@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canadian Highlander Data</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; padding: 20px; background: #f5f5f5; }
+        .container { max-width: 1400px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h1 { margin-bottom: 20px; color: #333; }
+        .search-section { margin-bottom: 20px; }
+        .search-box { position: relative; margin-bottom: 15px; }
+        #cardSearch { width: 100%; padding: 10px; font-size: 16px; border: 2px solid #ddd; border-radius: 4px; }
+        #cardSearch:focus { outline: none; border-color: #4CAF50; }
+        .autocomplete-items { position: absolute; border: 1px solid #ddd; border-top: none; z-index: 99; top: 100%; left: 0; right: 0; max-height: 300px; overflow-y: auto; background: white; }
+        .autocomplete-items div { padding: 10px; cursor: pointer; border-bottom: 1px solid #ddd; }
+        .autocomplete-items div:hover { background-color: #e9e9e9; }
+        .selected-cards { display: flex; flex-wrap: wrap; gap: 8px; min-height: 40px; }
+        .card-chip { background: #4CAF50; color: white; padding: 6px 12px; border-radius: 16px; display: inline-flex; align-items: center; gap: 8px; font-size: 14px; }
+        .card-chip button { background: none; border: none; color: white; cursor: pointer; font-size: 18px; font-weight: bold; padding: 0; width: 20px; height: 20px; }
+        .card-chip button:hover { color: #ffcccc; }
+        .chart-container { position: relative; height: 600px; margin-top: 20px; }
+        .empty-state { text-align: center; color: #999; padding: 100px 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Canadian Highlander Data</h1>
+        
+        <div class="search-section">
+            <div class="search-box">
+                <input type="text" id="cardSearch" placeholder="Search for a card..." autocomplete="off">
+                <div id="autocompleteList" class="autocomplete-items"></div>
+            </div>
+            <div class="selected-cards" id="selectedCards"></div>
+        </div>
+        
+        <div class="chart-container">
+            <canvas id="playrateChart"></canvas>
+        </div>
+    </div>
+
+    <script>
+        let data = [];
+        let allCards = [];
+        let selectedCards = ['Barrowgoyf'];
+        let chart = null;
+
+        // Load CSV data
+        Papa.parse('data.csv', {
+            download: true,
+            header: true,
+            complete: function(results) {
+                data = results.data.filter(row => row.card && row.year_month);
+                allCards = [...new Set(data.map(row => row.card))].sort();
+                updateChart();
+            }
+        });
+
+        // Autocomplete functionality
+        const searchInput = document.getElementById('cardSearch');
+        const autocompleteList = document.getElementById('autocompleteList');
+
+        searchInput.addEventListener('input', function() {
+            const val = this.value.toLowerCase();
+            autocompleteList.innerHTML = '';
+            
+            if (!val) return;
+            
+            const matches = allCards.filter(card => 
+                card.toLowerCase().includes(val) && !selectedCards.includes(card)
+            ).slice(0, 50);
+            
+            matches.forEach(card => {
+                const div = document.createElement('div');
+                div.textContent = card;
+                div.addEventListener('click', () => addCard(card));
+                autocompleteList.appendChild(div);
+            });
+        });
+
+        // Close autocomplete when clicking outside
+        document.addEventListener('click', function(e) {
+            if (e.target !== searchInput) {
+                autocompleteList.innerHTML = '';
+            }
+        });
+
+        function addCard(card) {
+            if (selectedCards.length >= 20) {
+                alert('Maximum 20 cards can be selected');
+                return;
+            }
+            if (!selectedCards.includes(card)) {
+                selectedCards.push(card);
+                updateSelectedCards();
+                updateChart();
+            }
+            searchInput.value = '';
+            autocompleteList.innerHTML = '';
+        }
+
+        function removeCard(card) {
+            selectedCards = selectedCards.filter(c => c !== card);
+            updateSelectedCards();
+            updateChart();
+        }
+
+        function updateSelectedCards() {
+            const container = document.getElementById('selectedCards');
+            container.innerHTML = selectedCards.map(card => `
+                <div class="card-chip">
+                    ${card}
+                    <button onclick="removeCard('${card.replace(/'/g, "\\'")}')">×</button>
+                </div>
+            `).join('');
+        }
+
+        function updateChart() {
+            const ctx = document.getElementById('playrateChart').getContext('2d');
+            
+            // Get all unique dates and sort them
+            const allDates = [...new Set(data.map(row => row.year_month))].sort();
+            
+            // Prepare datasets
+            const datasets = selectedCards.map((card, i) => {
+                const cardData = data.filter(row => row.card === card);
+                const dataPoints = allDates.map(date => {
+                    const row = cardData.find(r => r.year_month === date);
+                    return row ? parseFloat(row.playrate) * 100 : null;
+                });
+                
+                const hue = (i * 137.5) % 360;
+                const color = `hsl(${hue}, 70%, 50%)`;
+                
+                return {
+                    label: card,
+                    data: dataPoints,
+                    borderColor: color,
+                    backgroundColor: color,
+                    borderWidth: 2,
+                    fill: false,
+                    tension: 0.3,
+                    spanGaps: true
+                };
+            });
+
+            if (chart) {
+                chart.destroy();
+            }
+
+            chart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: allDates,
+                    datasets: datasets
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top'
+                        },
+                        title: {
+                            display: true,
+                            text: 'Play rate by Month'
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 100,
+                            ticks: {
+                                callback: function(value) {
+                                    return value + '%';
+                                }
+                            },
+                            title: {
+                                display: true,
+                                text: 'Play rate'
+                            }
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Month'
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Initialize
+        updateSelectedCards();
+    </script>
+</body>
+</html>

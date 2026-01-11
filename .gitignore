@@ -1,0 +1,6 @@
+/decklists.json
+/deck_ids.csv
+/generate_insights.py
+/get_moxfield_urls.py
+/moxfield_import_decklists.py
+/update_ids_lists.py
