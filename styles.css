@@ -1,0 +1,249 @@
+:root {
+    --primary-color: #607B8F;
+    --primary-hover: #E97F4A;
+    --text-dark: #333;
+    --text-light: #F7E396;
+    --border-color: #F7E396;
+    --background: #434E78;
+}
+
+/* Reset */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+/* Body */
+body { 
+    font-family: Arial, sans-serif; 
+    padding: 20px; 
+    background: var(--background); 
+}
+
+/* Container */
+.container { 
+    max-width: 1400px; 
+    margin: 0 auto; 
+    background: white; 
+    padding: 30px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.header h1 {
+    margin: 0;
+    color: var(--text-dark);
+    font-size: 30px;
+}
+
+.header h1 a {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-size: inherit;
+}
+
+.header h1 a:hover {
+    color: var(--primary-color);
+}
+
+.header a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+/* Content Tabs */
+.content-tabs {
+    display: flex;
+    gap: 5px;
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.content-tabs button {
+    padding: 10px 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.content-tabs button.active {
+    background: white;
+    font-weight: bold;
+}
+
+.content-tabs button:hover {
+    background: #e0e0e0;
+}
+
+.content-tabs button.active:hover {
+    background: white;
+}
+
+/* Utility */
+.hidden {
+    display: none;
+}
+
+/* Typography */
+h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: var(--text-dark);
+}
+
+h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: var(--text-dark);
+    font-size: 18px;
+}
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+p a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Back Link Button */
+.back-link {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 24px;
+    background: var(--primary-color);
+    color: white !important;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.back-link:hover {
+    background: var(--primary-hover);
+    text-decoration: none !important;
+}
+
+/* Search Section */
+.search-section { 
+    margin-bottom: 20px; 
+}
+
+.search-box { 
+    position: relative; 
+    margin-bottom: 15px; 
+}
+
+#cardSearch { 
+    width: 100%; 
+    padding: 10px; 
+    font-size: 16px; 
+    border: 2px solid var(--border-color); 
+    border-radius: 4px; 
+}
+
+#cardSearch:focus { 
+    outline: none; 
+    border-color: var(--primary-color); 
+}
+
+/* Autocomplete */
+.autocomplete-items { 
+    position: absolute; 
+    border: 1px solid var(--border-color); 
+    border-top: none; 
+    z-index: 99; 
+    top: 100%; 
+    left: 0; 
+    right: 0; 
+    max-height: 300px; 
+    overflow-y: auto; 
+    background: white; 
+}
+
+.autocomplete-items div { 
+    padding: 10px; 
+    cursor: pointer; 
+    border-bottom: 1px solid var(--border-color); 
+}
+
+.autocomplete-items div:hover { 
+    background-color: #e9e9e9; 
+}
+
+/* Selected Cards */
+.selected-cards { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 8px; 
+    min-height: 40px; 
+}
+
+.card-chip { 
+    background: var(--primary-color); 
+    color: white; 
+    padding: 6px 12px; 
+    border-radius: 16px; 
+    display: inline-flex; 
+    align-items: center; 
+    gap: 8px; 
+    font-size: 14px; 
+}
+
+.card-chip button {
+    background: none; 
+    border: none; 
+    color: white; 
+    cursor: pointer; 
+    font-size: 18px; 
+    font-weight: bold; 
+    padding: 0; 
+    width: 20px; 
+    height: 20px; 
+}
+
+.card-chip button:hover { 
+    color: #ffcccc; 
+}
+
+/* Chart */
+.chart-container { 
+    position: relative; 
+    height: 600px; 
+    margin-top: 20px; 
+}
+
+.empty-state { 
+    text-align: center; 
+    color: #999; 
+    padding: 100px 20px; 
+}

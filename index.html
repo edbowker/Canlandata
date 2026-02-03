@@ -1,48 +1,55 @@
 <!DOCTYPE html>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canadian Highlander Data</title>
+    <title>Canlandata</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: Arial, sans-serif; padding: 20px; background: #f5f5f5; }
-        .container { max-width: 1400px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        h1 { margin-bottom: 20px; color: #333; }
-        .search-section { margin-bottom: 20px; }
-        .search-box { position: relative; margin-bottom: 15px; }
-        #cardSearch { width: 100%; padding: 10px; font-size: 16px; border: 2px solid #ddd; border-radius: 4px; }
-        #cardSearch:focus { outline: none; border-color: #4CAF50; }
-        .autocomplete-items { position: absolute; border: 1px solid #ddd; border-top: none; z-index: 99; top: 100%; left: 0; right: 0; max-height: 300px; overflow-y: auto; background: white; }
-        .autocomplete-items div { padding: 10px; cursor: pointer; border-bottom: 1px solid #ddd; }
-        .autocomplete-items div:hover { background-color: #e9e9e9; }
-        .selected-cards { display: flex; flex-wrap: wrap; gap: 8px; min-height: 40px; }
-        .card-chip { background: #4CAF50; color: white; padding: 6px 12px; border-radius: 16px; display: inline-flex; align-items: center; gap: 8px; font-size: 14px; }
-        .card-chip button { background: none; border: none; color: white; cursor: pointer; font-size: 18px; font-weight: bold; padding: 0; width: 20px; height: 20px; }
-        .card-chip button:hover { color: #ffcccc; }
-        .chart-container { position: relative; height: 600px; margin-top: 20px; }
-        .empty-state { text-align: center; color: #999; padding: 100px 20px; }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Canadian Highlander Data</h1>
-        
-        <div class="search-section">
-            <div class="search-box">
-                <input type="text" id="cardSearch" placeholder="Search for a card..." autocomplete="off">
-                <div id="autocompleteList" class="autocomplete-items"></div>
-            </div>
-            <div class="selected-cards" id="selectedCards"></div>
+        <div class="header">
+            <h1><a href="index.html">Canlandata</a></h1>
+            <a href="about.html">About</a>
         </div>
-        
-        <div class="chart-container">
-            <canvas id="playrateChart"></canvas>
+
+        <div id="mainContent">
+
+            <div class="content-tabs">
+                <button class="active" onclick="showContentSection('chartSection')">Chart</button>
+                <button onclick="showContentSection('table1Section')">Table 1</button>
+                <button onclick="showContentSection('table2Section')">Table 2</button>
+            </div>
+
+            <div id="chartSection">
+                <div class="search-section">
+                    <div class="search-box">
+                        <input type="text" id="cardSearch" placeholder="Search for a card..." autocomplete="off">
+                        <div id="autocompleteList" class="autocomplete-items"></div>
+                    </div>
+                    <div class="selected-cards" id="selectedCards"></div>
+                </div>
+                
+                <div class="chart-container">
+                    <canvas id="playrateChart"></canvas>
+                </div>
+            </div>
+            
+            <div id="table1Section" class="hidden">
+                <h2>Table 1</h2>
+                <p>table 1 coming soon</p>
+            </div>
+
+            <div id="table2Section" class="hidden">
+                <h2>Table 2</h2>
+                <p>table 2 coming soon</p>
+            </div>
         </div>
     </div>
-
+ 
     <script>
         let data = [];
         let allCards = [];
@@ -196,6 +203,23 @@
             });
         }
 
+        function showContentSection(sectionId){
+            // hide alls sections
+            document.getElementById('chartSection').classList.add('hidden');
+            document.getElementById('table1Section').classList.add('hidden');
+            document.getElementById('table2Section').classList.add('hidden');
+
+            // unhide target section
+            document.getElementById(sectionId).classList.remove('hidden');
+
+            // remove active from all buttons
+            document.querySelectorAll('.content-tabs button').forEach(btn => {btn.classList.remove('active')});
+
+            // add active to target button
+            event.target.classList.add('active')
+        }
+
+        
         // Initialize
         updateSelectedCards();
     </script>
