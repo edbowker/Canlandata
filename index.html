@@ -89,6 +89,23 @@
             });
         });
 
+        
+        searchInput.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+                const val = this.value.toLowerCase();
+                
+                if (!val) return;
+                
+                const matches = allCards.filter(card => 
+                    card.toLowerCase().includes(val) && !selectedCards.includes(card)
+                );
+                
+                if (matches.length > 0) {
+                    addCard(matches[0]);  // Add the first match
+                }
+            }
+        });
+
         // Close autocomplete when clicking outside
         document.addEventListener('click', function(e) {
             if (e.target !== searchInput) {
