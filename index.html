@@ -17,12 +17,17 @@
         </div>
 
         <div id="mainContent">
-
-            <div class="content-tabs">
+            <div id="mainContent">
+                <div class="chart-header">
+                    <h2>Play Rate By Month</h2>
+                    <p>What percent of winning decks this month used this card?</p>
+                </div>
+            </div>
+            <!-- <div class="content-tabs">
                 <button class="active" onclick="showContentSection('chartSection')">Chart</button>
                 <button onclick="showContentSection('table1Section')">Table 1</button>
                 <button onclick="showContentSection('table2Section')">Table 2</button>
-            </div>
+            </div> -->
 
             <div id="chartSection">
                 <div class="search-section">
@@ -135,17 +140,49 @@
 
         function updateSelectedCards() {
             const container = document.getElementById('selectedCards');
+            const clearButton = selectedCards.length > 0
+                ? `<button class="clear-all-btn" onclick="clearAllCards()">Clear All</button>` 
+                : '';
             container.innerHTML = selectedCards.map(card => `
                 <div class="card-chip">
                     ${card}
                     <button onclick="removeCard('${card.replace(/'/g, "\\'")}')">×</button>
                 </div>
-            `).join('');
+            `).join('') + clearButton;
         }
 
+        function clearAllCards() {
+            selectedCards = [];
+            updateSelectedCards();
+            updateChart();
+    }
+
         function updateChart() {
+
+            // If no card selected, replace chart with reminder text
+            if (selectedCards.length === 0) {
+                if (chart) chart.destroy();
+                chart = null;
+                document.querySelector('.chart-container').innerHTML = 
+                    '<p class="empty-state">Search for a card above to get started.</p>';
+                return;
+            }
+
+            // If reminder text is up, replace with chart
+            if (!document.getElementById('playrateChart')) {
+                document.querySelector('.chart-container').innerHTML = 
+                    '<canvas id="playrateChart"></canvas>';
+            }
+
+            // Get Styles
             const ctx = document.getElementById('playrateChart').getContext('2d');
-            
+            const styles = getComputedStyle(document.documentElement);
+            const axisColor = styles.getPropertyValue('--chart-axis-color').trim();
+            const yearColor = styles.getPropertyValue('--chart-year-color').trim();
+            const fontFamily = styles.getPropertyValue('--chart-font-family').trim();
+            const fontSize = parseInt(styles.getPropertyValue('--chart-font-size'));
+            const yearFontSize = parseInt(styles.getPropertyValue('--chart-year-font-size'));
+
             // Get all unique dates and sort them
             const allDates = [...new Set(data.map(row => row.year_month))].sort();
             
@@ -168,7 +205,11 @@
                     borderWidth: 2,
                     fill: false,
                     tension: 0.3,
-                    spanGaps: true
+                    spanGaps: true,
+                    pointRadius: 0,
+                    pointHoverRadius: 5,
+                    pointHitRadius: 15,
+                    hoverBorderWidth: 4
                 };
             });
 
@@ -191,9 +232,27 @@
                             position: 'top'
                         },
                         title: {
-                            display: true,
+                            display: false,
                             text: 'Play rate by Month'
+                        },
+                        tooltip: {
+                            mode: 'nearest',
+                            intersect: true,
+                            callbacks: {
+                                title: function(context) {
+                                    const [year, month] = context[0].label.split('-');
+                                    const date = new Date(year, month - 1);
+                                    return date.toLocaleString('default', { month: 'short' }) + ' ' + year;
+                                },
+                                label: function(context) {
+                                    return context.dataset.label + ': ' + context.parsed.y.toFixed(2) + '%';
+                                }   
+                            }
                         }
+                    },
+                    interaction: {
+                        mode: 'nearest',
+                        intersect: true
                     },
                     scales: {
                         y: {
@@ -202,17 +261,66 @@
                             ticks: {
                                 callback: function(value) {
                                     return value + '%';
-                                }
-                            },
-                            title: {
-                                display: true,
-                                text: 'Play rate'
+                                },
+                                font: {
+                                    size: fontSize,
+                                    family: fontFamily
+                                },
+                                color: axisColor
                             }
                         },
                         x: {
-                            title: {
-                                display: true,
-                                text: 'Month'
+                            type: 'category',
+                            position: 'bottom',
+                            ticks: {
+                                callback: function(value, index, ticks) {
+                                    const label = this.getLabelForValue(value);
+                                    const [year, month] = label.split('-');
+                                    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+                                                'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                                    return months[parseInt(month) - 1];  // Just month names
+                                },
+                                autoSkip: true,
+                                maxRotation: 45,
+                                minRotation: 45,
+                                font: {
+                                    size: fontSize,
+                                    family: fontFamily
+                                },
+                                color: axisColor
+                            },
+                            grid: {
+                                display: true
+                            }
+                        },
+                        xYear: {
+                            type: 'category',
+                            position: 'bottom',
+                            offset: true,
+                            ticks: {
+                                callback: function(value, index, ticks) {
+                                    const label = this.getLabelForValue(value);
+                                    const [year, month] = label.split('-');
+                                    
+                                    // Only show year at January or first tick
+                                    if (index === 0 || parseInt(month) === 1) {
+                                        return year;
+                                    }
+                                    return '';  // Empty for other months
+                                },
+                                autoSkip: false,  // Never skip
+                                maxRotation: 0,
+                                minRotation: 0,
+                                font: {
+                                    size: yearFontSize,
+                                    weight: 'bold'
+                                },
+                                color: yearColor,
+                                padding: 10
+                            },
+                            grid: {
+                                display: false,  // Don't draw grid for year axis
+                                drawTicks: false
                             }
                         }
                     }

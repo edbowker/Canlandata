@@ -5,6 +5,13 @@
     --text-light: #F7E396;
     --border-color: #F7E396;
     --background: #434E78;
+
+    /* Chart text styles */
+    --chart-axis-color: #666;
+    --chart-year-color: #333;
+    --chart-font-family: 'Arial, sans-serif';
+    --chart-font-size: 13px;
+    --chart-year-font-size: 15px;
 }
 
 /* Reset */
@@ -67,6 +74,34 @@ body {
 
 .header a:hover {
     text-decoration: underline;
+}
+
+/* Chart Header */
+.chart-header {
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.chart-header h2 {
+    font-size: 14px;
+    color: var(--text-dark);
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.chart-header p {
+    font-size: 13px;
+    color: var(--text-dark);
+    font-weight: 400;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    letter-spacing: normal;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Content Tabs */
@@ -174,6 +209,31 @@ p a:hover {
 #cardSearch:focus { 
     outline: none; 
     border-color: var(--primary-color); 
+}
+
+.clear-all-btn {
+    background: none;
+    border: 1px solid var(--border-color);
+    color: var(--text-dark);
+    padding: 4px 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clear-all-btn:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    background: none;
+}
+
+.empty-state {
+    text-align: center;
+    color: var(--primary-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 80px 0;
 }
 
 /* Autocomplete */
