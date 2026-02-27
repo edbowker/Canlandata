@@ -3,7 +3,7 @@
     --primary-hover: #E97F4A;
     --text-dark: #333;
     --text-light: #F7E396;
-    --border-color: #F7E396;
+    --border-color: #cfb034c3;
     --background: #434E78;
 
     /* Chart text styles */
@@ -306,4 +306,136 @@ p a:hover {
     text-align: center; 
     color: #999; 
     padding: 100px 20px; 
+}
+
+/* Time Filter */
+.time-filter {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    background: #f0f0f0;
+    border-radius: 4px;
+}
+
+.time-filter-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.time-filter-group label {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-dark);
+}
+
+.time-filter-group input[type="month"] {
+    padding: 6px 10px;
+    font-size: 14px;
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+    background: white;
+    color: var(--text-dark);
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.time-filter-group input[type="month"]:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.time-filter-group select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+#allTimeBtn {
+    padding: 6px 14px;
+    font-size: 13px;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    background: none;
+    color: var(--text-dark);
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#allTimeBtn:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* DataTables Overrides */
+div.dt-container .dt-search input {
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+    padding: 6px 10px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-dark);
+    outline: none;
+}
+
+div.dt-container .dt-search input:focus {
+    border-color: var(--primary-color);
+}
+
+div.dt-container .dt-length select {
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+    padding: 6px 10px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-dark);
+}
+
+div.dt-container .dt-length select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+div.dt-container .dt-info {
+    font-size: 13px;
+    color: var(--text-dark);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Pagination */
+div.dt-container .dt-paging .dt-paging-button {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 4px 10px;
+    font-size: 13px;
+    color: var(--text-dark) !important;
+    cursor: pointer;
+    background: none;
+}
+
+div.dt-container .dt-paging .dt-paging-button:hover {
+    background: #f0f0f0 !important;
+    border-color: var(--primary-color) !important;
+    color: var(--primary-color) !important;
+}
+
+div.dt-container .dt-paging .dt-paging-button.current {
+    background: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    color: white !important;
+    font-weight: bold;
+}
+
+div.dt-container .dt-paging .dt-paging-button.disabled {
+    opacity: 0.4;
+    cursor: default;
+}
+
+/* Sort arrows */
+table.dataTable thead th.dt-orderable-asc span.dt-column-order::before,
+table.dataTable thead th.dt-orderable-desc span.dt-column-order::after {
+    color: var(--primary-color);
 }

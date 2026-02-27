@@ -7,6 +7,9 @@
     <title>Canlandata</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,18 +20,17 @@
         </div>
 
         <div id="mainContent">
-            <div id="mainContent">
-                <div class="chart-header">
-                    <h2>Play Rate By Month</h2>
-                    <p>What percent of winning decks this month used this card?</p>
-                </div>
+            <div class="chart-header">
+                <h2>Play Rate</h2>
+                <p>What percent of winning decks used this card?</p>
             </div>
-            <!-- <div class="content-tabs">
-                <button class="active" onclick="showContentSection('chartSection')">Chart</button>
-                <button onclick="showContentSection('table1Section')">Table 1</button>
-                <button onclick="showContentSection('table2Section')">Table 2</button>
-            </div> -->
 
+            <div class="content-tabs">
+                <button class="active" onclick="showContentSection('chartSection')">Lines</button>
+                <button onclick="showContentSection('tableSection')">Table</button>
+            </div>
+
+            <!-- CHART SECTION -->
             <div id="chartSection">
                 <div class="search-section">
                     <div class="search-box">
@@ -37,31 +39,48 @@
                     </div>
                     <div class="selected-cards" id="selectedCards"></div>
                 </div>
-                
                 <div class="chart-container">
                     <canvas id="playrateChart"></canvas>
                 </div>
             </div>
-            
-            <div id="table1Section" class="hidden">
-                <h2>Table 1</h2>
-                <p>table 1 coming soon</p>
+
+            <!-- TABLE SECTION -->
+            <div id="tableSection" class="hidden">
+                <div class="time-filter">
+                    <div class="time-filter-group">
+                        <label>From</label>
+                        <input type="month" id="startDate">
+                    </div>
+                    <div class="time-filter-group">
+                        <label>To</label>
+                        <input type="month" id="endDate">
+                    </div>
+                    <button id="allTimeBtn" onclick="resetTimeFilter()">All Time</button>
+                </div>
+                <table id="statsTable">
+                    <thead>
+                        <tr>
+                            <th>Card</th>
+                            <th>Plays</th>
+                            <th>Play Rate</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
             </div>
 
-            <div id="table2Section" class="hidden">
-                <h2>Table 2</h2>
-                <p>table 2 coming soon</p>
-            </div>
         </div>
     </div>
- 
+
     <script>
         let data = [];
+        let deckCounts = [];
         let allCards = [];
         let selectedCards = ['Barrowgoyf', 'White Plume Adventurer'];
         let chart = null;
+        let dataTable = null;
 
-        // Load CSV data
+        // Load card play data
         Papa.parse('data.csv', {
             download: true,
             header: true,
@@ -72,20 +91,140 @@
             }
         });
 
-        // Autocomplete functionality
+        // Load deck count data
+        Papa.parse('deck_counts.csv', {
+            download: true,
+            header: true,
+            complete: function(results) {
+                deckCounts = results.data.filter(row => row.year_month && row.count);
+            }
+        });
+
+        // ---- TIME FILTER ----
+
+        const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+        function populateTimeFilter() {
+            const dates = [...new Set(data.map(row => row.year_month))].sort();
+            const minDate = dates[0];
+            const maxDate = dates[dates.length - 1];
+
+            const startInput = document.getElementById('startDate');
+            const endInput = document.getElementById('endDate');
+
+            startInput.min = minDate;
+            startInput.max = maxDate;
+            endInput.min = minDate;
+            endInput.max = maxDate;
+
+            startInput.value = minDate;
+            endInput.value = maxDate;
+
+            startInput.addEventListener('change', initTable);
+            endInput.addEventListener('change', initTable);
+        }
+
+        function getSelectedRange() {
+            return {
+                startDate: document.getElementById('startDate').value,
+                endDate: document.getElementById('endDate').value
+            };
+        }
+
+        function resetTimeFilter() {
+            populateTimeFilter();
+            initTable();
+        }
+
+        // ---- AGGREGATION ----
+
+        function aggregateData(startDate = null, endDate = null) {
+            const filteredData = data.filter(row => {
+                if (startDate && row.year_month < startDate) return false;
+                if (endDate && row.year_month > endDate) return false;
+                return true;
+            });
+
+            const filteredDecks = deckCounts.filter(row => {
+                if (startDate && row.year_month < startDate) return false;
+                if (endDate && row.year_month > endDate) return false;
+                return true;
+            });
+
+            const totalDecks = filteredDecks.reduce((sum, row) => sum + parseInt(row.count), 0);
+
+            const cardMap = {};
+            filteredData.forEach(row => {
+                if (!cardMap[row.card]) cardMap[row.card] = 0;
+                cardMap[row.card] += parseInt(row.plays);
+            });
+
+            return Object.entries(cardMap).map(([card, plays]) => ({
+                card,
+                plays,
+                playrate: totalDecks > 0 ? parseFloat((plays / totalDecks * 100).toFixed(2)) : 0
+            }));
+        }
+
+        // ---- TABLE ----
+
+        function initTable() {
+            const { startDate, endDate } = getSelectedRange();
+            const rows = aggregateData(startDate, endDate);
+
+            if (dataTable) {
+                dataTable.clear();
+                dataTable.rows.add(rows.map(row => [row.card, row.plays, row.playrate]));
+                dataTable.draw();
+                return;
+            }
+
+            rows.forEach(row => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `<td>${row.card}</td><td>${row.plays}</td><td>${row.playrate}</td>`;
+                document.querySelector('#statsTable tbody').appendChild(tr);
+            });
+
+            dataTable = new DataTable('#statsTable', {
+                order: [[2, 'desc']],
+                columnDefs: [{
+                    targets: 2,
+                    render: function(data) {
+                        return data + '%';
+                    }
+                }]
+            });
+        }
+
+        // ---- TAB SWITCHING ----
+
+        function showContentSection(sectionId) {
+            document.getElementById('chartSection').classList.add('hidden');
+            document.getElementById('tableSection').classList.add('hidden');
+            document.querySelectorAll('.content-tabs button').forEach(btn => btn.classList.remove('active'));
+            document.getElementById(sectionId).classList.remove('hidden');
+            event.target.classList.add('active');
+
+            if (sectionId === 'tableSection') {
+                if (!document.getElementById('startDate').value) populateTimeFilter();                
+                initTable();
+            }
+        }
+
+        // ---- CHART SEARCH / AUTOCOMPLETE ----
+
         const searchInput = document.getElementById('cardSearch');
         const autocompleteList = document.getElementById('autocompleteList');
 
         searchInput.addEventListener('input', function() {
             const val = this.value.toLowerCase();
             autocompleteList.innerHTML = '';
-            
             if (!val) return;
-            
-            const matches = allCards.filter(card => 
+
+            const matches = allCards.filter(card =>
                 card.toLowerCase().includes(val) && !selectedCards.includes(card)
             ).slice(0, 50);
-            
+
             matches.forEach(card => {
                 const div = document.createElement('div');
                 div.textContent = card;
@@ -94,28 +233,19 @@
             });
         });
 
-        
         searchInput.addEventListener('keydown', function(e) {
             if (e.key === 'Enter') {
                 const val = this.value.toLowerCase();
-                
                 if (!val) return;
-                
-                const matches = allCards.filter(card => 
+                const matches = allCards.filter(card =>
                     card.toLowerCase().includes(val) && !selectedCards.includes(card)
                 );
-                
-                if (matches.length > 0) {
-                    addCard(matches[0]);  // Add the first match
-                }
+                if (matches.length > 0) addCard(matches[0]);
             }
         });
 
-        // Close autocomplete when clicking outside
         document.addEventListener('click', function(e) {
-            if (e.target !== searchInput) {
-                autocompleteList.innerHTML = '';
-            }
+            if (e.target !== searchInput) autocompleteList.innerHTML = '';
         });
 
         function addCard(card) {
@@ -141,7 +271,7 @@
         function updateSelectedCards() {
             const container = document.getElementById('selectedCards');
             const clearButton = selectedCards.length > 0
-                ? `<button class="clear-all-btn" onclick="clearAllCards()">Clear All</button>` 
+                ? `<button class="clear-all-btn" onclick="clearAllCards()">Clear All</button>`
                 : '';
             container.innerHTML = selectedCards.map(card => `
                 <div class="card-chip">
@@ -155,26 +285,24 @@
             selectedCards = [];
             updateSelectedCards();
             updateChart();
-    }
+        }
+
+        // ---- CHART ----
 
         function updateChart() {
-
-            // If no card selected, replace chart with reminder text
             if (selectedCards.length === 0) {
                 if (chart) chart.destroy();
                 chart = null;
-                document.querySelector('.chart-container').innerHTML = 
+                document.querySelector('.chart-container').innerHTML =
                     '<p class="empty-state">Search for a card above to get started.</p>';
                 return;
             }
 
-            // If reminder text is up, replace with chart
             if (!document.getElementById('playrateChart')) {
-                document.querySelector('.chart-container').innerHTML = 
+                document.querySelector('.chart-container').innerHTML =
                     '<canvas id="playrateChart"></canvas>';
             }
 
-            // Get Styles
             const ctx = document.getElementById('playrateChart').getContext('2d');
             const styles = getComputedStyle(document.documentElement);
             const axisColor = styles.getPropertyValue('--chart-axis-color').trim();
@@ -183,20 +311,18 @@
             const fontSize = parseInt(styles.getPropertyValue('--chart-font-size'));
             const yearFontSize = parseInt(styles.getPropertyValue('--chart-year-font-size'));
 
-            // Get all unique dates and sort them
             const allDates = [...new Set(data.map(row => row.year_month))].sort();
-            
-            // Prepare datasets
+
             const datasets = selectedCards.map((card, i) => {
                 const cardData = data.filter(row => row.card === card);
                 const dataPoints = allDates.map(date => {
                     const row = cardData.find(r => r.year_month === date);
                     return row ? parseFloat(row.playrate) * 100 : null;
                 });
-                
+
                 const hue = (i * 137.5) % 360;
                 const color = `hsl(${hue}, 30%, 50%)`;
-                
+
                 return {
                     label: card,
                     data: dataPoints,
@@ -213,9 +339,7 @@
                 };
             });
 
-            if (chart) {
-                chart.destroy();
-            }
+            if (chart) chart.destroy();
 
             chart = new Chart(ctx, {
                 type: 'line',
@@ -246,7 +370,7 @@
                                 },
                                 label: function(context) {
                                     return context.dataset.label + ': ' + context.parsed.y.toFixed(2) + '%';
-                                }   
+                                }
                             }
                         }
                     },
@@ -259,13 +383,8 @@
                             beginAtZero: true,
                             max: 100,
                             ticks: {
-                                callback: function(value) {
-                                    return value + '%';
-                                },
-                                font: {
-                                    size: fontSize,
-                                    family: fontFamily
-                                },
+                                callback: function(value) { return value + '%'; },
+                                font: { size: fontSize, family: fontFamily },
                                 color: axisColor
                             }
                         },
@@ -276,22 +395,17 @@
                                 callback: function(value, index, ticks) {
                                     const label = this.getLabelForValue(value);
                                     const [year, month] = label.split('-');
-                                    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
-                                                'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-                                    return months[parseInt(month) - 1];  // Just month names
+                                    const months = ['Jan','Feb','Mar','Apr','May','Jun',
+                                                    'Jul','Aug','Sep','Oct','Nov','Dec'];
+                                    return months[parseInt(month) - 1];
                                 },
                                 autoSkip: true,
                                 maxRotation: 45,
                                 minRotation: 45,
-                                font: {
-                                    size: fontSize,
-                                    family: fontFamily
-                                },
+                                font: { size: fontSize, family: fontFamily },
                                 color: axisColor
                             },
-                            grid: {
-                                display: true
-                            }
+                            grid: { display: true }
                         },
                         xYear: {
                             type: 'category',
@@ -301,50 +415,23 @@
                                 callback: function(value, index, ticks) {
                                     const label = this.getLabelForValue(value);
                                     const [year, month] = label.split('-');
-                                    
-                                    // Only show year at January or first tick
-                                    if (index === 0 || parseInt(month) === 1) {
-                                        return year;
-                                    }
-                                    return '';  // Empty for other months
+                                    if (index === 0 || parseInt(month) === 1) return year;
+                                    return '';
                                 },
-                                autoSkip: false,  // Never skip
+                                autoSkip: false,
                                 maxRotation: 0,
                                 minRotation: 0,
-                                font: {
-                                    size: yearFontSize,
-                                    weight: 'bold'
-                                },
+                                font: { size: yearFontSize, weight: 'bold' },
                                 color: yearColor,
                                 padding: 10
                             },
-                            grid: {
-                                display: false,  // Don't draw grid for year axis
-                                drawTicks: false
-                            }
+                            grid: { display: false, drawTicks: false }
                         }
                     }
                 }
             });
         }
 
-        function showContentSection(sectionId){
-            // hide alls sections
-            document.getElementById('chartSection').classList.add('hidden');
-            document.getElementById('table1Section').classList.add('hidden');
-            document.getElementById('table2Section').classList.add('hidden');
-
-            // unhide target section
-            document.getElementById(sectionId).classList.remove('hidden');
-
-            // remove active from all buttons
-            document.querySelectorAll('.content-tabs button').forEach(btn => {btn.classList.remove('active')});
-
-            // add active to target button
-            event.target.classList.add('active')
-        }
-
-        
         // Initialize
         updateSelectedCards();
     </script>
