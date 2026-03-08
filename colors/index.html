@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Representation - Canlandata</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="header-placeholder"></div>
+        <script src="/header.js"></script>
+
+        <div id="mainContent">
+            <div class="chart-header">
+                <h2>Color Representation</h2>
+                <p>Share of mana pips by color in winning decklists over time</p>
+            </div>
+
+            <div class="chart-container">
+                <canvas id="colorChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // MTG color palette - muted tones
+        const COLOR_STYLES = {
+            W: { label: 'White', backgroundColor: 'rgba(200, 195, 170, 0.9)', borderColor: '#a8a485' },
+            U: { label: 'Blue',  backgroundColor: 'rgba(70, 120, 160, 0.85)', borderColor: '#3a6a90' },
+            B: { label: 'Black', backgroundColor: 'rgba(60, 55, 65, 0.9)',    borderColor: '#2a252f' },
+            R: { label: 'Red',   backgroundColor: 'rgba(180, 75, 55, 0.85)',  borderColor: '#a04030' },
+            G: { label: 'Green', backgroundColor: 'rgba(70, 130, 80, 0.85)', borderColor: '#3a7045' }
+        };
+
+        const COLORS = ['W', 'U', 'B', 'R', 'G'];
+
+        let chart = null;
+
+        Papa.parse('/color_pips.csv', {
+            download: true,
+            header: true,
+            complete: function(results) {
+                const data = results.data.filter(row => row['mm-yy'] && row.color && row.pct);
+                buildChart(data);
+            }
+        });
+
+        function buildChart(data) {
+            // Get sorted unique months
+            const months = [...new Set(data.map(row => row['mm-yy']))].sort();
+
+            // Build one dataset per color
+            const datasets = COLORS.map(color => {
+                const style = COLOR_STYLES[color];
+                return {
+                    label: style.label,
+                    data: months.map(month => {
+                        const row = data.find(r => r['mm-yy'] === month && r.color === color);
+                        return row ? parseFloat(row.pct) : 0;
+                    }),
+                    backgroundColor: style.backgroundColor,
+                    borderColor: style.borderColor,
+                    borderWidth: 0,
+                    barPercentage: 1.0,
+                    categoryPercentage: 1.0
+                };
+            });
+
+            const styles = getComputedStyle(document.documentElement);
+            const axisColor = styles.getPropertyValue('--chart-axis-color').trim();
+            const fontFamily = styles.getPropertyValue('--chart-font-family').trim();
+            const fontSize = parseInt(styles.getPropertyValue('--chart-font-size'));
+
+            const ctx = document.getElementById('colorChart').getContext('2d');
+
+            chart = new Chart(ctx, {
+                type: 'bar',
+                data: { labels: months, datasets: datasets },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top'
+                        },
+                        tooltip: {
+                            callbacks: {
+                                title: function(context) {
+                                    const [year, month] = context[0].label.split('-');
+                                    const date = new Date(year, month - 1);
+                                    return date.toLocaleString('default', { month: 'short' }) + ' ' + year;
+                                },
+                                label: function(context) {
+                                    return context.dataset.label + ': ' + (context.parsed.y * 100).toFixed(1) + '%';
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            stacked: true,
+                            barPercentage: 1.0,
+                            categoryPercentage: 1.0,
+                            ticks: {
+                                callback: function(value, index) {
+                                    const label = this.getLabelForValue(value);
+                                    const [year, month] = label.split('-');
+                                    const monthNames = ['Jan','Feb','Mar','Apr','May','Jun',
+                                                        'Jul','Aug','Sep','Oct','Nov','Dec'];
+                                    return monthNames[parseInt(month) - 1];
+                                },
+                                autoSkip: true,
+                                maxRotation: 45,
+                                minRotation: 45,
+                                font: { size: fontSize, family: fontFamily },
+                                color: axisColor
+                            },
+                            grid: { display: true }
+                        },
+                        xYear: {
+                            type: 'category',
+                            labels: months,
+                            position: 'bottom',
+                            offset: true,
+                            ticks: {
+                                callback: function(value, index) {
+                                    const label = months[index];
+                                    const [year, month] = label.split('-');
+                                    if (index === 0 || parseInt(month) === 1) return year;
+                                    return '';
+                                },
+                                autoSkip: false,
+                                maxRotation: 0,
+                                minRotation: 0,
+                                font: { size: parseInt(styles.getPropertyValue('--chart-year-font-size')), weight: 'bold' },
+                                color: styles.getPropertyValue('--chart-year-color').trim(),
+                                padding: 10
+                            },
+                            grid: { display: false, drawTicks: false }
+                        },
+                        y: {
+                            stacked: true,
+                            min: 0,
+                            max: 1,
+                            ticks: {
+                                callback: function(value) { return Math.round(value * 100) + '%'; },
+                                font: { size: fontSize, family: fontFamily },
+                                color: axisColor
+                            }
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

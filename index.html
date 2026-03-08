@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<link rel="icon" type="image/x-icon" href="favicon.ico">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canlandata</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -14,10 +14,8 @@
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1><a href="/">Canlandata</a></h1>
-            <a href="/about">About</a>
-        </div>
+        <div id="header-placeholder"></div>
+        <script src="header.js"></script>
 
         <div id="mainContent">
             <div class="chart-header">
@@ -351,14 +349,8 @@
                     responsive: true,
                     maintainAspectRatio: false,
                     plugins: {
-                        legend: {
-                            display: true,
-                            position: 'top'
-                        },
-                        title: {
-                            display: false,
-                            text: 'Play rate by Month'
-                        },
+                        legend: { display: true, position: 'top' },
+                        title: { display: false },
                         tooltip: {
                             mode: 'nearest',
                             intersect: true,
@@ -374,10 +366,7 @@
                             }
                         }
                     },
-                    interaction: {
-                        mode: 'nearest',
-                        intersect: true
-                    },
+                    interaction: { mode: 'nearest', intersect: true },
                     scales: {
                         y: {
                             beginAtZero: true,

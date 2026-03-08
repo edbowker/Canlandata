@@ -71,6 +71,10 @@ body {
     font-weight: 500;
 }
 
+.header nav {
+    display: flex;
+    gap: 20px;
+}
 
 .header a:hover {
     text-decoration: underline;
