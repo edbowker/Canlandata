@@ -1,11 +1,19 @@
 from collections import defaultdict
 import json
 import pandas as pd
+from pathlib import Path
 
-with open('decklists.json', 'r') as f:
+# Pathing
+ROOT = Path(__file__).parent.parent
+DATA_DIR = ROOT / "data"
+INSIGHT_DIR = ROOT / "insights"
+UPDATE_DIR = ROOT / "update"
+DATA_OUT = DATA_DIR / "color_pips.csv"
+
+with open(DATA_DIR / 'decklists.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
 
-with open('card_database.json', 'r') as f:
+with open(DATA_DIR / 'card_database.json', 'r', encoding='utf-8') as f:
     card_db = json.load(f)
 
 # Get all unique months from decklists
@@ -55,6 +63,6 @@ for month, colors in color_counts.items():
 
 df = pd.DataFrame(rows)
 df = df.sort_values(['mm-yy', 'color']).reset_index(drop=True)
-df.to_csv('color_pips.csv', index=False)
+df.to_csv(DATA_OUT, index=False)
 
-print(f"Done. {len(df)} rows written to color_pips.csv")
+print(f"Done. {len(df)} rows written to {DATA_OUT}")

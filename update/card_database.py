@@ -1,23 +1,25 @@
 import requests
 import json
-from datetime import datetime
-import os
-import pandas as pd
 import time
-import re
 from pathlib import Path
 
+# Pathing
+ROOT = Path(__file__).parent.parent
+DATA_DIR = ROOT / "data"
+INSIGHT_DIR = ROOT / "insights"
+UPDATE_DIR = ROOT / "update"
+
 # Go get list of all cards from decklists
-with open('decklists.json', 'r') as f:
+with open(DATA_DIR / 'decklists.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
 
 allcards = set([card for deck in data for card in deck['mainboard']])
 
 # Go get (if exists) card database file
-db_path = Path('card_database.json')
+db_path = DATA_DIR / 'card_database.json'
 
 if db_path.exists():
-    with open(db_path, 'r') as f:
+    with open(db_path, 'r', encoding='utf-8') as f:
         card_db = json.load(f)
 else:
     card_db = {}
@@ -67,7 +69,10 @@ for i, card in enumerate(missing_cards):
                     card_db[card]['cmc'] = data['cmc']
                     card_db[card]['type_line'] = data['type_line']
                     card_db[card]['color_identity'] = data['color_identity']
-                    card_db[card]['set_name'] = data['set_name']
+                    if data['set_name'] == "Modern Horizons 2 Promos":
+                        card_db[card]['set_name'] = "Modern Horizons 2"
+                    else:
+                        card_db[card]['set_name'] = data['set_name']
 
                 # If single faced card
                 else:
@@ -76,8 +81,10 @@ for i, card in enumerate(missing_cards):
                     card_db[card]['cmc'] = data['cmc']
                     card_db[card]['type_line'] = data['type_line']
                     card_db[card]['color_identity'] = data['color_identity']
-                    card_db[card]['set_name'] = data['set_name']
-
+                    if data['set_name'] == "Modern Horizons 2 Promos":
+                        card_db[card]['set_name'] = "Modern Horizons 2"
+                    else:
+                        card_db[card]['set_name'] = data['set_name']
                 # Save after every 100 cards
                 if i % 100 == 0:
                     with open(db_path, 'w') as f:
@@ -97,8 +104,8 @@ for i, card in enumerate(missing_cards):
     time.sleep(0.15)
 
 # Save to card database file
-with open(db_path, 'w') as f:
-    json.dump(card_db, f, indent=2)
+with open(db_path, 'w', encoding='utf-8') as f:
+    json.dump(card_db, f, indent=2, ensure_ascii=False)
 
 print(f"Done. Database has {len(card_db)} cards.")
 

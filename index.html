@@ -79,7 +79,7 @@
         let dataTable = null;
 
         // Load card play data
-        Papa.parse('data.csv', {
+        Papa.parse('/data/data.csv', {
             download: true,
             header: true,
             complete: function(results) {
@@ -90,7 +90,7 @@
         });
 
         // Load deck count data
-        Papa.parse('deck_counts.csv', {
+        Papa.parse('/data/deck_counts.csv', {
             download: true,
             header: true,
             complete: function(results) {

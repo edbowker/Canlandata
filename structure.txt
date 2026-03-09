@@ -1,0 +1,46 @@
+UPDATE FLOW
+update_ids_lists.py
+- checks moxfield profile for all IDs, compares to deck_ids.csv, updates decklists.json and deck_ids.csv
+
+card_database.py
+- checks decklists.json and updates card_database.json with anything missing
+
+
+DATA
+card_database.json
+- list of all cards and relevant info about them
+
+color_pips.csv
+- output from generate_insights_colors, used for webpage color rep
+
+data.csv
+- output from generate_insights_cards, used for webpage card play rates
+
+deck_counts.csv
+- output from generate_insights_cards, used for webpage card play rates
+
+deck_ids.csv
+- list of all moxfield url IDs, used for checking for updates with update_ids_lists.py
+
+decklists.json
+- output from update_ids_lists, used many places
+
+set_counts.csv
+- output from generate_insights_sets, used for webpage set counts
+
+test_decklists.json
+- very small sample of decklists.json used for testing
+
+INSIGHTS
+generate_insights_cards.py
+- creates data.csv and deck_counts.csv from decklists.json
+
+generate_insights_colors.py
+- creates color_pips.csv from decklists.json and card_database.json
+
+generate_insights_sets.py
+- creates set_counts.csv from decklists.json and card_database.json
+
+TESTING
+test.py
+- test environment

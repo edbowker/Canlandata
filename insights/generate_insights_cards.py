@@ -1,8 +1,17 @@
 from collections import defaultdict
 import json
 import pandas as pd
+from pathlib import Path
 
-with open('decklists.json', 'r') as f:
+# Pathing
+ROOT = Path(__file__).parent.parent
+DATA_DIR = ROOT / "data"
+INSIGHT_DIR = ROOT / "insights"
+UPDATE_DIR = ROOT / "update"
+DATA_CARDS_OUT = DATA_DIR / "data.csv"
+DATA_DECKS_OUT = DATA_DIR / "deck_counts.csv"
+
+with open(DATA_DIR / 'decklists.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
 
 card_counts = defaultdict(dict)     # (card, month) -> {'plays': int, 'playrate': float}
@@ -47,7 +56,9 @@ rows = [
 ]
 
 df = pd.DataFrame(rows)
-df.to_csv('data.csv', index=False)
+df.to_csv(DATA_CARDS_OUT, index=False)
+print(f'Saved {DATA_CARDS_OUT}')
 
 df_deck_counts = pd.DataFrame(deck_counts.items(), columns=['year_month', 'count'])
-df_deck_counts.to_csv('deck_counts.csv', index=False)
+df_deck_counts.to_csv(DATA_DECKS_OUT, index=False)
+print(f'Saved {DATA_DECKS_OUT}')
