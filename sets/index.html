@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canlandata</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.min.css">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="header-placeholder"></div>
+        <script src="/header.js"></script>
+
+        <div id="mainContent">
+            <div class="chart-header">
+                <h2>Sets</h2>
+                <p>Which sets have contributed the most cards to winning cEDH decks?</p>
+            </div>
+
+            <div class="time-filter">
+                <div class="time-filter-group">
+                    <label>From</label>
+                    <input type="month" id="startDate">
+                </div>
+                <div class="time-filter-group">
+                    <label>To</label>
+                    <input type="month" id="endDate">
+                </div>
+                <button id="allTimeBtn" onclick="resetTimeFilter()">All Time</button>
+            </div>
+
+            <table id="setsTable">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Set</th>
+                        <th>Unique Cards</th>
+                        <th>Total Plays</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <style>
+        td.dt-control { cursor: pointer; text-align: center; color: var(--primary, #607B8F); width: 20px; background-image: none !important; }
+        td.dt-control::before { 
+            content: '+' !important; 
+            font-size: 1em;
+            border: none !important;
+        }
+        tr.dt-hasChild td.dt-control::before { 
+            content: '−' !important; 
+            font-size: 1em;
+            border: none !important;
+        }
+        .child-wrapper { padding: 0.5rem 1rem 0.75rem 2.5rem; }
+        .child-table { width: 50%; border-collapse: collapse; }
+        .child-table th { 
+            color: var(--text-muted, #aaa); 
+            font-weight: 600; 
+            font-size: 0.75em;
+            text-align: left; 
+            padding: 0.25rem 0.75rem;
+            border-bottom: 1px solid var(--border-color, #555);
+        }
+        .child-table td { 
+            padding: 0.3rem 0.75rem; 
+            font-size: 0.85em;
+        }
+        .child-table tbody tr:hover td {
+            background-color: inherit !important;
+        }
+
+        #setsTable tbody tr.dt-hasChild td,
+        #setsTable tbody tr.dt-hasChild:hover td {
+            background-color: inherit !important;
+        }
+    </style>
+
+    <script>
+        let data = [];
+        let dataTable = null;
+
+        Papa.parse('/data/set_apps.csv', {
+            download: true,
+            header: true,
+            complete: function(results) {
+                data = results.data.filter(row => row['mm-yy'] && row.card_name && row.set);
+                populateTimeFilter();
+                initTable();
+            }
+        });
+
+        // ---- TIME FILTER ----
+
+        function populateTimeFilter() {
+            const dates = [...new Set(data.map(row => row['mm-yy']))].sort();
+            const minDate = dates[0];
+            const maxDate = dates[dates.length - 1];
+
+            const startInput = document.getElementById('startDate');
+            const endInput = document.getElementById('endDate');
+
+            startInput.min = minDate;
+            startInput.max = maxDate;
+            endInput.min = minDate;
+            endInput.max = maxDate;
+
+            startInput.value = minDate;
+            endInput.value = maxDate;
+
+            startInput.addEventListener('change', initTable);
+            endInput.addEventListener('change', initTable);
+        }
+
+        function resetTimeFilter() {
+            populateTimeFilter();
+            initTable();
+        }
+
+        // ---- AGGREGATION ----
+
+        function getFilteredData() {
+            const startDate = document.getElementById('startDate').value;
+            const endDate = document.getElementById('endDate').value;
+            return data.filter(row => {
+                if (startDate && row['mm-yy'] < startDate) return false;
+                if (endDate && row['mm-yy'] > endDate) return false;
+                return true;
+            });
+        }
+
+        function aggregateBySet(filtered) {
+            const setMap = {};
+            filtered.forEach(row => {
+                if (!setMap[row.set]) {
+                    setMap[row.set] = { uniqueCards: new Set(), totalPlays: 0 };
+                }
+                setMap[row.set].uniqueCards.add(row.card_name);
+                setMap[row.set].totalPlays += parseInt(row.plays);
+            });
+
+            return Object.entries(setMap).map(([set, vals]) => ({
+                set,
+                uniqueCards: vals.uniqueCards.size,
+                totalPlays: vals.totalPlays
+            }));
+        }
+
+        function aggregateByCard(filtered, setName) {
+            const cardMap = {};
+            filtered.filter(row => row.set === setName).forEach(row => {
+                if (!cardMap[row.card_name]) cardMap[row.card_name] = 0;
+                cardMap[row.card_name] += parseInt(row.plays);
+            });
+
+            return Object.entries(cardMap)
+                .map(([card, plays]) => ({ card, plays }))
+                .sort((a, b) => b.plays - a.plays);
+        }
+
+        function buildChildHTML(cards) {
+            const rows = cards.map(c =>
+                `<tr><td>${c.card}</td><td>${c.plays}</td></tr>`
+            ).join('');
+            return `
+                <div class="child-wrapper">
+                    <table class="child-table">
+                        <thead><tr><th>Card</th><th>Plays</th></tr></thead>
+                        <tbody>${rows}</tbody>
+                    </table>
+                </div>`;
+        }
+
+        // ---- TABLE ----
+
+        function initTable() {
+            const filtered = getFilteredData();
+            const rows = aggregateBySet(filtered);
+
+            // Track which sets are currently open
+            const openSets = new Set();
+            if (dataTable) {
+                dataTable.rows().every(function() {
+                    if (this.child.isShown()) {
+                        openSets.add(this.data()[1]); // set name is column index 1
+                    }
+                });
+
+                dataTable.clear();
+                dataTable.rows.add(rows.map(row => ['', row.set, row.uniqueCards, row.totalPlays]));
+                dataTable.draw();
+
+                // Re-open any sets that were open before
+                dataTable.rows().every(function() {
+                    const setName = this.data()[1];
+                    if (openSets.has(setName)) {
+                        const cards = aggregateByCard(filtered, setName);
+                        this.child(buildChildHTML(cards)).show();
+                        $(this.node()).addClass('dt-hasChild');
+                    }
+                });
+                return;
+            }
+
+            rows.forEach(row => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `<td></td><td>${row.set}</td><td>${row.uniqueCards}</td><td>${row.totalPlays}</td>`;
+                document.querySelector('#setsTable tbody').appendChild(tr);
+            });
+
+            dataTable = new DataTable('#setsTable', {
+                order: [[3, 'desc']],
+                pageLength: 25,
+                columnDefs: [{ targets: 0, className: 'dt-control', orderable: false }]
+            });
+
+            // Click handler for expanding rows
+            $('#setsTable tbody').on('click', 'td.dt-control', function() {
+                const tr = $(this).closest('tr');
+                const row = dataTable.row(tr);
+                const setName = row.data()[1];
+
+                if (row.child.isShown()) {
+                    row.child.hide();
+                    tr.removeClass('dt-hasChild');
+                } else {
+                    const cards = aggregateByCard(getFilteredData(), setName);
+                    row.child(buildChildHTML(cards)).show();
+                    tr.addClass('dt-hasChild');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

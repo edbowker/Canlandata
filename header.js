@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <nav>
                     <a href="/">Card Play Rates</a>
                     <a href="/colors">Color Representation</a>
-
+                    <a href="/sets">Set Representation</a>
                 </nav>
             </div>
             <a href="/about">About</a>
