@@ -1,0 +1,22 @@
+Update Process
+
+
+update_ids_lists.py
+1- Check existing deck_ids on moxfield profile
+2- Compare to existing deck_ids in local db
+3- Add any missing deck_ids to database and pull decklists
+
+update_card_database.py
+4- Get list of all cards in decklists
+5- Compare against all cards in local db
+6- For each missing, pull scryfall data and store in local db
+
+generate_insights_cards.py
+7- Recreates data.csv and deck_counts.csv for card play rate info
+
+generate_insights_colors.py
+8- Recreates color_pips.csv for color balance info
+
+generate_insights_sets.py
+9- Recreates set_apps.csv for set representation info
+
