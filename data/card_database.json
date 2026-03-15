@@ -43389,5 +43389,47 @@
       "W"
     ],
     "set_name": "Tales of Middle-earth Commander"
+  },
+  "Mechanized Ninja Cavalry": {
+    "oracle_id": "2db8dda3-8136-4cf2-ba2d-ecc344a36725",
+    "mana_cost": "{1}{R/W}",
+    "cmc": 2.0,
+    "type_line": "Artifact Creature — Robot Ninja",
+    "color_identity": [
+      "R",
+      "W"
+    ],
+    "set_name": "Teenage Mutant Ninja Turtles"
+  },
+  "Thunderous Velocipede": {
+    "oracle_id": "899007b5-6a07-4491-9104-bb537106b07d",
+    "mana_cost": "{1}{G}{G}",
+    "cmc": 3.0,
+    "type_line": "Artifact — Vehicle",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Aetherdrift"
+  },
+  "Virulent Emissary": {
+    "oracle_id": "3d4bec90-7bbc-4385-a2b8-303c7a8d0a0f",
+    "mana_cost": "{G}",
+    "cmc": 1.0,
+    "type_line": "Creature — Elf Assassin",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Lorwyn Eclipsed"
+  },
+  "Chatterfang, Squirrel General": {
+    "oracle_id": "f15b3b76-d38a-48db-bb44-3296183c8641",
+    "mana_cost": "{2}{G}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Squirrel Warrior",
+    "color_identity": [
+      "B",
+      "G"
+    ],
+    "set_name": "Modern Horizons 2"
   }
 }

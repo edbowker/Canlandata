@@ -40,7 +40,7 @@ def main():
         time.sleep(1)
 
     # compare against current deck_ids in decklists.json
-    with open(DATA_DIR / 'decklists.json', 'r') as f:
+    with open(DATA_DIR / 'decklists.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
 
     current_ids = [deck['id'] for deck in data]
@@ -82,7 +82,7 @@ def main():
         print(f'Added {deckid} to decklists.json')
 
     # save JSON
-    with open(DATA_DIR / 'decklists.json', 'w') as file:
+    with open(DATA_DIR / 'decklists.json', 'w', encoding='utf-8') as file:
         json.dump(data, file, indent=4)
 
     print(f'Canlander archive has {len(deck_ids)} decks')
