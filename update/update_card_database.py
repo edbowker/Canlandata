@@ -38,10 +38,10 @@ def main():
         'User-Agent': 'Canlandata/1.0',
         'Accept': '*/*'
     }
+    print(f'Updating db with {len(missing_cards)} missing cards.')
 
     for i, card in enumerate(missing_cards):
 
-        print(f'Updating db with {len(missing_cards)} missing cards.')
         # Query scryfall, seacrch card name and get first result
         try:
             response = requests.get(

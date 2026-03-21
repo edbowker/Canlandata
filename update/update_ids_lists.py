@@ -61,7 +61,6 @@ def main():
         time.sleep(1)
         try:
             response = requests.get('https://api.moxfield.com/v2/decks/all/' + deckid, headers=headers, timeout=360)
-            response.encoding = 'utf-8'
         except:
             print(f'Couldnt Connect {deckid}')
             continue
@@ -83,7 +82,7 @@ def main():
 
     # save JSON
     with open(DATA_DIR / 'decklists.json', 'w', encoding='utf-8') as file:
-        json.dump(data, file, indent=4)
+        json.dump(data, file, indent=4, ensure_ascii=False)
 
     print(f'Canlander archive has {len(deck_ids)} decks')
     print(f'Decklist database has {len(data)} decks')

@@ -43431,5 +43431,234 @@
       "G"
     ],
     "set_name": "Modern Horizons 2"
+  },
+  "Infesting Radroach": {
+    "oracle_id": "064f371c-e4f2-423b-9f35-443191dfbb4c",
+    "mana_cost": "{2}{B}",
+    "cmc": 3.0,
+    "type_line": "Creature — Insect Mutant",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Fallout"
+  },
+  "Agent Bishop, Man in Black": {
+    "oracle_id": "f33217cc-175f-45e8-bc69-801f41cb4495",
+    "mana_cost": "{2}{W}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Human Soldier",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Teenage Mutant Ninja Turtles"
+  },
+  "Ninja Teen": {
+    "oracle_id": "2c5044ff-a303-4276-8e23-7caac30a275b",
+    "mana_cost": "{2}{B}",
+    "cmc": 3.0,
+    "type_line": "Enchantment — Class",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Teenage Mutant Ninja Turtles"
+  },
+  "Sticky Fingers": {
+    "oracle_id": "fa8ddc13-5108-4fe9-b3aa-dc28df476f7b",
+    "mana_cost": "{R}",
+    "cmc": 1.0,
+    "type_line": "Enchantment — Aura",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Streets of New Capenna"
+  },
+  "Somberwald Sage": {
+    "oracle_id": "f249db15-09fa-4a1c-9461-9ae803c219b6",
+    "mana_cost": "{2}{G}",
+    "cmc": 3.0,
+    "type_line": "Creature — Human Druid",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Avacyn Restored"
+  },
+  "Ashling's Command": {
+    "oracle_id": "9651d197-a408-4665-a292-58d5471f4ffc",
+    "mana_cost": "{3}{U}{R}",
+    "cmc": 5.0,
+    "type_line": "Kindred Instant — Elemental",
+    "color_identity": [
+      "R",
+      "U"
+    ],
+    "set_name": "Lorwyn Eclipsed"
+  },
+  "Transmutation Font": {
+    "oracle_id": "a68e57f3-f138-4c26-b8d5-55d1adec44a8",
+    "mana_cost": "{5}",
+    "cmc": 5.0,
+    "type_line": "Artifact",
+    "color_identity": [],
+    "set_name": "Wizards Play Network 2024"
+  },
+  "J. Jonah Jameson": {
+    "oracle_id": "de861715-fd0b-493e-9a7c-c470a23044c0",
+    "mana_cost": "{2}{R}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Human Citizen",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "MagicFest 2025"
+  },
+  "Raph & Leo, Sibling Rivals": {
+    "oracle_id": "57f39ce2-ecbb-4262-8140-03aba5c4303f",
+    "mana_cost": "{1}{R/W}{R/W}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Mutant Ninja Turtle",
+    "color_identity": [
+      "R",
+      "W"
+    ],
+    "set_name": "Teenage Mutant Ninja Turtles"
+  },
+  "Skateboard": {
+    "oracle_id": "decfde5e-ea53-4b15-8f69-51da7ef39d15",
+    "mana_cost": "{1}",
+    "cmc": 1.0,
+    "type_line": "Artifact — Equipment",
+    "color_identity": [],
+    "set_name": "Teenage Mutant Ninja Turtles"
+  },
+  "Kalain, Reclusive Painter": {
+    "oracle_id": "4fca09ac-8134-43d9-a84b-686db5e2bf69",
+    "mana_cost": "{B}{R}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Human Elf Bard",
+    "color_identity": [
+      "B",
+      "R"
+    ],
+    "set_name": "Adventures in the Forgotten Realms"
+  },
+  "Nimblewright Schematic": {
+    "oracle_id": "5b0dcf09-df51-4ad3-848e-c0ffb25824f9",
+    "mana_cost": "{2}",
+    "cmc": 2.0,
+    "type_line": "Artifact",
+    "color_identity": [],
+    "set_name": "Commander Legends: Battle for Baldur's Gate"
+  },
+  "Leonardo, Leader in Blue": {
+    "oracle_id": "348c7e22-2179-41b8-a5d2-8dd488e7e66d",
+    "mana_cost": "{W}",
+    "cmc": 1.0,
+    "type_line": "Legendary Creature — Mutant Ninja Turtle",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Teenage Mutant Ninja Turtles"
+  },
+  "Spider Manifestation": {
+    "oracle_id": "8281f2b9-e81b-48da-812a-8713b2adf8ab",
+    "mana_cost": "{1}{R/G}",
+    "cmc": 2.0,
+    "type_line": "Creature — Spider Avatar",
+    "color_identity": [
+      "G",
+      "R"
+    ],
+    "set_name": "Through the Omenpaths"
+  },
+  "Marionette Master": {
+    "oracle_id": "dabbf796-3b88-499e-8839-06fa36fe01ac",
+    "mana_cost": "{4}{B}{B}",
+    "cmc": 6.0,
+    "type_line": "Creature — Human Artificer",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Kaladesh"
+  },
+  "Fanatical Offering": {
+    "oracle_id": "3e5402bf-ce7b-4c23-9333-0acdcf349caf",
+    "mana_cost": "{1}{B}",
+    "cmc": 2.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "The Lost Caverns of Ixalan"
+  },
+  "Orochi Soul-Reaver": {
+    "oracle_id": "6d9ab641-ba99-4b27-a84e-8c2ae57a2fc1",
+    "mana_cost": "{5}{B}",
+    "cmc": 6.0,
+    "type_line": "Creature — Snake Ninja Rogue",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Outlaws of Thunder Junction Commander"
+  },
+  "Raphael, the Nightwatcher": {
+    "oracle_id": "8c1e5b25-ee5a-4ea9-a715-08dd1a4f51c4",
+    "mana_cost": "{2}{R}{R}",
+    "cmc": 4.0,
+    "type_line": "Legendary Creature — Mutant Ninja Turtle",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Teenage Mutant Ninja Turtles"
+  },
+  "Nick Valentine, Private Eye": {
+    "oracle_id": "5663288a-7300-4e1b-8fb0-43c467709fe5",
+    "mana_cost": "{2}{U}",
+    "cmc": 3.0,
+    "type_line": "Legendary Artifact Creature — Synth Detective",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Fallout"
+  },
+  "Disciple of the Vault": {
+    "oracle_id": "c8625113-0ce4-4454-83a1-25c31b8bfb9a",
+    "mana_cost": "{B}",
+    "cmc": 1.0,
+    "type_line": "Creature — Human Cleric",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Mirrodin"
+  },
+  "Thopter Fabricator": {
+    "oracle_id": "8aab9181-c306-471a-8061-9a7a7654dab5",
+    "mana_cost": "{2}{U}",
+    "cmc": 3.0,
+    "type_line": "Artifact — Vehicle",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Aetherdrift"
+  },
+  "Leonardo, Sewer Samurai": {
+    "oracle_id": "74e3243b-6707-4769-8767-7cf2ef71009a",
+    "mana_cost": "{3}{W}",
+    "cmc": 4.0,
+    "type_line": "Legendary Creature — Mutant Ninja Turtle Samurai",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Teenage Mutant Ninja Turtles"
+  },
+  "Jolene, the Plunder Queen": {
+    "oracle_id": "8215f4a2-7131-426b-ad9c-6427caabd715",
+    "mana_cost": "{2}{R}{G}",
+    "cmc": 4.0,
+    "type_line": "Legendary Creature — Human Warrior",
+    "color_identity": [
+      "G",
+      "R"
+    ],
+    "set_name": "New Capenna Commander"
   }
 }
