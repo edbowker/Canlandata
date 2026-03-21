@@ -361,7 +361,7 @@ p a:hover {
 #allTimeBtn {
     padding: 6px 14px;
     font-size: 13px;
-    border: 1px solid var(--border-color);
+    border: 2px solid var(--border-color);
     border-radius: 12px;
     background: none;
     color: var(--text-dark);
@@ -372,6 +372,56 @@ p a:hover {
 #allTimeBtn:hover {
     border-color: var(--primary-color);
     color: var(--primary-color);
+}
+
+.type-filter {
+    position: relative;
+}
+
+.type-filter-btn {
+    padding: 6px 14px;
+    font-size: 13px;
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    background: none;
+    color: var(--text-dark);
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+}
+
+.type-filter-btn:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.type-dropdown {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 4px 0;
+    z-index: 100;
+    min-width: 140px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.type-dropdown label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 12px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 13px;
+    color: var(--text-dark);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.type-dropdown label:hover {
+    background: #f0f0f0;
 }
 
 /* DataTables Overrides */

@@ -11,6 +11,9 @@
     <script src="https://cdn.datatables.net/2.2.2/js/dataTables.min.js"></script>
     <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.min.css">
     <link rel="stylesheet" href="styles.css">
+    <style>
+
+    </style>
 </head>
 <body>
     <div class="container">
@@ -54,6 +57,19 @@
                         <input type="month" id="endDate">
                     </div>
                     <button id="allTimeBtn" onclick="resetTimeFilter()">All Time</button>
+                    <div class="type-filter" id="typeFilterContainer">
+                        <button class="type-filter-btn" id="typeFilterBtn" onclick="toggleTypeDropdown(event)">Type: All ▾</button>
+                        <div class="type-dropdown hidden" id="typeDropdown">
+                            <label><input type="checkbox" value="Artifact"> Artifact</label>
+                            <label><input type="checkbox" value="Battle"> Battle</label>
+                            <label><input type="checkbox" value="Creature"> Creature</label>
+                            <label><input type="checkbox" value="Enchantment"> Enchantment</label>
+                            <label><input type="checkbox" value="Instant"> Instant</label>
+                            <label><input type="checkbox" value="Land"> Land</label>
+                            <label><input type="checkbox" value="Planeswalker"> Planeswalker</label>
+                            <label><input type="checkbox" value="Sorcery"> Sorcery</label>
+                        </div>
+                    </div>
                 </div>
                 <table id="statsTable">
                     <thead>
@@ -77,6 +93,7 @@
         let selectedCards = ['Barrowgoyf', 'White Plume Adventurer'];
         let chart = null;
         let dataTable = null;
+        let cardDatabase = {};
 
         // Load card play data
         Papa.parse('/data/data.csv', {
@@ -97,6 +114,22 @@
                 deckCounts = results.data.filter(row => row.year_month && row.count);
             }
         });
+
+        // Load card database and parse type_line into boolean flags
+        const CARD_TYPES = ['Artifact', 'Battle', 'Creature', 'Enchantment', 'Instant', 'Land', 'Planeswalker', 'Sorcery'];
+
+        fetch('/data/card_database.json')
+            .then(r => r.json())
+            .then(db => {
+                Object.entries(db).forEach(([name, card]) => {
+                    const typeLine = card.type_line || '';
+                    const flags = {};
+                    CARD_TYPES.forEach(type => {
+                        flags[type] = typeLine.includes(type);
+                    });
+                    cardDatabase[name] = flags;
+                });
+            });
 
         // ---- TIME FILTER ----
 
@@ -164,11 +197,49 @@
             }));
         }
 
+        // ---- TYPE FILTER ----
+
+        function getSelectedTypes() {
+            return [...document.querySelectorAll('#typeDropdown input:checked')]
+                .map(cb => cb.value);
+        }
+
+        function updateTypeFilterLabel() {
+            const selected = getSelectedTypes();
+            const btn = document.getElementById('typeFilterBtn');
+            btn.textContent = selected.length === 0 ? 'Type: All ▾' : selected.join(', ') + ' ▾';
+        }
+
+        function toggleTypeDropdown(e) {
+            e.stopPropagation();
+            document.getElementById('typeDropdown').classList.toggle('hidden');
+        }
+
+        document.addEventListener('click', function(e) {
+            if (!document.getElementById('typeFilterContainer').contains(e.target)) {
+                document.getElementById('typeDropdown').classList.add('hidden');
+            }
+        });
+
+        document.getElementById('typeDropdown').addEventListener('change', function() {
+            updateTypeFilterLabel();
+            initTable();
+        });
+
         // ---- TABLE ----
 
         function initTable() {
             const { startDate, endDate } = getSelectedRange();
-            const rows = aggregateData(startDate, endDate);
+            let rows = aggregateData(startDate, endDate);
+
+            const selectedTypes = getSelectedTypes();
+            if (selectedTypes.length > 0) {
+                rows = rows.filter(row => {
+                    const flags = cardDatabase[row.card];
+                    if (!flags) return true; // card not in DB yet, show it
+                    return selectedTypes.some(type => flags[type]);
+                });
+            }
 
             if (dataTable) {
                 dataTable.clear();
