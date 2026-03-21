@@ -90,7 +90,8 @@
         let data = [];
         let deckCounts = [];
         let allCards = [];
-        let selectedCards = ['Barrowgoyf', 'White Plume Adventurer'];
+        const cards = ["Ancestral Recall","Ancient Tomb","Balance","Black Lotus","Demonic Tutor","Dig Through Time","Flash","Forth Eorlingas!","Gifts Ungiven","Imperial Seal","Intuition","Mana Crypt","Mana Drain","Mana Vault","Merchant Scroll","Mox Emerald","Mox Jet","Mox Pearl","Mox Ruby","Mox Sapphire","Mystical Tutor","Nadu, Winged Wisdom","Natural Order","Psychic Frog","Reanimate","Sol Ring","Strip Mine","Tainted Pact","Tamiyo, Inquisitive Student","Thassa's Oracle","The One Ring","Time Vault","Time Walk","Tinker","Tolarian Academy","Treasure Cruise","True-Name Nemesis","Underworld Breach","Urza's Saga","Vampiric Tutor","White Plume Adventurer","Wishclaw Talisman","Wrenn and Six"];
+        let selectedCards = [cards[Math.floor(Math.random() * cards.length)]];
         let chart = null;
         let dataTable = null;
         let cardDatabase = {};
