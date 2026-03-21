@@ -33,6 +33,7 @@ def main():
 
     # For each card missing from database file, get info from Scryfall API
     missing_cards = [card for card in allcards if card not in card_db]
+
     errors = []
     headers = {
         'User-Agent': 'Canlandata/1.0',
@@ -94,6 +95,9 @@ def main():
                             card_db[card]['set_name'] = "Modern Horizons 2"
                         else:
                             card_db[card]['set_name'] = data['set_name']
+
+                    card_db[card]['released_at'] = data['released_at']
+
                     # Save after every 100 cards
                     if i % 100 == 0:
                         with open(db_path, 'w') as f:
@@ -124,3 +128,6 @@ def main():
             print(e)
 
     return len(missing_cards)
+
+
+main()

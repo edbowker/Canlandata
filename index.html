@@ -177,25 +177,31 @@
                 return true;
             });
 
-            const filteredDecks = deckCounts.filter(row => {
-                if (startDate && row.year_month < startDate) return false;
-                if (endDate && row.year_month > endDate) return false;
-                return true;
-            });
-
-            const totalDecks = filteredDecks.reduce((sum, row) => sum + parseInt(row.count), 0);
-
             const cardMap = {};
             filteredData.forEach(row => {
-                if (!cardMap[row.card]) cardMap[row.card] = 0;
-                cardMap[row.card] += parseInt(row.plays);
+                if (!cardMap[row.card]) cardMap[row.card] = { plays: 0, release_month: row.release_month };
+                cardMap[row.card].plays += parseInt(row.plays);
             });
 
-            return Object.entries(cardMap).map(([card, plays]) => ({
-                card,
-                plays,
-                playrate: totalDecks > 0 ? parseFloat((plays / totalDecks * 100).toFixed(2)) : 0
-            }));
+            return Object.entries(cardMap).map(([card, stats]) => {
+                const effectiveStart = stats.release_month && (!startDate || stats.release_month > startDate)
+                    ? stats.release_month
+                    : startDate;
+
+                const cardDenominator = deckCounts
+                    .filter(row => {
+                        if (effectiveStart && row.year_month < effectiveStart) return false;
+                        if (endDate && row.year_month > endDate) return false;
+                        return true;
+                    })
+                    .reduce((sum, row) => sum + parseInt(row.count), 0);
+
+                return {
+                    card,
+                    plays: stats.plays,
+                    playrate: cardDenominator > 0 ? parseFloat((stats.plays / cardDenominator * 100).toFixed(2)) : 0
+                };
+            });
         }
 
         // ---- TYPE FILTER ----

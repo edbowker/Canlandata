@@ -21,6 +21,9 @@ def main():
     with open(DATA_DIR / 'decklists.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
 
+    with open(DATA_DIR / 'card_database.json', 'r', encoding='utf-8') as f:
+        card_db = json.load(f)
+
     card_counts = defaultdict(dict)     # (card, month) -> {'plays': int, 'playrate': float}
     deck_counts = defaultdict(int)      # month -> number of decks
     allcards = []
@@ -58,8 +61,10 @@ def main():
             'card': card,
             'plays': stats['plays'],
             'playrate': stats['playrate'],
+            'release_month': card_db[card]['released_at'][:7] if card in card_db and 'released_at' in card_db[card] else None
         }
         for (card, month), stats in card_counts.items()
+        if stats['plays'] > 0
     ]
 
     df = pd.DataFrame(rows)
@@ -69,3 +74,5 @@ def main():
     df_deck_counts = pd.DataFrame(deck_counts.items(), columns=['year_month', 'count'])
     df_deck_counts.to_csv(DATA_DECKS_OUT, index=False)
     print(f'Saved {DATA_DECKS_OUT}')
+
+main()
