@@ -128,6 +128,3 @@ def main():
             print(e)
 
     return len(missing_cards)
-
-
-main()

@@ -47997,5 +47997,143 @@
     ],
     "set_name": "Innistrad: Crimson Vow",
     "released_at": "2021-11-19"
+  },
+  "Songs of the Damned": {
+    "oracle_id": "39419d29-47e7-4d71-953b-96a2e14ae964",
+    "mana_cost": "{B}",
+    "cmc": 1.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Ice Age",
+    "released_at": "1995-06-03"
+  },
+  "Rumble Arena": {
+    "oracle_id": "83f2470e-2114-4cd9-ab1a-21b76e9cdf63",
+    "mana_cost": "",
+    "cmc": 0.0,
+    "type_line": "Land",
+    "color_identity": [],
+    "set_name": "Avatar: The Last Airbender",
+    "released_at": "2025-11-21"
+  },
+  "Herd Heirloom": {
+    "oracle_id": "78b6dd40-c182-4037-a4d3-9fd012b2c584",
+    "mana_cost": "{1}{G}",
+    "cmc": 2.0,
+    "type_line": "Artifact",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Tarkir: Dragonstorm",
+    "released_at": "2025-04-11"
+  },
+  "Ride's End": {
+    "oracle_id": "89e209f3-c474-453f-9659-ccebfc88bc0f",
+    "mana_cost": "{4}{W}",
+    "cmc": 5.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Aetherdrift",
+    "released_at": "2025-02-14"
+  },
+  "Morningtide's Light": {
+    "oracle_id": "a25bcf65-4417-45e9-a4b1-94e0ea78af63",
+    "mana_cost": "{3}{W}",
+    "cmc": 4.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Lorwyn Eclipsed",
+    "released_at": "2026-01-23"
+  },
+  "Lluwen, Imperfect Naturalist": {
+    "oracle_id": "81ff5764-72ce-4b9a-a14f-07413700d935",
+    "mana_cost": "{B/G}{B/G}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Elf Druid",
+    "color_identity": [
+      "B",
+      "G"
+    ],
+    "set_name": "Lorwyn Eclipsed",
+    "released_at": "2026-01-23"
+  },
+  "Personify": {
+    "oracle_id": "e1708ad9-35d4-4243-92ca-ddf9d129aa32",
+    "mana_cost": "{1}{W}",
+    "cmc": 2.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Lorwyn Eclipsed",
+    "released_at": "2026-01-23"
+  },
+  "Priest of Gix": {
+    "oracle_id": "d93f82ce-0eed-45cc-a7b1-50fd4cbb6152",
+    "mana_cost": "{2}{B}",
+    "cmc": 3.0,
+    "type_line": "Creature — Phyrexian Human Cleric Minion",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Urza's Saga",
+    "released_at": "1998-10-12"
+  },
+  "Crystal Grotto": {
+    "oracle_id": "f15fb0cc-8e96-4f03-94d0-b51410415afd",
+    "mana_cost": "",
+    "cmc": 0.0,
+    "type_line": "Land",
+    "color_identity": [],
+    "set_name": "Dominaria United",
+    "released_at": "2022-09-09"
+  },
+  "Apprentice Necromancer": {
+    "oracle_id": "d1a6aa5f-2ad6-4bc7-82f0-4262f66af730",
+    "mana_cost": "{1}{B}",
+    "cmc": 2.0,
+    "type_line": "Creature — Zombie Wizard",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Urza's Destiny",
+    "released_at": "1999-06-07"
+  },
+  "Terrapact Intimidator": {
+    "oracle_id": "c08e0958-8fa2-49c7-ab17-a70dfc1ef33a",
+    "mana_cost": "{1}{R}",
+    "cmc": 2.0,
+    "type_line": "Creature — Kavu Scout",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Edge of Eternities",
+    "released_at": "2025-08-01"
+  },
+  "Putrid Imp": {
+    "oracle_id": "7192ff07-9a84-49ad-a40c-ce255ce21544",
+    "mana_cost": "{B}",
+    "cmc": 1.0,
+    "type_line": "Creature — Zombie Imp",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Torment",
+    "released_at": "2002-02-04"
+  },
+  "Promising Vein": {
+    "oracle_id": "861eb7d7-7616-4620-a4fd-4b8c3bf00dd1",
+    "mana_cost": "",
+    "cmc": 0.0,
+    "type_line": "Land — Cave",
+    "color_identity": [],
+    "set_name": "The Lost Caverns of Ixalan",
+    "released_at": "2023-11-17"
   }
 }

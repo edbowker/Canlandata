@@ -74,5 +74,3 @@ def main():
     df_deck_counts = pd.DataFrame(deck_counts.items(), columns=['year_month', 'count'])
     df_deck_counts.to_csv(DATA_DECKS_OUT, index=False)
     print(f'Saved {DATA_DECKS_OUT}')
-
-main()
