@@ -81,7 +81,7 @@
         // ---- DATA LOADING ----
 
         Promise.all([
-            fetch('/data/co_occurrence_index.json').then(r => r.json()),
+            fetch('/data/card_index.json').then(r => r.json()),
             fetch('/data/deck_dates.json').then(r => r.json()),
             fetch('/data/deck_counts.csv').then(r => r.text()),
             fetch('/data/card_database.json').then(r => r.json())
@@ -151,12 +151,6 @@
         // ---- AGGREGATION ----
 
         function aggregateData(startDate, endDate) {
-            // Total decks in range (denominator)
-            const totalDecks = allDates
-                .filter(d => (!startDate || d >= startDate) && (!endDate || d <= endDate))
-                .reduce((sum, d) => sum + (deckCountMap[d] || 0), 0);
-
-            if (totalDecks === 0) return [];
 
             return Object.entries(cardIndex).map(([card, deckIds]) => {
                 const releaseMonth = cardDatabase[card]?.releaseMonth || null;

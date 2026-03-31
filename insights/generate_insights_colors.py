@@ -6,8 +6,6 @@ from pathlib import Path
 # Pathing
 ROOT = Path(__file__).parent.parent
 DATA_DIR = ROOT / "data"
-INSIGHT_DIR = ROOT / "insights"
-UPDATE_DIR = ROOT / "update"
 DATA_OUT = DATA_DIR / "color_pips.csv"
 
 # Creates table of color pips in decklists
@@ -42,19 +40,22 @@ def main():
         # Tally pips
         for deck in month_decks:
             for card in deck['mainboard'].keys():
-                cost = card_db[card]['mana_cost']
-                if len(cost) > 0:
-                        color_counts[month]['W'] += cost.count('W')
-                        color_counts[month]['U'] += cost.count('U')
-                        color_counts[month]['B'] += cost.count('B')
-                        color_counts[month]['R'] += cost.count('R')
-                        color_counts[month]['G'] += cost.count('G')
+                if card in card_db:
+                    cost = card_db[card]['mana_cost']
+                    if len(cost) > 0:
+                            color_counts[month]['W'] += cost.count('W')
+                            color_counts[month]['U'] += cost.count('U')
+                            color_counts[month]['B'] += cost.count('B')
+                            color_counts[month]['R'] += cost.count('R')
+                            color_counts[month]['G'] += cost.count('G')
+                else:
+                    print(f'{card} not in card_db')
 
     # Add percentages to color_counts
     for month, colors in color_counts.items():
         total = sum(colors.values())
         for color in ['W', 'U', 'B', 'R', 'G']:
-            color_counts[month][f'{color}_pct'] = round(colors[color] / total, 4) if total > 0 else 0
+            color_counts[month][f'{color}_pct'] = colors[color] / total if total > 0 else 0
 
     # Build output rows
     rows = []

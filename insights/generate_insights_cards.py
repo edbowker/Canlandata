@@ -1,76 +1,45 @@
+from pathlib import Path
 from collections import defaultdict
 import json
-import pandas as pd
-from pathlib import Path
+import csv
 
-# Pathing
 ROOT = Path(__file__).parent.parent
 DATA_DIR = ROOT / "data"
-INSIGHT_DIR = ROOT / "insights"
-UPDATE_DIR = ROOT / "update"
-DATA_CARDS_OUT = DATA_DIR / "data.csv"
-DATA_DECKS_OUT = DATA_DIR / "deck_counts.csv"
+CARD_INDEX_OUT = DATA_DIR / "card_index.json"
+DECK_DATES_OUT = DATA_DIR / "deck_dates.json"
+DECK_COUNTS_OUT = DATA_DIR / "deck_counts.csv"
 
-
-# Create table of card play rates over time
-# Saves to data.csv and deck_counts.csv
-# Returns nothing
-# Typically called from update_all.py
 
 def main():
-    with open(DATA_DIR / 'decklists.json', 'r', encoding='utf-8') as f:
-        data = json.load(f)
+    with open(DATA_DIR / "decklists.json", encoding="utf-8") as f:
+        decklists = json.load(f)
 
-    with open(DATA_DIR / 'card_database.json', 'r', encoding='utf-8') as f:
-        card_db = json.load(f)
+    card_index = defaultdict(list)  # card name → [deck_ids]
+    deck_dates = {}                 # deck_id → "YYYY-MM"
+    deck_counts = defaultdict(int)  # "YYYY-MM" → deck count
 
-    card_counts = defaultdict(dict)     # (card, month) -> {'plays': int, 'playrate': float}
-    deck_counts = defaultdict(int)      # month -> number of decks
-    allcards = []
+    for deck in decklists:
+        deck_id = deck["id"]
+        date = deck["name"][:7].replace("/", "-")
 
-    # First pass: months + deck counts + collect card names
-    for deck in data:
-        mmyy = deck['name'][:7].replace('/', '-')
-        deck_counts[mmyy] += 1
-        allcards.extend(deck['mainboard'].keys())
+        deck_dates[deck_id] = date
+        deck_counts[date] += 1
 
-    # Initialize all (card, month) pairs
-    allcards = set(allcards)
-    allmonths = deck_counts.keys()
-    for card in allcards:
-        for month in allmonths:
-            card_counts[(card, month)]['plays'] = 0
-            card_counts[(card, month)]['playrate'] = 0.0
+        for card in deck["mainboard"]:
+            card_index[card].append(deck_id)
 
-    # Second pass: increment plays
-    for deck in data:
-        mmyy = deck['name'][:7].replace('/', '-')
-        for card in deck['mainboard'].keys():
-            card_counts[(card, mmyy)]['plays'] += 1
+    with open(CARD_INDEX_OUT, "w", encoding="utf-8") as f:
+        json.dump(dict(card_index), f, ensure_ascii=False, indent=2)
 
-    # Compute playrate
-    for (card, month), stats in card_counts.items():
-        plays = stats['plays']
-        if plays > 0:
-            stats['playrate'] = round(plays / deck_counts[month], 4)
+    with open(DECK_DATES_OUT, "w", encoding="utf-8") as f:
+        json.dump(deck_dates, f, ensure_ascii=False, indent=2)
 
-    # Output with new columns
-    rows = [
-        {
-            'year_month': month,
-            'card': card,
-            'plays': stats['plays'],
-            'playrate': stats['playrate'],
-            'release_month': card_db[card]['released_at'][:7] if card in card_db and 'released_at' in card_db[card] else None
-        }
-        for (card, month), stats in card_counts.items()
-        if stats['plays'] > 0
-    ]
+    with open(DECK_COUNTS_OUT, "w", encoding="utf-8", newline="") as f:
+        writer = csv.writer(f)
+        writer.writerow(["year_month", "count"])
+        for month, count in sorted(deck_counts.items()):
+            writer.writerow([month, count])
 
-    df = pd.DataFrame(rows)
-    df.to_csv(DATA_CARDS_OUT, index=False)
-    print(f'Saved {DATA_CARDS_OUT}')
-
-    df_deck_counts = pd.DataFrame(deck_counts.items(), columns=['year_month', 'count'])
-    df_deck_counts.to_csv(DATA_DECKS_OUT, index=False)
-    print(f'Saved {DATA_DECKS_OUT}')
+    print(f"Done. {len(card_index)} cards saved to {CARD_INDEX_OUT}")
+    print(f"Done. {len(deck_dates)} decks saved to {DECK_DATES_OUT}")
+    print(f"Done. {len(deck_counts)} months saved to {DECK_COUNTS_OUT}")

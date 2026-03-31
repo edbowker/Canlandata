@@ -505,12 +505,6 @@ p a:hover {
     margin-top: 20px; 
 }
 
-.empty-state { 
-    text-align: center; 
-    color: #999; 
-    padding: 100px 20px; 
-}
-
 /* Time Filter */
 .time-filter {
     display: flex;

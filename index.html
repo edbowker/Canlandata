@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canlandata</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HGRTCQ9M9P"></script>
@@ -20,7 +20,7 @@
 <body>
     <div class="container">
         <div id="header-placeholder"></div>
-        <script src="header.js"></script>
+        <script src="/header.js"></script>
 
         <div id="mainContent">
             <div class="chart-header">
@@ -113,7 +113,7 @@
         // ---- DATA LOADING ----
 
         Promise.all([
-            fetch('/data/co_occurrence_index.json').then(r => r.json()),
+            fetch('/data/card_index.json').then(r => r.json()),
             fetch('/data/deck_dates.json').then(r => r.json()),
             new Promise(resolve => {
                 Papa.parse('/data/deck_counts.csv', {
@@ -150,8 +150,6 @@
             document.getElementById('newGroupBtn').disabled = false;
 
             initChart();
-            document.getElementById('playrateChart').style.display = 'none';
-            document.getElementById('chartEmptyState').style.display = 'block';
             updateSelectedCards();
             updateChart();
         });
@@ -166,26 +164,6 @@
                 result = result.filter(id => sets[i].has(id));
             }
             return result;
-        }
-
-        function deckIdsToMonthlyRates(deckIds) {
-            const counts = {};
-            for (const id of deckIds) {
-                const month = deckDates[id];
-                if (month) counts[month] = (counts[month] || 0) + 1;
-            }
-            return allDates.map(date => {
-                const count = counts[date] || 0;
-                const total = deckCountMap[date] || 0;
-                return total > 0 ? (count / total) * 100 : 0;
-            });
-        }
-
-        function getDataPoints(item) {
-            const ids = item.cards
-                ? getIntersection(item.cards)
-                : (cardIndex[item.label] || []);
-            return deckIdsToMonthlyRates(ids);
         }
 
         // ---- CHART ----
@@ -224,7 +202,6 @@
                             }
                         }
                     },
-                    interaction: { mode: 'nearest', intersect: true },
                     scales: {
                         y: {
                             beginAtZero: true,
@@ -279,8 +256,6 @@
 
         function updateChart() {
             if (!chart) return;
-
-            const hasGroups = selected.some(s => s.cards);
 
             if (selected.length === 0) {
                 chart.data.datasets = [];
