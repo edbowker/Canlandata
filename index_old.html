@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canlandata</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+    </style>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HGRTCQ9M9P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HGRTCQ9M9P');
+</script>
+<body>
+    <div class="container">
+        <div id="header-placeholder"></div>
+        <script src="header.js"></script>
+
+        <div id="mainContent">
+            <div class="chart-header">
+                <h2>Card Play Rates</h2>
+                <p>What percent of winning decks used this card?</p>
+            </div>
+
+            <div class="content-tabs">
+                <button class="active" onclick="showContentSection('chartSection')">Lines</button>
+                <button onclick="showContentSection('tableSection')">Table</button>
+            </div>
+
+            <!-- CHART SECTION -->
+            <div id="chartSection">
+                <div class="search-section">
+                    <div class="search-box">
+                        <input type="text" id="cardSearch" placeholder="Search for a card..." autocomplete="off">
+                        <div id="autocompleteList" class="autocomplete-items"></div>
+                    </div>
+                    <div class="selected-cards" id="selectedCards"></div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="playrateChart"></canvas>
+                </div>
+            </div>
+
+            <!-- TABLE SECTION -->
+            <div id="tableSection" class="hidden">
+                <div class="time-filter">
+                    <div class="time-filter-group">
+                        <label>From</label>
+                        <input type="month" id="startDate">
+                    </div>
+                    <div class="time-filter-group">
+                        <label>To</label>
+                        <input type="month" id="endDate">
+                    </div>
+                    <button id="allTimeBtn" onclick="resetTimeFilter()">All Time</button>
+                    <div class="type-filter" id="typeFilterContainer">
+                        <button class="type-filter-btn" id="typeFilterBtn" onclick="toggleTypeDropdown(event)">Type: All ▾</button>
+                        <div class="type-dropdown hidden" id="typeDropdown">
+                            <label><input type="checkbox" value="Artifact"> Artifact</label>
+                            <label><input type="checkbox" value="Battle"> Battle</label>
+                            <label><input type="checkbox" value="Creature"> Creature</label>
+                            <label><input type="checkbox" value="Enchantment"> Enchantment</label>
+                            <label><input type="checkbox" value="Instant"> Instant</label>
+                            <label><input type="checkbox" value="Land"> Land</label>
+                            <label><input type="checkbox" value="Planeswalker"> Planeswalker</label>
+                            <label><input type="checkbox" value="Sorcery"> Sorcery</label>
+                        </div>
+                    </div>
+                </div>
+                <table id="statsTable">
+                    <thead>
+                        <tr>
+                            <th>Card</th>
+                            <th>Plays</th>
+                            <th>Play Rate</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        let data = [];
+        let deckCounts = [];
+        let allCards = [];
+        const cards = ["Ancestral Recall","Ancient Tomb","Balance","Black Lotus","Demonic Tutor","Dig Through Time","Flash","Forth Eorlingas!","Gifts Ungiven","Imperial Seal","Intuition","Mana Crypt","Mana Drain","Mana Vault","Merchant Scroll","Mox Emerald","Mox Jet","Mox Pearl","Mox Ruby","Mox Sapphire","Mystical Tutor","Nadu, Winged Wisdom","Natural Order","Psychic Frog","Reanimate","Sol Ring","Strip Mine","Tainted Pact","Tamiyo, Inquisitive Student","Thassa's Oracle","The One Ring","Time Vault","Time Walk","Tinker","Tolarian Academy","Treasure Cruise","True-Name Nemesis","Underworld Breach","Urza's Saga","Vampiric Tutor","White Plume Adventurer","Wishclaw Talisman","Wrenn and Six"];
+        let selectedCards = [cards[Math.floor(Math.random() * cards.length)]];
+        let chart = null;
+        let dataTable = null;
+        let cardDatabase = {};
+
+        // Load card play data
+        Papa.parse('/data/data.csv', {
+            download: true,
+            header: true,
+            complete: function(results) {
+                data = results.data.filter(row => row.card && row.year_month);
+                allCards = [...new Set(data.map(row => row.card))].sort();
+                updateChart();
+            }
+        });
+
+        // Load deck count data
+        Papa.parse('/data/deck_counts.csv', {
+            download: true,
+            header: true,
+            complete: function(results) {
+                deckCounts = results.data.filter(row => row.year_month && row.count);
+            }
+        });
+
+        // Load card database and parse type_line into boolean flags
+        const CARD_TYPES = ['Artifact', 'Battle', 'Creature', 'Enchantment', 'Instant', 'Land', 'Planeswalker', 'Sorcery'];
+
+        fetch('/data/card_database.json')
+            .then(r => r.json())
+            .then(db => {
+                Object.entries(db).forEach(([name, card]) => {
+                    const typeLine = card.type_line || '';
+                    const flags = {};
+                    CARD_TYPES.forEach(type => {
+                        flags[type] = typeLine.includes(type);
+                    });
+                    cardDatabase[name] = flags;
+                });
+            });
+
+        // ---- TIME FILTER ----
+
+        const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+        function populateTimeFilter() {
+            const dates = [...new Set(data.map(row => row.year_month))].sort();
+            const minDate = dates[0];
+            const maxDate = dates[dates.length - 1];
+
+            const startInput = document.getElementById('startDate');
+            const endInput = document.getElementById('endDate');
+
+            startInput.min = minDate;
+            startInput.max = maxDate;
+            endInput.min = minDate;
+            endInput.max = maxDate;
+
+            startInput.value = minDate;
+            endInput.value = maxDate;
+
+            startInput.addEventListener('change', initTable);
+            endInput.addEventListener('change', initTable);
+        }
+
+        function getSelectedRange() {
+            return {
+                startDate: document.getElementById('startDate').value,
+                endDate: document.getElementById('endDate').value
+            };
+        }
+
+        function resetTimeFilter() {
+            populateTimeFilter();
+            initTable();
+        }
+
+        // ---- AGGREGATION ----
+
+        function aggregateData(startDate = null, endDate = null) {
+            const filteredData = data.filter(row => {
+                if (startDate && row.year_month < startDate) return false;
+                if (endDate && row.year_month > endDate) return false;
+                return true;
+            });
+
+            const cardMap = {};
+            filteredData.forEach(row => {
+                if (!cardMap[row.card]) cardMap[row.card] = { plays: 0, release_month: row.release_month };
+                cardMap[row.card].plays += parseInt(row.plays);
+            });
+
+            return Object.entries(cardMap).map(([card, stats]) => {
+                const effectiveStart = stats.release_month && (!startDate || stats.release_month > startDate)
+                    ? stats.release_month
+                    : startDate;
+
+                const cardDenominator = deckCounts
+                    .filter(row => {
+                        if (effectiveStart && row.year_month < effectiveStart) return false;
+                        if (endDate && row.year_month > endDate) return false;
+                        return true;
+                    })
+                    .reduce((sum, row) => sum + parseInt(row.count), 0);
+
+                return {
+                    card,
+                    plays: stats.plays,
+                    playrate: cardDenominator > 0 ? parseFloat((stats.plays / cardDenominator * 100).toFixed(2)) : 0
+                };
+            });
+        }
+
+        // ---- TYPE FILTER ----
+
+        function getSelectedTypes() {
+            return [...document.querySelectorAll('#typeDropdown input:checked')]
+                .map(cb => cb.value);
+        }
+
+        function updateTypeFilterLabel() {
+            const selected = getSelectedTypes();
+            const btn = document.getElementById('typeFilterBtn');
+            btn.textContent = selected.length === 0 ? 'Type: All ▾' : selected.join(', ') + ' ▾';
+        }
+
+        function toggleTypeDropdown(e) {
+            e.stopPropagation();
+            document.getElementById('typeDropdown').classList.toggle('hidden');
+        }
+
+        document.addEventListener('click', function(e) {
+            if (!document.getElementById('typeFilterContainer').contains(e.target)) {
+                document.getElementById('typeDropdown').classList.add('hidden');
+            }
+        });
+
+        document.getElementById('typeDropdown').addEventListener('change', function() {
+            updateTypeFilterLabel();
+            initTable();
+        });
+
+        // ---- TABLE ----
+
+        function initTable() {
+            const { startDate, endDate } = getSelectedRange();
+            let rows = aggregateData(startDate, endDate);
+
+            const selectedTypes = getSelectedTypes();
+            if (selectedTypes.length > 0) {
+                rows = rows.filter(row => {
+                    const flags = cardDatabase[row.card];
+                    if (!flags) return true; // card not in DB yet, show it
+                    return selectedTypes.some(type => flags[type]);
+                });
+            }
+
+            if (dataTable) {
+                dataTable.clear();
+                dataTable.rows.add(rows.map(row => [row.card, row.plays, row.playrate]));
+                dataTable.draw();
+                return;
+            }
+
+            rows.forEach(row => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `<td>${row.card}</td><td>${row.plays}</td><td>${row.playrate}</td>`;
+                document.querySelector('#statsTable tbody').appendChild(tr);
+            });
+
+            dataTable = new DataTable('#statsTable', {
+                order: [[2, 'desc']],
+                columnDefs: [{
+                    targets: 2,
+                    render: function(data) {
+                        return data + '%';
+                    }
+                }]
+            });
+        }
+
+        // ---- TAB SWITCHING ----
+
+        function showContentSection(sectionId) {
+            document.getElementById('chartSection').classList.add('hidden');
+            document.getElementById('tableSection').classList.add('hidden');
+            document.querySelectorAll('.content-tabs button').forEach(btn => btn.classList.remove('active'));
+            document.getElementById(sectionId).classList.remove('hidden');
+            event.target.classList.add('active');
+
+            if (sectionId === 'tableSection') {
+                if (!document.getElementById('startDate').value) populateTimeFilter();                
+                initTable();
+            }
+        }
+
+        // ---- CHART SEARCH / AUTOCOMPLETE ----
+
+        const searchInput = document.getElementById('cardSearch');
+        const autocompleteList = document.getElementById('autocompleteList');
+
+        searchInput.addEventListener('input', function() {
+            const val = this.value.toLowerCase();
+            autocompleteList.innerHTML = '';
+            if (!val) return;
+
+            const matches = allCards.filter(card =>
+                card.toLowerCase().includes(val) && !selectedCards.includes(card)
+            ).slice(0, 50);
+
+            matches.forEach(card => {
+                const div = document.createElement('div');
+                div.textContent = card;
+                div.addEventListener('click', () => addCard(card));
+                autocompleteList.appendChild(div);
+            });
+        });
+
+        searchInput.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+                const val = this.value.toLowerCase();
+                if (!val) return;
+                const matches = allCards.filter(card =>
+                    card.toLowerCase().includes(val) && !selectedCards.includes(card)
+                );
+                if (matches.length > 0) addCard(matches[0]);
+            }
+        });
+
+        document.addEventListener('click', function(e) {
+            if (e.target !== searchInput) autocompleteList.innerHTML = '';
+        });
+
+        function addCard(card) {
+            if (selectedCards.length >= 20) {
+                alert('Maximum 20 cards can be selected');
+                return;
+            }
+            if (!selectedCards.includes(card)) {
+                selectedCards.push(card);
+                updateSelectedCards();
+                updateChart();
+            }
+            searchInput.value = '';
+            autocompleteList.innerHTML = '';
+        }
+
+        function removeCard(card) {
+            selectedCards = selectedCards.filter(c => c !== card);
+            updateSelectedCards();
+            updateChart();
+        }
+
+        function updateSelectedCards() {
+            const container = document.getElementById('selectedCards');
+            const clearButton = selectedCards.length > 0
+                ? `<button class="clear-all-btn" onclick="clearAllCards()">Clear All</button>`
+                : '';
+            container.innerHTML = selectedCards.map(card => `
+                <div class="card-chip">
+                    ${card}
+                    <button onclick="removeCard('${card.replace(/'/g, "\\'")}')">×</button>
+                </div>
+            `).join('') + clearButton;
+        }
+
+        function clearAllCards() {
+            selectedCards = [];
+            updateSelectedCards();
+            updateChart();
+        }
+
+        // ---- CHART ----
+
+        function updateChart() {
+            if (selectedCards.length === 0) {
+                if (chart) chart.destroy();
+                chart = null;
+                document.querySelector('.chart-container').innerHTML =
+                    '<p class="empty-state">Search for a card above to get started.</p>';
+                return;
+            }
+
+            if (!document.getElementById('playrateChart')) {
+                document.querySelector('.chart-container').innerHTML =
+                    '<canvas id="playrateChart"></canvas>';
+            }
+
+            const ctx = document.getElementById('playrateChart').getContext('2d');
+            const styles = getComputedStyle(document.documentElement);
+            const axisColor = styles.getPropertyValue('--chart-axis-color').trim();
+            const yearColor = styles.getPropertyValue('--chart-year-color').trim();
+            const fontFamily = styles.getPropertyValue('--chart-font-family').trim();
+            const fontSize = parseInt(styles.getPropertyValue('--chart-font-size'));
+            const yearFontSize = parseInt(styles.getPropertyValue('--chart-year-font-size'));
+
+            const allDates = [...new Set(data.map(row => row.year_month))].sort();
+
+            const datasets = selectedCards.map((card, i) => {
+                const cardData = data.filter(row => row.card === card);
+                const dataPoints = allDates.map(date => {
+                    const row = cardData.find(r => r.year_month === date);
+                    return row ? parseFloat(row.playrate) * 100 : null;
+                });
+
+                const hue = (i * 137.5) % 360;
+                const color = `hsl(${hue}, 30%, 50%)`;
+
+                return {
+                    label: card,
+                    data: dataPoints,
+                    borderColor: color,
+                    backgroundColor: color,
+                    borderWidth: 2,
+                    fill: false,
+                    tension: 0.3,
+                    spanGaps: true,
+                    pointRadius: 0,
+                    pointHoverRadius: 5,
+                    pointHitRadius: 15,
+                    hoverBorderWidth: 4
+                };
+            });
+
+            if (chart) chart.destroy();
+
+            chart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: allDates,
+                    datasets: datasets
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: true, position: 'top' },
+                        title: { display: false },
+                        tooltip: {
+                            mode: 'nearest',
+                            intersect: true,
+                            callbacks: {
+                                title: function(context) {
+                                    const [year, month] = context[0].label.split('-');
+                                    const date = new Date(year, month - 1);
+                                    return date.toLocaleString('default', { month: 'short' }) + ' ' + year;
+                                },
+                                label: function(context) {
+                                    return context.dataset.label + ': ' + context.parsed.y.toFixed(2) + '%';
+                                }
+                            }
+                        }
+                    },
+                    interaction: { mode: 'nearest', intersect: true },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 100,
+                            ticks: {
+                                callback: function(value) { return value + '%'; },
+                                font: { size: fontSize, family: fontFamily },
+                                color: axisColor
+                            }
+                        },
+                        x: {
+                            type: 'category',
+                            position: 'bottom',
+                            ticks: {
+                                callback: function(value, index, ticks) {
+                                    const label = this.getLabelForValue(value);
+                                    const [year, month] = label.split('-');
+                                    const months = ['Jan','Feb','Mar','Apr','May','Jun',
+                                                    'Jul','Aug','Sep','Oct','Nov','Dec'];
+                                    return months[parseInt(month) - 1];
+                                },
+                                autoSkip: true,
+                                maxRotation: 45,
+                                minRotation: 45,
+                                font: { size: fontSize, family: fontFamily },
+                                color: axisColor
+                            },
+                            grid: { display: true }
+                        },
+                        xYear: {
+                            type: 'category',
+                            position: 'bottom',
+                            offset: true,
+                            ticks: {
+                                callback: function(value, index, ticks) {
+                                    const label = this.getLabelForValue(value);
+                                    const [year, month] = label.split('-');
+                                    if (index === 0 || parseInt(month) === 1) return year;
+                                    return '';
+                                },
+                                autoSkip: false,
+                                maxRotation: 0,
+                                minRotation: 0,
+                                font: { size: yearFontSize, weight: 'bold' },
+                                color: yearColor,
+                                padding: 10
+                            },
+                            grid: { display: false, drawTicks: false }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Initialize
+        updateSelectedCards();
+    </script>
+</body>
+</html>

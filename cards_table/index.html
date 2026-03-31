@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canlandata</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.min.css">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HGRTCQ9M9P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HGRTCQ9M9P');
+</script>
+<body>
+    <div class="container">
+        <div id="header-placeholder"></div>
+        <script src="/header.js"></script>
+
+        <div id="mainContent">
+            <div class="chart-header">
+                <h2>Card Play Rates</h2>
+                <p>Each row shows the number of plays and the total play rate for the selected time period. </p>
+            </div>
+
+            <div class="time-filter">
+                <div class="time-filter-group">
+                    <label>From</label>
+                    <input type="month" id="startDate">
+                </div>
+                <div class="time-filter-group">
+                    <label>To</label>
+                    <input type="month" id="endDate">
+                </div>
+                <button id="allTimeBtn" onclick="resetTimeFilter()">All Time</button>
+                <div class="type-filter" id="typeFilterContainer">
+                    <button class="type-filter-btn" id="typeFilterBtn" onclick="toggleTypeDropdown(event)">Type: All ▾</button>
+                    <div class="type-dropdown hidden" id="typeDropdown">
+                        <label><input type="checkbox" value="Artifact"> Artifact</label>
+                        <label><input type="checkbox" value="Battle"> Battle</label>
+                        <label><input type="checkbox" value="Creature"> Creature</label>
+                        <label><input type="checkbox" value="Enchantment"> Enchantment</label>
+                        <label><input type="checkbox" value="Instant"> Instant</label>
+                        <label><input type="checkbox" value="Land"> Land</label>
+                        <label><input type="checkbox" value="Planeswalker"> Planeswalker</label>
+                        <label><input type="checkbox" value="Sorcery"> Sorcery</label>
+                    </div>
+                </div>
+            </div>
+
+            <table id="statsTable">
+                <thead>
+                    <tr>
+                        <th>Card</th>
+                        <th>Plays</th>
+                        <th>Play Rate</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+        </div>
+    </div>
+
+    <script>
+        let cardIndex = {};    // card → [deck_ids]
+        let deckDates = {};    // deck_id → "YYYY-MM"
+        let deckCountMap = {}; // "YYYY-MM" → total deck count
+        let allDates = [];
+        let cardDatabase = {};
+        let dataTable = null;
+
+        const CARD_TYPES = ['Artifact', 'Battle', 'Creature', 'Enchantment', 'Instant', 'Land', 'Planeswalker', 'Sorcery'];
+
+        // ---- DATA LOADING ----
+
+        Promise.all([
+            fetch('/data/co_occurrence_index.json').then(r => r.json()),
+            fetch('/data/deck_dates.json').then(r => r.json()),
+            fetch('/data/deck_counts.csv').then(r => r.text()),
+            fetch('/data/card_database.json').then(r => r.json())
+        ]).then(([indexData, datesData, countsCSV, dbData]) => {
+            cardIndex = indexData;
+            deckDates = datesData;
+
+            // Parse deck_counts.csv manually
+            countsCSV.trim().split('\n').slice(1).forEach(line => {
+                const [year_month, count] = line.split(',');
+                if (year_month && count) deckCountMap[year_month.trim()] = parseInt(count.trim());
+            });
+            allDates = Object.keys(deckCountMap).sort();
+
+            // Parse card database type flags and release date
+            Object.entries(dbData).forEach(([name, card]) => {
+                const typeLine = card.type_line || '';
+                const flags = {};
+                CARD_TYPES.forEach(type => { flags[type] = typeLine.includes(type); });
+                const releaseMonth = card.released_at ? card.released_at.slice(0, 7) : null;
+                cardDatabase[name] = { ...flags, releaseMonth };
+            });
+
+            populateTimeFilter();
+            initTable();
+        });
+
+        // ---- TIME FILTER ----
+
+        function populateTimeFilter() {
+            const minDate = allDates[0];
+            const maxDate = allDates[allDates.length - 1];
+
+            const startInput = document.getElementById('startDate');
+            const endInput = document.getElementById('endDate');
+
+            const defaultStart = allDates.find(d => d >= '2024-01') || allDates[0];
+            const defaultEnd = allDates[allDates.length - 1];
+            
+            startInput.min = minDate;
+            startInput.max = maxDate;
+            endInput.min = minDate;
+            endInput.max = maxDate;
+
+            startInput.value = defaultStart;
+            endInput.value = defaultEnd;
+
+            startInput.addEventListener('change', initTable);
+            endInput.addEventListener('change', initTable);
+        }
+
+        function getSelectedRange() {
+            return {
+                startDate: document.getElementById('startDate').value,
+                endDate: document.getElementById('endDate').value
+            };
+        }
+
+        function resetTimeFilter() {
+                const minDate = allDates[0];
+                const maxDate = allDates[allDates.length - 1];
+                document.getElementById('startDate').value = minDate;
+                document.getElementById('endDate').value = maxDate;
+                initTable();
+        }
+
+        // ---- AGGREGATION ----
+
+        function aggregateData(startDate, endDate) {
+            // Total decks in range (denominator)
+            const totalDecks = allDates
+                .filter(d => (!startDate || d >= startDate) && (!endDate || d <= endDate))
+                .reduce((sum, d) => sum + (deckCountMap[d] || 0), 0);
+
+            if (totalDecks === 0) return [];
+
+            return Object.entries(cardIndex).map(([card, deckIds]) => {
+                const releaseMonth = cardDatabase[card]?.releaseMonth || null;
+
+                // Effective start is the later of: filter start or card release month
+                const effectiveStart = (releaseMonth && (!startDate || releaseMonth > startDate))
+                    ? releaseMonth
+                    : startDate;
+
+                // Denominator: total decks in the effective range
+                const totalDecks = allDates
+                    .filter(d => (!effectiveStart || d >= effectiveStart) && (!endDate || d <= endDate))
+                    .reduce((sum, d) => sum + (deckCountMap[d] || 0), 0);
+
+                if (totalDecks === 0) return null;
+
+                const plays = deckIds.filter(id => {
+                    const month = deckDates[id];
+                    if (!month) return false;
+                    if (effectiveStart && month < effectiveStart) return false;
+                    if (endDate && month > endDate) return false;
+                    return true;
+                }).length;
+
+                return {
+                    card,
+                    plays,
+                    playrate: parseFloat((plays / totalDecks * 100).toFixed(2))
+                };
+            }).filter(row => row && row.plays > 0);
+        }
+
+        // ---- TYPE FILTER ----
+
+        function getSelectedTypes() {
+            return [...document.querySelectorAll('#typeDropdown input:checked')]
+                .map(cb => cb.value);
+        }
+
+        function updateTypeFilterLabel() {
+            const selected = getSelectedTypes();
+            document.getElementById('typeFilterBtn').textContent =
+                selected.length === 0 ? 'Type: All ▾' : selected.join(', ') + ' ▾';
+        }
+
+        function toggleTypeDropdown(e) {
+            e.stopPropagation();
+            document.getElementById('typeDropdown').classList.toggle('hidden');
+        }
+
+        document.addEventListener('click', function(e) {
+            if (!document.getElementById('typeFilterContainer').contains(e.target)) {
+                document.getElementById('typeDropdown').classList.add('hidden');
+            }
+        });
+
+        document.getElementById('typeDropdown').addEventListener('change', function() {
+            updateTypeFilterLabel();
+            initTable();
+        });
+
+        // ---- TABLE ----
+
+        function initTable() {
+            const { startDate, endDate } = getSelectedRange();
+            let rows = aggregateData(startDate, endDate);
+
+            const selectedTypes = getSelectedTypes();
+            if (selectedTypes.length > 0) {
+                rows = rows.filter(row => {
+                    const flags = cardDatabase[row.card];
+                    if (!flags) return true;
+                    return selectedTypes.some(type => flags[type]);
+                });
+            }
+
+            if (dataTable) {
+                dataTable.clear();
+                dataTable.rows.add(rows.map(row => [row.card, row.plays, row.playrate]));
+                dataTable.draw();
+                return;
+            }
+
+            rows.forEach(row => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `<td>${row.card}</td><td>${row.plays}</td><td>${row.playrate}</td>`;
+                document.querySelector('#statsTable tbody').appendChild(tr);
+            });
+
+            dataTable = new DataTable('#statsTable', {
+                order: [[2, 'desc']],
+                columnDefs: [{
+                    targets: 2,
+                    render: function(data) { return data + '%'; }
+                }]
+            });
+        }
+    </script>
+</body>
+</html>

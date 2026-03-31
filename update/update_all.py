@@ -6,6 +6,7 @@ sys.path.append(str(Path(__file__).parent.parent))
 from insights import generate_insights_cards
 from insights import generate_insights_colors
 from insights import generate_insights_sets
+from insights import generate_insights_cooccurence
 from update import update_ids_lists
 from update import update_card_database
 
@@ -25,3 +26,4 @@ if new_deck_count > 0:
     generate_insights_cards.main()
     generate_insights_colors.main()
     generate_insights_sets.main()
+    generate_insights_cooccurence.main()

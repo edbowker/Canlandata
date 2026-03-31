@@ -27,6 +27,9 @@ body {
     padding: 20px; 
     background: var(--background); 
 }
+html {
+    scrollbar-gutter: stable;
+}
 
 /* Container */
 .container { 
@@ -193,6 +196,23 @@ p a:hover {
 }
 
 /* Search Section */
+.search-box {
+    position: relative;
+}
+.search-clear-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #999;
+    padding: 0;
+    line-height: 1;
+}
+.search-clear-btn:hover { color: var(--text-dark); }
 .search-section { 
     margin-bottom: 20px; 
 }
@@ -240,6 +260,26 @@ p a:hover {
     padding: 80px 0;
 }
 
+.chart-time-filter {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-left: 16px;
+    border-left: 1px solid var(--border-color);
+}
+.chart-time-filter input[type="month"] {
+    height: 43px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+    background: white;
+    color: var(--text-dark);
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
 /* Autocomplete */
 .autocomplete-items { 
     position: absolute; 
@@ -273,7 +313,6 @@ p a:hover {
 }
 
 .card-chip { 
-    background: var(--primary-color); 
     color: white; 
     padding: 6px 12px; 
     border-radius: 16px; 
@@ -298,7 +337,167 @@ p a:hover {
 .card-chip button:hover { 
     color: #ffcccc; 
 }
+.chip-color-dot {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background: white !important;
+    opacity: 0.7;
+}
+.chip-color-dot.is-group {
+    border-radius: 2px;
+}
+.chip-edit-hint {
+    font-size: 11px;
+    opacity: 0.5;
+    margin-left: 2px;
+}
+.chip-edit-hint::before {
+    content: '| ';
+}
+.new-group-btn {
+    white-space: nowrap;
+    padding: 6px 14px;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 2px solid var(--primary-color);
+    background: transparent;
+    color: var(--primary-color);
+    height: 43px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.new-group-btn:hover {
+    border-color: var(--border-color);
+    color: var(--text-dark);
+}
+.new-group-btn:hover { opacity: 0.8; }
+.search-and-group {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+.search-and-group .search-box {
+    flex: 1;
+}
+.group-builder {
+    display: none;
+    background: #f5f3ee;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 12px 14px;
+    margin-bottom: 10px;
+    max-width: 600px;
+}
+.group-builder.open {
+    display: block;
+}
+.group-builder-inner {
+    display: flex;
+    gap: 0;
+}
+.group-builder-left {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-right: 16px;
+    border-right: 1px solid var(--border-color);
+    min-width: 110px;
+    width: 110px;
+}
+.group-builder-left input {
+    padding: 5px 10px;
+    font-size: 13px;
+    background: white;
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+    color: var(--text-dark);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: 600;
+}
+.group-builder-left input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+.group-builder-left button {
+    padding: 6px 10px;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    background: white;
+    color: var(--text-dark);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+.group-builder-left button:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+.group-builder-left .delete-btn {
+    border-color: #c0392b;
+    color: #c0392b;
+    margin-top: auto;
+}
+.group-builder-left .delete-btn:hover { background: #fff0f0; }
+.group-builder-right {
+    flex: 1;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.group-builder-right .search-box {
+    position: relative;
+}
 
+.group-builder-right .search-box input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 10px;
+    font-size: 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-dark);
+}
+.group-card-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 8px 3px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+}
+.group-card-chip button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 14px;
+    color: white;
+    line-height: 1;
+    opacity: 0.7;
+}
+.group-card-chip button:hover { opacity: 1; }
+.group-empty-hint{
+    font-size: 13px;
+    color: var(--text-dark);
+    font-weight: 400;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    letter-spacing: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
 /* Chart */
 .chart-container { 
     position: relative; 
@@ -423,6 +622,7 @@ p a:hover {
 .type-dropdown label:hover {
     background: #f0f0f0;
 }
+
 
 /* DataTables Overrides */
 div.dt-container .dt-search input {
