@@ -200,7 +200,10 @@
                 const yearMonth = `${year}-${month.padStart(2, '0')}`;
                 const delta = parseInt(row['New Value']) - parseInt(row['Old Value']);
                 if (!pointsChangeMap[yearMonth]) pointsChangeMap[yearMonth] = {};
-                pointsChangeMap[yearMonth][row.Card] = delta;
+                pointsChangeMap[yearMonth][row.Card] = {
+                    old: parseInt(row['Old Value']),
+                    new: parseInt(row['New Value'])
+                };
             });
         }
         
@@ -234,6 +237,9 @@
                         tooltip: {
                             mode: 'index',
                             intersect: false,
+                            itemSort: function(a, b){
+                                return b.parsed.y - a.parsed.y;
+                            },
                             position: 'top',
                             callbacks: {
                                 title: function(context) {
@@ -245,10 +251,17 @@
                                     const card = context.dataset.label;
                                     const date = context.label;
                                     const delta = pointsChangeMap[date]?.[card];
-                                    const changeNote = delta !== undefined
-                                        ? `  (points ${delta > 0 ? '+' : ''}${delta})`
+                                    const change = pointsChangeMap[date]?.[card];
+                                    const changeNote = change !== undefined
+                                        ? `  (points ${change.old} -> ${change.new})`
                                         : '';
                                     return card + ': ' + context.parsed.y.toFixed(1) + '%' + changeNote;
+                                },
+                                labelColor: function(context){
+                                    return {
+                                        backgroundColor: context.dataset.borderColor,
+                                        borderColor: context.dataset.borderColor
+                                    };
                                 }
                             }
                         }
@@ -356,9 +369,9 @@
                 });
                 const pointBackgroundColor = filteredDates.map(date => {
                     if (isGroup) return 'transparent';
-                    const delta = pointsChangeMap[date]?.[item.label];
-                    if (delta === undefined) return 'transparent';
-                    return delta > 0 ? '#e05c4b' : '#5bab6e';   // up = red, down = green
+                    const change = pointsChangeMap[date]?.[item.label];
+                    if (change === undefined) return 'transparent';
+                    return change.new > change.old ? '#e05c4b' : '#5bab6e';
                 });
 
                 return {
