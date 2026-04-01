@@ -42,3 +42,6 @@ def main():
     df.to_csv(DATA_OUT, index=False)
 
     print(f"Done. {len(df)} rows written to {DATA_OUT}")
+
+
+main()
