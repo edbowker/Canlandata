@@ -90,6 +90,26 @@
         let allCardNames = [];  // sorted card name strings
         let selected = [];      // { label, color, cards? } — cards present = group
         let chart = null;
+        let pointsChangeMap = {};
+
+        
+        const crosshairPlugin = {
+            id: 'crosshair',
+            afterDraw(chart) {
+                if (chart._crosshairX === undefined) return;
+                const ctx = chart.ctx;
+                const yAxis = chart.scales.y;
+                ctx.save();
+                ctx.beginPath();
+                ctx.moveTo(chart._crosshairX, yAxis.top);
+                ctx.lineTo(chart._crosshairX, yAxis.bottom);
+                ctx.lineWidth = 1;
+                ctx.strokeStyle = 'rgba(0,0,0,0.3)';
+                ctx.setLineDash([4, 4]);
+                ctx.stroke();
+                ctx.restore();
+            }
+        };
 
         // Group builder state
         let builderCards = [];
@@ -120,8 +140,14 @@
                     download: true, header: true,
                     complete: results => resolve(results.data.filter(r => r.year_month && r.count))
                 });
+            }),
+            new Promise(resolve => {
+                Papa.parse('/data/points_change_history.csv', {
+                    download: true, header: true,
+                    complete: results => resolve(results.data.filter(r => r.Card))
+                });
             })
-        ]).then(([indexData, datesData, countsData]) => {
+        ]).then(([indexData, datesData, countsData, pointsData]) => {
             cardIndex = indexData;
             deckDates = datesData;
 
@@ -149,6 +175,8 @@
             document.getElementById('cardSearch').disabled = false;
             document.getElementById('newGroupBtn').disabled = false;
 
+            
+            buildPointsChangeMap(pointsData);
             initChart();
             updateSelectedCards();
             updateChart();
@@ -166,6 +194,16 @@
             return result;
         }
 
+        function buildPointsChangeMap(rows){
+            rows.forEach(row => {
+                const [month, , year] = row['Date'].split('/');
+                const yearMonth = `${year}-${month.padStart(2, '0')}`;
+                const delta = parseInt(row['New Value']) - parseInt(row['Old Value']);
+                if (!pointsChangeMap[yearMonth]) pointsChangeMap[yearMonth] = {};
+                pointsChangeMap[yearMonth][row.Card] = delta;
+            });
+        }
+        
         // ---- CHART ----
 
         function initChart() {
@@ -178,18 +216,25 @@
             const yearFontSize = parseInt(styles.getPropertyValue('--chart-year-font-size'));
 
             const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-
+            Chart.Tooltip.positioners.top = function(elements, position) {
+                return {
+                    x: position.x,
+                    y: this.chart.scales.y.top + 150
+                };
+            };
             chart = new Chart(ctx, {
                 type: 'line',
                 data: { labels: allDates, datasets: [] },
+                plugins: [crosshairPlugin],
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
                     plugins: {
                         legend: { display: false, position: 'top' },
                         tooltip: {
-                            mode: 'nearest',
-                            intersect: true,
+                            mode: 'index',
+                            intersect: false,
+                            position: 'top',
                             callbacks: {
                                 title: function(context) {
                                     const [year, month] = context[0].label.split('-');
@@ -197,7 +242,13 @@
                                     return date.toLocaleString('default', { month: 'short' }) + ' ' + year;
                                 },
                                 label: function(context) {
-                                    return context.dataset.label + ': ' + context.parsed.y.toFixed(1) + '%';
+                                    const card = context.dataset.label;
+                                    const date = context.label;
+                                    const delta = pointsChangeMap[date]?.[card];
+                                    const changeNote = delta !== undefined
+                                        ? `  (points ${delta > 0 ? '+' : ''}${delta})`
+                                        : '';
+                                    return card + ': ' + context.parsed.y.toFixed(1) + '%' + changeNote;
                                 }
                             }
                         }
@@ -252,6 +303,19 @@
                     }
                 }
             });
+
+            const canvas = document.getElementById('playrateChart');
+
+            canvas.addEventListener('mousemove', function(e) {
+                const rect = canvas.getBoundingClientRect();
+                chart._crosshairX = e.clientX - rect.left;
+                chart.draw();
+            });
+
+            canvas.addEventListener('mouseleave', function() {
+                delete chart._crosshairX;
+                chart.draw();
+            });
         }
 
         function updateChart() {
@@ -271,33 +335,50 @@
             const filteredDates = getChartDateRange();
 
             chart.data.labels = filteredDates;
-            chart.data.datasets = selected.map(item => ({
-                label: item.label,
-                data: (() => {
-                    const ids = item.cards ? getIntersection(item.cards) : (cardIndex[item.label] || []);
-                    const counts = {};
-                    for (const id of ids) {
-                        const month = deckDates[id];
-                        if (month) counts[month] = (counts[month] || 0) + 1;
-                    }
-                    return filteredDates.map(date => {
-                        const count = counts[date] || 0;
-                        const total = deckCountMap[date] || 0;
-                        return total > 0 ? (count / total) * 100 : 0;
-                    });
-                })(),
-                borderColor: item.color,
-                backgroundColor: item.color,
-                borderWidth: 2,
-                borderDash: item.cards ? [6, 3] : [],
-                fill: false,
-                tension: 0.3,
-                spanGaps: true,
-                pointRadius: 0,
-                pointHoverRadius: 5,
-                pointHitRadius: 15,
-                hoverBorderWidth: 4
-            }));
+            chart.data.datasets = selected.map(item => {
+                const isGroup = !!item.cards;
+                const ids = isGroup ? getIntersection(item.cards) : (cardIndex[item.label] || []);
+                const counts = {};
+                for (const id of ids) {
+                    const month = deckDates[id];
+                    if (month) counts[month] = (counts[month] || 0) + 1;
+                }
+                const data = filteredDates.map(date => {
+                    const count = counts[date] || 0;
+                    const total = deckCountMap[date] || 0;
+                    return total > 0 ? (count / total) * 100 : 0;
+                });
+
+                // Per-point styling — groups get no indicators
+                const pointRadius = filteredDates.map(date => {
+                    if (isGroup) return 0;
+                    return pointsChangeMap[date]?.[item.label] !== undefined ? 5 : 0;
+                });
+                const pointBackgroundColor = filteredDates.map(date => {
+                    if (isGroup) return 'transparent';
+                    const delta = pointsChangeMap[date]?.[item.label];
+                    if (delta === undefined) return 'transparent';
+                    return delta > 0 ? '#e05c4b' : '#5bab6e';   // up = red, down = green
+                });
+
+                return {
+                    label: item.label,
+                    data,
+                    borderColor: item.color,
+                    backgroundColor: item.color,
+                    borderWidth: 2,
+                    borderDash: isGroup ? [6, 3] : [],
+                    fill: false,
+                    tension: 0.3,
+                    spanGaps: true,
+                    pointRadius,
+                    pointBackgroundColor,
+                    pointBorderColor: pointBackgroundColor,   // match fill
+                    pointHoverRadius: 5,
+                    pointHitRadius: 15,
+                    hoverBorderWidth: 4
+                };
+            });
 
             chart.update();
         }
