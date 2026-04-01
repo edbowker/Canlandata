@@ -52,7 +52,7 @@ def main():
                     'q': f'!"{card}"',
                     'order': 'released',
                     'dir': 'asc',
-                    'unique': 'prints'
+                    'unique': 'prints',
                 },
                 timeout=10
             )
@@ -67,7 +67,18 @@ def main():
             data = response.json().get('data', [])
             if data:
                 print(f'Saving data for {card}')
-                data = data[0]
+                #data = data[0]
+                counter = 0
+                while True:
+                    try:
+                        if data[counter]['promo'] == True:
+                            print(f'Skipping promo set {data[counter]['set_name']} for {card}')
+                            counter += 1
+                        else:
+                            data = data[counter]
+                            break
+                    except:
+                        print('Ran out of sets for {card}, all promo?')
                 card_db[card] = {}
 
                 # Save data to dict
