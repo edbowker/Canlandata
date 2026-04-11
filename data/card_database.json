@@ -48135,5 +48135,61 @@
     ],
     "set_name": "Urza's Saga",
     "released_at": "1998-10-12"
+  },
+  "Melded Moxite": {
+    "oracle_id": "86e0e718-82b5-4c99-9837-1b4d8729a27e",
+    "mana_cost": "{1}{R}",
+    "cmc": 2.0,
+    "type_line": "Artifact",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Edge of Eternities",
+    "released_at": "2025-08-01"
+  },
+  "Does Machines": {
+    "oracle_id": "df54b79d-f31d-4582-86c0-1d34ec77be0f",
+    "mana_cost": "{1}{U}",
+    "cmc": 2.0,
+    "type_line": "Enchantment — Class",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Teenage Mutant Ninja Turtles",
+    "released_at": "2026-03-06"
+  },
+  "Mikey & Leo, Chaos & Order": {
+    "oracle_id": "a86117c1-b83d-4350-9a10-a23b7e67e1bd",
+    "mana_cost": "{G/W}{G/W}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Mutant Ninja Turtle",
+    "color_identity": [
+      "G",
+      "W"
+    ],
+    "set_name": "Teenage Mutant Ninja Turtles",
+    "released_at": "2026-03-06"
+  },
+  "Michelangelo, Weirdness to 11": {
+    "oracle_id": "170ab932-9d50-4ce7-9a42-08e1edce7e7c",
+    "mana_cost": "{1}{G}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Mutant Ninja Turtle",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Teenage Mutant Ninja Turtles",
+    "released_at": "2026-03-06"
+  },
+  "Sewer-veillance Cam": {
+    "oracle_id": "25c83d45-581f-48ba-b6bb-feb66e8a65c7",
+    "mana_cost": "{U}",
+    "cmc": 1.0,
+    "type_line": "Artifact",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Teenage Mutant Ninja Turtles",
+    "released_at": "2026-03-06"
   }
 }

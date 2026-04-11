@@ -43,5 +43,3 @@ def main():
 
     print(f"Done. {len(df)} rows written to {DATA_OUT}")
 
-
-main()
