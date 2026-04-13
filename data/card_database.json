@@ -48191,5 +48191,49 @@
     ],
     "set_name": "Teenage Mutant Ninja Turtles",
     "released_at": "2026-03-06"
+  },
+  "Jadzi, Steward of Fate // Oracle's Gift": {
+    "oracle_id": "c63b3511-d597-4c6e-9094-eabdeaa8a394",
+    "mana_cost": "{2}{U}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Human Wizard // Sorcery",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Goblin Machinist": {
+    "oracle_id": "c6c4cc65-6ccb-437b-ae97-3201be95b6df",
+    "mana_cost": "{4}{R}",
+    "cmc": 5.0,
+    "type_line": "Creature — Goblin",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Onslaught",
+    "released_at": "2002-10-07"
+  },
+  "Eumidian Hatchery": {
+    "oracle_id": "5b6d933e-2830-4f5a-b244-a421aa9615dc",
+    "mana_cost": "",
+    "cmc": 0.0,
+    "type_line": "Land",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Edge of Eternities Commander",
+    "released_at": "2025-08-01"
+  },
+  "Iron-Shield Elf": {
+    "oracle_id": "1c77b4da-b580-4ce9-b127-76de674f5694",
+    "mana_cost": "{1}{B}",
+    "cmc": 2.0,
+    "type_line": "Creature — Elf Warrior",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Lorwyn Eclipsed",
+    "released_at": "2026-01-23"
   }
 }
