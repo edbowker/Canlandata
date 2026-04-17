@@ -48235,5 +48235,136 @@
     ],
     "set_name": "Lorwyn Eclipsed",
     "released_at": "2026-01-23"
+  },
+  "Garruk, Caller of Beasts": {
+    "oracle_id": "8e2fbc26-5373-4fd7-8e9e-41af5bb9ff18",
+    "mana_cost": "{4}{G}{G}",
+    "cmc": 6.0,
+    "type_line": "Legendary Planeswalker — Garruk",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Magic 2014",
+    "released_at": "2013-07-19"
+  },
+  "Loch Mare": {
+    "oracle_id": "631eb3e9-a3e0-4341-ad2d-e79142ce537d",
+    "mana_cost": "{1}{U}",
+    "cmc": 2.0,
+    "type_line": "Creature — Horse Serpent",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Lorwyn Eclipsed",
+    "released_at": "2026-01-23"
+  },
+  "Tender Wildguide": {
+    "oracle_id": "74868bc0-6081-4f46-a2c6-9521cd5465aa",
+    "mana_cost": "{1}{G}",
+    "cmc": 2.0,
+    "type_line": "Creature — Possum Druid",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Bloomburrow",
+    "released_at": "2024-08-02"
+  },
+  "Elenda's Hierophant": {
+    "oracle_id": "cb99c675-adc5-4dad-8be8-524f5f921213",
+    "mana_cost": "{2}{W}",
+    "cmc": 3.0,
+    "type_line": "Creature — Vampire Cleric",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "The Lost Caverns of Ixalan Commander",
+    "released_at": "2023-11-17"
+  },
+  "Exemplar of Light": {
+    "oracle_id": "9ad730b5-8950-4215-9319-387e2970dd22",
+    "mana_cost": "{2}{W}{W}",
+    "cmc": 4.0,
+    "type_line": "Creature — Angel",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Foundations",
+    "released_at": "2024-11-15"
+  },
+  "Leonardo, Cutting Edge": {
+    "oracle_id": "933fe6e5-8d00-4411-aa54-7780382c1ea6",
+    "mana_cost": "{1}{W}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Mutant Ninja Turtle",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Teenage Mutant Ninja Turtles",
+    "released_at": "2026-03-06"
+  },
+  "Ajani's Pridemate": {
+    "oracle_id": "95e94dea-5ac0-4d6f-adec-ca147aee861f",
+    "mana_cost": "{1}{W}",
+    "cmc": 2.0,
+    "type_line": "Creature — Cat Soldier",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Magic 2011",
+    "released_at": "2010-07-16"
+  },
+  "Aerith Gainsborough": {
+    "oracle_id": "dd9a6f6b-f9b7-4292-bc80-b7da326de032",
+    "mana_cost": "{2}{W}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Human Cleric",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Final Fantasy",
+    "released_at": "2025-06-13"
+  },
+  "Turncoat Kunoichi": {
+    "oracle_id": "0f35cf85-6783-4d69-b5e6-a81f7c1f21e7",
+    "mana_cost": "{2}{W}",
+    "cmc": 3.0,
+    "type_line": "Creature — Mutant Ninja Fox",
+    "color_identity": [
+      "B",
+      "W"
+    ],
+    "set_name": "Teenage Mutant Ninja Turtles",
+    "released_at": "2026-03-06"
+  },
+  "Curse of Shaken Faith": {
+    "oracle_id": "297494f0-1f79-4f77-b68b-6ed858e21f4e",
+    "mana_cost": "{1}{R}",
+    "cmc": 2.0,
+    "type_line": "Enchantment — Aura Curse",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Innistrad: Midnight Hunt",
+    "released_at": "2021-09-24"
+  },
+  "Omni-Cheese Pizza": {
+    "oracle_id": "73144877-1d37-4c7a-8493-3cef191b9211",
+    "mana_cost": "{2}",
+    "cmc": 2.0,
+    "type_line": "Artifact — Food",
+    "color_identity": [],
+    "set_name": "Teenage Mutant Ninja Turtles",
+    "released_at": "2026-03-06"
+  },
+  "Psionic Blast": {
+    "oracle_id": "7f221ad6-7ec4-483d-a6b5-1456c95c1cad",
+    "mana_cost": "{2}{U}",
+    "cmc": 3.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Limited Edition Alpha",
+    "released_at": "1993-08-05"
   }
 }

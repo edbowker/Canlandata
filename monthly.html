@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canlandata – Monthly Report</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        /* ── Month Navigation ── */
+        .month-nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            margin: 28px 0 32px;
+        }
+        .month-nav h2 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--text-dark);
+            letter-spacing: 0.04em;
+            min-width: 260px;
+            text-align: center;
+        }
+        .month-nav button {
+            background: none;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            width: 32px;
+            height: 32px;
+            font-size: 16px;
+            cursor: pointer;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: border-color 0.15s, color 0.15s;
+        }
+        .month-nav button:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        /* ── Stat Chips ── */
+        .stat-chips {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+        .stat-chip {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+        }
+        .stat-chip-value-row {
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+        }
+        .stat-chip-number {
+            font-size: 28px;
+            font-weight: 600;
+            color: var(--text-dark);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            padding: 6px 18px;
+            min-width: 80px;
+            text-align: center;
+        }
+        .stat-chip-delta {
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .stat-chip-delta.up   { color: #2e7d32; }
+        .stat-chip-delta.down { color: #c62828; }
+        .stat-chip-delta.neutral { color: #888; }
+        .stat-chip-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #888;
+            font-weight: 600;
+        }
+
+        /* ── Section Divider ── */
+        .report-divider {
+            border: none;
+            border-top: 1px solid var(--border-color);
+            margin: 32px 0;
+        }
+
+        /* ── Two-col layout ── */
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        /* ── Section Headers ── */
+        .report-section-title {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: #888;
+            margin-bottom: 16px;
+        }
+
+        /* ── Rising / Falling ── */
+        .mover-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding: 7px 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 14px;
+            color: var(--text-dark);
+        }
+        .mover-row:last-child { border-bottom: none; }
+        .mover-name { font-weight: 500; }
+        .mover-change {
+            font-size: 13px;
+            color: #888;
+            white-space: nowrap;
+        }
+        .mover-change .arrow {
+            font-weight: 700;
+            margin-right: 3px;
+        }
+        .mover-change .arrow.up   { color: #2e7d32; }
+        .mover-change .arrow.down { color: #c62828; }
+
+        /* ── Card Debuts ── */
+        .debut-row {
+            padding: 6px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .debut-row:last-child { border-bottom: none; }
+        .debut-trigger {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-dark);
+            user-select: none;
+        }
+        .debut-trigger:hover { color: var(--primary-color); }
+        .debut-caret {
+            font-size: 10px;
+            color: #aaa;
+            transition: transform 0.15s;
+            display: inline-block;
+        }
+        .debut-row.open .debut-caret { transform: rotate(90deg); }
+        .debut-decks {
+            display: none;
+            padding: 6px 0 2px 18px;
+        }
+        .debut-row.open .debut-decks { display: block; }
+        .debut-deck-item {
+            font-size: 12px;
+            color: #888;
+            padding: 2px 0;
+        }
+        .see-more-btn {
+            background: none;
+            border: none;
+            color: var(--primary-color);
+            font-size: 13px;
+            cursor: pointer;
+            padding: 8px 0 0;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: underline;
+        }
+        .see-more-btn:hover { color: var(--primary-hover); }
+
+        /* ── Event Winners ── */
+        .winner-row {
+            display: grid;
+            grid-template-columns: 90px 36px 1fr;
+            align-items: baseline;
+            gap: 0 8px;
+            padding: 7px 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 14px;
+            color: var(--text-dark);
+        }
+        .winner-row:last-child { border-bottom: none; }
+        .winner-name { font-weight: 500; }
+        .winner-place {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: #888;
+        }
+        .winner-deck { color: #555; font-size: 13px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="header-placeholder"></div>
+        <script src="/header.js"></script>
+
+        <div id="mainContent">
+
+            <!-- Month Navigation -->
+            <div class="month-nav">
+                <button id="prevMonth" title="Previous month">&#9664;</button>
+                <h2>Monthly Report — March 2026</h2>
+                <button id="nextMonth" title="Next month">&#9654;</button>
+            </div>
+
+            <!-- Stat Chips -->
+            <div class="stat-chips">
+                <div class="stat-chip">
+                    <div class="stat-chip-value-row">
+                        <div class="stat-chip-number">37</div>
+                        <span class="stat-chip-delta up">+4</span>
+                    </div>
+                    <div class="stat-chip-label">Reported Events</div>
+                </div>
+                <div class="stat-chip">
+                    <div class="stat-chip-value-row">
+                        <div class="stat-chip-number">105</div>
+                        <span class="stat-chip-delta up">+12</span>
+                    </div>
+                    <div class="stat-chip-label">Decks</div>
+                </div>
+                <div class="stat-chip">
+                    <div class="stat-chip-value-row">
+                        <div class="stat-chip-number">312</div>
+                        <span class="stat-chip-delta down">−8</span>
+                    </div>
+                    <div class="stat-chip-label">Unique Cards</div>
+                </div>
+            </div>
+
+            <hr class="report-divider">
+
+            <!-- Rising / Falling -->
+            <div class="two-col">
+                <div>
+                    <div class="report-section-title">Rising</div>
+                    <div class="mover-row">
+                        <span class="mover-name">Sol Ring</span>
+                        <span class="mover-change"><span class="arrow up">▲</span>7% → 9%</span>
+                    </div>
+                    <div class="mover-row">
+                        <span class="mover-name">Wasteland</span>
+                        <span class="mover-change"><span class="arrow up">▲</span>10% → 12%</span>
+                    </div>
+                    <div class="mover-row">
+                        <span class="mover-name">Fire Nation Occupation</span>
+                        <span class="mover-change"><span class="arrow up">▲</span>0% → 1%</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="report-section-title">Falling</div>
+                    <div class="mover-row">
+                        <span class="mover-name">Mountain</span>
+                        <span class="mover-change"><span class="arrow down">▼</span>12% → 9%</span>
+                    </div>
+                    <div class="mover-row">
+                        <span class="mover-name">Joven</span>
+                        <span class="mover-change"><span class="arrow down">▼</span>5% → 3%</span>
+                    </div>
+                    <div class="mover-row">
+                        <span class="mover-name">Mana Tithe</span>
+                        <span class="mover-change"><span class="arrow down">▼</span>8% → 6%</span>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="report-divider">
+
+            <!-- Card Debuts + Event Winners -->
+            <div class="two-col">
+
+                <!-- Card Debuts -->
+                <div>
+                    <div class="report-section-title">Card Debuts</div>
+
+                    <div class="debut-row">
+                        <div class="debut-trigger">
+                            <span class="debut-caret">&#9654;</span>
+                            Chub Toad
+                        </div>
+                        <div class="debut-decks">
+                            <div class="debut-deck-item">04/11/2026 – Ed's Jeskai Control</div>
+                            <div class="debut-deck-item">04/08/2026 – Casey's 5-Color Goodstuff</div>
+                        </div>
+                    </div>
+
+                    <div class="debut-row">
+                        <div class="debut-trigger">
+                            <span class="debut-caret">&#9654;</span>
+                            Mwunvoli Ooze
+                        </div>
+                        <div class="debut-decks">
+                            <div class="debut-deck-item">04/05/2026 – Dylan's Mono Green</div>
+                        </div>
+                    </div>
+
+                    <div class="debut-row">
+                        <div class="debut-trigger">
+                            <span class="debut-caret">&#9654;</span>
+                            Spectral Sailor
+                        </div>
+                        <div class="debut-decks">
+                            <div class="debut-deck-item">04/03/2026 – Nick's Tempo Blue</div>
+                            <div class="debut-deck-item">04/11/2026 – Ed's Jeskai Control</div>
+                        </div>
+                    </div>
+
+                    <div class="debut-row">
+                        <div class="debut-trigger">
+                            <span class="debut-caret">&#9654;</span>
+                            Grenzo, Dungeon Warden
+                        </div>
+                        <div class="debut-decks">
+                            <div class="debut-deck-item">04/07/2026 – Casey's Rakdos Aggro</div>
+                        </div>
+                    </div>
+
+                    <div class="debut-row">
+                        <div class="debut-trigger">
+                            <span class="debut-caret">&#9654;</span>
+                            Pyroblast
+                        </div>
+                        <div class="debut-decks">
+                            <div class="debut-deck-item">04/09/2026 – Dylan's Mono Red</div>
+                        </div>
+                    </div>
+
+                    <!-- Hidden rows (see more) -->
+                    <div id="debutExtra" style="display:none">
+                        <div class="debut-row">
+                            <div class="debut-trigger">
+                                <span class="debut-caret">&#9654;</span>
+                                Crop Rotation
+                            </div>
+                            <div class="debut-decks">
+                                <div class="debut-deck-item">04/10/2026 – Nick's Lands</div>
+                            </div>
+                        </div>
+                        <div class="debut-row">
+                            <div class="debut-trigger">
+                                <span class="debut-caret">&#9654;</span>
+                                Mana Drain
+                            </div>
+                            <div class="debut-decks">
+                                <div class="debut-deck-item">04/11/2026 – Ed's Jeskai Control</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="see-more-btn" id="seeMoreBtn">Show 2 more</button>
+                </div>
+
+                <!-- Event Winners -->
+                <div>
+                    <div class="report-section-title">Event Winners</div>
+
+                    <div class="winner-row">
+                        <span class="winner-name">Ed</span>
+                        <span class="winner-place">1st</span>
+                        <span class="winner-deck">Mana Vault – 4/11/2026</span>
+                    </div>
+                    <div class="winner-row">
+                        <span class="winner-name">Casey</span>
+                        <span class="winner-place">1st</span>
+                        <span class="winner-deck">Mana Tithe – 4/11/2026</span>
+                    </div>
+                    <div class="winner-row">
+                        <span class="winner-name">Dylan</span>
+                        <span class="winner-place">1st</span>
+                        <span class="winner-deck">Mana Monkey – 4/8/2026</span>
+                    </div>
+                    <div class="winner-row">
+                        <span class="winner-name">Nick</span>
+                        <span class="winner-place">1st</span>
+                        <span class="winner-deck">Mana Drain – 4/5/2026</span>
+                    </div>
+                    <div class="winner-row">
+                        <span class="winner-name">Ed</span>
+                        <span class="winner-place">1st</span>
+                        <span class="winner-deck">Mana Vault – 4/3/2026</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div><!-- /mainContent -->
+    </div><!-- /container -->
+
+    <script>
+        // Expand/collapse debut rows
+        document.querySelectorAll('.debut-trigger').forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                trigger.closest('.debut-row').classList.toggle('open');
+            });
+        });
+
+        // See more
+        const seeMoreBtn = document.getElementById('seeMoreBtn');
+        const debutExtra = document.getElementById('debutExtra');
+        seeMoreBtn.addEventListener('click', () => {
+            const isHidden = debutExtra.style.display === 'none';
+            debutExtra.style.display = isHidden ? 'block' : 'none';
+            seeMoreBtn.textContent = isHidden ? 'Show less' : 'Show 2 more';
+        });
+    </script>
+</body>
+</html>
