@@ -1,56 +1,49 @@
 import json
+import re
 from pathlib import Path
 
-def fix_mojibake(text):
-    """Fix UTF-8 text that was misread as Latin-1"""
-    try:
-        return text.encode('latin-1').decode('utf-8')
-    except (UnicodeDecodeError, UnicodeEncodeError):
-        return text  # already correct, leave it alone
-
-ROOT = Path(__file__).parent
+ROOT = Path(__file__).parent.parent
 DATA_DIR = ROOT / "data"
+DECKLISTS_PATH = DATA_DIR / "decklists.json"
 
-# --- Fix decklists.json ---
-with open(DATA_DIR / 'decklists.json', 'r', encoding='utf-8') as f:
+PATTERN = re.compile(
+    r'^(\d{4}/\d{2}/\d{2})\s+-\s+(.+?)\s+-\s+(.+?)\s+\((.+?)(?:,\s*(.+))?\)$'
+)
+
+with open(DECKLISTS_PATH, encoding="utf-8") as f:
     decklists = json.load(f)
 
+matched = 0
+unmatched = 0
+
+reordered = []
 for deck in decklists:
-    fixed_mainboard = {}
-    for card_name, quantity in deck['mainboard'].items():
-        fixed_name = fix_mojibake(card_name)
-        fixed_mainboard[fixed_name] = quantity
-    deck['mainboard'] = fixed_mainboard
-
-with open(DATA_DIR / 'decklists.json', 'w', encoding='utf-8') as f:
-    json.dump(decklists, f, indent=4, ensure_ascii=False)
-
-print("Fixed decklists.json")
-
-# --- Fix card_database.json ---
-with open(DATA_DIR / 'card_database.json', 'r', encoding='utf-8') as f:
-    card_db = json.load(f)
-
-seen_oracle_ids = {}
-fixed_db = {}
-
-for card_name, card_data in card_db.items():
-    oracle_id = card_data['oracle_id']
-    fixed_name = fix_mojibake(card_name)
-
-    if oracle_id not in seen_oracle_ids:
-        seen_oracle_ids[oracle_id] = fixed_name
-        fixed_db[fixed_name] = card_data
+    name = deck.get("name", "")
+    m = PATTERN.match(name)
+    if m:
+        date        = m.group(1).strip()
+        deck_name   = m.group(2).strip()
+        placement   = m.group(3).strip()
+        event_name  = m.group(4).strip()
+        winner_name = m.group(5).strip() if m.group(5) else ""
+        matched += 1
     else:
-        existing_name = seen_oracle_ids[oracle_id]
-        # Always prefer the fixed name over whatever we stored first
-        if fixed_name != existing_name:
-            print(f"Dropped duplicate: '{existing_name}' (keeping '{fixed_name}')")
-            del fixed_db[existing_name]
-            seen_oracle_ids[oracle_id] = fixed_name
-            fixed_db[fixed_name] = card_data
+        date = deck_name = placement = event_name = winner_name = ""
+        unmatched += 1
 
-with open(DATA_DIR / 'card_database.json', 'w', encoding='utf-8') as f:
-    json.dump(fixed_db, f, indent=2, ensure_ascii=False)
+    reordered.append({
+        "name":         deck.get("name", ""),
+        "id":           deck.get("id", ""),
+        "date_created": deck.get("date_created", ""),
+        "date":         date,
+        "deck_name":    deck_name,
+        "placement":    placement,
+        "event_name":   event_name,
+        "winner_name":  winner_name,
+        "mainboard":    deck.get("mainboard", {}),
+    })
 
-print(f"Fixed card_database.json — {len(fixed_db)} cards")
+with open(DECKLISTS_PATH, "w", encoding="utf-8") as f:
+    json.dump(reordered, f, ensure_ascii=False, indent=2)
+
+print(f"Done. {matched} matched, {unmatched} unmatched.")

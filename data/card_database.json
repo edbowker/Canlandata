@@ -48366,5 +48366,372 @@
     ],
     "set_name": "Limited Edition Alpha",
     "released_at": "1993-08-05"
+  },
+  "Professor Dellian Fel": {
+    "oracle_id": "8c5fe985-69e1-4a03-99fc-a6fd2314a9a7",
+    "mana_cost": "{2}{B}{G}",
+    "cmc": 4.0,
+    "type_line": "Legendary Planeswalker — Dellian",
+    "color_identity": [
+      "B",
+      "G"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Flow State": {
+    "oracle_id": "e7194bca-0cf4-4a86-8b84-d2f9219a08b3",
+    "mana_cost": "{1}{U}",
+    "cmc": 2.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Ral Zarek, Guest Lecturer": {
+    "oracle_id": "0dc76b7f-6405-44a1-8c55-31fa480ff70b",
+    "mana_cost": "{1}{B}{B}",
+    "cmc": 3.0,
+    "type_line": "Legendary Planeswalker — Ral",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Glorious Decay": {
+    "oracle_id": "ac4277d7-d78a-4d6e-8d6d-11f9e56f8ae7",
+    "mana_cost": "{1}{G}",
+    "cmc": 2.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Bloomvine Regent // Claim Territory": {
+    "oracle_id": "da1e019c-2ffb-412d-90d7-f2e5e5c44c4b",
+    "mana_cost": "{3}{G}{G}",
+    "cmc": 5.0,
+    "type_line": "Creature — Dragon // Sorcery — Omen",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Tarkir: Dragonstorm",
+    "released_at": "2025-04-11"
+  },
+  "Game Over": {
+    "oracle_id": "e326b5a1-f8ce-471b-8663-ec1ba649b24f",
+    "mana_cost": "{3}{B}{B}",
+    "cmc": 5.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Teenage Mutant Ninja Turtles Eternal",
+    "released_at": "2026-03-06"
+  },
+  "Pox Plague": {
+    "oracle_id": "c505d304-9428-4532-87a2-167c69f16969",
+    "mana_cost": "{B}{B}{B}{B}{B}",
+    "cmc": 5.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Emeritus of Truce // Swords to Plowshares": {
+    "oracle_id": "e6c41473-2398-4888-9f0c-467dce7c39a4",
+    "mana_cost": "{1}{W}{W}",
+    "cmc": 3.0,
+    "type_line": "Creature — Cat Cleric // Instant",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Bonny Pall, Clearcutter": {
+    "oracle_id": "fcb811a8-c6e6-4bc4-b64b-8963a7183669",
+    "mana_cost": "{3}{G}{U}{U}",
+    "cmc": 6.0,
+    "type_line": "Legendary Creature — Giant Scout",
+    "color_identity": [
+      "G",
+      "U"
+    ],
+    "set_name": "Outlaws of Thunder Junction",
+    "released_at": "2024-04-19"
+  },
+  "Skycoach Conductor // All Aboard": {
+    "oracle_id": "788d3cfa-7706-4728-9c48-cf7bc963d002",
+    "mana_cost": "{2}{U}",
+    "cmc": 3.0,
+    "type_line": "Creature — Bird Pilot // Instant",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Great Hall of the Biblioplex": {
+    "oracle_id": "a8c70dab-1e27-4a9c-bd2d-910d5720d02d",
+    "mana_cost": "",
+    "cmc": 0.0,
+    "type_line": "Land",
+    "color_identity": [],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Quandrix, the Proof": {
+    "oracle_id": "2cbccc46-bdef-4dfb-90a4-0278c5c8488a",
+    "mana_cost": "{4}{G}{U}",
+    "cmc": 6.0,
+    "type_line": "Legendary Creature — Elder Dragon",
+    "color_identity": [
+      "G",
+      "U"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Grave Researcher // Reanimate": {
+    "oracle_id": "6cb8b8c4-0674-4f14-9d89-010969fbb80e",
+    "mana_cost": "{2}{B}",
+    "cmc": 3.0,
+    "type_line": "Creature — Troll Warlock // Sorcery",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Erode": {
+    "oracle_id": "2e467fab-e808-44d3-99bf-e3621baeb7cb",
+    "mana_cost": "{W}",
+    "cmc": 1.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Hardened Academic": {
+    "oracle_id": "921252df-6679-4f70-ae26-d4956c90b7df",
+    "mana_cost": "{R}{W}",
+    "cmc": 2.0,
+    "type_line": "Creature — Bird Cleric",
+    "color_identity": [
+      "R",
+      "W"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Xantid Swarm": {
+    "oracle_id": "13ba9ef8-2010-4d3f-8c62-85b7c5620031",
+    "mana_cost": "{G}",
+    "cmc": 1.0,
+    "type_line": "Creature — Insect",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Scourge",
+    "released_at": "2003-05-26"
+  },
+  "Emeritus of Woe // Demonic Tutor": {
+    "oracle_id": "93056597-b964-421f-be2f-e92abef1c2a4",
+    "mana_cost": "{3}{B}",
+    "cmc": 4.0,
+    "type_line": "Creature — Vampire Warlock // Sorcery",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Emeritus of Ideation // Ancestral Recall": {
+    "oracle_id": "24a29be4-5bc2-469b-b2ce-2fb305c3facb",
+    "mana_cost": "{3}{U}{U}",
+    "cmc": 5.0,
+    "type_line": "Creature — Human Wizard // Instant",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Ennis, Debate Moderator": {
+    "oracle_id": "97e1fcdf-04e8-40cf-b04a-8505d9b7cecc",
+    "mana_cost": "{1}{W}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Human Cleric",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Environmental Scientist": {
+    "oracle_id": "f30aa897-7027-47e7-ae58-73cbc448c1f0",
+    "mana_cost": "{1}{G}",
+    "cmc": 2.0,
+    "type_line": "Creature — Human Druid",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Hydroid Krasis": {
+    "oracle_id": "6bd872b2-5c40-4e11-9a7f-0136a51b0642",
+    "mana_cost": "{X}{G}{U}",
+    "cmc": 2.0,
+    "type_line": "Creature — Jellyfish Hydra Beast",
+    "color_identity": [
+      "G",
+      "U"
+    ],
+    "set_name": "Ravnica Allegiance",
+    "released_at": "2019-01-25"
+  },
+  "Braids, Cabal Minion": {
+    "oracle_id": "d85aa59b-c6aa-4b2f-885c-59d6e5e6e8b9",
+    "mana_cost": "{2}{B}{B}",
+    "cmc": 4.0,
+    "type_line": "Legendary Creature — Human Minion",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Odyssey",
+    "released_at": "2001-10-01"
+  },
+  "Soul Search": {
+    "oracle_id": "58f12f0d-e2c1-48f9-9e27-d1de8db743cb",
+    "mana_cost": "{W}{B}",
+    "cmc": 2.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "B",
+      "W"
+    ],
+    "set_name": "Murders at Karlov Manor",
+    "released_at": "2024-02-09"
+  },
+  "Traumatic Critique": {
+    "oracle_id": "06c1f8a4-4948-435b-ae98-b1276b57e958",
+    "mana_cost": "{X}{U}{R}",
+    "cmc": 2.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "R",
+      "U"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Dina's Guidance": {
+    "oracle_id": "a9abed25-9256-4fc7-8afb-edb4286e18f4",
+    "mana_cost": "{1}{B}{G}",
+    "cmc": 3.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "B",
+      "G"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Genesis": {
+    "oracle_id": "15afdd88-05fc-4335-8a55-c6ee702f3bef",
+    "mana_cost": "{4}{G}",
+    "cmc": 5.0,
+    "type_line": "Creature — Incarnation",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Judgment",
+    "released_at": "2002-05-27"
+  },
+  "Prismari Charm": {
+    "oracle_id": "c3c25a2c-f71c-4cb7-9117-0bcda9248bfd",
+    "mana_cost": "{U}{R}",
+    "cmc": 2.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "R",
+      "U"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "The Ooze": {
+    "oracle_id": "82a6fa6f-13c2-4ea3-bec2-c51b56b2783b",
+    "mana_cost": "{2}",
+    "cmc": 2.0,
+    "type_line": "Legendary Artifact",
+    "color_identity": [],
+    "set_name": "Teenage Mutant Ninja Turtles",
+    "released_at": "2026-03-06"
+  },
+  "The Dawning Archaic": {
+    "oracle_id": "a3e10b9b-9349-4b44-a46c-c825293dbd05",
+    "mana_cost": "{10}",
+    "cmc": 10.0,
+    "type_line": "Legendary Creature — Avatar",
+    "color_identity": [],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Emeritus of Abundance // Regrowth": {
+    "oracle_id": "e5152e8d-9f55-493d-a0fc-753cc72ee299",
+    "mana_cost": "{2}{G}",
+    "cmc": 3.0,
+    "type_line": "Creature — Elf Druid // Sorcery",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Mind into Matter": {
+    "oracle_id": "9f9e4be0-814a-4cab-948b-114769035a4a",
+    "mana_cost": "{X}{G}{U}",
+    "cmc": 2.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "G",
+      "U"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Flashback": {
+    "oracle_id": "02070488-9203-4304-9392-a111d20218c5",
+    "mana_cost": "{R}",
+    "cmc": 1.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Leonardo's Technique": {
+    "oracle_id": "e98c2af9-1393-487d-b8e9-f49a67bb7296",
+    "mana_cost": "{3}{W}",
+    "cmc": 4.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Teenage Mutant Ninja Turtles",
+    "released_at": "2026-03-06"
   }
 }

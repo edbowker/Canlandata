@@ -16,12 +16,11 @@ print('Checking for new decks on winners archive...')
 new_deck_count = update_ids_lists.main()
 
 # If new decks, update card database and recreate insights
-if new_deck_count > 0:
-    
-    print('Updating local card database...')
-    update_card_database.main()
 
-    print('Recreating local data files...')
-    generate_insights_cards.main()
-    generate_insights_colors.main()
-    generate_insights_sets.main()
+print('Updating local card database...')
+update_card_database.main()
+
+print('Recreating local data files...')
+generate_insights_cards.main()
+generate_insights_colors.main()
+generate_insights_sets.main()
