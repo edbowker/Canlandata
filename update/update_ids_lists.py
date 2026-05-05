@@ -67,7 +67,10 @@ def main():
         
         # add every card to a list (name? scryfall id?)
         cards_for_export = {}
-        main = response.json()['mainboard']
+        try:
+            main = response.json()['mainboard']
+        except:
+            print(f'Couldnt access main[mainboard] for id {deckid}')
         for card in main:
             cards_for_export[main[card]['card']['name']] = main[card]['quantity']
 

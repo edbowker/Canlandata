@@ -48733,5 +48733,209 @@
     ],
     "set_name": "Teenage Mutant Ninja Turtles",
     "released_at": "2026-03-06"
+  },
+  "Nameless Inversion": {
+    "oracle_id": "d6911456-42cb-4b23-a560-dc98784530f5",
+    "mana_cost": "{1}{B}",
+    "cmc": 2.0,
+    "type_line": "Kindred Instant — Shapeshifter",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Lorwyn",
+    "released_at": "2007-10-12"
+  },
+  "Pursue the Past": {
+    "oracle_id": "4384996f-aeaa-41ac-aa0e-12d72c887731",
+    "mana_cost": "{R}{W}",
+    "cmc": 2.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "R",
+      "W"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Coastal Peak": {
+    "oracle_id": "0e25faa2-efb0-4ca5-b280-18c38faa860c",
+    "mana_cost": "",
+    "cmc": 0.0,
+    "type_line": "Land — Island Mountain",
+    "color_identity": [
+      "R",
+      "U"
+    ],
+    "set_name": "Secrets of Strixhaven Commander",
+    "released_at": "2026-04-24"
+  },
+  "Titans' Vanguard": {
+    "oracle_id": "3da6d24b-ecbd-4a41-a37e-84a19b243414",
+    "mana_cost": "{3}{R}{G}",
+    "cmc": 5.0,
+    "type_line": "Creature — Eldrazi",
+    "color_identity": [
+      "G",
+      "R"
+    ],
+    "set_name": "Modern Horizons 3",
+    "released_at": "2024-06-14"
+  },
+  "Practiced Offense": {
+    "oracle_id": "99678cc9-59c8-4358-b847-8c38ffb4a050",
+    "mana_cost": "{2}{W}",
+    "cmc": 3.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Improvisation Capstone": {
+    "oracle_id": "fd4f0315-567a-4cc5-bc7e-88a9d2cee910",
+    "mana_cost": "{5}{R}{R}",
+    "cmc": 7.0,
+    "type_line": "Sorcery — Lesson",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Hormagaunt Horde": {
+    "oracle_id": "cc965557-f69e-4689-8791-d3618e4ffbfa",
+    "mana_cost": "{X}{G}",
+    "cmc": 1.0,
+    "type_line": "Creature — Tyranid",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Warhammer 40,000 Commander",
+    "released_at": "2022-10-07"
+  },
+  "Zephyr Sentinel": {
+    "oracle_id": "dcddd143-a7d9-4a38-a2da-dd6bd2e48205",
+    "mana_cost": "{1}{U}",
+    "cmc": 2.0,
+    "type_line": "Creature — Human Soldier",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "The Brothers' War",
+    "released_at": "2022-11-18"
+  },
+  "Voidpouncer": {
+    "oracle_id": "bb4ebe30-2501-48aa-879a-2402a9eb1be7",
+    "mana_cost": "{1}{R}",
+    "cmc": 2.0,
+    "type_line": "Creature — Eldrazi",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Modern Horizons 3",
+    "released_at": "2024-06-14"
+  },
+  "Unexpected Windfall": {
+    "oracle_id": "498c10c9-253d-4b15-b48c-1509381b17e8",
+    "mana_cost": "{2}{R}{R}",
+    "cmc": 4.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Adventures in the Forgotten Realms",
+    "released_at": "2021-07-23"
+  },
+  "Origin of the Hidden Ones": {
+    "oracle_id": "9c8f1abb-bd08-41e0-91ed-56ff25d7f9f2",
+    "mana_cost": "{3}{R}",
+    "cmc": 4.0,
+    "type_line": "Enchantment — Saga",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Assassin's Creed",
+    "released_at": "2024-07-05"
+  },
+  "Scorched Geyser": {
+    "oracle_id": "f808b510-907a-4c3c-aea1-efb825c8e13e",
+    "mana_cost": "",
+    "cmc": 0.0,
+    "type_line": "Land — Island Mountain",
+    "color_identity": [
+      "R",
+      "U"
+    ],
+    "set_name": "Secrets of Strixhaven Commander",
+    "released_at": "2026-04-24"
+  },
+  "Wildgrowth Archaic": {
+    "oracle_id": "4469ff35-54ec-4ff5-bc19-3808ae0f711b",
+    "mana_cost": "{2/G}{2/G}",
+    "cmc": 4.0,
+    "type_line": "Creature — Avatar",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Urborg Lhurgoyf": {
+    "oracle_id": "f84d8217-51a4-49ba-9df6-d080ed38f37d",
+    "mana_cost": "{1}{G}",
+    "cmc": 2.0,
+    "type_line": "Creature — Lhurgoyf",
+    "color_identity": [
+      "B",
+      "G",
+      "U"
+    ],
+    "set_name": "Dominaria United",
+    "released_at": "2022-09-09"
+  },
+  "Hall of Gemstone": {
+    "oracle_id": "3da9fecc-064a-44e6-b88e-4b10194e367e",
+    "mana_cost": "{1}{G}{G}",
+    "cmc": 3.0,
+    "type_line": "World Enchantment",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Mirage",
+    "released_at": "1996-10-08"
+  },
+  "What Must Be Done": {
+    "oracle_id": "bd0df0a8-c2ec-4d1f-9ada-cc91f7a20e1a",
+    "mana_cost": "{3}{W}{W}",
+    "cmc": 5.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Assassin's Creed",
+    "released_at": "2024-07-05"
+  },
+  "Kozilek's Return": {
+    "oracle_id": "6caafe5a-884d-49e8-a62a-7bf609f0ce53",
+    "mana_cost": "{2}{R}",
+    "cmc": 3.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Oath of the Gatewatch",
+    "released_at": "2016-01-22"
+  },
+  "Airbender Ascension": {
+    "oracle_id": "c4d2fdf9-637d-4e97-ae33-45f2d27bf8cd",
+    "mana_cost": "{1}{W}",
+    "cmc": 2.0,
+    "type_line": "Enchantment",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Avatar: The Last Airbender",
+    "released_at": "2025-11-21"
   }
 }
