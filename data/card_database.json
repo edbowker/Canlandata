@@ -48937,5 +48937,93 @@
     ],
     "set_name": "Avatar: The Last Airbender",
     "released_at": "2025-11-21"
+  },
+  "Postmortem Professor": {
+    "oracle_id": "0859d16e-2a1f-4b48-8687-99af8a8bdb38",
+    "mana_cost": "{1}{B}",
+    "cmc": 2.0,
+    "type_line": "Creature — Zombie Warlock",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Laboratory Maniac": {
+    "oracle_id": "aa286dd5-aa19-446d-9003-684d81eb57ca",
+    "mana_cost": "{2}{U}",
+    "cmc": 3.0,
+    "type_line": "Creature — Human Wizard",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Innistrad",
+    "released_at": "2011-09-30"
+  },
+  "The Soul Stone": {
+    "oracle_id": "92cfba68-12f6-4f97-9187-0f6a39656a0f",
+    "mana_cost": "{1}{B}",
+    "cmc": 2.0,
+    "type_line": "Legendary Artifact — Infinity Stone",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Through the Omenpaths",
+    "released_at": "2025-09-23"
+  },
+  "Vicious Rivalry": {
+    "oracle_id": "90898c76-21f9-4597-88fe-dc9179911cde",
+    "mana_cost": "{2}{B}{G}",
+    "cmc": 4.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "B",
+      "G"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Pox": {
+    "oracle_id": "539d7c1a-b5e9-4204-9109-ddb2e8dec168",
+    "mana_cost": "{B}{B}{B}",
+    "cmc": 3.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Ice Age",
+    "released_at": "1995-06-03"
+  },
+  "Divining Witch": {
+    "oracle_id": "ebd77c52-97ea-421f-99eb-c6e2263cdecf",
+    "mana_cost": "{1}{B}",
+    "cmc": 2.0,
+    "type_line": "Creature — Human Spellshaper",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Nemesis",
+    "released_at": "2000-02-14"
+  },
+  "Petrified Hamlet": {
+    "oracle_id": "78a2972c-14f4-41f3-99f9-167948bdd73a",
+    "mana_cost": "",
+    "cmc": 0.0,
+    "type_line": "Land",
+    "color_identity": [],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Witherbloom Charm": {
+    "oracle_id": "ee1db746-f5c1-4dce-82eb-24b273cc9507",
+    "mana_cost": "{B}{G}",
+    "cmc": 2.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "B",
+      "G"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
   }
 }
