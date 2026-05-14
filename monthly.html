@@ -251,6 +251,9 @@
         let allMonths   = [];
         let currentIdx  = 0;
 
+        const now       = new Date();
+        const thisMonth = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}`;
+
         // ── Helpers ──────────────────────────────────────────────────────
 
         function formatMonthTitle(key) {
@@ -281,7 +284,7 @@
 
             // Stat chips
             const chips = [
-                { value: data.event_count,  delta: data.event_delta,  label: 'Events' },
+                { value: data.event_count,  delta: data.event_delta,  label: 'Reported Events' },
                 { value: data.deck_count,   delta: data.deck_delta,   label: 'Decks'           },
                 { value: data.unique_cards, delta: data.unique_delta, label: 'Unique Cards'    },
             ];
@@ -294,26 +297,32 @@
                 </div>`).join('');
 
             // Rising / Falling
-            function moverRows(list) {
-                if (!list.length) return '<div class="mover-row" style="color:#aaa;font-size:13px;">No data</div>';
-                return list.map(r => `
-                    <div class="mover-row">
-                        <span class="mover-name">${r.card}</span>
-                        <span class="mover-change">
-                            <span class="arrow ${r.delta > 0 ? 'up' : 'down'}">${r.delta > 0 ? '▲' : '▼'}</span>
-                            ${r.prev_rate.toFixed(1)}% → ${r.curr_rate.toFixed(1)}%
-                        </span>
-                    </div>`).join('');
+            const isCurrentMonth = (key === thisMonth);
+            if (isCurrentMonth) {
+                document.getElementById('moversSection').innerHTML =
+                    '<div style="grid-column:1/-1;color:#aaa;font-size:13px;padding:8px 0;">Not enough data — check back when the month is complete.</div>';
+            } else {
+                function moverRows(list) {
+                    if (!list.length) return '<div class="mover-row" style="color:#aaa;font-size:13px;">No data</div>';
+                    return list.map(r => `
+                        <div class="mover-row">
+                            <span class="mover-name">${r.card}</span>
+                            <span class="mover-change">
+                                <span class="arrow ${r.delta > 0 ? 'up' : 'down'}">${r.delta > 0 ? '▲' : '▼'}</span>
+                                ${r.prev_rate.toFixed(1)}% → ${r.curr_rate.toFixed(1)}%
+                            </span>
+                        </div>`).join('');
+                }
+                document.getElementById('moversSection').innerHTML = `
+                    <div>
+                        <div class="report-section-title">Rising</div>
+                        ${moverRows(data.rising)}
+                    </div>
+                    <div>
+                        <div class="report-section-title">Falling</div>
+                        ${moverRows(data.falling)}
+                    </div>`;
             }
-            document.getElementById('moversSection').innerHTML = `
-                <div>
-                    <div class="report-section-title">Rising</div>
-                    ${moverRows(data.rising)}
-                </div>
-                <div>
-                    <div class="report-section-title">Falling</div>
-                    ${moverRows(data.falling)}
-                </div>`;
 
             // Card Debuts
             const debuts    = data.debuts || [];
@@ -425,11 +434,12 @@
                 reportData = data;
 
                 // Limit to Jan 2024 through last complete month
-                const now       = new Date();
-                const thisMonth = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}`;
-                allMonths = Object.keys(data).sort().filter(m => m >= '2024-01' && m < thisMonth);
+                allMonths = Object.keys(data).sort().filter(m => m >= '2024-01' && m <= thisMonth);
 
-                currentIdx = allMonths.length - 1;
+                const lastComplete = allMonths.filter(m => m < thisMonth);
+                currentIdx = lastComplete.length > 0
+                    ? allMonths.indexOf(lastComplete[lastComplete.length - 1])
+                    : allMonths.length - 1;
 
                 renderMonth(currentIdx);
             })
