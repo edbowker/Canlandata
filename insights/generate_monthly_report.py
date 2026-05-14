@@ -138,6 +138,14 @@ for i, month in enumerate(all_months):
     debuts.sort(key=lambda x: x["deck_count"], reverse=True)
 
     # Event winners
+    # Compute event size: number of decks per (date, event_name) combo
+    event_size = {}
+    for d in this_decks:
+        key = (d.get("date", ""), d.get("event_name", ""))
+        event_size[key] = event_size.get(key, 0) + 1
+
+    placement_rank = {"1st": 0, "Winner": 0, "1st/2nd": 1, "Top 2": 1}
+
     winners = [
         {
             "winner_name": d.get("winner_name", ""),
@@ -147,9 +155,19 @@ for i, month in enumerate(all_months):
             "date":        d.get("date", ""),
             "id":          d.get("id", ""),
         }
-        for d in sorted(this_decks, key=lambda d: d.get("date", ""))
+        for d in this_decks
         if d.get("placement") or d.get("winner_name")
     ]
+
+    # Store event_size on each winner entry
+    for w in winners:
+        w["event_size"] = event_size.get((w["date"], w["event_name"]), 1)
+
+    winners.sort(key=lambda w: (
+        placement_rank.get(w["placement"], 99),  # 1st before 1st/2nd
+        -w["event_size"],                        # larger events first
+        w["date"],                               # chronological asc
+    ))
 
     report[month] = {
         "month":        month,
