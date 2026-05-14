@@ -1,9 +1,14 @@
 import requests
 import json
 import os
+import re
 import pandas as pd
 import time
 from pathlib import Path
+
+PATTERN = re.compile(
+    r'^(\d{4}/\d{2}/\d{2})\s+-\s+(.+?)\s+-\s+(.+?)\s+\((.+?)(?:,\s*(.+))?\)$'
+)
 
 # Pathing
 ROOT = Path(__file__).parent.parent
@@ -75,10 +80,18 @@ def main():
             cards_for_export[main[card]['card']['name']] = main[card]['quantity']
 
         # add list, name, and date to a json entry
-        output = {'name': response.json()['name'],
-                'id': deckid,
-                'date_created': response.json()['createdAtUtc'],
-                'mainboard': cards_for_export
+        deck_name = response.json()['name']
+        m = PATTERN.match(deck_name)
+        output = {
+            'name':         deck_name,
+            'id':           deckid,
+            'date_created': response.json()['createdAtUtc'],
+            'date':         m.group(1).strip() if m else "",
+            'deck_name':    m.group(2).strip() if m else "",
+            'placement':    m.group(3).strip() if m else "",
+            'event_name':   m.group(4).strip() if m else "",
+            'winner_name':  m.group(5).strip() if m and m.group(5) else "",
+            'mainboard':    cards_for_export,
         }
         data.append(output)
         print(f'Added {deckid} to decklists.json')
