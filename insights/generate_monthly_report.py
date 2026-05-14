@@ -65,7 +65,7 @@ for card, deck_ids in card_index.items():
     if months:
         card_first_month[card] = sorted(months)[0]
 
-# month -> card -> [display strings] for debut deck expansion
+# month -> card -> [{label, id}] for debut deck expansion
 month_card_decks = defaultdict(lambda: defaultdict(list))
 for deck in decklists:
     if not deck.get("date") or not deck.get("mainboard"):
@@ -75,7 +75,7 @@ for deck in decklists:
     dname   = deck.get("deck_name") or deck.get("name", "")
     label   = f"{winner} \u2013 {dname}" if winner else dname
     for card in deck["mainboard"]:
-        month_card_decks[mk][card].append(label)
+        month_card_decks[mk][card].append({"label": label, "id": deck.get("id", "")})
 
 # ── Build report ───────────────────────────────────────────────────────────
 
@@ -145,6 +145,7 @@ for i, month in enumerate(all_months):
             "deck_name":   d.get("deck_name", ""),
             "event_name":  d.get("event_name", ""),
             "date":        d.get("date", ""),
+            "id":          d.get("id", ""),
         }
         for d in sorted(this_decks, key=lambda d: d.get("date", ""))
         if d.get("placement") or d.get("winner_name")

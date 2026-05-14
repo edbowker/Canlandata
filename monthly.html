@@ -201,6 +201,13 @@
             color: #888;
         }
         .winner-deck { color: #555; font-size: 13px; }
+        .winner-deck a, .debut-deck-item a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        .winner-deck a:hover, .debut-deck-item a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -314,7 +321,12 @@
             const hidden    = debuts.slice(DEBUTS_VISIBLE);
 
             function debutRowHtml(d) {
-                const decks = d.decks.map(name => `<div class="debut-deck-item">${name}</div>`).join('');
+                const decks = d.decks.map(entry => {
+                    const url = entry.id ? `https://moxfield.com/decks/${entry.id}` : null;
+                    return url
+                        ? `<div class="debut-deck-item"><a href="${url}" target="_blank" rel="noopener">${entry.label}</a></div>`
+                        : `<div class="debut-deck-item">${entry.label}</div>`;
+                }).join('');
                 return `
                     <div class="debut-row">
                         <div class="debut-trigger">
@@ -343,7 +355,7 @@
                 return `<div class="winner-row">
                     <span class="winner-name">${w.winner_name || '—'}</span>
                     <span class="winner-place">${w.placement === 'Winner' ? '1st' : w.placement}</span>
-                    <span class="winner-deck">${w.deck_name} – ${w.date}</span>
+                    <span class="winner-deck">${w.id ? `<a href="https://moxfield.com/decks/${w.id}" target="_blank" rel="noopener">${w.deck_name}</a>` : w.deck_name} – ${w.date}</span>
                 </div>`;
             }
 
