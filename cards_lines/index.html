@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canlandata</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HGRTCQ9M9P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HGRTCQ9M9P');
+</script>
+<body>
+    <div class="container">
+        <div id="header-placeholder"></div>
+        <script src="/header.js"></script>
+
+        <div id="mainContent">
+            <div class="chart-header">
+                <h2>Card Play Rates</h2>
+                <p>Each line shows the percent of decks playing that card during that time period.
+                 <br>Create a group to show the percent of decks playing all cards in the group during that time period. </p>
+            </div>
+
+            <!-- SEARCH ROW -->
+            <div class="search-section">
+                <div class="search-and-group">
+                    <div class="search-box">
+                        <input type="text" id="cardSearch" placeholder="Search for a card..." autocomplete="off" disabled>
+                        <button class="search-clear-btn" id="searchClearBtn" onclick="clearSearchInput()" style="display:none;">×</button>
+                        <div id="autocompleteList" class="autocomplete-items"></div>
+                    </div>
+                    <button class="new-group-btn" id="newGroupBtn" onclick="openNewGroup()" disabled>+ New Group</button>
+                    <div class="chart-time-filter" id="chartTimeFilter">
+                        <div class="time-filter-group">
+                            <label>From</label>
+                            <input type="month" id="chartStartDate" onchange="updateChart()">
+                        </div>
+                        <div class="time-filter-group">
+                            <label>To</label>
+                            <input type="month" id="chartEndDate" onchange="updateChart()">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GROUP BUILDER -->
+                <div class="group-builder" id="groupBuilder">
+                    <div class="group-builder-inner">
+                        <div class="group-builder-left">
+                            <input type="text" id="gbName" placeholder="Group 1">
+                            <button id="gbCommitBtn" onclick="commitGroup()">Add Group</button>
+                            <button onclick="cancelGroup()">Cancel</button>
+                            <button class="delete-btn" id="gbDeleteBtn" onclick="deleteGroup()" style="display:none;">Remove</button>
+                        </div>
+                        <div class="group-builder-right">
+                            <div class="search-box">
+                                <input type="text" id="gbSearch" placeholder="Search for a card..." autocomplete="off">
+                                <div id="gbAutocomplete" class="autocomplete-items"></div>
+                            </div>
+                            <div class="group-chips" id="groupChips">
+                                <span class="group-empty-hint" id="groupEmpty">No cards yet</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="selected-cards" id="selectedCards"></div>
+            </div>
+
+            <div class="chart-container" id="chartContainer">
+                <div class="loading-overlay" id="loadingOverlay">Loading data...</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ---- STATE ----
+
+        let cardIndex = {};     // card name → [deck_ids]
+        let deckDates = {};     // deck_id → "YYYY-MM"
+        let deckCountMap = {};  // "YYYY-MM" → total deck count (int)
+        let allDates = [];      // sorted "YYYY-MM" strings
+        let allCardNames = [];  // sorted card name strings
+        let selected = [];      // { label, color, cards? } — cards present = group
+        let chart = null;
+        let pointsChangeMap = {};
+
+        
+        const crosshairPlugin = {
+            id: 'crosshair',
+            afterDraw(chart) {
+                if (chart._crosshairX === undefined) return;
+                const ctx = chart.ctx;
+                const yAxis = chart.scales.y;
+                ctx.save();
+                ctx.beginPath();
+                ctx.moveTo(chart._crosshairX, yAxis.top);
+                ctx.lineTo(chart._crosshairX, yAxis.bottom);
+                ctx.lineWidth = 1;
+                ctx.strokeStyle = 'rgba(0,0,0,0.3)';
+                ctx.setLineDash([4, 4]);
+                ctx.stroke();
+                ctx.restore();
+            }
+        };
+
+        // Group builder state
+        let builderCards = [];
+        let editingIdx = null;
+        let groupCounter = 1;
+        let soloColorIdx = 0;
+        let groupColorIdx = 0;
+
+        // ---- COLOR GENERATORS ----
+
+        function nextSoloColor() {
+            const hue = (120 + soloColorIdx++ * 137.5) % 360;
+            return `hsl(${hue}, 30%, 50%)`;
+        }
+
+        function nextGroupColor() {
+            const hue = (200 + groupColorIdx++ * 137.5) % 360;
+            return `hsl(${hue}, 30%, 50%)`;
+        }
+
+        // ---- DATA LOADING ----
+
+        Promise.all([
+            fetch('/data/card_index.json').then(r => r.json()),
+            fetch('/data/deck_dates.json').then(r => r.json()),
+            new Promise(resolve => {
+                Papa.parse('/data/deck_counts.csv', {
+                    download: true, header: true,
+                    complete: results => resolve(results.data.filter(r => r.year_month && r.count))
+                });
+            }),
+            new Promise(resolve => {
+                Papa.parse('/data/points_change_history.csv', {
+                    download: true, header: true,
+                    complete: results => resolve(results.data.filter(r => r.Card))
+                });
+            })
+        ]).then(([indexData, datesData, countsData, pointsData]) => {
+            cardIndex = indexData;
+            deckDates = datesData;
+
+            countsData.forEach(row => {
+                deckCountMap[row.year_month] = parseInt(row.count);
+            });
+            allDates = Object.keys(deckCountMap).sort();
+            const defaultStart = allDates.find(d => d >= '2024-01') || allDates[0];
+            const defaultEnd = allDates[allDates.length - 1];
+
+            const startInput = document.getElementById('chartStartDate');
+            const endInput = document.getElementById('chartEndDate');
+            startInput.min = allDates[0];
+            startInput.max = defaultEnd;
+            startInput.value = defaultStart;
+            endInput.min = allDates[0];
+            endInput.max = defaultEnd;
+            endInput.value = defaultEnd;
+
+            allCardNames = Object.keys(cardIndex).sort();
+
+            // Ready — remove loading state and enable UI
+            document.getElementById('loadingOverlay').remove();
+            document.getElementById('chartContainer').innerHTML = '<canvas id="playrateChart"></canvas>' + '<p class="empty-state" id="chartEmptyState">Search for a card above to get started.</p>';
+            document.getElementById('cardSearch').disabled = false;
+            document.getElementById('newGroupBtn').disabled = false;
+
+            
+            buildPointsChangeMap(pointsData);
+            initChart();
+            updateSelectedCards();
+            updateChart();
+        });
+
+        // ---- CORE DATA FUNCTIONS ----
+
+        function getIntersection(cards) {
+            if (!cards.length) return [];
+            const sets = cards.map(card => new Set(cardIndex[card] || []));
+            let result = [...(cardIndex[cards[0]] || [])];
+            for (let i = 1; i < sets.length; i++) {
+                result = result.filter(id => sets[i].has(id));
+            }
+            return result;
+        }
+
+        function buildPointsChangeMap(rows){
+            rows.forEach(row => {
+                const [month, , year] = row['Date'].split('/');
+                const yearMonth = `${year}-${month.padStart(2, '0')}`;
+                const delta = parseInt(row['New Value']) - parseInt(row['Old Value']);
+                if (!pointsChangeMap[yearMonth]) pointsChangeMap[yearMonth] = {};
+                pointsChangeMap[yearMonth][row.Card] = {
+                    old: parseInt(row['Old Value']),
+                    new: parseInt(row['New Value'])
+                };
+            });
+        }
+        
+        // ---- CHART ----
+
+        function initChart() {
+            const ctx = document.getElementById('playrateChart').getContext('2d');
+            const styles = getComputedStyle(document.documentElement);
+            const axisColor = styles.getPropertyValue('--chart-axis-color').trim();
+            const yearColor = styles.getPropertyValue('--chart-year-color').trim();
+            const fontFamily = styles.getPropertyValue('--chart-font-family').trim();
+            const fontSize = parseInt(styles.getPropertyValue('--chart-font-size'));
+            const yearFontSize = parseInt(styles.getPropertyValue('--chart-year-font-size'));
+
+            const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+            Chart.Tooltip.positioners.top = function(elements, position) {
+                return {
+                    x: position.x,
+                    y: this.chart.scales.y.top + 150
+                };
+            };
+            chart = new Chart(ctx, {
+                type: 'line',
+                data: { labels: allDates, datasets: [] },
+                plugins: [crosshairPlugin],
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false, position: 'top' },
+                        tooltip: {
+                            mode: 'index',
+                            intersect: false,
+                            itemSort: function(a, b){
+                                return b.parsed.y - a.parsed.y;
+                            },
+                            position: 'top',
+                            callbacks: {
+                                title: function(context) {
+                                    const [year, month] = context[0].label.split('-');
+                                    const date = new Date(year, month - 1);
+                                    return date.toLocaleString('default', { month: 'short' }) + ' ' + year;
+                                },
+                                label: function(context) {
+                                    const card = context.dataset.label;
+                                    const date = context.label;
+                                    const delta = pointsChangeMap[date]?.[card];
+                                    const change = pointsChangeMap[date]?.[card];
+                                    const changeNote = change !== undefined
+                                        ? `  (points ${change.old} -> ${change.new})`
+                                        : '';
+                                    return card + ': ' + context.parsed.y.toFixed(1) + '%' + changeNote;
+                                },
+                                labelColor: function(context){
+                                    return {
+                                        backgroundColor: context.dataset.borderColor,
+                                        borderColor: context.dataset.borderColor
+                                    };
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 100,
+                            ticks: {
+                                callback: v => v + '%',
+                                font: { size: fontSize, family: fontFamily },
+                                color: axisColor
+                            }
+                        },
+                        x: {
+                            type: 'category',
+                            position: 'bottom',
+                            ticks: {
+                                callback: function(value, index) {
+                                    const label = this.getLabelForValue(value);
+                                    const month = parseInt(label.split('-')[1]);
+                                    return MONTHS[month - 1];
+                                },
+                                autoSkip: true,
+                                maxRotation: 45,
+                                minRotation: 45,
+                                font: { size: fontSize, family: fontFamily },
+                                color: axisColor
+                            },
+                            grid: { display: true }
+                        },
+                        xYear: {
+                            type: 'category',
+                            position: 'bottom',
+                            offset: true,
+                            ticks: {
+                                callback: function(value, index) {
+                                    const label = this.getLabelForValue(value);
+                                    const [year, month] = label.split('-');
+                                    if (index === 0 || parseInt(month) === 1) return year;
+                                    return '';
+                                },
+                                autoSkip: false,
+                                maxRotation: 0,
+                                minRotation: 0,
+                                font: { size: yearFontSize, weight: 'bold' },
+                                color: yearColor,
+                                padding: 10
+                            },
+                            grid: { display: false, drawTicks: false }
+                        }
+                    }
+                }
+            });
+
+            const canvas = document.getElementById('playrateChart');
+
+            canvas.addEventListener('mousemove', function(e) {
+                const rect = canvas.getBoundingClientRect();
+                chart._crosshairX = e.clientX - rect.left;
+                chart.draw();
+            });
+
+            canvas.addEventListener('mouseleave', function() {
+                delete chart._crosshairX;
+                chart.draw();
+            });
+        }
+
+        function updateChart() {
+            if (!chart) return;
+
+            if (selected.length === 0) {
+                chart.data.datasets = [];
+                chart.update();
+                document.getElementById('playrateChart').style.display = 'none';
+                document.getElementById('chartEmptyState').style.display = 'block';
+                return;
+            }
+
+            document.getElementById('playrateChart').style.display = 'block';
+            document.getElementById('chartEmptyState').style.display = 'none';
+
+            const filteredDates = getChartDateRange();
+
+            chart.data.labels = filteredDates;
+            chart.data.datasets = selected.map(item => {
+                const isGroup = !!item.cards;
+                const ids = isGroup ? getIntersection(item.cards) : (cardIndex[item.label] || []);
+                const counts = {};
+                for (const id of ids) {
+                    const month = deckDates[id];
+                    if (month) counts[month] = (counts[month] || 0) + 1;
+                }
+                const data = filteredDates.map(date => {
+                    const count = counts[date] || 0;
+                    const total = deckCountMap[date] || 0;
+                    return total > 0 ? (count / total) * 100 : 0;
+                });
+
+                // Per-point styling — groups get no indicators
+                const pointRadius = filteredDates.map(date => {
+                    if (isGroup) return 0;
+                    return pointsChangeMap[date]?.[item.label] !== undefined ? 5 : 0;
+                });
+                const pointBackgroundColor = filteredDates.map(date => {
+                    if (isGroup) return 'transparent';
+                    const change = pointsChangeMap[date]?.[item.label];
+                    if (change === undefined) return 'transparent';
+                    return change.new > change.old ? '#e05c4b' : '#5bab6e';
+                });
+
+                return {
+                    label: item.label,
+                    data,
+                    borderColor: item.color,
+                    backgroundColor: item.color,
+                    borderWidth: 2,
+                    borderDash: isGroup ? [6, 3] : [],
+                    fill: false,
+                    tension: 0.3,
+                    spanGaps: true,
+                    pointRadius,
+                    pointBackgroundColor,
+                    pointBorderColor: pointBackgroundColor,   // match fill
+                    pointHoverRadius: 5,
+                    pointHitRadius: 15,
+                    hoverBorderWidth: 4
+                };
+            });
+
+            chart.update();
+        }
+        
+        function getChartDateRange() {
+            const start = document.getElementById('chartStartDate').value;
+            const end = document.getElementById('chartEndDate').value;
+            return allDates.filter(d => (!start || d >= start) && (!end || d <= end));
+        }
+       
+        // ---- CHIP UI ----
+
+        function updateSelectedCards() {
+            const container = document.getElementById('selectedCards');
+            if (!selected.length) {
+                container.innerHTML = '';
+                return;
+            }
+
+            const clearBtn = `<button class="clear-all-btn" onclick="clearAll()">Clear All</button>`;
+
+            container.innerHTML = selected.map((item, idx) => {
+                const isGroup = !!item.cards;
+                const dot = `<span class="chip-color-dot ${isGroup ? 'is-group' : ''}" style="background:${item.color};"></span>`;
+                const editHint = isGroup ? `<span class="chip-edit-hint">edit</span>` : '';
+                const clickAttr = isGroup ? `onclick="openEditGroup(${idx})"` : '';
+                const stopProp = isGroup ? `onclick="event.stopPropagation(); removeItem(${idx})"` : `onclick="removeItem(${idx})"`;
+                return `<div class="card-chip ${isGroup ? 'is-group' : ''}" style="background:${item.color};" ${clickAttr}>
+                    ${dot}
+                    ${item.label}
+                    ${editHint}
+                    <button ${stopProp}>×</button>
+                </div>`;
+            }).join('') + clearBtn;
+        }
+
+        function removeItem(idx) {
+            selected.splice(idx, 1);
+            updateSelectedCards();
+            updateChart();
+        }
+
+        function clearAll() {
+            selected = [];
+            soloColorIdx = 0;
+            groupColorIdx = 0;
+            updateSelectedCards();
+            updateChart();
+        }
+
+        function addCard(card) {
+            if (selected.some(s => s.label === card && !s.cards)) return;
+            selected.push({ label: card, color: nextSoloColor() });
+            updateSelectedCards();
+            updateChart();
+        }
+
+        // ---- GROUP BUILDER ----
+
+        function openNewGroup() {
+            editingIdx = null;
+            builderCards = [];
+            document.getElementById('gbName').value = `Group ${groupCounter}`;
+            document.getElementById('gbCommitBtn').textContent = 'Add Group';
+            document.getElementById('gbDeleteBtn').style.display = 'none';
+            document.getElementById('groupBuilder').classList.add('open');
+            renderBuilderChips();
+        }
+
+        function openEditGroup(idx) {
+            editingIdx = idx;
+            const item = selected[idx];
+            builderCards = [...item.cards];
+            document.getElementById('gbName').value = item.label;
+            document.getElementById('gbCommitBtn').textContent = 'Update';
+            document.getElementById('gbDeleteBtn').style.display = 'inline-block';
+            document.getElementById('groupBuilder').classList.add('open');
+            renderBuilderChips();
+        }
+
+        function cancelGroup() {
+            builderCards = [];
+            editingIdx = null;
+            document.getElementById('gbName').value = '';
+            document.getElementById('gbSearch').value = '';
+            document.getElementById('gbAutocomplete').innerHTML = '';
+            document.getElementById('groupBuilder').classList.remove('open');
+        }
+
+        function commitGroup() {
+            if (builderCards.length < 2) {
+                alert('Select at least 2 cards for a group.');
+                return;
+            }
+            const name = document.getElementById('gbName').value.trim() || `Group ${groupCounter}`;
+
+            if (editingIdx !== null) {
+                selected[editingIdx].label = name;
+                selected[editingIdx].cards = [...builderCards];
+            } else {
+                selected.push({ label: name, cards: [...builderCards], color: nextGroupColor() });
+                groupCounter++;
+            }
+
+            cancelGroup();
+            updateSelectedCards();
+            updateChart();
+        }
+
+        function deleteGroup() {
+            if (editingIdx !== null) selected.splice(editingIdx, 1);
+            cancelGroup();
+            updateSelectedCards();
+            updateChart();
+        }
+
+        function renderBuilderChips() {
+            const container = document.getElementById('groupChips');
+            const emptyHint = document.getElementById('groupEmpty');
+            container.querySelectorAll('.group-card-chip').forEach(el => el.remove());
+
+            if (!builderCards.length) {
+                emptyHint.style.display = '';
+                return;
+            }
+            emptyHint.style.display = 'none';
+
+            builderCards.forEach((card, i) => {
+                const chip = document.createElement('span');
+                chip.className = 'group-card-chip';
+                chip.innerHTML = `${card} <button onclick="removeBuilderCard(${i})">×</button>`;
+                container.insertBefore(chip, emptyHint);
+            });
+        }
+
+        function removeBuilderCard(i) {
+            builderCards.splice(i, 1);
+            renderBuilderChips();
+        }
+
+        function addBuilderCard(card) {
+            if (!builderCards.includes(card)) builderCards.push(card);
+            document.getElementById('gbSearch').value = '';
+            document.getElementById('gbAutocomplete').innerHTML = '';
+            renderBuilderChips();
+        }
+
+        // ---- AUTOCOMPLETE ----
+        function clearSearchInput() {
+            const input = document.getElementById('cardSearch');
+            input.value = '';
+            document.getElementById('autocompleteList').innerHTML = '';
+            document.getElementById('searchClearBtn').style.display = 'none';
+            input.focus();
+        }
+        
+        function setupAutocomplete(inputId, listId, onSelect, excludeFn) {
+            const input = document.getElementById(inputId);
+            const list = document.getElementById(listId);
+
+            input.addEventListener('input', function() {
+                const query = this.value.trim().toLowerCase();
+                list.innerHTML = '';
+                if (inputId === 'cardSearch') {
+                    document.getElementById('searchClearBtn').style.display = query ? 'block' : 'none';
+                }
+                if (!query) return;
+
+                const matches = allCardNames
+                    .filter(card => card.toLowerCase().includes(query) && !(excludeFn && excludeFn(card)))
+                    .slice(0, 50);
+
+                matches.forEach(card => {
+                    const div = document.createElement('div');
+                    div.textContent = card;
+                    div.addEventListener('click', () => onSelect(card));
+                    list.appendChild(div);
+                });
+            });
+
+            input.addEventListener('keydown', function(e) {
+                if (e.key !== 'Enter') return;
+                const query = this.value.trim().toLowerCase();
+                if (!query) return;
+                const match = allCardNames.find(c =>
+                    c.toLowerCase().includes(query) && !(excludeFn && excludeFn(c))
+                );
+                if (match) {
+                    onSelect(match);
+                    this.value = '';
+                    list.innerHTML = '';
+                    if (inputId === 'cardSearch'){
+                        document.getElementById('searchClearBtn').style.display = 'none';
+                    }
+                }
+            });
+        }
+
+        document.addEventListener('click', function(e) {
+            const search = document.getElementById('cardSearch');
+            const gbSearch = document.getElementById('gbSearch');
+            if (e.target !== search) document.getElementById('autocompleteList').innerHTML = '';
+            if (e.target !== gbSearch) document.getElementById('gbAutocomplete').innerHTML = '';
+        });
+
+        // Main search: exclude cards already added as individuals
+        setupAutocomplete('cardSearch', 'autocompleteList',
+            card => {
+                addCard(card);
+                document.getElementById('cardSearch').value = '';
+                document.getElementById('autocompleteList').innerHTML = '';
+            },
+            card => selected.some(s => s.label === card && !s.cards)
+        );
+
+        // Group builder search: no exclusions (same card can be in multiple groups)
+        setupAutocomplete('gbSearch', 'gbAutocomplete', addBuilderCard);
+    </script>
+</body>
+</html>

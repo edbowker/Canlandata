@@ -30,9 +30,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 <h1><a href="/">Canlandata</a></h1>
                 <nav>
                     <div class="nav-dropdown">
-                        <a href="/">Cards</a>
+                        <a href="/cards_table">Cards</a>
                         <div class="nav-dropdown-menu">
-                            <a href="/">Trend Lines</a>
+                            <a href="/cards_lines">Trend Lines</a>
                             <a href="/cards_table">Data Table</a>
                         </div>
                     </div>
