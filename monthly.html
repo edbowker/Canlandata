@@ -21,8 +21,9 @@
             font-weight: 600;
             color: var(--text-dark);
             letter-spacing: 0.04em;
-            min-width: 260px;
+            width: 380px;
             text-align: center;
+            white-space: nowrap;
         }
         .month-nav button {
             background: none;
@@ -112,8 +113,8 @@
 
         /* ── Rising / Falling ── */
         .mover-row {
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 200px 1fr;
             align-items: baseline;
             padding: 7px 0;
             border-bottom: 1px solid #f0f0f0;
@@ -183,7 +184,7 @@
         /* ── Event Winners ── */
         .winner-row {
             display: grid;
-            grid-template-columns: 90px 36px 1fr;
+            grid-template-columns: 130px 58px 1fr;
             align-items: baseline;
             gap: 0 8px;
             padding: 7px 0;
@@ -212,209 +213,219 @@
             <!-- Month Navigation -->
             <div class="month-nav">
                 <button id="prevMonth" title="Previous month">&#9664;</button>
-                <h2>Monthly Report — March 2026</h2>
+                <h2 id="monthTitle"></h2>
                 <button id="nextMonth" title="Next month">&#9654;</button>
             </div>
 
             <!-- Stat Chips -->
-            <div class="stat-chips">
-                <div class="stat-chip">
-                    <div class="stat-chip-value-row">
-                        <div class="stat-chip-number">37</div>
-                        <span class="stat-chip-delta up">+4</span>
-                    </div>
-                    <div class="stat-chip-label">Reported Events</div>
-                </div>
-                <div class="stat-chip">
-                    <div class="stat-chip-value-row">
-                        <div class="stat-chip-number">105</div>
-                        <span class="stat-chip-delta up">+12</span>
-                    </div>
-                    <div class="stat-chip-label">Decks</div>
-                </div>
-                <div class="stat-chip">
-                    <div class="stat-chip-value-row">
-                        <div class="stat-chip-number">312</div>
-                        <span class="stat-chip-delta down">−8</span>
-                    </div>
-                    <div class="stat-chip-label">Unique Cards</div>
-                </div>
-            </div>
+            <div class="stat-chips" id="statChips"></div>
 
             <hr class="report-divider">
 
             <!-- Rising / Falling -->
-            <div class="two-col">
-                <div>
-                    <div class="report-section-title">Rising</div>
-                    <div class="mover-row">
-                        <span class="mover-name">Sol Ring</span>
-                        <span class="mover-change"><span class="arrow up">▲</span>7% → 9%</span>
-                    </div>
-                    <div class="mover-row">
-                        <span class="mover-name">Wasteland</span>
-                        <span class="mover-change"><span class="arrow up">▲</span>10% → 12%</span>
-                    </div>
-                    <div class="mover-row">
-                        <span class="mover-name">Fire Nation Occupation</span>
-                        <span class="mover-change"><span class="arrow up">▲</span>0% → 1%</span>
-                    </div>
-                </div>
-                <div>
-                    <div class="report-section-title">Falling</div>
-                    <div class="mover-row">
-                        <span class="mover-name">Mountain</span>
-                        <span class="mover-change"><span class="arrow down">▼</span>12% → 9%</span>
-                    </div>
-                    <div class="mover-row">
-                        <span class="mover-name">Joven</span>
-                        <span class="mover-change"><span class="arrow down">▼</span>5% → 3%</span>
-                    </div>
-                    <div class="mover-row">
-                        <span class="mover-name">Mana Tithe</span>
-                        <span class="mover-change"><span class="arrow down">▼</span>8% → 6%</span>
-                    </div>
-                </div>
-            </div>
+            <div class="two-col" id="moversSection"></div>
 
             <hr class="report-divider">
 
             <!-- Card Debuts + Event Winners -->
-            <div class="two-col">
-
-                <!-- Card Debuts -->
-                <div>
-                    <div class="report-section-title">Card Debuts</div>
-
-                    <div class="debut-row">
-                        <div class="debut-trigger">
-                            <span class="debut-caret">&#9654;</span>
-                            Chub Toad
-                        </div>
-                        <div class="debut-decks">
-                            <div class="debut-deck-item">04/11/2026 – Ed's Jeskai Control</div>
-                            <div class="debut-deck-item">04/08/2026 – Casey's 5-Color Goodstuff</div>
-                        </div>
-                    </div>
-
-                    <div class="debut-row">
-                        <div class="debut-trigger">
-                            <span class="debut-caret">&#9654;</span>
-                            Mwunvoli Ooze
-                        </div>
-                        <div class="debut-decks">
-                            <div class="debut-deck-item">04/05/2026 – Dylan's Mono Green</div>
-                        </div>
-                    </div>
-
-                    <div class="debut-row">
-                        <div class="debut-trigger">
-                            <span class="debut-caret">&#9654;</span>
-                            Spectral Sailor
-                        </div>
-                        <div class="debut-decks">
-                            <div class="debut-deck-item">04/03/2026 – Nick's Tempo Blue</div>
-                            <div class="debut-deck-item">04/11/2026 – Ed's Jeskai Control</div>
-                        </div>
-                    </div>
-
-                    <div class="debut-row">
-                        <div class="debut-trigger">
-                            <span class="debut-caret">&#9654;</span>
-                            Grenzo, Dungeon Warden
-                        </div>
-                        <div class="debut-decks">
-                            <div class="debut-deck-item">04/07/2026 – Casey's Rakdos Aggro</div>
-                        </div>
-                    </div>
-
-                    <div class="debut-row">
-                        <div class="debut-trigger">
-                            <span class="debut-caret">&#9654;</span>
-                            Pyroblast
-                        </div>
-                        <div class="debut-decks">
-                            <div class="debut-deck-item">04/09/2026 – Dylan's Mono Red</div>
-                        </div>
-                    </div>
-
-                    <!-- Hidden rows (see more) -->
-                    <div id="debutExtra" style="display:none">
-                        <div class="debut-row">
-                            <div class="debut-trigger">
-                                <span class="debut-caret">&#9654;</span>
-                                Crop Rotation
-                            </div>
-                            <div class="debut-decks">
-                                <div class="debut-deck-item">04/10/2026 – Nick's Lands</div>
-                            </div>
-                        </div>
-                        <div class="debut-row">
-                            <div class="debut-trigger">
-                                <span class="debut-caret">&#9654;</span>
-                                Mana Drain
-                            </div>
-                            <div class="debut-decks">
-                                <div class="debut-deck-item">04/11/2026 – Ed's Jeskai Control</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <button class="see-more-btn" id="seeMoreBtn">Show 2 more</button>
-                </div>
-
-                <!-- Event Winners -->
-                <div>
-                    <div class="report-section-title">Event Winners</div>
-
-                    <div class="winner-row">
-                        <span class="winner-name">Ed</span>
-                        <span class="winner-place">1st</span>
-                        <span class="winner-deck">Mana Vault – 4/11/2026</span>
-                    </div>
-                    <div class="winner-row">
-                        <span class="winner-name">Casey</span>
-                        <span class="winner-place">1st</span>
-                        <span class="winner-deck">Mana Tithe – 4/11/2026</span>
-                    </div>
-                    <div class="winner-row">
-                        <span class="winner-name">Dylan</span>
-                        <span class="winner-place">1st</span>
-                        <span class="winner-deck">Mana Monkey – 4/8/2026</span>
-                    </div>
-                    <div class="winner-row">
-                        <span class="winner-name">Nick</span>
-                        <span class="winner-place">1st</span>
-                        <span class="winner-deck">Mana Drain – 4/5/2026</span>
-                    </div>
-                    <div class="winner-row">
-                        <span class="winner-name">Ed</span>
-                        <span class="winner-place">1st</span>
-                        <span class="winner-deck">Mana Vault – 4/3/2026</span>
-                    </div>
-                </div>
-
-            </div>
+            <div class="two-col" id="bottomSection"></div>
 
         </div><!-- /mainContent -->
     </div><!-- /container -->
 
     <script>
-        // Expand/collapse debut rows
-        document.querySelectorAll('.debut-trigger').forEach(trigger => {
-            trigger.addEventListener('click', () => {
-                trigger.closest('.debut-row').classList.toggle('open');
+        const WINNER_PLACEMENTS = new Set(['1st', 'Winner', '1st/2nd', 'Top 2']);
+        const DEBUTS_VISIBLE    = 10;
+        const WINNERS_VISIBLE   = 10;
+        const MONTH_NAMES       = ['January','February','March','April','May','June',
+                                   'July','August','September','October','November','December'];
+
+        let reportData  = {};
+        let allMonths   = [];
+        let currentIdx  = 0;
+
+        // ── Helpers ──────────────────────────────────────────────────────
+
+        function formatMonthTitle(key) {
+            const [y, m] = key.split('-');
+            return `Monthly Report — ${MONTH_NAMES[parseInt(m) - 1]} ${y}`;
+        }
+
+        function deltaHtml(val) {
+            if (val === null || val === undefined) return '';
+            const sign  = val > 0 ? '+' : '';
+            const cls   = val > 0 ? 'up' : val < 0 ? 'down' : 'neutral';
+            const minus = val < 0 ? '−' : '';
+            return `<span class="stat-chip-delta ${cls}">${val > 0 ? '+' : val < 0 ? '−' : '±'}${Math.abs(val)}</span>`;
+        }
+
+        // ── Render ───────────────────────────────────────────────────────
+
+        function renderMonth(idx) {
+            const key  = allMonths[idx];
+            const data = reportData[key];
+
+            // Title
+            document.getElementById('monthTitle').textContent = formatMonthTitle(key);
+
+            // Nav buttons
+            document.getElementById('prevMonth').disabled = (idx === 0);
+            document.getElementById('nextMonth').disabled = (idx === allMonths.length - 1);
+
+            // Stat chips
+            const chips = [
+                { value: data.event_count,  delta: data.event_delta,  label: 'Reported Events' },
+                { value: data.deck_count,   delta: data.deck_delta,   label: 'Decks'           },
+                { value: data.unique_cards, delta: data.unique_delta, label: 'Unique Cards'    },
+            ];
+            document.getElementById('statChips').innerHTML = chips.map(c => `
+                <div class="stat-chip">
+                    <div class="stat-chip-value-row">
+                        <div class="stat-chip-number">${c.value}</div>
+                    </div>
+                    <div class="stat-chip-label">${c.label}</div>
+                </div>`).join('');
+
+            // Rising / Falling
+            function moverRows(list) {
+                if (!list.length) return '<div class="mover-row" style="color:#aaa;font-size:13px;">No data</div>';
+                return list.map(r => `
+                    <div class="mover-row">
+                        <span class="mover-name">${r.card}</span>
+                        <span class="mover-change">
+                            <span class="arrow ${r.delta > 0 ? 'up' : 'down'}">${r.delta > 0 ? '▲' : '▼'}</span>
+                            ${r.prev_rate.toFixed(1)}% → ${r.curr_rate.toFixed(1)}%
+                        </span>
+                    </div>`).join('');
+            }
+            document.getElementById('moversSection').innerHTML = `
+                <div>
+                    <div class="report-section-title">Rising</div>
+                    ${moverRows(data.rising)}
+                </div>
+                <div>
+                    <div class="report-section-title">Falling</div>
+                    ${moverRows(data.falling)}
+                </div>`;
+
+            // Card Debuts
+            const debuts    = data.debuts || [];
+            const visible   = debuts.slice(0, DEBUTS_VISIBLE);
+            const hidden    = debuts.slice(DEBUTS_VISIBLE);
+
+            function debutRowHtml(d) {
+                const decks = d.decks.map(name => `<div class="debut-deck-item">${name}</div>`).join('');
+                return `
+                    <div class="debut-row">
+                        <div class="debut-trigger">
+                            <span class="debut-caret">&#9654;</span>
+                            ${d.card}
+                        </div>
+                        <div class="debut-decks">${decks}</div>
+                    </div>`;
+            }
+
+            let debutsHtml = visible.map(debutRowHtml).join('');
+            if (hidden.length) {
+                debutsHtml += `<div id="debutExtra" style="display:none">${hidden.map(debutRowHtml).join('')}</div>
+                    <button class="see-more-btn" id="seeMoreBtn">Show ${hidden.length} more</button>`;
+            }
+            if (!debuts.length) {
+                debutsHtml = '<div style="color:#aaa;font-size:13px;">No debuts this month</div>';
+            }
+
+            // Event Winners
+            const winners        = (data.winners || []).filter(w => WINNER_PLACEMENTS.has(w.placement));
+            const winnersVisible = winners.slice(0, WINNERS_VISIBLE);
+            const winnersHidden  = winners.slice(WINNERS_VISIBLE);
+
+            function winnerRowHtml(w) {
+                return `<div class="winner-row">
+                    <span class="winner-name">${w.winner_name || '—'}</span>
+                    <span class="winner-place">${w.placement === 'Winner' ? '1st' : w.placement}</span>
+                    <span class="winner-deck">${w.deck_name} – ${w.date}</span>
+                </div>`;
+            }
+
+            let winnersHtml = winnersVisible.map(winnerRowHtml).join('');
+            if (winnersHidden.length) {
+                winnersHtml += `<div id="winnersExtra" style="display:none">${winnersHidden.map(winnerRowHtml).join('')}</div>
+                    <button class="see-more-btn" id="seeMoreWinnersBtn">Show ${winnersHidden.length} more</button>`;
+            }
+            if (!winners.length) {
+                winnersHtml = '<div style="color:#aaa;font-size:13px;">No results recorded</div>';
+            }
+
+            document.getElementById('bottomSection').innerHTML = `
+                <div>
+                    <div class="report-section-title">Card Debuts</div>
+                    ${debutsHtml}
+                </div>
+                <div>
+                    <div class="report-section-title">Event Winners</div>
+                    ${winnersHtml}
+                </div>`;
+
+            // Wire up winners see more
+            const seeMoreWinnersBtn = document.getElementById('seeMoreWinnersBtn');
+            if (seeMoreWinnersBtn) {
+                const extra = document.getElementById('winnersExtra');
+                seeMoreWinnersBtn.addEventListener('click', () => {
+                    const isHidden = extra.style.display === 'none';
+                    extra.style.display = isHidden ? 'block' : 'none';
+                    seeMoreWinnersBtn.textContent = isHidden ? 'Show less' : `Show ${winnersHidden.length} more`;
+                });
+            }
+
+            // Wire up debut expand/collapse
+            document.querySelectorAll('.debut-trigger').forEach(trigger => {
+                trigger.addEventListener('click', () => {
+                    trigger.closest('.debut-row').classList.toggle('open');
+                });
             });
+
+            // Wire up see more
+            const seeMoreBtn = document.getElementById('seeMoreBtn');
+            if (seeMoreBtn) {
+                const extra = document.getElementById('debutExtra');
+                seeMoreBtn.addEventListener('click', () => {
+                    const isHidden = extra.style.display === 'none';
+                    extra.style.display = isHidden ? 'block' : 'none';
+                    seeMoreBtn.textContent = isHidden ? 'Show less' : `Show ${hidden.length} more`;
+                });
+            }
+        }
+
+        // ── Navigation ───────────────────────────────────────────────────
+
+        document.getElementById('prevMonth').addEventListener('click', () => {
+            if (currentIdx > 0) { currentIdx--; renderMonth(currentIdx); }
+        });
+        document.getElementById('nextMonth').addEventListener('click', () => {
+            if (currentIdx < allMonths.length - 1) { currentIdx++; renderMonth(currentIdx); }
         });
 
-        // See more
-        const seeMoreBtn = document.getElementById('seeMoreBtn');
-        const debutExtra = document.getElementById('debutExtra');
-        seeMoreBtn.addEventListener('click', () => {
-            const isHidden = debutExtra.style.display === 'none';
-            debutExtra.style.display = isHidden ? 'block' : 'none';
-            seeMoreBtn.textContent = isHidden ? 'Show less' : 'Show 2 more';
-        });
+        // ── Init ─────────────────────────────────────────────────────────
+
+        fetch('/data/monthly_report.json')
+            .then(r => r.json())
+            .then(data => {
+                reportData = data;
+
+                // Limit to Jan 2024 through last complete month
+                const now       = new Date();
+                const thisMonth = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}`;
+                allMonths = Object.keys(data).sort().filter(m => m >= '2024-01' && m < thisMonth);
+
+                currentIdx = allMonths.length - 1;
+
+                renderMonth(currentIdx);
+            })
+            .catch(err => {
+                document.getElementById('mainContent').innerHTML =
+                    '<p style="color:#c62828;padding:40px 0;">Failed to load report data.</p>';
+                console.error(err);
+            });
     </script>
 </body>
 </html>

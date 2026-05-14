@@ -3628,13 +3628,13 @@
         "delta": 50.0
       },
       {
-        "card": "Wrenn and Six",
-        "prev_rate": 12.5,
-        "curr_rate": 50.0,
+        "card": "Tarmogoyf",
+        "prev_rate": 0.0,
+        "curr_rate": 37.5,
         "delta": 37.5
       },
       {
-        "card": "Savannah",
+        "card": "Scrubland",
         "prev_rate": 0.0,
         "curr_rate": 37.5,
         "delta": 37.5
@@ -3660,15 +3660,15 @@
         "delta": -50.0
       },
       {
-        "card": "Drown in the Loch",
+        "card": "Snow-Covered Swamp",
         "prev_rate": 37.5,
         "curr_rate": 0.0,
         "delta": -37.5
       },
       {
-        "card": "Snow-Covered Island",
-        "prev_rate": 37.5,
-        "curr_rate": 0.0,
+        "card": "Otawara, Soaring City",
+        "prev_rate": 50.0,
+        "curr_rate": 12.5,
         "delta": -37.5
       }
     ],
@@ -5564,16 +5564,22 @@
     "unique_delta": -26,
     "rising": [
       {
+        "card": "Plains",
+        "prev_rate": 12.5,
+        "curr_rate": 62.5,
+        "delta": 50.0
+      },
+      {
         "card": "March of Otherworldly Light",
         "prev_rate": 0.0,
         "curr_rate": 50.0,
         "delta": 50.0
       },
       {
-        "card": "Plains",
+        "card": "Strip Mine",
         "prev_rate": 12.5,
-        "curr_rate": 62.5,
-        "delta": 50.0
+        "curr_rate": 50.0,
+        "delta": 37.5
       },
       {
         "card": "Karakas",
@@ -5586,12 +5592,6 @@
         "prev_rate": 25.0,
         "curr_rate": 62.5,
         "delta": 37.5
-      },
-      {
-        "card": "Jace, the Mind Sculptor",
-        "prev_rate": 0.0,
-        "curr_rate": 37.5,
-        "delta": 37.5
       }
     ],
     "falling": [
@@ -5602,25 +5602,25 @@
         "delta": -37.5
       },
       {
-        "card": "Ragavan, Nimble Pilferer",
-        "prev_rate": 50.0,
-        "curr_rate": 25.0,
+        "card": "Najeela, the Blade-Blossom",
+        "prev_rate": 25.0,
+        "curr_rate": 0.0,
         "delta": -25.0
       },
       {
-        "card": "Oko, Thief of Crowns",
+        "card": "Abrade",
+        "prev_rate": 25.0,
+        "curr_rate": 0.0,
+        "delta": -25.0
+      },
+      {
+        "card": "Unholy Heat",
         "prev_rate": 37.5,
         "curr_rate": 12.5,
         "delta": -25.0
       },
       {
         "card": "Blood Moon",
-        "prev_rate": 25.0,
-        "curr_rate": 0.0,
-        "delta": -25.0
-      },
-      {
-        "card": "Imperial Recruiter",
         "prev_rate": 25.0,
         "curr_rate": 0.0,
         "delta": -25.0
@@ -6589,18 +6589,6 @@
         "delta": 62.5
       },
       {
-        "card": "Abrade",
-        "prev_rate": 0.0,
-        "curr_rate": 50.0,
-        "delta": 50.0
-      },
-      {
-        "card": "Bonecrusher Giant // Stomp",
-        "prev_rate": 12.5,
-        "curr_rate": 62.5,
-        "delta": 50.0
-      },
-      {
         "card": "Unlicensed Hearse",
         "prev_rate": 0.0,
         "curr_rate": 50.0,
@@ -6611,17 +6599,35 @@
         "prev_rate": 12.5,
         "curr_rate": 62.5,
         "delta": 50.0
+      },
+      {
+        "card": "Bonecrusher Giant // Stomp",
+        "prev_rate": 12.5,
+        "curr_rate": 62.5,
+        "delta": 50.0
+      },
+      {
+        "card": "Fury",
+        "prev_rate": 12.5,
+        "curr_rate": 62.5,
+        "delta": 50.0
       }
     ],
     "falling": [
       {
-        "card": "Misty Rainforest",
-        "prev_rate": 87.5,
-        "curr_rate": 50.0,
+        "card": "Life from the Loam",
+        "prev_rate": 37.5,
+        "curr_rate": 0.0,
         "delta": -37.5
       },
       {
-        "card": "Strip Mine",
+        "card": "Crop Rotation",
+        "prev_rate": 50.0,
+        "curr_rate": 12.5,
+        "delta": -37.5
+      },
+      {
+        "card": "Opt",
         "prev_rate": 50.0,
         "curr_rate": 12.5,
         "delta": -37.5
@@ -6633,15 +6639,9 @@
         "delta": -37.5
       },
       {
-        "card": "Life from the Loam",
-        "prev_rate": 37.5,
-        "curr_rate": 0.0,
-        "delta": -37.5
-      },
-      {
-        "card": "Crop Rotation",
-        "prev_rate": 50.0,
-        "curr_rate": 12.5,
+        "card": "Misty Rainforest",
+        "prev_rate": 87.5,
+        "curr_rate": 50.0,
         "delta": -37.5
       }
     ],
@@ -7313,13 +7313,7 @@
     ],
     "falling": [
       {
-        "card": "Seasoned Pyromancer",
-        "prev_rate": 50.0,
-        "curr_rate": 0.0,
-        "delta": -50.0
-      },
-      {
-        "card": "Swamp",
+        "card": "Lurrus of the Dream-Den",
         "prev_rate": 50.0,
         "curr_rate": 0.0,
         "delta": -50.0
@@ -7331,13 +7325,19 @@
         "delta": -50.0
       },
       {
+        "card": "Seasoned Pyromancer",
+        "prev_rate": 50.0,
+        "curr_rate": 0.0,
+        "delta": -50.0
+      },
+      {
         "card": "Urza's Saga",
         "prev_rate": 50.0,
         "curr_rate": 0.0,
         "delta": -50.0
       },
       {
-        "card": "Lurrus of the Dream-Den",
+        "card": "Swamp",
         "prev_rate": 50.0,
         "curr_rate": 0.0,
         "delta": -50.0
@@ -7454,7 +7454,7 @@
         "delta": 43.8
       },
       {
-        "card": "Uro, Titan of Nature's Wrath",
+        "card": "Sevinne's Reclamation",
         "prev_rate": 0.0,
         "curr_rate": 37.5,
         "delta": 37.5
@@ -7466,7 +7466,7 @@
         "delta": 37.5
       },
       {
-        "card": "Chrome Mox",
+        "card": "Ancient Tomb",
         "prev_rate": 0.0,
         "curr_rate": 37.5,
         "delta": 37.5
@@ -8343,19 +8343,19 @@
         "delta": 43.1
       },
       {
-        "card": "Witherbloom Command",
-        "prev_rate": 0.0,
-        "curr_rate": 38.9,
-        "delta": 38.9
-      },
-      {
         "card": "Dark Confidant",
         "prev_rate": 0.0,
         "curr_rate": 38.9,
         "delta": 38.9
       },
       {
-        "card": "Overgrown Tomb",
+        "card": "Witherbloom Command",
+        "prev_rate": 0.0,
+        "curr_rate": 38.9,
+        "delta": 38.9
+      },
+      {
+        "card": "Grist, the Hunger Tide",
         "prev_rate": 6.2,
         "curr_rate": 44.4,
         "delta": 38.2
@@ -9305,13 +9305,13 @@
         "delta": 43.3
       },
       {
-        "card": "Teferi, Time Raveler",
+        "card": "Tundra",
         "prev_rate": 16.7,
         "curr_rate": 60.0,
         "delta": 43.3
       },
       {
-        "card": "Tundra",
+        "card": "Teferi, Time Raveler",
         "prev_rate": 16.7,
         "curr_rate": 60.0,
         "delta": 43.3
@@ -9337,13 +9337,13 @@
         "delta": -23.3
       },
       {
-        "card": "Liliana of the Veil",
+        "card": "Eternal Witness",
         "prev_rate": 22.2,
         "curr_rate": 0.0,
         "delta": -22.2
       },
       {
-        "card": "Lion Sash",
+        "card": "Assassin's Trophy",
         "prev_rate": 22.2,
         "curr_rate": 0.0,
         "delta": -22.2
@@ -9858,7 +9858,7 @@
         "delta": 18.6
       },
       {
-        "card": "City of Brass",
+        "card": "Sevinne's Reclamation",
         "prev_rate": 0.0,
         "curr_rate": 17.9,
         "delta": 17.9
@@ -9896,7 +9896,7 @@
         "delta": -26.4
       },
       {
-        "card": "Bloodchief's Thirst",
+        "card": "Copperline Gorge",
         "prev_rate": 40.0,
         "curr_rate": 14.3,
         "delta": -25.7
@@ -11991,15 +11991,15 @@
         "delta": 29.1
       },
       {
-        "card": "Path to Exile",
-        "prev_rate": 33.3,
-        "curr_rate": 58.3,
-        "delta": 25.0
-      },
-      {
         "card": "Spell Snare",
         "prev_rate": 25.0,
         "curr_rate": 50.0,
+        "delta": 25.0
+      },
+      {
+        "card": "Path to Exile",
+        "prev_rate": 33.3,
+        "curr_rate": 58.3,
         "delta": 25.0
       }
     ],
@@ -12011,13 +12011,13 @@
         "delta": -25.0
       },
       {
-        "card": "Ahn-Crop Crasher",
+        "card": "Demonic Tutor",
         "prev_rate": 20.8,
         "curr_rate": 0.0,
         "delta": -20.8
       },
       {
-        "card": "Demonic Tutor",
+        "card": "Ahn-Crop Crasher",
         "prev_rate": 20.8,
         "curr_rate": 0.0,
         "delta": -20.8
@@ -12606,13 +12606,13 @@
         "delta": 26.6
       },
       {
-        "card": "Demonic Tutor",
+        "card": "Blood Crypt",
         "prev_rate": 0.0,
         "curr_rate": 26.3,
         "delta": 26.3
       },
       {
-        "card": "Blood Crypt",
+        "card": "Demonic Tutor",
         "prev_rate": 0.0,
         "curr_rate": 26.3,
         "delta": 26.3
@@ -13332,13 +13332,13 @@
         "delta": 29.9
       },
       {
-        "card": "Rishadan Port",
+        "card": "Mana Crypt",
         "prev_rate": 5.3,
         "curr_rate": 33.3,
         "delta": 28.0
       },
       {
-        "card": "Mana Crypt",
+        "card": "Rishadan Port",
         "prev_rate": 5.3,
         "curr_rate": 33.3,
         "delta": 28.0
@@ -14502,15 +14502,15 @@
         "delta": 18.8
       },
       {
-        "card": "Verdant Catacombs",
-        "prev_rate": 48.0,
-        "curr_rate": 66.0,
-        "delta": 18.0
-      },
-      {
         "card": "Savannah",
         "prev_rate": 16.0,
         "curr_rate": 34.0,
+        "delta": 18.0
+      },
+      {
+        "card": "Verdant Catacombs",
+        "prev_rate": 48.0,
+        "curr_rate": 66.0,
         "delta": 18.0
       },
       {
@@ -14528,13 +14528,13 @@
         "delta": -20.0
       },
       {
-        "card": "Containment Priest",
+        "card": "Stoneforge Mystic",
         "prev_rate": 20.0,
         "curr_rate": 2.1,
         "delta": -17.9
       },
       {
-        "card": "Stoneforge Mystic",
+        "card": "Containment Priest",
         "prev_rate": 20.0,
         "curr_rate": 2.1,
         "delta": -17.9
@@ -14546,7 +14546,7 @@
         "delta": -17.1
       },
       {
-        "card": "Dryad Militant",
+        "card": "Selfless Spirit",
         "prev_rate": 16.0,
         "curr_rate": 0.0,
         "delta": -16.0
@@ -16008,13 +16008,13 @@
         "delta": 24.2
       },
       {
-        "card": "Murktide Regent",
+        "card": "Flame Slash",
         "prev_rate": 31.9,
         "curr_rate": 55.9,
         "delta": 24.0
       },
       {
-        "card": "Flame Slash",
+        "card": "Murktide Regent",
         "prev_rate": 31.9,
         "curr_rate": 55.9,
         "delta": 24.0
@@ -20551,9 +20551,9 @@
         "delta": 18.7
       },
       {
-        "card": "Fury",
-        "prev_rate": 44.4,
-        "curr_rate": 62.0,
+        "card": "Misty Rainforest",
+        "prev_rate": 70.4,
+        "curr_rate": 88.0,
         "delta": 17.6
       }
     ],
@@ -25562,13 +25562,13 @@
         "delta": 21.6
       },
       {
-        "card": "Pyrogoyf",
+        "card": "Galvanic Discharge",
         "prev_rate": 0.0,
         "curr_rate": 17.0,
         "delta": 17.0
       },
       {
-        "card": "Galvanic Discharge",
+        "card": "Pyrogoyf",
         "prev_rate": 0.0,
         "curr_rate": 17.0,
         "delta": 17.0
@@ -35182,7 +35182,7 @@
         "delta": 15.9
       },
       {
-        "card": "March of Otherworldly Light",
+        "card": "Ajani, Nacatl Pariah // Ajani, Nacatl Avenger",
         "prev_rate": 20.4,
         "curr_rate": 33.9,
         "delta": 13.5
@@ -40387,13 +40387,13 @@
         "delta": 11.9
       },
       {
-        "card": "The Wandering Emperor",
+        "card": "Voice of Victory",
         "prev_rate": 7.5,
         "curr_rate": 19.2,
         "delta": 11.7
       },
       {
-        "card": "Voice of Victory",
+        "card": "The Wandering Emperor",
         "prev_rate": 7.5,
         "curr_rate": 19.2,
         "delta": 11.7
@@ -41419,13 +41419,13 @@
         "delta": 17.4
       },
       {
-        "card": "Taiga",
+        "card": "Uro, Titan of Nature's Wrath",
         "prev_rate": 9.1,
         "curr_rate": 25.3,
         "delta": 16.2
       },
       {
-        "card": "Uro, Titan of Nature's Wrath",
+        "card": "Taiga",
         "prev_rate": 9.1,
         "curr_rate": 25.3,
         "delta": 16.2
@@ -41439,15 +41439,15 @@
     ],
     "falling": [
       {
-        "card": "Daze",
-        "prev_rate": 36.4,
-        "curr_rate": 24.1,
-        "delta": -12.3
-      },
-      {
         "card": "The Wandering Emperor",
         "prev_rate": 19.2,
         "curr_rate": 6.9,
+        "delta": -12.3
+      },
+      {
+        "card": "Daze",
+        "prev_rate": 36.4,
+        "curr_rate": 24.1,
         "delta": -12.3
       },
       {
@@ -45298,9 +45298,9 @@
         "delta": -16.0
       },
       {
-        "card": "Dauthi Voidwalker",
-        "prev_rate": 18.8,
-        "curr_rate": 5.7,
+        "card": "Fable of the Mirror-Breaker // Reflection of Kiki-Jiki",
+        "prev_rate": 38.4,
+        "curr_rate": 25.3,
         "delta": -13.1
       }
     ],
@@ -47279,13 +47279,13 @@
         "delta": -10.3
       },
       {
-        "card": "Urza's Bauble",
+        "card": "Demonic Tutor",
         "prev_rate": 14.0,
         "curr_rate": 4.3,
         "delta": -9.7
       },
       {
-        "card": "Demonic Tutor",
+        "card": "Urza's Bauble",
         "prev_rate": 14.0,
         "curr_rate": 4.3,
         "delta": -9.7
@@ -48469,13 +48469,13 @@
         "delta": -10.6
       },
       {
-        "card": "Dark Ritual",
+        "card": "Lion Sash",
         "prev_rate": 13.0,
         "curr_rate": 3.8,
         "delta": -9.2
       },
       {
-        "card": "Lion Sash",
+        "card": "Dark Ritual",
         "prev_rate": 13.0,
         "curr_rate": 3.8,
         "delta": -9.2
@@ -52651,9 +52651,9 @@
         "delta": 21.2
       },
       {
-        "card": "Birds of Paradise",
-        "prev_rate": 18.5,
-        "curr_rate": 39.4,
+        "card": "Endurance",
+        "prev_rate": 14.9,
+        "curr_rate": 35.8,
         "delta": 20.9
       }
     ],

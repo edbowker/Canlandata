@@ -164,8 +164,8 @@ for i, month in enumerate(all_months):
         "winners":      winners,
     }
 
-INSIGHT_DIR.mkdir(exist_ok=True)
-out = INSIGHT_DIR / "monthly_report.json"
+DATA_DIR.mkdir(exist_ok=True)
+out = DATA_DIR / "monthly_report.json"
 with open(out, "w", encoding="utf-8") as f:
     json.dump(report, f, ensure_ascii=False, indent=2)
 
