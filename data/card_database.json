@@ -49025,5 +49025,47 @@
     ],
     "set_name": "Secrets of Strixhaven",
     "released_at": "2026-04-24"
+  },
+  "Call to the Netherworld": {
+    "oracle_id": "a28ef7a5-4b47-4429-838b-a64a7c0701d0",
+    "mana_cost": "{B}",
+    "cmc": 1.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Time Spiral",
+    "released_at": "2006-10-06"
+  },
+  "Containment Construct": {
+    "oracle_id": "54d48e54-be4a-4a78-a778-b28e74ef7134",
+    "mana_cost": "{2}",
+    "cmc": 2.0,
+    "type_line": "Artifact Creature — Construct",
+    "color_identity": [],
+    "set_name": "Kamigawa: Neon Dynasty",
+    "released_at": "2022-02-18"
+  },
+  "Goblin Lore": {
+    "oracle_id": "d6fe945c-b561-4e35-8c8e-7dcaa2ec45ab",
+    "mana_cost": "{1}{R}",
+    "cmc": 2.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Portal Second Age",
+    "released_at": "1998-06-24"
+  },
+  "Emeritus of Conflict // Lightning Bolt": {
+    "oracle_id": "5963eef1-1022-42b1-8a0c-fc9850bfc2a3",
+    "mana_cost": "{1}{R}",
+    "cmc": 2.0,
+    "type_line": "Creature — Human Wizard // Instant",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
   }
 }
