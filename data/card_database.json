@@ -49067,5 +49067,171 @@
     ],
     "set_name": "Secrets of Strixhaven",
     "released_at": "2026-04-24"
+  },
+  "Aeve, Progenitor Ooze": {
+    "oracle_id": "44600a74-9584-488b-a342-2fccd8fa7599",
+    "mana_cost": "{2}{G}{G}{G}",
+    "cmc": 5.0,
+    "type_line": "Legendary Creature — Ooze",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Modern Horizons 2",
+    "released_at": "2021-06-18"
+  },
+  "Exhibition Tidecaller": {
+    "oracle_id": "d32c9439-4c97-412b-83cc-6d9acb48be3c",
+    "mana_cost": "{U}",
+    "cmc": 1.0,
+    "type_line": "Creature — Djinn Wizard",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "True Ancestry": {
+    "oracle_id": "26c2dd96-07e7-4294-9431-96d5aeff3761",
+    "mana_cost": "{1}{G}",
+    "cmc": 2.0,
+    "type_line": "Sorcery — Lesson",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Avatar: The Last Airbender",
+    "released_at": "2025-11-21"
+  },
+  "Contamination": {
+    "oracle_id": "4013b4c2-c9ed-4d14-90f0-97214ec1fded",
+    "mana_cost": "{2}{B}",
+    "cmc": 3.0,
+    "type_line": "Enchantment",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Urza's Saga",
+    "released_at": "1998-10-12"
+  },
+  "Mine Excavation": {
+    "oracle_id": "9bd5dc7a-11b0-48eb-bf52-2956dd3989ab",
+    "mana_cost": "{1}{W}",
+    "cmc": 2.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Shadowmoor",
+    "released_at": "2008-05-02"
+  },
+  "Not on My Watch": {
+    "oracle_id": "2d400c01-d2d0-442a-bc3d-cf106a754dab",
+    "mana_cost": "{1}{W}",
+    "cmc": 2.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Murders at Karlov Manor",
+    "released_at": "2024-02-09"
+  },
+  "Nature's Spiral": {
+    "oracle_id": "565922d6-8152-411f-8d4d-dc7c8523a49b",
+    "mana_cost": "{1}{G}",
+    "cmc": 2.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Magic 2010",
+    "released_at": "2009-07-17"
+  },
+  "Unnatural Restoration": {
+    "oracle_id": "05d1e797-bda2-4411-a546-919493768650",
+    "mana_cost": "{1}{G}",
+    "cmc": 2.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Phyrexia: All Will Be One",
+    "released_at": "2023-02-10"
+  },
+  "Whirlwind of Thought": {
+    "oracle_id": "6467cbb7-1e4e-482d-a20f-6cb9fc0f1ad1",
+    "mana_cost": "{1}{U}{R}{W}",
+    "cmc": 4.0,
+    "type_line": "Enchantment",
+    "color_identity": [
+      "R",
+      "U",
+      "W"
+    ],
+    "set_name": "Ikoria: Lair of Behemoths",
+    "released_at": "2020-04-24"
+  },
+  "Wan Shi Tong, All-Knowing": {
+    "oracle_id": "6927bd2e-cb05-487a-af86-89ede6e8dabd",
+    "mana_cost": "{3}{U}{U}",
+    "cmc": 5.0,
+    "type_line": "Legendary Creature — Bird Spirit",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Avatar: The Last Airbender Eternal",
+    "released_at": "2025-11-21"
+  },
+  "Peerless Recycling": {
+    "oracle_id": "938c03fc-8adf-4c7a-8ae1-eca8401f7a83",
+    "mana_cost": "{1}{G}",
+    "cmc": 2.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Bloomburrow",
+    "released_at": "2024-08-02"
+  },
+  "Diary of Dreams": {
+    "oracle_id": "98b43c61-4563-4a29-8cf0-fb8b34f337ce",
+    "mana_cost": "{2}",
+    "cmc": 2.0,
+    "type_line": "Artifact — Book",
+    "color_identity": [],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Moseo, Vein's New Dean": {
+    "oracle_id": "c2e2f21a-0338-44d7-96a5-5a277f0ec419",
+    "mana_cost": "{2}{B}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Bird Skeleton Warlock",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Lorehold Charm": {
+    "oracle_id": "a5729f11-6cde-4830-b882-ab4c5251c1a9",
+    "mana_cost": "{R}{W}",
+    "cmc": 2.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "R",
+      "W"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Ritual of Restoration": {
+    "oracle_id": "7cfd0320-0b1c-4ef4-8e17-600cbcbddd6f",
+    "mana_cost": "{W}",
+    "cmc": 1.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Darksteel",
+    "released_at": "2004-02-06"
   }
 }
