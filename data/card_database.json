@@ -49233,5 +49233,37 @@
     ],
     "set_name": "Darksteel",
     "released_at": "2004-02-06"
+  },
+  "Radiant Lotus": {
+    "oracle_id": "307be184-176a-40a8-944c-48aa00cfdd29",
+    "mana_cost": "{6}",
+    "cmc": 6.0,
+    "type_line": "Artifact",
+    "color_identity": [],
+    "set_name": "Aetherdrift",
+    "released_at": "2025-02-14"
+  },
+  "Extract": {
+    "oracle_id": "36e937a9-e15e-4404-bcdd-c2b0943a34ad",
+    "mana_cost": "{U}",
+    "cmc": 1.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Odyssey",
+    "released_at": "2001-10-01"
+  },
+  "Excava, the Risen Past": {
+    "oracle_id": "77216636-f76d-4c5e-b1ac-ab1844753f05",
+    "mana_cost": "{2}{R}{W}",
+    "cmc": 4.0,
+    "type_line": "Legendary Creature — Spirit Horse",
+    "color_identity": [
+      "R",
+      "W"
+    ],
+    "set_name": "Secrets of Strixhaven Commander",
+    "released_at": "2026-04-24"
   }
 }
