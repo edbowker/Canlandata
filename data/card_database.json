@@ -49265,5 +49265,71 @@
     ],
     "set_name": "Secrets of Strixhaven Commander",
     "released_at": "2026-04-24"
+  },
+  "Daydream": {
+    "oracle_id": "094c4486-6cae-4268-850e-ff0082e5ad10",
+    "mana_cost": "{W}",
+    "cmc": 1.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Fugitive Droid": {
+    "oracle_id": "c04d4fd4-e5aa-431d-824b-8bc94245f103",
+    "mana_cost": "{U}",
+    "cmc": 1.0,
+    "type_line": "Artifact Creature — Robot Scientist",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Teenage Mutant Ninja Turtles",
+    "released_at": "2026-03-06"
+  },
+  "Kismet": {
+    "oracle_id": "81fdd1c4-d43b-4f8b-8712-7c2bf45a3e0b",
+    "mana_cost": "{3}{W}",
+    "cmc": 4.0,
+    "type_line": "Enchantment",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Legends",
+    "released_at": "1994-06-01"
+  },
+  "Krang, Master Mind": {
+    "oracle_id": "52562194-4a97-40d2-aa73-7827f7834f2f",
+    "mana_cost": "{6}{U}{U}",
+    "cmc": 8.0,
+    "type_line": "Legendary Artifact Creature — Utrom Warrior",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Teenage Mutant Ninja Turtles",
+    "released_at": "2026-03-06"
+  },
+  "Sandman, Shifting Scoundrel": {
+    "oracle_id": "8b205480-b1fb-490c-b1c9-cf5cc3c5acdb",
+    "mana_cost": "{1}{G}{G}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Sand Elemental Villain",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Through the Omenpaths",
+    "released_at": "2025-09-23"
+  },
+  "Revive the Shire": {
+    "oracle_id": "67afcfef-3f0c-4823-b690-01732f28a005",
+    "mana_cost": "{1}{G}",
+    "cmc": 2.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "The Lord of the Rings: Tales of Middle-earth",
+    "released_at": "2023-06-23"
   }
 }
