@@ -49331,5 +49331,60 @@
     ],
     "set_name": "The Lord of the Rings: Tales of Middle-earth",
     "released_at": "2023-06-23"
+  },
+  "Faerie Seer": {
+    "oracle_id": "b2e65e8b-5f08-4cc2-ab1d-00f8903dbea2",
+    "mana_cost": "{U}",
+    "cmc": 1.0,
+    "type_line": "Creature — Faerie Wizard",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Modern Horizons",
+    "released_at": "2019-06-14"
+  },
+  "Thousand-Faced Shadow": {
+    "oracle_id": "98636623-bbc6-4935-a2bb-2234691eb6d8",
+    "mana_cost": "{U}",
+    "cmc": 1.0,
+    "type_line": "Creature — Human Ninja",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Kamigawa: Neon Dynasty",
+    "released_at": "2022-02-18"
+  },
+  "Lightning Axe": {
+    "oracle_id": "81b90905-fbc0-426a-a084-c3300533abb4",
+    "mana_cost": "{R}",
+    "cmc": 1.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Time Spiral",
+    "released_at": "2006-10-06"
+  },
+  "Casey Jones, Vigilante": {
+    "oracle_id": "bc163b5a-0b1a-4257-8c07-5c7d5284015f",
+    "mana_cost": "{1}{R}{R}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Human Berserker",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Teenage Mutant Ninja Turtles",
+    "released_at": "2026-03-06"
+  },
+  "Manglehorn": {
+    "oracle_id": "b67db32b-30a9-49d2-b4c2-90a9f80c36eb",
+    "mana_cost": "{2}{G}",
+    "cmc": 3.0,
+    "type_line": "Creature — Beast",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Amonkhet",
+    "released_at": "2017-04-28"
   }
 }
