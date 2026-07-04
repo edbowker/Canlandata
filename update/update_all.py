@@ -26,4 +26,3 @@ generate_insights_cards.main()
 generate_insights_colors.main()
 generate_insights_sets.main()
 generate_monthly_report.main()
-
