@@ -49386,5 +49386,349 @@
     ],
     "set_name": "Amonkhet",
     "released_at": "2017-04-28"
+  },
+  "Molten Gatekeeper": {
+    "oracle_id": "90fdfba8-f29e-44f9-91d2-7bf3c458a9c1",
+    "mana_cost": "{2}{R}",
+    "cmc": 3.0,
+    "type_line": "Artifact Creature — Golem",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Modern Horizons 3",
+    "released_at": "2024-06-14"
+  },
+  "Hawkeye, Master Marksman": {
+    "oracle_id": "6b59bb1f-f2d4-4d47-bd57-23927d588381",
+    "mana_cost": "{1}{R}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Human Archer Hero",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26"
+  },
+  "Battle Screech": {
+    "oracle_id": "e73131cd-b454-405b-9539-9d777e232b9e",
+    "mana_cost": "{2}{W}{W}",
+    "cmc": 4.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Judgment",
+    "released_at": "2002-05-27"
+  },
+  "Cerebral Vortex": {
+    "oracle_id": "c68b4003-e539-4b88-acc9-e95c100173c0",
+    "mana_cost": "{1}{U}{R}",
+    "cmc": 3.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "R",
+      "U"
+    ],
+    "set_name": "Guildpact",
+    "released_at": "2006-02-03"
+  },
+  "Fantastic Elasticity": {
+    "oracle_id": "67af9477-82b2-459e-8c09-b9a93a1d1c94",
+    "mana_cost": "{2}{U}",
+    "cmc": 3.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Marvel Super Heroes Commander",
+    "released_at": "2026-06-26"
+  },
+  "Icy Manipulator": {
+    "oracle_id": "3608f1f7-8dc5-4dd1-ae91-c830e1de9529",
+    "mana_cost": "{4}",
+    "cmc": 4.0,
+    "type_line": "Artifact",
+    "color_identity": [],
+    "set_name": "Limited Edition Alpha",
+    "released_at": "1993-08-05"
+  },
+  "Avatar's Wrath": {
+    "oracle_id": "e3431dae-969c-4896-9f9e-a80e7bec4bdf",
+    "mana_cost": "{2}{W}{W}",
+    "cmc": 4.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Avatar: The Last Airbender",
+    "released_at": "2025-11-21"
+  },
+  "Vibrant Outburst": {
+    "oracle_id": "a0cbb1ba-73b1-4418-bbe3-5d1a02007c08",
+    "mana_cost": "{U}{R}",
+    "cmc": 2.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "R",
+      "U"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "God-Pharaoh's Statue": {
+    "oracle_id": "183954d2-7b40-4c7e-adfa-d80191ab5ad6",
+    "mana_cost": "{6}",
+    "cmc": 6.0,
+    "type_line": "Legendary Artifact",
+    "color_identity": [],
+    "set_name": "War of the Spark",
+    "released_at": "2019-05-03"
+  },
+  "Parallax Tide": {
+    "oracle_id": "e36a92be-537d-4a63-858a-afaab064fbf7",
+    "mana_cost": "{2}{U}{U}",
+    "cmc": 4.0,
+    "type_line": "Enchantment",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Nemesis",
+    "released_at": "2000-02-14"
+  },
+  "Glowrider": {
+    "oracle_id": "aaf825b0-af0f-47a0-8b00-85f0614cef5d",
+    "mana_cost": "{2}{W}",
+    "cmc": 3.0,
+    "type_line": "Creature — Human Cleric",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Legions",
+    "released_at": "2003-02-03"
+  },
+  "Dinosaur Egg": {
+    "oracle_id": "ac4d5a97-6177-4eac-b0f2-cf10531ad879",
+    "mana_cost": "{1}{G}",
+    "cmc": 2.0,
+    "type_line": "Creature — Dinosaur Egg",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "The Lost Caverns of Ixalan Commander",
+    "released_at": "2023-11-17"
+  },
+  "Thunder of Unity": {
+    "oracle_id": "8419d1d5-bb0e-4a2d-bb6f-67957d035dde",
+    "mana_cost": "{R}{W}{B}",
+    "cmc": 3.0,
+    "type_line": "Enchantment — Saga",
+    "color_identity": [
+      "B",
+      "R",
+      "W"
+    ],
+    "set_name": "Tarkir: Dragonstorm",
+    "released_at": "2025-04-11"
+  },
+  "Scene of the Crime": {
+    "oracle_id": "ba11a517-1dbd-4797-9f5e-46ce0f6c77c0",
+    "mana_cost": "",
+    "cmc": 0.0,
+    "type_line": "Artifact Land — Clue",
+    "color_identity": [],
+    "set_name": "Murders at Karlov Manor",
+    "released_at": "2024-02-09"
+  },
+  "Night Nurse, Healer of Heroes": {
+    "oracle_id": "e3559565-0512-4525-addb-bf27903bcd13",
+    "mana_cost": "{1}{W}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Human Doctor Hero",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26"
+  },
+  "Wilt-Leaf Liege": {
+    "oracle_id": "2441696b-a9ba-4813-ba2e-e71f85281d05",
+    "mana_cost": "{1}{G/W}{G/W}{G/W}",
+    "cmc": 4.0,
+    "type_line": "Creature — Elf Knight",
+    "color_identity": [
+      "G",
+      "W"
+    ],
+    "set_name": "Shadowmoor",
+    "released_at": "2008-05-02"
+  },
+  "Splatter Technique": {
+    "oracle_id": "2620dcfe-8738-4f81-b23d-0c1c60cf9047",
+    "mana_cost": "{1}{U}{U}{R}{R}",
+    "cmc": 5.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "R",
+      "U"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Jennifer Walters // The Sensational She-Hulk": {
+    "oracle_id": "c867a778-97ef-4872-b890-b088b96a1281",
+    "mana_cost": "{1}{W}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Human Advisor Hero // Legendary Creature — Gamma Hero",
+    "color_identity": [
+      "G",
+      "W"
+    ],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26"
+  },
+  "Absorbing Man": {
+    "oracle_id": "ec8e310f-e871-498f-8d80-c3617c5e1433",
+    "mana_cost": "{1}{G}{U}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Human Villain",
+    "color_identity": [
+      "G",
+      "U"
+    ],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26"
+  },
+  "Black Widow, Super Spy": {
+    "oracle_id": "579f9a86-a1af-4c2a-a7e5-8fea0bd0eb61",
+    "mana_cost": "{1}{B}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Human Spy Hero",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26"
+  },
+  "Mathemagics": {
+    "oracle_id": "5f56a303-b3da-41df-a959-7823a87ee60c",
+    "mana_cost": "{X}{X}{U}{U}",
+    "cmc": 2.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Merchant of the Vale // Haggle": {
+    "oracle_id": "f88a096e-7497-4297-ab65-f18769b1cc47",
+    "mana_cost": "{2}{R}",
+    "cmc": 3.0,
+    "type_line": "Creature — Human Peasant // Instant — Adventure",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Throne of Eldraine",
+    "released_at": "2019-10-04"
+  },
+  "Cryptbreaker": {
+    "oracle_id": "16f75a65-d067-4f79-81b9-833c373cf4d2",
+    "mana_cost": "{B}",
+    "cmc": 1.0,
+    "type_line": "Creature — Zombie",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Eldritch Moon",
+    "released_at": "2016-07-22"
+  },
+  "Soured Springs": {
+    "oracle_id": "e579edd7-4f6c-4f22-a72f-0a20d7a698a2",
+    "mana_cost": "",
+    "cmc": 0.0,
+    "type_line": "Land — Desert",
+    "color_identity": [
+      "B",
+      "U"
+    ],
+    "set_name": "Outlaws of Thunder Junction",
+    "released_at": "2024-04-19"
+  },
+  "Weftstalker Ardent": {
+    "oracle_id": "926d52a5-4db1-46ce-9567-17c28bf56ae7",
+    "mana_cost": "{2}{R}",
+    "cmc": 3.0,
+    "type_line": "Creature — Drix Artificer",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Edge of Eternities",
+    "released_at": "2025-08-01"
+  },
+  "Splinter's Technique": {
+    "oracle_id": "532ee9c3-391c-44db-8ed5-a1d28fd7f876",
+    "mana_cost": "{3}{B}",
+    "cmc": 4.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Teenage Mutant Ninja Turtles",
+    "released_at": "2026-03-06"
+  },
+  "Vastlands Scavenger // Bind to Life": {
+    "oracle_id": "3a97bc8d-bd81-468e-9277-eba4fac11ee0",
+    "mana_cost": "{1}{G}{G}",
+    "cmc": 3.0,
+    "type_line": "Creature — Bear Druid // Instant",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Fleeting Spirit": {
+    "oracle_id": "bc79eb3c-33e2-4820-a59c-92a6271fd725",
+    "mana_cost": "{1}{W}",
+    "cmc": 2.0,
+    "type_line": "Creature — Spirit",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Innistrad: Crimson Vow",
+    "released_at": "2021-11-19"
+  },
+  "Shocking Sharpshooter": {
+    "oracle_id": "fbb7735f-ec91-4ed4-b735-d94a76e68a80",
+    "mana_cost": "{1}{R}",
+    "cmc": 2.0,
+    "type_line": "Creature — Human Archer",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Tarkir: Dragonstorm",
+    "released_at": "2025-04-11"
+  },
+  "Impractical Joke": {
+    "oracle_id": "c8da73ed-2834-4094-8723-a4ad75660290",
+    "mana_cost": "{R}",
+    "cmc": 1.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Tireless Tribe": {
+    "oracle_id": "5dfbcdb4-d2ad-477d-b37d-db4725410b27",
+    "mana_cost": "{W}",
+    "cmc": 1.0,
+    "type_line": "Creature — Human Nomad",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Odyssey",
+    "released_at": "2001-10-01"
   }
 }

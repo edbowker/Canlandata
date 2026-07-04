@@ -35,14 +35,16 @@ def main():
     time.sleep(1)
 
     deck_ids = []
-    for page in range(1, data['totalPages']+1):
+    totalPages = data['totalPages']
+    for page in range(1, totalPages+1):
         response = requests.get(apiurl + f'&pageNumber={page}&pagesize=100', headers=headers, timeout=360)
         data = response.json()['data']
 
         for deck in data:
             deck_ids.append(deck['publicId'])
 
-        time.sleep(1)
+        print(f'Page {page}/{totalPages} done')
+        time.sleep(2)
 
     # compare against current deck_ids in decklists.json
     with open(DATA_DIR / 'decklists.json', 'r', encoding='utf-8') as f:
