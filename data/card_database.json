@@ -49730,5 +49730,647 @@
     ],
     "set_name": "Odyssey",
     "released_at": "2001-10-01"
+  },
+  "Ravenous Robots": {
+    "oracle_id": "45873747-f2a4-4d83-9492-bfc97df7b605",
+    "mana_cost": "{1}{R}",
+    "cmc": 2.0,
+    "type_line": "Artifact Creature — Robot",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Teenage Mutant Ninja Turtles",
+    "released_at": "2026-03-06"
+  },
+  "Quandrix Charm": {
+    "oracle_id": "f43e36ea-6bf5-45bd-a4ad-cc507ae45641",
+    "mana_cost": "{G}{U}",
+    "cmc": 2.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "G",
+      "U"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Hammerhead, Maggia Boss": {
+    "oracle_id": "2ff5a5ed-d6db-4dfa-b1fd-38ad872ad30a",
+    "mana_cost": "{1}{B}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Human Rogue Villain",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Marvel Super Heroes Commander",
+    "released_at": "2026-06-26"
+  },
+  "Intermediate Chirography": {
+    "oracle_id": "6c948f71-5c86-450c-8828-df4d8deaf1dd",
+    "mana_cost": "{1}{B}",
+    "cmc": 2.0,
+    "type_line": "Enchantment — Class",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Secrets of Strixhaven Commander",
+    "released_at": "2026-04-24"
+  },
+  "The Ten Rings": {
+    "oracle_id": "a82d855c-50c8-43f2-99ba-a84fe84539c5",
+    "mana_cost": "{8}",
+    "cmc": 8.0,
+    "type_line": "Legendary Artifact",
+    "color_identity": [],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26"
+  },
+  "Semblance Anvil": {
+    "oracle_id": "bbd0c406-c995-46e0-898d-375fdbede203",
+    "mana_cost": "{3}",
+    "cmc": 3.0,
+    "type_line": "Artifact",
+    "color_identity": [],
+    "set_name": "Scars of Mirrodin",
+    "released_at": "2010-10-01"
+  },
+  "Blast-Furnace Hellkite": {
+    "oracle_id": "c13079d5-6749-43e5-a8ee-ef3af31ff679",
+    "mana_cost": "{7}{R}{R}",
+    "cmc": 9.0,
+    "type_line": "Creature — Dragon",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "The Brothers' War Commander",
+    "released_at": "2022-11-18"
+  },
+  "Loki, God of Mischief": {
+    "oracle_id": "c112852f-61d5-4b94-b864-c7d0b5333b29",
+    "mana_cost": "{1}{U}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — God Sorcerer Villain",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26"
+  },
+  "Molten-Core Maestro": {
+    "oracle_id": "485233bf-dc4b-4f31-8dfb-5054aee70c08",
+    "mana_cost": "{1}{R}",
+    "cmc": 2.0,
+    "type_line": "Creature — Goblin Bard",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "The Wondrous Wasp": {
+    "oracle_id": "5ad8963b-8091-4787-9147-20a1fe7bf0fb",
+    "mana_cost": "{1}{U}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Human Hero",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26"
+  },
+  "Arnyn, Deathbloom Botanist": {
+    "oracle_id": "3debd5c7-da3c-4130-8ed9-e156e10034b6",
+    "mana_cost": "{2}{B}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Vampire Druid",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Depthshaker Titan": {
+    "oracle_id": "23bf0648-7097-41df-a539-1d36ac42cf9c",
+    "mana_cost": "{5}{R}{R}",
+    "cmc": 7.0,
+    "type_line": "Artifact Creature — Robot",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Edge of Eternities Commander",
+    "released_at": "2025-08-01"
+  },
+  "Boil": {
+    "oracle_id": "3a51485b-31b2-4fa5-824a-a919f9d28ca8",
+    "mana_cost": "{3}{R}",
+    "cmc": 4.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Tempest",
+    "released_at": "1997-10-14"
+  },
+  "Emissary Escort": {
+    "oracle_id": "7d8b53f4-bdb5-4ba1-b6c0-f4846d8d3565",
+    "mana_cost": "{1}{U}",
+    "cmc": 2.0,
+    "type_line": "Artifact Creature — Robot Soldier",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Edge of Eternities",
+    "released_at": "2025-08-01"
+  },
+  "Matt Murdock, Justice Seeker": {
+    "oracle_id": "e64efd0d-3de3-42e2-949e-4a152d08def8",
+    "mana_cost": "{1}{W}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Human Advisor Hero",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Marvel Super Heroes Commander",
+    "released_at": "2026-06-26"
+  },
+  "Furnace Hellkite": {
+    "oracle_id": "647980b2-088c-43a4-bdc4-5865f03a4fc4",
+    "mana_cost": "{5}{R}{R}",
+    "cmc": 7.0,
+    "type_line": "Artifact Creature — Dragon",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Modern Horizons 3",
+    "released_at": "2024-06-14"
+  },
+  "Vibranium Mining Mech": {
+    "oracle_id": "1bea6d02-186e-46d8-b788-d4cc37dbb480",
+    "mana_cost": "{4}",
+    "cmc": 4.0,
+    "type_line": "Artifact — Vehicle",
+    "color_identity": [],
+    "set_name": "Marvel Super Heroes Commander",
+    "released_at": "2026-06-26"
+  },
+  "Krang, Utrom Warlord": {
+    "oracle_id": "2d56a491-b3eb-4f3e-82ab-981d3036c45d",
+    "mana_cost": "{9}",
+    "cmc": 9.0,
+    "type_line": "Legendary Artifact Creature — Utrom Robot",
+    "color_identity": [],
+    "set_name": "Teenage Mutant Ninja Turtles",
+    "released_at": "2026-03-06"
+  },
+  "Improvised Arsenal": {
+    "oracle_id": "4f02aa99-481c-4089-8f7c-cfe7eaa7dda0",
+    "mana_cost": "{1}{R}",
+    "cmc": 2.0,
+    "type_line": "Artifact — Equipment",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Teenage Mutant Ninja Turtles",
+    "released_at": "2026-03-06"
+  },
+  "Ancient Cellarspawn": {
+    "oracle_id": "b8510b34-0e5f-4639-9db1-1ba40d84b800",
+    "mana_cost": "{1}{B}{B}",
+    "cmc": 3.0,
+    "type_line": "Enchantment Creature — Horror",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Duskmourn: House of Horror Commander",
+    "released_at": "2024-09-27"
+  },
+  "Foot Chopper": {
+    "oracle_id": "1eed017a-342a-47a8-9395-890ef0bd1eb2",
+    "mana_cost": "{1}{B}",
+    "cmc": 2.0,
+    "type_line": "Artifact — Equipment",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Teenage Mutant Ninja Turtles Eternal",
+    "released_at": "2026-03-06"
+  },
+  "Okiba Reckoner Raid // Nezumi Road Captain": {
+    "oracle_id": "54257132-c67a-4c19-bada-08e7025c2929",
+    "mana_cost": "{B}",
+    "cmc": 1.0,
+    "type_line": "Enchantment — Saga // Enchantment Creature — Rat Rogue",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Kamigawa: Neon Dynasty",
+    "released_at": "2022-02-18"
+  },
+  "Nick Fury, Agent of S.H.I.E.L.D.": {
+    "oracle_id": "62916107-14c0-4516-9fed-a032b1a80e5d",
+    "mana_cost": "{W}",
+    "cmc": 1.0,
+    "type_line": "Legendary Creature — Human Spy Hero",
+    "color_identity": [
+      "B",
+      "G",
+      "R",
+      "U",
+      "W"
+    ],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26"
+  },
+  "General Thunderbolt Ross": {
+    "oracle_id": "57ffb558-3a1c-43ea-a79c-bcfacad22ca4",
+    "mana_cost": "{W}",
+    "cmc": 1.0,
+    "type_line": "Legendary Creature — Human Soldier",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Marvel Super Heroes Commander",
+    "released_at": "2026-06-26"
+  },
+  "Coin of Mastery": {
+    "oracle_id": "d78518ee-df79-48d1-b9d5-4f968b441899",
+    "mana_cost": "{4}",
+    "cmc": 4.0,
+    "type_line": "Artifact",
+    "color_identity": [],
+    "set_name": "Teenage Mutant Ninja Turtles Eternal",
+    "released_at": "2026-03-06"
+  },
+  "Rescue, Pepper Potts": {
+    "oracle_id": "54917578-9493-499e-b200-51d5cf7978ff",
+    "mana_cost": "{1}{U}",
+    "cmc": 2.0,
+    "type_line": "Legendary Artifact Creature — Human Hero",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Marvel Super Heroes Commander",
+    "released_at": "2026-06-26"
+  },
+  "The Ruinous Wrecking Crew": {
+    "oracle_id": "0ff9c0cc-4fb3-4117-9a8e-5b51f62306c4",
+    "mana_cost": "{X}{B}{R}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Human Villain",
+    "color_identity": [
+      "B",
+      "R"
+    ],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26"
+  },
+  "Galactus, Devourer of Worlds": {
+    "oracle_id": "4232995b-68c0-4514-8cde-bc62b9d1cbaa",
+    "mana_cost": "{10}",
+    "cmc": 10.0,
+    "type_line": "Legendary Creature — Elder Alien",
+    "color_identity": [],
+    "set_name": "Marvel Super Heroes Commander",
+    "released_at": "2026-06-26"
+  },
+  "Doc Ock's Tentacles": {
+    "oracle_id": "a5a18764-eb29-4bd8-a2e9-0ce55f4f6c88",
+    "mana_cost": "{1}",
+    "cmc": 1.0,
+    "type_line": "Artifact — Equipment",
+    "color_identity": [],
+    "set_name": "Through the Omenpaths",
+    "released_at": "2025-09-23"
+  },
+  "Mole Man, Moloid Master": {
+    "oracle_id": "34994475-b914-44f6-8ca1-c2747b6d5956",
+    "mana_cost": "{2}{G}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Human Villain",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26"
+  },
+  "Shuri, Wakandan Inventor": {
+    "oracle_id": "a8c047fc-20a9-4c62-b8a6-9ead56d60ad0",
+    "mana_cost": "{1}{U}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Human Artificer Hero",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26"
+  },
+  "Klaw, Master of Sound": {
+    "oracle_id": "8eaa8833-ab9e-4bd8-92de-63e195b8d912",
+    "mana_cost": "{2}{B}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Elemental Rogue Villain",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Marvel Super Heroes Commander",
+    "released_at": "2026-06-26"
+  },
+  "Agent Venom": {
+    "oracle_id": "14c356aa-178d-4c14-a88e-fbe92ee6d89f",
+    "mana_cost": "{2}{B}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Symbiote Soldier Hero",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Through the Omenpaths",
+    "released_at": "2025-09-23"
+  },
+  "Lavabrink Venturer": {
+    "oracle_id": "ea66ffa3-d084-434f-91a6-fdff49806285",
+    "mana_cost": "{2}{W}",
+    "cmc": 3.0,
+    "type_line": "Creature — Human Soldier",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Ikoria: Lair of Behemoths",
+    "released_at": "2020-04-24"
+  },
+  "Whiplash, Vengeful Engineer": {
+    "oracle_id": "00ed7aca-b3c1-4d48-acd5-b1596daeb4c3",
+    "mana_cost": "{B}",
+    "cmc": 1.0,
+    "type_line": "Legendary Creature — Human Artificer Villain",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26"
+  },
+  "Amphibian Downpour": {
+    "oracle_id": "a4280cea-386b-450d-a7e9-29c7aa58ce5a",
+    "mana_cost": "{2}{U}",
+    "cmc": 3.0,
+    "type_line": "Enchantment — Aura",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Modern Horizons 3",
+    "released_at": "2024-06-14"
+  },
+  "Continue?": {
+    "oracle_id": "175c76c8-f36c-4948-aaa8-0208eac5f0d3",
+    "mana_cost": "{1}{W}",
+    "cmc": 2.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Teenage Mutant Ninja Turtles Eternal",
+    "released_at": "2026-03-06"
+  },
+  "Ancestral Communion": {
+    "oracle_id": "a45bb088-16fd-4d91-8fd6-3c52f1c24748",
+    "mana_cost": "{1}{G}",
+    "cmc": 2.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Marvel Super Heroes Commander",
+    "released_at": "2026-06-26"
+  },
+  "Call Damage Control": {
+    "oracle_id": "49a32f34-01a9-4f25-bf38-b4d46ca67b2d",
+    "mana_cost": "{1}{G}",
+    "cmc": 2.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26"
+  },
+  "Imskir Iron-Eater": {
+    "oracle_id": "2494101a-2c6b-45d8-95fe-e62bf9a25130",
+    "mana_cost": "{6}{B}{R}",
+    "cmc": 8.0,
+    "type_line": "Legendary Creature — Demon",
+    "color_identity": [
+      "B",
+      "R"
+    ],
+    "set_name": "Modern Horizons 3",
+    "released_at": "2024-06-14"
+  },
+  "Phoenix Down": {
+    "oracle_id": "8cc7e418-cc5e-4aef-9757-874223fccd74",
+    "mana_cost": "{W}",
+    "cmc": 1.0,
+    "type_line": "Artifact",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Final Fantasy",
+    "released_at": "2025-06-13"
+  },
+  "Cloak and Dagger, Entwined": {
+    "oracle_id": "64132f93-66ac-4794-8c07-a88f9ed0e22b",
+    "mana_cost": "{1}{W}{B}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Human Hero",
+    "color_identity": [
+      "B",
+      "W"
+    ],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26"
+  },
+  "Ironheart, Clever Champion": {
+    "oracle_id": "df3d5b86-7b75-4df9-8985-7159cde12261",
+    "mana_cost": "{4}{U}",
+    "cmc": 5.0,
+    "type_line": "Legendary Artifact Creature — Human Hero",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26"
+  },
+  "Training Compound": {
+    "oracle_id": "99c70f4e-de8a-426d-99aa-17b2f87625ba",
+    "mana_cost": "",
+    "cmc": 0.0,
+    "type_line": "Land",
+    "color_identity": [
+      "G",
+      "R"
+    ],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26"
+  },
+  "Scout for Survivors": {
+    "oracle_id": "5a367c9c-9a7f-4587-aa05-c0fba46ed838",
+    "mana_cost": "{2}{W}",
+    "cmc": 3.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Edge of Eternities",
+    "released_at": "2025-08-01"
+  },
+  "Castle Doom": {
+    "oracle_id": "9bd013df-ad75-4099-940b-1765c58faf26",
+    "mana_cost": "",
+    "cmc": 0.0,
+    "type_line": "Land",
+    "color_identity": [],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26"
+  },
+  "Ancestral Anger": {
+    "oracle_id": "e0828e8d-f01f-4088-9123-6d923ddb3242",
+    "mana_cost": "{R}",
+    "cmc": 1.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Innistrad: Crimson Vow",
+    "released_at": "2021-11-19"
+  },
+  "Dreamtide Whale": {
+    "oracle_id": "ee8c0b4c-03c5-4da5-b4f1-028c845384af",
+    "mana_cost": "{2}{U}",
+    "cmc": 3.0,
+    "type_line": "Creature — Whale",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Modern Horizons 3",
+    "released_at": "2024-06-14"
+  },
+  "Iron Man Armor": {
+    "oracle_id": "958d81c2-ca09-4275-890e-3bb595317325",
+    "mana_cost": "{3}",
+    "cmc": 3.0,
+    "type_line": "Artifact — Equipment",
+    "color_identity": [],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26"
+  },
+  "Eldrazi Ravager": {
+    "oracle_id": "25a73cfc-a40d-47ea-a7b1-61c7b62a9e6c",
+    "mana_cost": "{5}{C}",
+    "cmc": 6.0,
+    "type_line": "Creature — Eldrazi",
+    "color_identity": [],
+    "set_name": "Modern Horizons 3",
+    "released_at": "2024-06-14"
+  },
+  "Vision, Spectral Synthezoid": {
+    "oracle_id": "1a44261a-2b6a-45dc-91a4-b2eb219ba6fb",
+    "mana_cost": "{6}{U}{U}",
+    "cmc": 8.0,
+    "type_line": "Legendary Artifact Creature — Robot Hero",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Marvel Super Heroes Commander",
+    "released_at": "2026-06-26"
+  },
+  "Rocket-Powered Goblin Glider": {
+    "oracle_id": "5db9121d-934a-44f1-b178-b389c6595af7",
+    "mana_cost": "{3}",
+    "cmc": 3.0,
+    "type_line": "Artifact — Equipment",
+    "color_identity": [],
+    "set_name": "Through the Omenpaths",
+    "released_at": "2025-09-23"
+  },
+  "The Mighty Thor, Jane Foster": {
+    "oracle_id": "57d02dc8-e22e-4874-9f02-490a2528a28f",
+    "mana_cost": "{1}{W}{U}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Human God Hero",
+    "color_identity": [
+      "U",
+      "W"
+    ],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26"
+  },
+  "Valkyrie Aerial Unit": {
+    "oracle_id": "1333d690-a6dc-4ef8-8c57-2ba16727c0a5",
+    "mana_cost": "{5}{U}{U}",
+    "cmc": 7.0,
+    "type_line": "Artifact Creature — Construct",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Final Fantasy",
+    "released_at": "2025-06-13"
+  },
+  "Winter Soldier, Bucky Barnes": {
+    "oracle_id": "874bbeb2-aa15-41e8-afad-122ab9b555fd",
+    "mana_cost": "{W}",
+    "cmc": 1.0,
+    "type_line": "Legendary Creature — Human Soldier Hero",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Marvel Super Heroes Commander",
+    "released_at": "2026-06-26"
+  },
+  "The Fantasticar": {
+    "oracle_id": "9b0abb58-4e2c-45dc-99b1-61a4cb79354b",
+    "mana_cost": "{3}",
+    "cmc": 3.0,
+    "type_line": "Legendary Artifact — Vehicle",
+    "color_identity": [],
+    "set_name": "Marvel Super Heroes Commander",
+    "released_at": "2026-06-26"
+  },
+  "Chrome Dome": {
+    "oracle_id": "3dc71e16-b935-4ad7-b3f7-945ac2c179a7",
+    "mana_cost": "{2}",
+    "cmc": 2.0,
+    "type_line": "Artifact Creature — Robot Ninja",
+    "color_identity": [],
+    "set_name": "Teenage Mutant Ninja Turtles",
+    "released_at": "2026-03-06"
+  },
+  "Panther Robot": {
+    "oracle_id": "89115ed5-95bf-4b81-b352-5481c3addbed",
+    "mana_cost": "{10}",
+    "cmc": 10.0,
+    "type_line": "Artifact Creature — Cat Robot",
+    "color_identity": [],
+    "set_name": "Marvel Super Heroes Commander",
+    "released_at": "2026-06-26"
+  },
+  "Agent Maria Hill": {
+    "oracle_id": "a2d90efe-80f2-4069-b135-a8bd00ccd2b0",
+    "mana_cost": "{W}",
+    "cmc": 1.0,
+    "type_line": "Legendary Creature — Human Spy Hero",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26"
+  },
+  "Hydroblast": {
+    "oracle_id": "b94c0336-2ca8-4bb1-bb1f-e9babd1826ad",
+    "mana_cost": "{U}",
+    "cmc": 1.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Ice Age",
+    "released_at": "1995-06-03"
   }
 }
