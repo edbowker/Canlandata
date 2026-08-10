@@ -50372,5 +50372,275 @@
     ],
     "set_name": "Ice Age",
     "released_at": "1995-06-03"
+  },
+  "Shang-Chi, Master of Kung Fu": {
+    "oracle_id": "700ef9c8-698b-45f7-a1fd-dec74e553224",
+    "mana_cost": "{1}{G}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Human Warrior Hero",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26"
+  },
+  "Rootwater Thief": {
+    "oracle_id": "68abaca6-a86a-46e3-b5b8-9860bb6425d2",
+    "mana_cost": "{1}{U}",
+    "cmc": 2.0,
+    "type_line": "Creature — Merfolk Rogue",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Nemesis",
+    "released_at": "2000-02-14"
+  },
+  "Namor, Atlantean King": {
+    "oracle_id": "171a0a09-4aee-466c-aebd-3b0d4c1f51b4",
+    "mana_cost": "{1}{W}{U}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Mutant Merfolk Noble",
+    "color_identity": [
+      "U",
+      "W"
+    ],
+    "set_name": "Marvel Super Heroes Commander",
+    "released_at": "2026-06-26"
+  },
+  "Riftsweeper": {
+    "oracle_id": "1ba0dce5-e767-47cc-9967-174e52bce120",
+    "mana_cost": "{1}{G}",
+    "cmc": 2.0,
+    "type_line": "Creature — Elf Shaman",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Future Sight",
+    "released_at": "2007-05-04"
+  },
+  "The Unbeatable Squirrel Girl": {
+    "oracle_id": "80312910-5d53-44f1-9982-e46dc7532abb",
+    "mana_cost": "{1}{G}{G}{G}",
+    "cmc": 4.0,
+    "type_line": "Legendary Creature — Squirrel Human Hero",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26"
+  },
+  "Gollum, Riddle Master": {
+    "oracle_id": "514b451b-814d-45fb-a2ba-8fe6f0bdad60",
+    "mana_cost": "{1}{B}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Halfling Horror",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "The Hobbit",
+    "released_at": "2026-08-14"
+  },
+  "Teferi, Timebender": {
+    "oracle_id": "761bb894-d3f9-4248-af76-1559c502e342",
+    "mana_cost": "{4}{W}{U}",
+    "cmc": 6.0,
+    "type_line": "Legendary Planeswalker — Teferi",
+    "color_identity": [
+      "U",
+      "W"
+    ],
+    "set_name": "Dominaria",
+    "released_at": "2018-04-27"
+  },
+  "Avengers Disassembled": {
+    "oracle_id": "34493cf5-7586-48ef-806d-57273b2ab034",
+    "mana_cost": "{1}{R}{R}",
+    "cmc": 3.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26"
+  },
+  "Cleansing Wildfire": {
+    "oracle_id": "993b92f4-4160-4171-9e67-90dc935030fe",
+    "mana_cost": "{1}{R}",
+    "cmc": 2.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Zendikar Rising",
+    "released_at": "2020-09-25"
+  },
+  "Enduring Vitality": {
+    "oracle_id": "3577c47e-76d3-4659-b922-31c4b74be3a0",
+    "mana_cost": "{1}{G}{G}",
+    "cmc": 3.0,
+    "type_line": "Enchantment Creature — Elk Glimmer",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Duskmourn: House of Horror",
+    "released_at": "2024-09-27"
+  },
+  "Gathering Place": {
+    "oracle_id": "36b58705-c5a5-4547-8d8b-a7c35e1f69ae",
+    "mana_cost": "",
+    "cmc": 0.0,
+    "type_line": "Land",
+    "color_identity": [
+      "G",
+      "W"
+    ],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26"
+  },
+  "Moonmist": {
+    "oracle_id": "2c306e87-e3c8-4066-9be5-570e2f2d6bad",
+    "mana_cost": "{1}{G}",
+    "cmc": 2.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Innistrad",
+    "released_at": "2011-09-30"
+  },
+  "King T'Challa // Black Panther, Hope Enduring": {
+    "oracle_id": "fe00278d-4385-4e3f-919c-12a794fd86f5",
+    "mana_cost": "{1}{W}{U}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Human Noble Hero // Legendary Creature — Human Warrior Hero",
+    "color_identity": [
+      "U",
+      "W"
+    ],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26"
+  },
+  "The Destined White Mage": {
+    "oracle_id": "c8110200-209e-423a-96b7-81a3ac32447c",
+    "mana_cost": "{2}{W}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Human Cleric",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Final Fantasy Commander",
+    "released_at": "2025-12-05"
+  },
+  "Daughter of the Deep": {
+    "oracle_id": "63e0f03f-16da-4c09-ad03-8945f660942d",
+    "mana_cost": "{1}{U}",
+    "cmc": 2.0,
+    "type_line": "Creature — Merfolk Noble",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Marvel Super Heroes Commander",
+    "released_at": "2026-06-26"
+  },
+  "Serra Ascendant": {
+    "oracle_id": "27ad3e00-6ffb-48f7-8469-8868d066d1e2",
+    "mana_cost": "{W}",
+    "cmc": 1.0,
+    "type_line": "Creature — Human Monk",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Magic 2011",
+    "released_at": "2010-07-16"
+  },
+  "Magus of the Candelabra": {
+    "oracle_id": "30e58e88-ac99-4d32-b2fe-6d6cb6288af3",
+    "mana_cost": "{G}",
+    "cmc": 1.0,
+    "type_line": "Creature — Human Wizard",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Time Spiral",
+    "released_at": "2006-10-06"
+  },
+  "Ashaya, Soul of the Wild": {
+    "oracle_id": "162572f2-1757-42e9-bd97-e6bd9a762c0e",
+    "mana_cost": "{3}{G}{G}",
+    "cmc": 5.0,
+    "type_line": "Legendary Creature — Elemental",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Zendikar Rising",
+    "released_at": "2020-09-25"
+  },
+  "Rhovanion Rampager": {
+    "oracle_id": "008a11c1-d283-49fe-abd7-ff4fe8b1fe79",
+    "mana_cost": "{2}{B}",
+    "cmc": 3.0,
+    "type_line": "Creature — Wolf",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "The Hobbit",
+    "released_at": "2026-08-14"
+  },
+  "Gleaming Bastion": {
+    "oracle_id": "7785ffd4-f169-475d-9558-ce4877b3378a",
+    "mana_cost": "",
+    "cmc": 0.0,
+    "type_line": "Land",
+    "color_identity": [
+      "U",
+      "W"
+    ],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26"
+  },
+  "Sygg, River Cutthroat": {
+    "oracle_id": "cd4db500-0017-46c6-be94-1bf48f686b6a",
+    "mana_cost": "{U/B}{U/B}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Merfolk Rogue",
+    "color_identity": [
+      "B",
+      "U"
+    ],
+    "set_name": "Shadowmoor",
+    "released_at": "2008-05-02"
+  },
+  "Herd Migration": {
+    "oracle_id": "dfdc0eab-309b-4441-a94c-930c6dde4c48",
+    "mana_cost": "{6}{G}",
+    "cmc": 7.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Dominaria United",
+    "released_at": "2022-09-09"
+  },
+  "Tigra, Feline Fury": {
+    "oracle_id": "39d993be-30ad-4756-a494-fd8808d474c9",
+    "mana_cost": "{1}{G}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Cat Human Hero",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26"
+  },
+  "Namor the Sub-Mariner": {
+    "oracle_id": "dff11626-ad4d-443a-b7db-f508790b5fd2",
+    "mana_cost": "{1}{U}{U}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Mutant Merfolk Villain",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26"
   }
 }
