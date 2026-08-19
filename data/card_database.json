@@ -50642,5 +50642,319 @@
     ],
     "set_name": "Marvel Super Heroes",
     "released_at": "2026-06-26"
+  },
+  "Hit-Monkey": {
+    "oracle_id": "e27d1993-8d83-449d-8a64-8b66086db995",
+    "mana_cost": "{3}{G}",
+    "cmc": 4.0,
+    "type_line": "Legendary Creature — Monkey Assassin",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Marvel Super Heroes Commander",
+    "released_at": "2026-06-26"
+  },
+  "Sandbender Scavengers": {
+    "oracle_id": "0feacc7c-b93e-4322-bc8b-b3c19006128e",
+    "mana_cost": "{W}{B}",
+    "cmc": 2.0,
+    "type_line": "Creature — Human Rogue",
+    "color_identity": [
+      "B",
+      "W"
+    ],
+    "set_name": "Avatar: The Last Airbender",
+    "released_at": "2025-11-21"
+  },
+  "Special Move": {
+    "oracle_id": "7564afbb-b29e-4234-a3b2-3354c6f5c90a",
+    "mana_cost": "{2}{R}",
+    "cmc": 3.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Teenage Mutant Ninja Turtles Eternal",
+    "released_at": "2026-03-06"
+  },
+  "Nesting Bot": {
+    "oracle_id": "7ffb8c2e-1737-4df3-b310-384a5000bfa5",
+    "mana_cost": "{W}",
+    "cmc": 1.0,
+    "type_line": "Artifact Creature — Robot",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Aetherdrift",
+    "released_at": "2025-02-14"
+  },
+  "Royal Talon Fighter Jet": {
+    "oracle_id": "d6f36172-d3ef-49e9-a55f-ce2983bb2439",
+    "mana_cost": "{X}{W}{W}",
+    "cmc": 2.0,
+    "type_line": "Artifact — Vehicle",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Marvel Super Heroes Commander",
+    "released_at": "2026-06-26"
+  },
+  "Political Triumph": {
+    "oracle_id": "0bbceb51-1fb8-44d7-8afc-b4746d292262",
+    "mana_cost": "{W}",
+    "cmc": 1.0,
+    "type_line": "Enchantment — Plan",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26"
+  },
+  "Bard, Heir of Girion": {
+    "oracle_id": "b0e88bd6-50a3-48d7-a15f-ec51f6bced0d",
+    "mana_cost": "{2}{W}{U}",
+    "cmc": 4.0,
+    "type_line": "Legendary Creature — Human Archer",
+    "color_identity": [
+      "U",
+      "W"
+    ],
+    "set_name": "The Hobbit Eternal",
+    "released_at": "2026-08-14"
+  },
+  "Splinter & Leo, Father & Son": {
+    "oracle_id": "c01095ba-b9c9-44e0-97d1-35cc47c4ed04",
+    "mana_cost": "{2}{W}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Mutant Ninja Rat Turtle",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Teenage Mutant Ninja Turtles Eternal",
+    "released_at": "2026-03-06"
+  },
+  "Tempt with Discovery": {
+    "oracle_id": "4baa6145-216e-476b-b178-aaaa1e633701",
+    "mana_cost": "{3}{G}",
+    "cmc": 4.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Commander 2013",
+    "released_at": "2013-11-01"
+  },
+  "Belladonna Took": {
+    "oracle_id": "011da9c5-aa8a-4fa0-b1f2-62b9f3760476",
+    "mana_cost": "{1}{W}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Halfling Citizen",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "The Hobbit",
+    "released_at": "2026-08-14"
+  },
+  "Bilbo, Thief in the Night": {
+    "oracle_id": "72a9a85d-7cfc-4b3c-82db-9d35be6c0982",
+    "mana_cost": "{1}{U}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Halfling Rogue",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "The Hobbit",
+    "released_at": "2026-08-14"
+  },
+  "The Legend of Kuruk // Avatar Kuruk": {
+    "oracle_id": "201b8936-18f4-4881-a1d4-c308cf3832bf",
+    "mana_cost": "{2}{U}{U}",
+    "cmc": 4.0,
+    "type_line": "Enchantment — Saga // Legendary Creature — Avatar",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Avatar: The Last Airbender",
+    "released_at": "2025-11-21"
+  },
+  "Scheming Silvertongue // Sign in Blood": {
+    "oracle_id": "44443716-8356-40cd-a879-35264b29108c",
+    "mana_cost": "{1}{B}",
+    "cmc": 2.0,
+    "type_line": "Creature — Vampire Warlock // Sorcery",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Not of This World": {
+    "oracle_id": "5da5d8a3-009e-4d8a-977e-6ebc73ba2682",
+    "mana_cost": "{7}",
+    "cmc": 7.0,
+    "type_line": "Kindred Instant — Eldrazi",
+    "color_identity": [],
+    "set_name": "Rise of the Eldrazi",
+    "released_at": "2010-04-23"
+  },
+  "Hellcat, Undying Vigilante": {
+    "oracle_id": "4c27ba61-6812-4dd7-8efc-65435a8df7b5",
+    "mana_cost": "{G}{G}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Human Hero",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26"
+  },
+  "The Serpent Society": {
+    "oracle_id": "3688ad0d-653b-4d5d-a57e-444db679d83e",
+    "mana_cost": "{1}{B}{G}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Human Snake Villain",
+    "color_identity": [
+      "B",
+      "G"
+    ],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26"
+  },
+  "Lizard, Connors's Curse": {
+    "oracle_id": "48d1b217-b068-468c-bc6c-4bef9e44cc6e",
+    "mana_cost": "{2}{G}{G}",
+    "cmc": 4.0,
+    "type_line": "Legendary Creature — Lizard Villain",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Through the Omenpaths",
+    "released_at": "2025-09-23"
+  },
+  "Bard's Company": {
+    "oracle_id": "5c5bfbb2-0e63-4e43-b441-c4878983288f",
+    "mana_cost": "{2}{W}{U}",
+    "cmc": 4.0,
+    "type_line": "Creature — Human Citizen",
+    "color_identity": [
+      "U",
+      "W"
+    ],
+    "set_name": "The Hobbit",
+    "released_at": "2026-08-14"
+  },
+  "Daredevil, Fearless Fighter": {
+    "oracle_id": "9436a736-9139-4d8a-9eb0-9dbf706da51c",
+    "mana_cost": "{2}{R}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Human Hero",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Marvel Super Heroes Commander",
+    "released_at": "2026-06-26"
+  },
+  "Sabotender": {
+    "oracle_id": "65385311-1158-4e94-892a-683997706ca8",
+    "mana_cost": "{1}{R}",
+    "cmc": 2.0,
+    "type_line": "Creature — Plant",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Final Fantasy",
+    "released_at": "2025-06-13"
+  },
+  "Sauron, Dino Devotee": {
+    "oracle_id": "f5295bfe-7e73-44ad-9cfd-200e31c5d52b",
+    "mana_cost": "{3}{G}{G}",
+    "cmc": 5.0,
+    "type_line": "Legendary Creature — Dinosaur Vampire Villain",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Marvel Super Heroes Commander",
+    "released_at": "2026-06-26"
+  },
+  "Sanar, Unfinished Genius // Wild Idea": {
+    "oracle_id": "a8c44bd9-6470-47d7-934f-77c76a44a984",
+    "mana_cost": "{U}{R}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Goblin Sorcerer // Sorcery",
+    "color_identity": [
+      "R",
+      "U"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Gert and Old Lace, Runaways": {
+    "oracle_id": "aaded61e-32c2-4e02-8557-3f8cd927a64e",
+    "mana_cost": "{2}{R/G}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Human Dinosaur Hero",
+    "color_identity": [
+      "G",
+      "R"
+    ],
+    "set_name": "Marvel Super Heroes Commander",
+    "released_at": "2026-06-26"
+  },
+  "Skirsdag High Priest": {
+    "oracle_id": "c6064c08-e4e0-49f4-9f0b-55cdecf443af",
+    "mana_cost": "{1}{B}",
+    "cmc": 2.0,
+    "type_line": "Creature — Human Cleric",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Innistrad",
+    "released_at": "2011-09-30"
+  },
+  "Riddles in the Dark": {
+    "oracle_id": "78bed291-0ec7-466f-bc7a-9dae7d0b56ae",
+    "mana_cost": "{2}{U}",
+    "cmc": 3.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "The Hobbit",
+    "released_at": "2026-08-14"
+  },
+  "Deceptive Landscape": {
+    "oracle_id": "1831fe12-dbe0-437f-8fc8-f01bbb701fe1",
+    "mana_cost": "",
+    "cmc": 0.0,
+    "type_line": "Land",
+    "color_identity": [
+      "B",
+      "G",
+      "W"
+    ],
+    "set_name": "Modern Horizons 3",
+    "released_at": "2024-06-14"
+  },
+  "Sejiri Steppe": {
+    "oracle_id": "3dfbf95e-a91b-429c-96e2-95ac777e7027",
+    "mana_cost": "",
+    "cmc": 0.0,
+    "type_line": "Land",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Worldwake",
+    "released_at": "2010-02-05"
+  },
+  "Desperate Measures": {
+    "oracle_id": "f1f3df1c-5c51-445a-b66d-eee4aab23691",
+    "mana_cost": "{B}",
+    "cmc": 1.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Tarkir: Dragonstorm",
+    "released_at": "2025-04-11"
   }
 }

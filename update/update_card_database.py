@@ -140,3 +140,4 @@ def main():
 
     return len(missing_cards)
 
+main()
