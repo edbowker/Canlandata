@@ -50956,5 +50956,349 @@
     ],
     "set_name": "Tarkir: Dragonstorm",
     "released_at": "2025-04-11"
+  },
+  "Aviary Mechanic": {
+    "oracle_id": "b47d37ee-2bb2-4ca8-b245-94d2cc4b6684",
+    "mana_cost": "{1}{W}",
+    "cmc": 2.0,
+    "type_line": "Creature — Dwarf Artificer",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Kaladesh",
+    "released_at": "2016-09-30"
+  },
+  "Stormcatch Mentor": {
+    "oracle_id": "b2252471-01ca-4d58-aa99-4ab0aa5eae12",
+    "mana_cost": "{U}{R}",
+    "cmc": 2.0,
+    "type_line": "Creature — Otter Wizard",
+    "color_identity": [
+      "R",
+      "U"
+    ],
+    "set_name": "Bloomburrow",
+    "released_at": "2024-08-02"
+  },
+  "Curie, Emergent Intelligence": {
+    "oracle_id": "48cf6b88-6bca-49d4-9951-36d98befa588",
+    "mana_cost": "{1}{U}",
+    "cmc": 2.0,
+    "type_line": "Legendary Artifact Creature — Robot",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Fallout",
+    "released_at": "2024-03-08"
+  },
+  "The Queen of Dale": {
+    "oracle_id": "a2ec1dd0-86c7-423d-b562-ed95b79bf8f7",
+    "mana_cost": "{1}{W}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Human Noble",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "The Hobbit",
+    "released_at": "2026-08-14"
+  },
+  "Narset's Reversal": {
+    "oracle_id": "d55f6c70-321f-4fb4-bd33-0850ae1a7c36",
+    "mana_cost": "{U}{U}",
+    "cmc": 2.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "War of the Spark",
+    "released_at": "2019-05-03"
+  },
+  "This Town Ain't Big Enough": {
+    "oracle_id": "2550c2ae-834d-46e7-9ab4-d7bf7bfa6a78",
+    "mana_cost": "{4}{U}",
+    "cmc": 5.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Outlaws of Thunder Junction",
+    "released_at": "2024-04-19"
+  },
+  "Mjölnir, Hammer of Thor": {
+    "oracle_id": "7f9a8845-d760-44a7-a4c9-8a20dba4e14a",
+    "mana_cost": "{3}{R}",
+    "cmc": 4.0,
+    "type_line": "Legendary Artifact — Equipment",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26"
+  },
+  "Abstract Paintmage": {
+    "oracle_id": "bc899d5c-0a91-4f19-a3e4-3078ae966110",
+    "mana_cost": "{U}{U/R}{R}",
+    "cmc": 3.0,
+    "type_line": "Creature — Djinn Sorcerer",
+    "color_identity": [
+      "R",
+      "U"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Glider Staff": {
+    "oracle_id": "823006a8-098c-457a-8546-77ae2457c459",
+    "mana_cost": "{2}{W}",
+    "cmc": 3.0,
+    "type_line": "Artifact — Equipment",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Avatar: The Last Airbender",
+    "released_at": "2025-11-21"
+  },
+  "Sunpearl Kirin": {
+    "oracle_id": "f17b9356-a329-4f89-b690-afc2eaff4977",
+    "mana_cost": "{1}{W}",
+    "cmc": 2.0,
+    "type_line": "Creature — Kirin",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Tarkir: Dragonstorm",
+    "released_at": "2025-04-11"
+  },
+  "Twin Blades": {
+    "oracle_id": "88b076a4-46ff-4a41-95a5-2821f4d8944d",
+    "mana_cost": "{2}{R}",
+    "cmc": 3.0,
+    "type_line": "Artifact — Equipment",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Avatar: The Last Airbender",
+    "released_at": "2025-11-21"
+  },
+  "Ashling, Rekindled // Ashling, Rimebound": {
+    "oracle_id": "31fc5d8b-94bc-4688-8a84-f15800e717a8",
+    "mana_cost": "{1}{R}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Elemental Sorcerer // Legendary Creature — Elemental Wizard",
+    "color_identity": [
+      "R",
+      "U"
+    ],
+    "set_name": "Lorwyn Eclipsed",
+    "released_at": "2026-01-23"
+  },
+  "Fear of Isolation": {
+    "oracle_id": "0ee28549-5909-4372-8376-34010b7b6654",
+    "mana_cost": "{1}{U}",
+    "cmc": 2.0,
+    "type_line": "Enchantment Creature — Nightmare",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Duskmourn: House of Horror",
+    "released_at": "2024-09-27"
+  },
+  "Okoye, Mighty and Adored": {
+    "oracle_id": "8fbfc5b1-2146-4d07-a5fe-5f025da31bd6",
+    "mana_cost": "{2}{G}{W}",
+    "cmc": 4.0,
+    "type_line": "Legendary Creature — Human Warrior Hero",
+    "color_identity": [
+      "G",
+      "W"
+    ],
+    "set_name": "Marvel Super Heroes Commander",
+    "released_at": "2026-06-26"
+  },
+  "Split Decision": {
+    "oracle_id": "5f725d51-e133-488c-9ca9-1c7b0523b5bd",
+    "mana_cost": "{1}{U}",
+    "cmc": 2.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Conspiracy",
+    "released_at": "2014-06-06"
+  },
+  "Adaptive Omnitool": {
+    "oracle_id": "e91240bc-4a13-4131-9379-5ddac6555f4a",
+    "mana_cost": "{2}",
+    "cmc": 2.0,
+    "type_line": "Artifact — Equipment",
+    "color_identity": [],
+    "set_name": "Aetherdrift Commander",
+    "released_at": "2025-02-14"
+  },
+  "Gandalf, Goblins' Bane // Flameshape": {
+    "oracle_id": "f48f2a9b-4ba5-4984-8180-3950889bba65",
+    "mana_cost": "{2}{R}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Avatar Wizard // Sorcery — Adventure",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "The Hobbit",
+    "released_at": "2026-08-14"
+  },
+  "Rescuer Chwinga": {
+    "oracle_id": "be1f0d72-14b5-41be-a37a-7abeb52ec0e5",
+    "mana_cost": "{1}{W}",
+    "cmc": 2.0,
+    "type_line": "Creature — Elemental Spirit",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Commander Legends: Battle for Baldur's Gate",
+    "released_at": "2022-06-10"
+  },
+  "Galvanic Iteration": {
+    "oracle_id": "c51ed6e3-813b-49c4-b1de-7f92a77f8f6e",
+    "mana_cost": "{U}{R}",
+    "cmc": 2.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "R",
+      "U"
+    ],
+    "set_name": "Innistrad: Midnight Hunt",
+    "released_at": "2021-09-24"
+  },
+  "Raubahn, Bull of Ala Mhigo": {
+    "oracle_id": "d81d5749-ab4d-42c5-8903-0b400f10fe33",
+    "mana_cost": "{1}{R}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Human Warrior",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Final Fantasy",
+    "released_at": "2025-06-13"
+  },
+  "Procrastinate": {
+    "oracle_id": "6f8fa68e-e961-4ae1-b27d-22d87e90f26b",
+    "mana_cost": "{X}{U}",
+    "cmc": 1.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24"
+  },
+  "Voracious Tome-Skimmer": {
+    "oracle_id": "25b0876e-c995-486e-8536-6e68b76b9c86",
+    "mana_cost": "{U/B}{U/B}{U/B}",
+    "cmc": 3.0,
+    "type_line": "Creature — Faerie Rogue",
+    "color_identity": [
+      "B",
+      "U"
+    ],
+    "set_name": "Lorwyn Eclipsed",
+    "released_at": "2026-01-23"
+  },
+  "Azog, Moria's Ruin": {
+    "oracle_id": "a8b018a7-0350-4ee0-9582-8d391018bdee",
+    "mana_cost": "{2}{B}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Goblin Soldier",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "The Hobbit",
+    "released_at": "2026-08-14"
+  },
+  "Shepherd of the Flock // Usher to Safety": {
+    "oracle_id": "6d611800-5b0e-40ca-82a2-5b294a1ebf6d",
+    "mana_cost": "{1}{W}",
+    "cmc": 2.0,
+    "type_line": "Creature — Human Peasant // Instant — Adventure",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Throne of Eldraine",
+    "released_at": "2019-10-04"
+  },
+  "Unscrupulous Agent": {
+    "oracle_id": "3e7879d5-62ea-4c9a-9fc0-659d70f3a8e1",
+    "mana_cost": "{1}{B}",
+    "cmc": 2.0,
+    "type_line": "Creature — Elf Detective",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Murders at Karlov Manor",
+    "released_at": "2024-02-09"
+  },
+  "Ral, Storm Conduit": {
+    "oracle_id": "b7da26c9-78a6-41c5-a5ef-6555e8274d7a",
+    "mana_cost": "{2}{U}{R}",
+    "cmc": 4.0,
+    "type_line": "Legendary Planeswalker — Ral",
+    "color_identity": [
+      "R",
+      "U"
+    ],
+    "set_name": "War of the Spark",
+    "released_at": "2019-05-03"
+  },
+  "Utrom Monitor": {
+    "oracle_id": "976e1fe6-ac32-4ea9-9828-acd3c4791e01",
+    "mana_cost": "{4}{U}",
+    "cmc": 5.0,
+    "type_line": "Artifact Creature — Utrom Scientist",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Teenage Mutant Ninja Turtles Eternal",
+    "released_at": "2026-03-06"
+  },
+  "Walk the Aeons": {
+    "oracle_id": "0ec36301-6282-49d4-85ea-6a46708e2f60",
+    "mana_cost": "{4}{U}{U}",
+    "cmc": 6.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Time Spiral",
+    "released_at": "2006-10-06"
+  },
+  "Tower of the Magistrate": {
+    "oracle_id": "ac08fae8-208c-4602-8d39-9bfd29b53a5e",
+    "mana_cost": "",
+    "cmc": 0.0,
+    "type_line": "Land",
+    "color_identity": [],
+    "set_name": "Mercadian Masques",
+    "released_at": "1999-10-04"
+  },
+  "Primaris Eliminator": {
+    "oracle_id": "7d679591-f8ea-4c4c-ab98-7b9e3438cf57",
+    "mana_cost": "{4}{B}",
+    "cmc": 5.0,
+    "type_line": "Creature — Astartes Warrior",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Warhammer 40,000 Commander",
+    "released_at": "2022-10-07"
+  },
+  "Stony Silence": {
+    "oracle_id": "12c63a45-7eb2-4262-b571-3358182f5610",
+    "mana_cost": "{1}{W}",
+    "cmc": 2.0,
+    "type_line": "Enchantment",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Innistrad",
+    "released_at": "2011-09-30"
   }
 }
