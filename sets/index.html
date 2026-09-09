@@ -96,15 +96,24 @@
     <script>
         let data = [];
         let dataTable = null;
+        let cardDb = {};   // card name → { image_url, ... }
 
-        Papa.parse('/data/set_apps.csv', {
-            download: true,
-            header: true,
-            complete: function(results) {
-                data = results.data.filter(row => row['mm-yy'] && row.card_name && row.set);
-                populateTimeFilter();
-                initTable();
-            }
+        Promise.all([
+            fetch('/data/card_database.json').then(r => r.json()),
+            new Promise(resolve => {
+                Papa.parse('/data/set_apps.csv', {
+                    download: true,
+                    header: true,
+                    complete: results => resolve(
+                        results.data.filter(row => row['mm-yy'] && row.card_name && row.set)
+                    )
+                });
+            })
+        ]).then(([dbData, rows]) => {
+            cardDb = dbData;
+            data = rows;
+            populateTimeFilter();
+            initTable();
         });
 
         // ---- TIME FILTER ----
@@ -175,9 +184,15 @@
                 .sort((a, b) => b.plays - a.plays);
         }
 
+        // Wrap a card name so card-hover.js (loaded via header.js) shows its image.
+        function cardNameHtml(name) {
+            const url = cardDb[name] && cardDb[name].image_url;
+            return url ? `<span data-img="${url}">${name}</span>` : name;
+        }
+
         function buildChildHTML(cards) {
             const rows = cards.map(c =>
-                `<tr><td>${c.card}</td><td>${c.plays}</td></tr>`
+                `<tr><td>${cardNameHtml(c.card)}</td><td>${c.plays}</td></tr>`
             ).join('');
             return `
                 <div class="child-wrapper">

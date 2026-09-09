@@ -91,6 +91,7 @@
         let selected = [];      // { label, color, cards? } — cards present = group
         let chart = null;
         let pointsChangeMap = {};
+        let cardDb = {};        // card name → { image_url, ... }
 
         
         const crosshairPlugin = {
@@ -146,10 +147,12 @@
                     download: true, header: true,
                     complete: results => resolve(results.data.filter(r => r.Card))
                 });
-            })
-        ]).then(([indexData, datesData, countsData, pointsData]) => {
+            }),
+            fetch('/data/card_database.json').then(r => r.json())
+        ]).then(([indexData, datesData, countsData, pointsData, dbData]) => {
             cardIndex = indexData;
             deckDates = datesData;
+            cardDb = dbData;
 
             countsData.forEach(row => {
                 deckCountMap[row.year_month] = parseInt(row.count);
@@ -404,6 +407,12 @@
        
         // ---- CHIP UI ----
 
+        // Wrap a card name so card-hover.js (loaded via header.js) shows its image.
+        function cardNameHtml(name) {
+            const url = cardDb[name] && cardDb[name].image_url;
+            return url ? `<span data-img="${url}">${name}</span>` : name;
+        }
+
         function updateSelectedCards() {
             const container = document.getElementById('selectedCards');
             if (!selected.length) {
@@ -421,7 +430,7 @@
                 const stopProp = isGroup ? `onclick="event.stopPropagation(); removeItem(${idx})"` : `onclick="removeItem(${idx})"`;
                 return `<div class="card-chip ${isGroup ? 'is-group' : ''}" style="background:${item.color};" ${clickAttr}>
                     ${dot}
-                    ${item.label}
+                    ${isGroup ? item.label : cardNameHtml(item.label)}
                     ${editHint}
                     <button ${stopProp}>×</button>
                 </div>`;
@@ -522,7 +531,7 @@
             builderCards.forEach((card, i) => {
                 const chip = document.createElement('span');
                 chip.className = 'group-card-chip';
-                chip.innerHTML = `${card} <button onclick="removeBuilderCard(${i})">×</button>`;
+                chip.innerHTML = `${cardNameHtml(card)} <button onclick="removeBuilderCard(${i})">×</button>`;
                 container.insertBefore(chip, emptyHint);
             });
         }
@@ -566,7 +575,7 @@
 
                 matches.forEach(card => {
                     const div = document.createElement('div');
-                    div.textContent = card;
+                    div.innerHTML = cardNameHtml(card);
                     div.addEventListener('click', () => onSelect(card));
                     list.appendChild(div);
                 });

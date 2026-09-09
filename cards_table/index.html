@@ -102,7 +102,7 @@
                 const flags = {};
                 CARD_TYPES.forEach(type => { flags[type] = typeLine.includes(type); });
                 const releaseMonth = card.released_at ? card.released_at.slice(0, 7) : null;
-                cardDatabase[name] = { ...flags, releaseMonth };
+                cardDatabase[name] = { ...flags, releaseMonth, imageUrl: card.image_url };
             });
 
             populateTimeFilter();
@@ -243,6 +243,13 @@
             dataTable = new DataTable('#statsTable', {
                 order: [[2, 'desc']],
                 columnDefs: [{
+                    targets: 0,
+                    render: function(data, type) {
+                        if (type !== 'display') return data;
+                        const url = cardDatabase[data]?.imageUrl;
+                        return url ? `<span data-img="${url}">${data}</span>` : data;
+                    }
+                }, {
                     targets: 2,
                     render: function(data) { return data + '%'; }
                 }]

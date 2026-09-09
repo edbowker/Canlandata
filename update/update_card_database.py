@@ -3,6 +3,18 @@ import json
 import time
 from pathlib import Path
 
+
+# Normal-size image lives on the card, or on the first face for multi-faced cards
+def get_image_url(data):
+    image_uris = data.get('image_uris')
+    if image_uris and image_uris.get('normal'):
+        return image_uris['normal']
+    for face in data.get('card_faces', []):
+        face_uris = face.get('image_uris')
+        if face_uris and face_uris.get('normal'):
+            return face_uris['normal']
+    return None
+
 # Pathing
 ROOT = Path(__file__).parent.parent
 DATA_DIR = ROOT / "data"
@@ -108,11 +120,12 @@ def main():
                             card_db[card]['set_name'] = data['set_name']
 
                     card_db[card]['released_at'] = data['released_at']
+                    card_db[card]['image_url'] = get_image_url(data)
 
                     # Save after every 100 cards
                     if i % 100 == 0:
-                        with open(db_path, 'w') as f:
-                            json.dump(card_db, f, indent=2)
+                        with open(db_path, 'w', encoding='utf-8') as f:
+                            json.dump(card_db, f, indent=2, ensure_ascii=False)
                         print(f'Saved progress after {i} cards')
                 
                 except KeyError as e:

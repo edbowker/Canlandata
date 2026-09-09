@@ -248,6 +248,7 @@
                                    'July','August','September','October','November','December'];
 
         let reportData  = {};
+        let cardDb      = {};
         let allMonths   = [];
         let currentIdx  = 0;
 
@@ -259,6 +260,12 @@
         function formatMonthTitle(key) {
             const [y, m] = key.split('-');
             return `${MONTH_NAMES[parseInt(m) - 1]} ${y}`;
+        }
+
+        // Wrap a card name so card-hover.js (loaded via header.js) shows its image.
+        function cardNameHtml(name) {
+            const url = cardDb[name] && cardDb[name].image_url;
+            return url ? `<span data-img="${url}">${name}</span>` : name;
         }
 
         function deltaHtml(val) {
@@ -306,7 +313,7 @@
                     if (!list.length) return '<div class="mover-row" style="color:#aaa;font-size:13px;">No data</div>';
                     return list.map(r => `
                         <div class="mover-row">
-                            <span class="mover-name">${r.card}</span>
+                            <span class="mover-name">${cardNameHtml(r.card)}</span>
                             <span class="mover-change">
                                 <span class="arrow ${r.delta > 0 ? 'up' : 'down'}">${r.delta > 0 ? '▲' : '▼'}</span>
                                 ${r.prev_rate.toFixed(1)}% → ${r.curr_rate.toFixed(1)}%
@@ -340,7 +347,7 @@
                     <div class="debut-row">
                         <div class="debut-trigger">
                             <span class="debut-caret">&#9654;</span>
-                            ${d.card}
+                            ${cardNameHtml(d.card)}
                         </div>
                         <div class="debut-decks">${decks}</div>
                     </div>`;
@@ -428,10 +435,13 @@
 
         // ── Init ─────────────────────────────────────────────────────────
 
-        fetch('/data/monthly_report.json')
-            .then(r => r.json())
-            .then(data => {
+        Promise.all([
+            fetch('/data/monthly_report.json').then(r => r.json()),
+            fetch('/data/card_database.json').then(r => r.json())
+        ])
+            .then(([data, dbData]) => {
                 reportData = data;
+                cardDb = dbData;
 
                 // Limit to Jan 2024 through last complete month
                 allMonths = Object.keys(data).sort().filter(m => m >= '2024-01' && m <= thisMonth);

@@ -44,4 +44,11 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
     `;
     document.getElementById('header-placeholder').innerHTML = header;
+
+    // Shared card-image hover preview — loaded here so every page gets it for free.
+    if (!document.querySelector('script[src="/card-hover.js"]')) {
+        const cardHover = document.createElement('script');
+        cardHover.src = '/card-hover.js';
+        document.body.appendChild(cardHover);
+    }
 });
