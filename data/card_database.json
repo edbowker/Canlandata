@@ -55937,5 +55937,191 @@
     "set_name": "Innistrad",
     "released_at": "2011-09-30",
     "image_url": "https://cards.scryfall.io/normal/front/8/e/8e7faede-f794-4bda-9d64-21390ba19266.jpg?1783936674"
+  },
+  "Helm of Obedience": {
+    "oracle_id": "16cadebf-c484-41f8-9e38-5c2c528f5b54",
+    "mana_cost": "{4}",
+    "cmc": 4.0,
+    "type_line": "Artifact",
+    "color_identity": [],
+    "set_name": "Alliances",
+    "released_at": "1996-06-10",
+    "image_url": "https://cards.scryfall.io/normal/front/b/1/b17e9216-b1ed-4101-a04e-2bb139ccfa55.jpg?1783947163"
+  },
+  "Confusticate and Bebother": {
+    "oracle_id": "7a7d9887-3cc4-4fb9-9109-1315903ace45",
+    "mana_cost": "{2}{U}",
+    "cmc": 3.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "The Hobbit",
+    "released_at": "2026-08-14",
+    "image_url": "https://cards.scryfall.io/normal/front/9/d/9de48690-e5ae-495a-addf-305f1db7ec21.jpg?1785496428"
+  },
+  "Omen of the Dead": {
+    "oracle_id": "0aa9ee99-69a8-452b-a0d5-001384bdff3c",
+    "mana_cost": "{B}",
+    "cmc": 1.0,
+    "type_line": "Enchantment",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Theros Beyond Death",
+    "released_at": "2020-01-24",
+    "image_url": "https://cards.scryfall.io/normal/front/8/0/8023fc44-fb8e-420d-a68c-b45912c4e5bd.jpg?1783931561"
+  },
+  "Bejeweled Warg": {
+    "oracle_id": "051ff7e0-dd00-4467-8796-a5d1c21934ed",
+    "mana_cost": "{1}{G}",
+    "cmc": 2.0,
+    "type_line": "Creature — Wolf",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "The Hobbit",
+    "released_at": "2026-08-14",
+    "image_url": "https://cards.scryfall.io/normal/front/e/9/e95eba5c-e0d6-46b4-a0be-8e373b2185ea.jpg?1785496330"
+  },
+  "Batroc the Leaper": {
+    "oracle_id": "ebbea7a7-c990-43fa-8f67-a5da17fbbb10",
+    "mana_cost": "{1}{R}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Human Villain",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Marvel Super Heroes Commander",
+    "released_at": "2026-06-26",
+    "image_url": "https://cards.scryfall.io/normal/front/e/3/e34e33ea-042e-409c-b304-52644ec5b1f5.jpg?1783903286"
+  },
+  "Summon: Brynhildr": {
+    "oracle_id": "bab5e9ce-6d55-4d1e-a9ac-c2b954191be9",
+    "mana_cost": "{1}{R}",
+    "cmc": 2.0,
+    "type_line": "Enchantment Creature — Saga Knight",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Final Fantasy",
+    "released_at": "2025-06-13",
+    "image_url": "https://cards.scryfall.io/normal/front/8/a/8ab5429a-1075-49aa-9608-0610080fbf7a.jpg?1784182953"
+  },
+  "Smokestack": {
+    "oracle_id": "fda61506-ed79-47fd-badd-639185297913",
+    "mana_cost": "{4}",
+    "cmc": 4.0,
+    "type_line": "Artifact",
+    "color_identity": [],
+    "set_name": "Urza's Saga",
+    "released_at": "1998-10-12",
+    "image_url": "https://cards.scryfall.io/normal/front/6/a/6a37ab2d-094f-431e-878f-93aef0360413.jpg?1783946302"
+  },
+  "Sand Scout": {
+    "oracle_id": "ca9f9017-c952-4e89-b284-02396e6be0af",
+    "mana_cost": "{1}{W}",
+    "cmc": 2.0,
+    "type_line": "Creature — Human Scout",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Outlaws of Thunder Junction Commander",
+    "released_at": "2024-04-19",
+    "image_url": "https://cards.scryfall.io/normal/front/e/6/e63ba7e6-87a9-49ef-bddc-60543edfd726.jpg?1783911971"
+  },
+  "Jaya Ballard, Task Mage": {
+    "oracle_id": "cbbad3da-695e-4527-9678-0942f3751287",
+    "mana_cost": "{1}{R}{R}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Human Spellshaper",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Time Spiral",
+    "released_at": "2006-10-06",
+    "image_url": "https://cards.scryfall.io/normal/front/a/1/a1f85b2a-7836-4058-87a5-859c4311a7e4.jpg?1783943219"
+  },
+  "Mephitic Draught": {
+    "oracle_id": "05da6b06-fb5f-41e8-b0a2-d949646e36d9",
+    "mana_cost": "{1}{B}",
+    "cmc": 2.0,
+    "type_line": "Artifact",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "The Lost Caverns of Ixalan",
+    "released_at": "2023-11-17",
+    "image_url": "https://cards.scryfall.io/normal/front/a/d/adcae196-dbcc-44d5-b700-c57b0b646483.jpg?1783913775"
+  },
+  "Mindbreak Trap": {
+    "oracle_id": "48712d36-5c13-4ded-87a4-68106da4a5cd",
+    "mana_cost": "{2}{U}{U}",
+    "cmc": 4.0,
+    "type_line": "Instant — Trap",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Zendikar",
+    "released_at": "2009-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/4/f/4f51140b-6254-431a-8810-94307bfdfbbe.jpg?1783942162"
+  },
+  "Aetherling": {
+    "oracle_id": "b980bf11-9e12-4ee9-83c1-45706d9ae344",
+    "mana_cost": "{4}{U}{U}",
+    "cmc": 6.0,
+    "type_line": "Creature — Shapeshifter",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Dragon's Maze",
+    "released_at": "2013-05-03",
+    "image_url": "https://cards.scryfall.io/normal/front/9/c/9c93313b-cf43-47e9-a911-717b4d14b0b5.jpg?1783940042"
+  },
+  "Kimoyo Beads": {
+    "oracle_id": "c7bdbf7a-8054-4e91-bb32-84f47e98553c",
+    "mana_cost": "{4}",
+    "cmc": 4.0,
+    "type_line": "Artifact",
+    "color_identity": [],
+    "set_name": "Marvel Super Heroes Commander",
+    "released_at": "2026-06-26",
+    "image_url": "https://cards.scryfall.io/normal/front/1/1/1138096a-0d7c-461b-af83-3c90f681722d.jpg?1783903258"
+  },
+  "The Mind Stone": {
+    "oracle_id": "b175e826-09e8-4fae-9f2e-b902f95b282d",
+    "mana_cost": "{1}{W}",
+    "cmc": 2.0,
+    "type_line": "Legendary Artifact — Infinity Stone",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26",
+    "image_url": "https://cards.scryfall.io/normal/front/8/7/87f1e69a-6d74-4982-afda-82613637799a.jpg?1783902972"
+  },
+  "The Eagles Are Coming!": {
+    "oracle_id": "169a4a77-12ff-4997-9550-bdcd456aa2f7",
+    "mana_cost": "{1}{W}",
+    "cmc": 2.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "The Hobbit",
+    "released_at": "2026-08-14",
+    "image_url": "https://cards.scryfall.io/normal/front/0/b/0bda1b62-47fc-42c2-a841-ccad8ea0db48.jpg?1784376936"
+  },
+  "Ragged Short Spear": {
+    "oracle_id": "bb67d0a4-864e-4f46-8538-fdd920bf0197",
+    "mana_cost": "{1}{R}",
+    "cmc": 2.0,
+    "type_line": "Artifact — Equipment",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "The Hobbit",
+    "released_at": "2026-08-14",
+    "image_url": "https://cards.scryfall.io/normal/front/7/b/7bf81a8b-52ad-49f5-a3d4-22613cad3a3d.jpg?1785497128"
   }
 }
