@@ -56123,5 +56123,161 @@
     "set_name": "The Hobbit",
     "released_at": "2026-08-14",
     "image_url": "https://cards.scryfall.io/normal/front/7/b/7bf81a8b-52ad-49f5-a3d4-22613cad3a3d.jpg?1785497128"
+  },
+  "Flare of Cultivation": {
+    "oracle_id": "1766f1f4-0924-4436-8379-94030adcccc5",
+    "mana_cost": "{1}{G}{G}",
+    "cmc": 3.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Modern Horizons 3",
+    "released_at": "2024-06-14",
+    "image_url": "https://cards.scryfall.io/normal/front/b/d/bda2fa87-81c0-41ac-8831-556ce392c058.jpg?1783911261"
+  },
+  "Mutagen Man, Living Ooze": {
+    "oracle_id": "472d9a18-19a0-46c0-a4bf-328ebec7ce41",
+    "mana_cost": "{X}{G}{G}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Ooze Mutant",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Teenage Mutant Ninja Turtles",
+    "released_at": "2026-03-06",
+    "image_url": "https://cards.scryfall.io/normal/front/9/f/9f9085f0-3702-462c-8c81-b4576236792d.jpg?1783904085"
+  },
+  "The Sackville-Bagginses": {
+    "oracle_id": "e3a665f9-6e51-4e0d-923b-e9552d5978a4",
+    "mana_cost": "{1}{B}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Halfling Citizen",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "The Hobbit",
+    "released_at": "2026-08-14",
+    "image_url": "https://cards.scryfall.io/normal/front/e/d/ed87b471-79f9-45ec-9188-69e970f6121e.jpg?1784894871"
+  },
+  "Meltstrider's Resolve": {
+    "oracle_id": "6f9bc0c6-1792-4771-a839-95a22d9c699a",
+    "mana_cost": "{G}",
+    "cmc": 1.0,
+    "type_line": "Enchantment — Aura",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Edge of Eternities",
+    "released_at": "2025-08-01",
+    "image_url": "https://cards.scryfall.io/normal/front/5/3/53c08af4-b975-4d9d-baba-73e6727f2778.jpg?1783905933"
+  },
+  "Giant's Boulder": {
+    "oracle_id": "80433c2c-5196-42e0-b9fa-d7b12783f5fd",
+    "mana_cost": "{1}",
+    "cmc": 1.0,
+    "type_line": "Artifact",
+    "color_identity": [],
+    "set_name": "The Hobbit",
+    "released_at": "2026-08-14",
+    "image_url": "https://cards.scryfall.io/normal/front/c/e/ce254758-c928-4b43-a952-13fac1845668.jpg?1785497186"
+  },
+  "Blightning": {
+    "oracle_id": "a6496440-dc0c-4d9b-bf37-f537b6f0187b",
+    "mana_cost": "{1}{B}{R}",
+    "cmc": 3.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "B",
+      "R"
+    ],
+    "set_name": "Shards of Alara",
+    "released_at": "2008-10-03",
+    "image_url": "https://cards.scryfall.io/normal/front/3/c/3c05e8a2-b7d0-4f24-b2ae-8e4db30e5842.jpg?1783942548"
+  },
+  "Cultivate": {
+    "oracle_id": "8b755881-a72d-4e21-a369-d2924eb4585a",
+    "mana_cost": "{2}{G}",
+    "cmc": 3.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Magic 2011",
+    "released_at": "2010-07-16",
+    "image_url": "https://cards.scryfall.io/normal/front/2/e/2ef3dbe4-5c03-4be4-ab48-45b6689b6712.jpg?1783941799"
+  },
+  "Sunlance": {
+    "oracle_id": "3c8cc7e2-7bff-46e0-bb5b-1e721a56a3ef",
+    "mana_cost": "{W}",
+    "cmc": 1.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Planar Chaos",
+    "released_at": "2007-02-02",
+    "image_url": "https://cards.scryfall.io/normal/front/4/6/46144ca5-aa81-4314-a1e5-1716f8565d70.jpg?1783943164"
+  },
+  "Slumbering Trudge": {
+    "oracle_id": "d04bce9a-822b-4a52-8826-b503ef5f5b2e",
+    "mana_cost": "{X}{G}",
+    "cmc": 1.0,
+    "type_line": "Creature — Plant Beast",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24",
+    "image_url": "https://cards.scryfall.io/normal/front/3/a/3a925370-58ac-4181-9acc-db7b0e0abf17.jpg?1783903653"
+  },
+  "Primal Surge": {
+    "oracle_id": "44b12ccc-81cb-4ec1-891e-4bf706e53aa4",
+    "mana_cost": "{8}{G}{G}",
+    "cmc": 10.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Avacyn Restored",
+    "released_at": "2012-05-04",
+    "image_url": "https://cards.scryfall.io/normal/front/4/2/4278f7bd-afff-4a1d-a0bb-bf9ce3ad5a2e.jpg?1783940663"
+  },
+  "Water Tribe Rallier": {
+    "oracle_id": "64acb083-a0a3-46ec-9c93-b2ac36878703",
+    "mana_cost": "{1}{W}",
+    "cmc": 2.0,
+    "type_line": "Creature — Human Soldier Ally",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Avatar: The Last Airbender",
+    "released_at": "2025-11-21",
+    "image_url": "https://cards.scryfall.io/normal/front/4/e/4e744b6c-1c2f-451a-818a-5ee7785b5213.jpg?1783904991"
+  },
+  "Ambitious Augmenter": {
+    "oracle_id": "d87f0e52-486e-49b4-9cf1-12e238857340",
+    "mana_cost": "{G}",
+    "cmc": 1.0,
+    "type_line": "Creature — Turtle Wizard",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24",
+    "image_url": "https://cards.scryfall.io/normal/front/8/5/85629088-2007-4db5-9397-bac12a3d7498.jpg?1783903661"
+  },
+  "Wolverine, Fierce Fighter": {
+    "oracle_id": "8429ba6a-6c06-4a83-a6ee-023b64b825f8",
+    "mana_cost": "{2}{R}{G}",
+    "cmc": 4.0,
+    "type_line": "Legendary Creature — Mutant Berserker Hero",
+    "color_identity": [
+      "G",
+      "R"
+    ],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26",
+    "image_url": "https://cards.scryfall.io/normal/front/c/1/c1c7aa22-51b0-45ee-9a8e-5493a1820d8c.jpg?1783902893"
   }
 }
