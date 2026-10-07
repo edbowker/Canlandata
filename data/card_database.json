@@ -56279,5 +56279,213 @@
     "set_name": "Marvel Super Heroes",
     "released_at": "2026-06-26",
     "image_url": "https://cards.scryfall.io/normal/front/c/1/c1c7aa22-51b0-45ee-9a8e-5493a1820d8c.jpg?1783902893"
+  },
+  "Lodestone Bauble": {
+    "oracle_id": "6048b9ac-7d5e-4486-a89a-30adb45aab27",
+    "mana_cost": "{0}",
+    "cmc": 0.0,
+    "type_line": "Artifact",
+    "color_identity": [],
+    "set_name": "Alliances",
+    "released_at": "1996-06-10",
+    "image_url": "https://cards.scryfall.io/normal/front/8/4/84d88a33-3990-4044-a5fe-4123d5781f18.jpg?1783947163"
+  },
+  "Vraska's Final Mercy": {
+    "oracle_id": "7799413d-e313-4a05-ad28-f4c926c26d28",
+    "mana_cost": "{B}{B}",
+    "cmc": 2.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/9/9/992bd991-7cfb-459f-bafd-9a44f3c925c5.jpg?1789699369"
+  },
+  "Wreck and Rebuild": {
+    "oracle_id": "7e10c141-dfb0-409b-b8c9-cdfe93b42a06",
+    "mana_cost": "{1}{R}{G}",
+    "cmc": 3.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "G",
+      "R"
+    ],
+    "set_name": "Doctor Who",
+    "released_at": "2023-10-13",
+    "image_url": "https://cards.scryfall.io/normal/front/4/4/44e7d2ca-3fa9-4cb2-adc2-dae4e161f186.jpg?1783914619"
+  },
+  "Earthshape": {
+    "oracle_id": "300f17a2-1594-40cb-9187-952898a83622",
+    "mana_cost": "{2}{W}",
+    "cmc": 3.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Avatar: The Last Airbender Eternal",
+    "released_at": "2025-11-21",
+    "image_url": "https://cards.scryfall.io/normal/front/d/8/d873c678-c8f2-40f0-ab03-a2fdf5187aea.jpg?1783904839"
+  },
+  "Lich's Relic": {
+    "oracle_id": "0540eaca-0e03-4831-955a-192ae2b87d35",
+    "mana_cost": "{B}",
+    "cmc": 1.0,
+    "type_line": "Artifact — Equipment",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/b/1/b105511d-5022-4a84-b6ce-4bb433e93a62.jpg?1789644819"
+  },
+  "Eureka Moment": {
+    "oracle_id": "0e2c11b2-d95f-4402-9a4a-afd3f7ffb8be",
+    "mana_cost": "{2}{G}{U}",
+    "cmc": 4.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "G",
+      "U"
+    ],
+    "set_name": "Strixhaven: School of Mages",
+    "released_at": "2021-04-23",
+    "image_url": "https://cards.scryfall.io/normal/front/e/4/e400c9b7-c789-49dd-9f72-b9d1df03fcca.jpg?1783927314"
+  },
+  "Proctor's Gaze": {
+    "oracle_id": "a7fe7621-9bb1-4d0d-8b50-c179c685d79d",
+    "mana_cost": "{2}{G}{U}",
+    "cmc": 4.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "G",
+      "U"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24",
+    "image_url": "https://cards.scryfall.io/normal/front/b/1/b127d543-0a90-4af6-9410-94d5cd30389e.jpg?1783903636"
+  },
+  "Scout's Warning": {
+    "oracle_id": "f65cba6a-3ef4-4841-b2c1-578b2a2c3300",
+    "mana_cost": "{W}",
+    "cmc": 1.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Future Sight",
+    "released_at": "2007-05-04",
+    "image_url": "https://cards.scryfall.io/normal/front/e/6/e6639e3d-b0c4-4c08-83d5-f3fc58fac9b2.jpg?1783943127"
+  },
+  "Wear // Tear": {
+    "oracle_id": "9842734c-1eac-4509-a731-4c22017ae586",
+    "mana_cost": "{1}{R} // {W}",
+    "cmc": 3.0,
+    "type_line": "Instant // Instant",
+    "color_identity": [
+      "R",
+      "W"
+    ],
+    "set_name": "Dragon's Maze",
+    "released_at": "2013-05-03",
+    "image_url": "https://cards.scryfall.io/normal/front/d/1/d169a3b2-18ae-4414-98ef-d879676fdcc0.jpg?1783940014"
+  },
+  "Gideon the Oathless": {
+    "oracle_id": "7afa530f-ea51-4bee-af3b-59b83ea5cb25",
+    "mana_cost": "{2}{B}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Human Mercenary",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/c/9/c985b0d1-25bd-4069-aab7-a566ff27a8f6.jpg?1789127990"
+  },
+  "Twiddle": {
+    "oracle_id": "773ad2ef-5acc-49ea-8d85-056330e87039",
+    "mana_cost": "{U}",
+    "cmc": 1.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Limited Edition Alpha",
+    "released_at": "1993-08-05",
+    "image_url": "https://cards.scryfall.io/normal/front/5/7/576e811f-26a3-4a7c-bd13-3b1cc3e184eb.jpg?1783948699"
+  },
+  "Embrace the Paradox": {
+    "oracle_id": "b9110be0-3f0c-449b-8baf-689e92fdb8f0",
+    "mana_cost": "{3}{G}{U}",
+    "cmc": 5.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "G",
+      "U"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24",
+    "image_url": "https://cards.scryfall.io/normal/front/c/0/c0cf5e0f-3668-46f2-850d-d91a538e8ead.jpg?1783903647"
+  },
+  "Carnivorous Cultivator // Enroot": {
+    "oracle_id": "db655c5a-06f6-42bc-8180-d9ca1c1d939a",
+    "mana_cost": "{1}{G}",
+    "cmc": 2.0,
+    "type_line": "Creature — Elf Warlock // Sorcery",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/7/9/79dd5c54-5ea5-47b5-8f9b-50ed57a5ea45.jpg?1789385967"
+  },
+  "Temporal Fissure": {
+    "oracle_id": "8a9525f4-74a6-44f0-a1b1-d57937d7783b",
+    "mana_cost": "{4}{U}",
+    "cmc": 5.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Scourge",
+    "released_at": "2003-05-26",
+    "image_url": "https://cards.scryfall.io/normal/front/9/7/97949c53-aef7-4c0c-b846-8d4003193ced.jpg?1783944883"
+  },
+  "Dawn's Truce": {
+    "oracle_id": "37c06f89-db36-4937-9404-2b07cd22e1a6",
+    "mana_cost": "{1}{W}",
+    "cmc": 2.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Bloomburrow",
+    "released_at": "2024-08-02",
+    "image_url": "https://cards.scryfall.io/normal/front/8/f/8f72bfa0-efef-48ce-aff8-d5818ed71ba6.jpg?1783910863"
+  },
+  "Dream's Grip": {
+    "oracle_id": "8b239262-c392-4ec6-9ae1-8b4a076e4bf0",
+    "mana_cost": "{U}",
+    "cmc": 1.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Mirrodin",
+    "released_at": "2003-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/7/f/7ffaa6a2-7c86-45b4-8892-b837e05f11a6.jpg?1783944556"
+  },
+  "Avatar of Burgeoning Echoes": {
+    "oracle_id": "08e8a63c-9fcc-48cf-a9af-15cbaeec943f",
+    "mana_cost": "{G}{U}",
+    "cmc": 2.0,
+    "type_line": "Creature — Avatar",
+    "color_identity": [
+      "G",
+      "U"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/5/9/5905995b-7a20-4602-a7cc-90aa5089a082.jpg?1788878208"
   }
 }
