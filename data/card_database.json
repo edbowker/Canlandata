@@ -56487,5 +56487,287 @@
     "set_name": "Reality Fracture",
     "released_at": "2026-10-02",
     "image_url": "https://cards.scryfall.io/normal/front/5/9/5905995b-7a20-4602-a7cc-90aa5089a082.jpg?1788878208"
+  },
+  "Terminal Agony": {
+    "oracle_id": "b69e68e7-0612-40f8-a40a-9c4e77653442",
+    "mana_cost": "{2}{B}{R}",
+    "cmc": 4.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "B",
+      "R"
+    ],
+    "set_name": "Modern Horizons 2",
+    "released_at": "2021-06-18",
+    "image_url": "https://cards.scryfall.io/normal/front/3/1/314e94ad-0e12-48bb-aae1-2c842943114a.jpg?1783926810"
+  },
+  "Dark Matter Manipulator": {
+    "oracle_id": "6a3862f0-8dfc-4ac9-8eb9-faefcad685d4",
+    "mana_cost": "{B}",
+    "cmc": 1.0,
+    "type_line": "Creature — Human Warlock",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/4/e/4ec912d5-cbe7-4d07-9ece-b03ac02d3055.jpg?1789385959"
+  },
+  "Resonating Lute": {
+    "oracle_id": "9263287d-f782-4318-9ab8-e2e5f8107f5e",
+    "mana_cost": "{2}{U}{R}",
+    "cmc": 4.0,
+    "type_line": "Artifact",
+    "color_identity": [
+      "R",
+      "U"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24",
+    "image_url": "https://cards.scryfall.io/normal/front/6/e/6ef168d6-28f2-4c24-9bfa-82c35663b729.jpg?1783903631"
+  },
+  "Samut, Hazoret's Champion": {
+    "oracle_id": "add02a36-8811-438b-a8e1-f5c8a8146b4e",
+    "mana_cost": "{1}{R}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Human Warrior Cleric",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/b/a/ba920f23-f05c-410e-8516-c93abedf1d4d.jpg?1789729662"
+  },
+  "Stingcaster Mage": {
+    "oracle_id": "056b651e-e0e2-4333-9235-d1ffe8fcca29",
+    "mana_cost": "{1}{R}",
+    "cmc": 2.0,
+    "type_line": "Creature — Human Wizard",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/2/d/2d8e8e5f-3bf5-490d-aa9c-9df2b26f1460.jpg?1788329303"
+  },
+  "Mouser Foundry": {
+    "oracle_id": "404e958b-ead9-4ec7-b786-7b3d65e29967",
+    "mana_cost": "{1}{R}",
+    "cmc": 2.0,
+    "type_line": "Artifact",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Teenage Mutant Ninja Turtles",
+    "released_at": "2026-03-06",
+    "image_url": "https://cards.scryfall.io/normal/front/8/a/8aae3bd6-a935-44a5-aa4d-a525b00cbf50.jpg?1783904095"
+  },
+  "Loyal Tutor": {
+    "oracle_id": "7e52f151-d1f6-4fcb-9b21-1baecae27da6",
+    "mana_cost": "{W}",
+    "cmc": 1.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/4/9/490dae91-94ce-42a9-a11f-6c5e77c4e486.jpg?1788878096"
+  },
+  "Sigarda, Font of Blessings": {
+    "oracle_id": "5fe07a76-f261-4f16-8a15-571bed707261",
+    "mana_cost": "{2}{G}{W}",
+    "cmc": 4.0,
+    "type_line": "Legendary Creature — Angel",
+    "color_identity": [
+      "G",
+      "W"
+    ],
+    "set_name": "March of the Machine: The Aftermath",
+    "released_at": "2023-05-12",
+    "image_url": "https://cards.scryfall.io/normal/front/c/b/cba71725-d6df-44d7-a93b-934573759711.jpg?1783916509"
+  },
+  "Way of the Paradox": {
+    "oracle_id": "76771cd1-6b74-49bb-9421-8845fe344567",
+    "mana_cost": "{2}{G}",
+    "cmc": 3.0,
+    "type_line": "Legendary Enchantment",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/9/8/98dc5470-507a-4364-8480-42607255e56c.jpg?1789729606"
+  },
+  "The Theorist, Jace Beleren": {
+    "oracle_id": "89a6e876-0b00-4671-9652-766fd7ef9bf2",
+    "mana_cost": "{2}{U}{U}",
+    "cmc": 4.0,
+    "type_line": "Legendary Planeswalker — Jace",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/2/0/20bb8c55-4b0b-425f-8201-b54fa2fdde86.jpg?1788329228"
+  },
+  "Mystic Retrieval": {
+    "oracle_id": "b7cfbfa1-dd38-47ff-9138-fa6b247afc11",
+    "mana_cost": "{3}{U}",
+    "cmc": 4.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "R",
+      "U"
+    ],
+    "set_name": "Dark Ascension",
+    "released_at": "2012-02-03",
+    "image_url": "https://cards.scryfall.io/normal/front/2/8/281a685a-bd02-43bf-8700-2207c65bbbb1.jpg?1783940839"
+  },
+  "Dragonlord Dromoka": {
+    "oracle_id": "82cdd612-3322-4372-810f-1ff106ea8e6a",
+    "mana_cost": "{4}{G}{W}",
+    "cmc": 6.0,
+    "type_line": "Legendary Creature — Elder Dragon",
+    "color_identity": [
+      "G",
+      "W"
+    ],
+    "set_name": "Dragons of Tarkir",
+    "released_at": "2015-03-27",
+    "image_url": "https://cards.scryfall.io/normal/front/9/0/908042f3-0d03-4edf-816a-ec846a1e315f.jpg?1783938573"
+  },
+  "Kíli the Resourceful": {
+    "oracle_id": "840de40b-590e-4bf0-8d16-22b0eff61202",
+    "mana_cost": "{1}{W}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Dwarf Scout",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "The Hobbit",
+    "released_at": "2026-08-14",
+    "image_url": "https://cards.scryfall.io/normal/front/1/8/1805532f-6d99-47d0-9529-5f5831a7fdc8.jpg?1785496242"
+  },
+  "Chandra, Chill of Compliance": {
+    "oracle_id": "c3dfa1e2-6785-49a0-a194-fb842a8eb63c",
+    "mana_cost": "{1}{U}{U}",
+    "cmc": 3.0,
+    "type_line": "Legendary Planeswalker — Chandra",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/2/4/240f58ab-944c-4f4c-9df9-5f40b132bf3e.jpg?1788329242"
+  },
+  "Way of the Pyromancer": {
+    "oracle_id": "68d3f547-674a-4d8a-b02f-01bc2f161916",
+    "mana_cost": "{1}{R}",
+    "cmc": 2.0,
+    "type_line": "Legendary Enchantment",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/c/1/c1a00020-7c14-4503-a057-5763704bb83e.jpg?1788878311"
+  },
+  "Sigarda, Host of Herons": {
+    "oracle_id": "e55104e2-4900-48de-b288-d3e6abd5e09e",
+    "mana_cost": "{2}{G}{W}{W}",
+    "cmc": 5.0,
+    "type_line": "Legendary Creature — Angel",
+    "color_identity": [
+      "G",
+      "W"
+    ],
+    "set_name": "Avacyn Restored",
+    "released_at": "2012-05-04",
+    "image_url": "https://cards.scryfall.io/normal/front/f/e/feccd0e2-fae6-4ced-acdf-4252ed5c56e7.jpg?1783940655"
+  },
+  "Winter, Tormented Loner": {
+    "oracle_id": "84eaac2e-74ce-4a16-9faa-409df7c58eb3",
+    "mana_cost": "{2}{B}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Human Warlock",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/9/6/9670f754-f41f-45ac-8e8b-025ad2c0f66b.jpg?1789127724"
+  },
+  "Way of the Cryomancer": {
+    "oracle_id": "7d32c63d-aa9e-4f5d-a3e6-51377a786009",
+    "mana_cost": "{2}{U}",
+    "cmc": 3.0,
+    "type_line": "Legendary Enchantment",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/8/3/838b0efb-7398-4df9-8fdf-b8af43b47938.jpg?1789014637"
+  },
+  "Geist of Saint Thalia": {
+    "oracle_id": "ef32a4a9-14e2-4738-b4c2-53ce5e1d2a53",
+    "mana_cost": "{1}{U}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Spirit Cleric",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/9/c/9c334530-0880-46b5-a358-9603eee3cecf.jpg?1789128026"
+  },
+  "Marwyn, the Preserver": {
+    "oracle_id": "eb03f6c1-c94f-4f09-b2e9-a55ce5533653",
+    "mana_cost": "{1}{G}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Elf Druid",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/9/0/90f33f99-7bc5-42e1-815e-bfb4c2b74107.jpg?1789644564"
+  },
+  "The Lonely Mountain": {
+    "oracle_id": "3678c06f-8a33-4a6d-bf20-5b92d5c05a95",
+    "mana_cost": "",
+    "cmc": 0.0,
+    "type_line": "Land — Mountain",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "The Hobbit",
+    "released_at": "2026-08-14",
+    "image_url": "https://cards.scryfall.io/normal/front/b/3/b39ebc4d-a01a-4401-ab3a-bf6142c93b47.jpg?1784543511"
+  },
+  "Hexhaven Invigorator": {
+    "oracle_id": "12d617b1-c95b-4b1c-a586-ccfdf5898b03",
+    "mana_cost": "{G}{G}{G}{G}",
+    "cmc": 4.0,
+    "type_line": "Creature — Chimera Horror",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/9/a/9a446cae-e93c-4574-8ffd-7688f9729a8a.jpg?1788878191"
+  },
+  "Magnetic Theft": {
+    "oracle_id": "9b22cc97-003f-4227-acdc-7a0857674b67",
+    "mana_cost": "{R}",
+    "cmc": 1.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Fifth Dawn",
+    "released_at": "2004-06-04",
+    "image_url": "https://cards.scryfall.io/normal/front/d/e/de0c1e37-fedc-43d9-97fd-b797c6c2fbbe.jpg?1783944393"
   }
 }

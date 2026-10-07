@@ -42697,57 +42697,64 @@ mm-yy,card_name,set,plays
 2026-09,Battle Cry Goblin,Adventures in the Forgotten Realms,1
 2026-09,Deadly Dispute,Adventures in the Forgotten Realms,1
 2026-09,Feign Death,Adventures in the Forgotten Realms,1
-2026-09,Portable Hole,Adventures in the Forgotten Realms,14
+2026-09,Fighter Class,Adventures in the Forgotten Realms,1
+2026-09,Portable Hole,Adventures in the Forgotten Realms,15
 2026-09,Disallow,Aether Revolt,1
-2026-09,Fatal Push,Aether Revolt,43
+2026-09,Fatal Push,Aether Revolt,50
 2026-09,Renegade Rallier,Aether Revolt,1
-2026-09,Walking Ballista,Aether Revolt,14
-2026-09,Whir of Invention,Aether Revolt,5
-2026-09,Brightglass Gearhulk,Aetherdrift,11
+2026-09,Walking Ballista,Aether Revolt,15
+2026-09,Whir of Invention,Aether Revolt,6
+2026-09,Brightglass Gearhulk,Aetherdrift,13
 2026-09,District Mascot,Aetherdrift,2
 2026-09,Draconautics Engineer,Aetherdrift,1
 2026-09,Greasewrench Goblin,Aetherdrift,1
 2026-09,Grim Bauble,Aetherdrift,1
 2026-09,Howlsquad Heavy,Aetherdrift,1
+2026-09,Molt Tender,Aetherdrift,2
 2026-09,Momentum Breaker,Aetherdrift,1
 2026-09,Nesting Bot,Aetherdrift,1
 2026-09,Quag Feast,Aetherdrift,1
-2026-09,Stock Up,Aetherdrift,37
+2026-09,Stock Up,Aetherdrift,44
 2026-09,Ardent Plea,Alara Reborn,1
 2026-09,Bloodbraid Elf,Alara Reborn,4
 2026-09,Demonic Dread,Alara Reborn,1
 2026-09,Qasali Pridemage,Alara Reborn,1
+2026-09,Thopter Foundry,Alara Reborn,1
 2026-09,Violent Outburst,Alara Reborn,1
-2026-09,Wargate,Alara Reborn,8
+2026-09,Wargate,Alara Reborn,10
 2026-09,Diminishing Returns,Alliances,1
-2026-09,Elvish Spirit Guide,Alliances,2
-2026-09,Force of Will,Alliances,37
+2026-09,Elvish Spirit Guide,Alliances,3
+2026-09,Force of Will,Alliances,44
 2026-09,Helm of Obedience,Alliances,1
 2026-09,Lat-Nam's Legacy,Alliances,1
 2026-09,Lim-Dûl's Vault,Alliances,3
 2026-09,Lodestone Bauble,Alliances,1
-2026-09,Pyrokinesis,Alliances,10
+2026-09,Pyrokinesis,Alliances,12
+2026-09,Commit // Memory,Amonkhet,1
 2026-09,Gideon of the Trials,Amonkhet,1
 2026-09,Harsh Mentor,Amonkhet,2
-2026-09,Candelabra of Tawnos,Antiquities,6
-2026-09,Power Artifact,Antiquities,1
+2026-09,Candelabra of Tawnos,Antiquities,7
+2026-09,Power Artifact,Antiquities,2
 2026-09,Transmute Artifact,Antiquities,6
-2026-09,Evasive Action,Apocalypse,4
+2026-09,Evasive Action,Apocalypse,6
 2026-09,Goblin Ringleader,Apocalypse,1
-2026-09,Life // Death,Apocalypse,8
+2026-09,Life // Death,Apocalypse,9
 2026-09,Pernicious Deed,Apocalypse,1
-2026-09,"Crystal Skull, Isu Spyglass",Assassin's Creed,5
+2026-09,"Crystal Skull, Isu Spyglass",Assassin's Creed,6
+2026-09,What Must Be Done,Assassin's Creed,1
 2026-09,Blood Artist,Avacyn Restored,1
 2026-09,Cloudshift,Avacyn Restored,2
-2026-09,Craterhoof Behemoth,Avacyn Restored,2
+2026-09,Craterhoof Behemoth,Avacyn Restored,3
+2026-09,Devastation Tide,Avacyn Restored,1
 2026-09,Entreat the Angels,Avacyn Restored,1
 2026-09,Griselbrand,Avacyn Restored,1
 2026-09,Primal Surge,Avacyn Restored,1
 2026-09,Restoration Angel,Avacyn Restored,1
-2026-09,Terminus,Avacyn Restored,9
+2026-09,"Sigarda, Host of Herons",Avacyn Restored,1
+2026-09,Terminus,Avacyn Restored,11
 2026-09,"Aang, Swift Savior // Aang and La, Ocean's Fury",Avatar: The Last Airbender,6
-2026-09,Badgermole Cub,Avatar: The Last Airbender,22
-2026-09,Boomerang Basics,Avatar: The Last Airbender,2
+2026-09,Badgermole Cub,Avatar: The Last Airbender,27
+2026-09,Boomerang Basics,Avatar: The Last Airbender,3
 2026-09,Curious Farm Animals,Avatar: The Last Airbender,2
 2026-09,Day of Black Sun,Avatar: The Last Airbender,1
 2026-09,Invasion Reinforcements,Avatar: The Last Airbender,2
@@ -42755,7 +42762,7 @@ mm-yy,card_name,set,plays
 2026-09,Obsessive Pursuit,Avatar: The Last Airbender,1
 2026-09,Planetarium of Wan Shi Tong,Avatar: The Last Airbender,1
 2026-09,Sandbender Scavengers,Avatar: The Last Airbender,1
-2026-09,"Wan Shi Tong, Librarian",Avatar: The Last Airbender,27
+2026-09,"Wan Shi Tong, Librarian",Avatar: The Last Airbender,32
 2026-09,Water Tribe Rallier,Avatar: The Last Airbender,2
 2026-09,"Zhao, the Moon Slayer",Avatar: The Last Airbender,4
 2026-09,Earthshape,Avatar: The Last Airbender Eternal,1
@@ -42763,29 +42770,30 @@ mm-yy,card_name,set,plays
 2026-09,"Katara, Waterbending Master",Avatar: The Last Airbender Eternal,1
 2026-09,"The Duke, Rebel Sentry",Avatar: The Last Airbender Eternal,1
 2026-09,"Toph, Greatest Earthbender",Avatar: The Last Airbender Eternal,5
-2026-09,Bring to Light,Battle for Zendikar,5
+2026-09,Bring to Light,Battle for Zendikar,6
+2026-09,Conduit of Ruin,Battle for Zendikar,1
 2026-09,Painful Truths,Battle for Zendikar,1
 2026-09,Retreat to Hagra,Battle for Zendikar,1
-2026-09,"Ulamog, the Ceaseless Hunger",Battle for Zendikar,1
+2026-09,"Ulamog, the Ceaseless Hunger",Battle for Zendikar,2
 2026-09,Zulaport Cutthroat,Battle for Zendikar,1
 2026-09,Arena Rector,Battlebond,1
-2026-09,Spellseeker,Battlebond,8
+2026-09,Spellseeker,Battlebond,10
 2026-09,Disrupting Shoal,Betrayers of Kamigawa,1
 2026-09,Kami of False Hope,Betrayers of Kamigawa,1
 2026-09,Ninja of the Deep Hours,Betrayers of Kamigawa,1
-2026-09,Shuko,Betrayers of Kamigawa,7
-2026-09,Umezawa's Jitte,Betrayers of Kamigawa,13
+2026-09,Shuko,Betrayers of Kamigawa,9
+2026-09,Umezawa's Jitte,Betrayers of Kamigawa,14
 2026-09,Azure Beastbinder,Bloomburrow,1
 2026-09,Cache Grab,Bloomburrow,2
 2026-09,Darkstar Augur,Bloomburrow,2
 2026-09,Dawn's Truce,Bloomburrow,1
 2026-09,Dour Port-Mage,Bloomburrow,1
 2026-09,Feed the Cycle,Bloomburrow,1
-2026-09,Into the Flood Maw,Bloomburrow,5
+2026-09,Into the Flood Maw,Bloomburrow,6
 2026-09,Iridescent Vinelasher,Bloomburrow,1
-2026-09,Keen-Eyed Curator,Bloomburrow,20
-2026-09,"Lumra, Bellow of the Woods",Bloomburrow,3
-2026-09,Mockingbird,Bloomburrow,8
+2026-09,Keen-Eyed Curator,Bloomburrow,23
+2026-09,"Lumra, Bellow of the Woods",Bloomburrow,4
+2026-09,Mockingbird,Bloomburrow,9
 2026-09,Parting Gust,Bloomburrow,1
 2026-09,Pawpatch Recruit,Bloomburrow,3
 2026-09,Scrapshooter,Bloomburrow,2
@@ -42794,58 +42802,63 @@ mm-yy,card_name,set,plays
 2026-09,Agate Instigator,Bloomburrow Commander,2
 2026-09,Jacked Rabbit,Bloomburrow Commander,2
 2026-09,Courser of Kruphix,Born of the Gods,1
-2026-09,Satyr Wayfinder,Born of the Gods,1
+2026-09,Satyr Wayfinder,Born of the Gods,2
 2026-09,"Azusa, Lost but Seeking",Champions of Kamigawa,1
-2026-09,Gifts Ungiven,Champions of Kamigawa,6
+2026-09,Gifts Ungiven,Champions of Kamigawa,8
 2026-09,"Kiki-Jiki, Mirror Breaker",Champions of Kamigawa,1
 2026-09,Sakura-Tribe Elder,Champions of Kamigawa,2
-2026-09,Sensei's Divining Top,Champions of Kamigawa,9
+2026-09,Sensei's Divining Top,Champions of Kamigawa,10
 2026-09,Zo-Zu the Punisher,Champions of Kamigawa,1
-2026-09,Mishra's Bauble,Coldsnap,14
+2026-09,Boreal Druid,Coldsnap,1
+2026-09,Mishra's Bauble,Coldsnap,15
 2026-09,Flusterstorm,Commander 2011,3
-2026-09,Scavenging Ooze,Commander 2011,17
+2026-09,Scavenging Ooze,Commander 2011,19
 2026-09,Restore,Commander 2013,1
-2026-09,Toxic Deluge,Commander 2013,10
+2026-09,Toxic Deluge,Commander 2013,15
 2026-09,Unexpectedly Absent,Commander 2013,2
-2026-09,Containment Priest,Commander 2014,16
-2026-09,"Titania, Protector of Argoth",Commander 2014,1
+2026-09,Containment Priest,Commander 2014,17
+2026-09,"Titania, Protector of Argoth",Commander 2014,2
 2026-09,Fiery Confluence,Commander 2015,2
-2026-09,Mystic Confluence,Commander 2015,6
-2026-09,Retrofitter Foundry,Commander 2018,6
+2026-09,Mystic Confluence,Commander 2015,8
+2026-09,Saskia the Unyielding,Commander 2016,1
+2026-09,Retrofitter Foundry,Commander 2018,7
 2026-09,"Yuriko, the Tiger's Shadow",Commander 2018,1
 2026-09,Anje's Ravager,Commander 2019,7
-2026-09,Sevinne's Reclamation,Commander 2019,11
-2026-09,"Laelia, the Blade Reforged",Commander 2021,26
+2026-09,Sevinne's Reclamation,Commander 2019,12
+2026-09,"Laelia, the Blade Reforged",Commander 2021,29
 2026-09,Court of Grace,Commander Legends,1
-2026-09,Hullbreacher,Commander Legends,3
-2026-09,Opposition Agent,Commander Legends,40
+2026-09,Hullbreacher,Commander Legends,4
+2026-09,Opposition Agent,Commander Legends,47
 2026-09,Aarakocra Sneak,Commander Legends: Battle for Baldur's Gate,1
 2026-09,Caves of Chaos Adventurer,Commander Legends: Battle for Baldur's Gate,11
 2026-09,Delayed Blast Fireball,Commander Legends: Battle for Baldur's Gate,1
-2026-09,From the Catacombs,Commander Legends: Battle for Baldur's Gate,1
-2026-09,"Gut, True Soul Zealot",Commander Legends: Battle for Baldur's Gate,25
-2026-09,"Minsc & Boo, Timeless Heroes",Commander Legends: Battle for Baldur's Gate,21
+2026-09,From the Catacombs,Commander Legends: Battle for Baldur's Gate,2
+2026-09,"Gut, True Soul Zealot",Commander Legends: Battle for Baldur's Gate,28
+2026-09,"Minsc & Boo, Timeless Heroes",Commander Legends: Battle for Baldur's Gate,23
 2026-09,Passageway Seer,Commander Legends: Battle for Baldur's Gate,1
-2026-09,Rescuer Chwinga,Commander Legends: Battle for Baldur's Gate,1
-2026-09,Seasoned Dungeoneer,Commander Legends: Battle for Baldur's Gate,32
-2026-09,Undermountain Adventurer,Commander Legends: Battle for Baldur's Gate,12
-2026-09,White Plume Adventurer,Commander Legends: Battle for Baldur's Gate,34
+2026-09,Rescuer Chwinga,Commander Legends: Battle for Baldur's Gate,2
+2026-09,Seasoned Dungeoneer,Commander Legends: Battle for Baldur's Gate,33
+2026-09,Undermountain Adventurer,Commander Legends: Battle for Baldur's Gate,15
+2026-09,White Plume Adventurer,Commander Legends: Battle for Baldur's Gate,37
 2026-09,Darksteel Monolith,Commander Masters,1
 2026-09,Rise of the Eldrazi,Commander Masters,1
 2026-09,Knight of the Reliquary,Conflux,1
-2026-09,Noble Hierarch,Conflux,28
-2026-09,Path to Exile,Conflux,51
+2026-09,Noble Hierarch,Conflux,35
+2026-09,Path to Exile,Conflux,59
 2026-09,Council's Judgment,Conspiracy,1
 2026-09,"Grenzo, Havoc Raiser",Conspiracy: Take the Crown,1
-2026-09,Palace Jailer,Conspiracy: Take the Crown,20
-2026-09,Recruiter of the Guard,Conspiracy: Take the Crown,17
+2026-09,"Leovold, Emissary of Trest",Conspiracy: Take the Crown,1
+2026-09,Palace Jailer,Conspiracy: Take the Crown,22
+2026-09,Recruiter of the Guard,Conspiracy: Take the Crown,18
 2026-09,Goblin Instigator,Core Set 2019,1
 2026-09,Goblin Trashmaster,Core Set 2019,1
+2026-09,Stitcher's Supplier,Core Set 2019,1
+2026-09,Colossus Hammer,Core Set 2020,1
 2026-09,Drawn from Dreams,Core Set 2020,3
 2026-09,Elvish Reclaimer,Core Set 2020,4
 2026-09,"Golos, Tireless Pilgrim",Core Set 2020,5
 2026-09,Knight of the Ebon Legion,Core Set 2020,1
-2026-09,Manifold Key,Core Set 2020,7
+2026-09,Manifold Key,Core Set 2020,8
 2026-09,Mystic Forge,Core Set 2020,6
 2026-09,Rotting Regisaur,Core Set 2020,3
 2026-09,Spectral Sailor,Core Set 2020,1
@@ -42857,31 +42870,33 @@ mm-yy,card_name,set,plays
 2026-09,Faithless Looting,Dark Ascension,2
 2026-09,Grafdigger's Cage,Dark Ascension,1
 2026-09,Hellrider,Dark Ascension,1
+2026-09,Mystic Retrieval,Dark Ascension,1
 2026-09,"Thalia, Guardian of Thraben",Dark Ascension,19
-2026-09,Thought Scour,Dark Ascension,5
+2026-09,Thought Scour,Dark Ascension,6
 2026-09,Aether Vial,Darksteel,9
 2026-09,Reap and Sow,Darksteel,2
-2026-09,Reshape,Darksteel,2
-2026-09,Skullclamp,Darksteel,45
+2026-09,Reshape,Darksteel,3
+2026-09,Skullclamp,Darksteel,49
 2026-09,Sword of Fire and Ice,Darksteel,1
 2026-09,Azorius Signet,Dissension,4
+2026-09,Hide // Seek,Dissension,1
 2026-09,Infernal Tutor,Dissension,3
 2026-09,Protean Hulk,Dissension,1
 2026-09,Simic Signet,Dissension,5
-2026-09,Spell Snare,Dissension,25
+2026-09,Spell Snare,Dissension,30
 2026-09,Lunar Hatchling,Doctor Who,1
 2026-09,Sonic Screwdriver,Doctor Who,1
 2026-09,Start the TARDIS,Doctor Who,1
 2026-09,Weeping Angel,Doctor Who,2
 2026-09,Wreck and Rebuild,Doctor Who,1
 2026-09,"Karn, Scion of Urza",Dominaria,1
-2026-09,"Teferi, Hero of Dominaria",Dominaria,5
+2026-09,"Teferi, Hero of Dominaria",Dominaria,6
 2026-09,Voltaic Servant,Dominaria,1
-2026-09,Anointed Peacekeeper,Dominaria United,14
-2026-09,Cut Down,Dominaria United,4
+2026-09,Anointed Peacekeeper,Dominaria United,15
+2026-09,Cut Down,Dominaria United,5
 2026-09,"Elas il-Kor, Sadistic Pilgrim",Dominaria United,1
 2026-09,Founding the Third Path,Dominaria United,1
-2026-09,Leyline Binding,Dominaria United,3
+2026-09,Leyline Binding,Dominaria United,4
 2026-09,Resolute Reinforcements,Dominaria United,2
 2026-09,Rundvelt Hordemaster,Dominaria United,1
 2026-09,Serra Paragon,Dominaria United,2
@@ -42891,130 +42906,141 @@ mm-yy,card_name,set,plays
 2026-09,Temporary Lockdown,Dominaria United,1
 2026-09,Voice of Resurgence,Dragon's Maze,1
 2026-09,Wear // Tear,Dragon's Maze,2
+2026-09,Dragonlord Dromoka,Dragons of Tarkir,1
 2026-09,Kolaghan's Command,Dragons of Tarkir,2
 2026-09,Pore Over the Pages,Duel Decks: Blessed vs. Cursed,1
-2026-09,Abhorrent Oculus,Duskmourn: House of Horror,31
+2026-09,Oblivion Sower,Duel Decks: Zendikar vs. Eldrazi,1
+2026-09,Abhorrent Oculus,Duskmourn: House of Horror,38
 2026-09,Balustrade Wurm,Duskmourn: House of Horror,2
-2026-09,Chainsaw,Duskmourn: House of Horror,3
+2026-09,Chainsaw,Duskmourn: House of Horror,4
 2026-09,Commune with Evil,Duskmourn: House of Horror,1
 2026-09,Demonic Counsel,Duskmourn: House of Horror,4
 2026-09,Drag to the Roots,Duskmourn: House of Horror,1
 2026-09,Enduring Innocence,Duskmourn: House of Horror,6
-2026-09,Fear of Missing Out,Duskmourn: House of Horror,8
+2026-09,Fear of Missing Out,Duskmourn: House of Horror,10
 2026-09,Floodpits Drowner,Duskmourn: House of Horror,1
-2026-09,Ghost Vacuum,Duskmourn: House of Horror,15
+2026-09,Ghost Vacuum,Duskmourn: House of Horror,16
 2026-09,Hand That Feeds,Duskmourn: House of Horror,2
 2026-09,Insidious Fungus,Duskmourn: House of Horror,1
-2026-09,"Kaito, Bane of Nightmares",Duskmourn: House of Horror,5
+2026-09,"Kaito, Bane of Nightmares",Duskmourn: House of Horror,6
 2026-09,"Norin, Swift Survivalist",Duskmourn: House of Horror,1
 2026-09,Omnivorous Flytrap,Duskmourn: House of Horror,2
 2026-09,Osseous Sticktwister,Duskmourn: House of Horror,1
-2026-09,Overlord of the Balemurk,Duskmourn: House of Horror,25
+2026-09,Overlord of the Balemurk,Duskmourn: House of Horror,28
 2026-09,Overlord of the Mistmoors,Duskmourn: House of Horror,2
 2026-09,Patchwork Beastie,Duskmourn: House of Horror,2
 2026-09,Razorkin Needlehead,Duskmourn: House of Horror,1
-2026-09,Roaring Furnace // Steaming Sauna,Duskmourn: House of Horror,3
-2026-09,Screaming Nemesis,Duskmourn: House of Horror,22
+2026-09,Roaring Furnace // Steaming Sauna,Duskmourn: House of Horror,5
+2026-09,Screaming Nemesis,Duskmourn: House of Horror,25
 2026-09,Sheltered by Ghosts,Duskmourn: House of Horror,5
 2026-09,The Jolly Balloon Man,Duskmourn: House of Horror,1
 2026-09,The Wandering Rescuer,Duskmourn: House of Horror,2
 2026-09,"Toby, Beastie Befriender",Duskmourn: House of Horror,2
-2026-09,Unstoppable Slasher,Duskmourn: House of Horror,4
+2026-09,Unstoppable Slasher,Duskmourn: House of Horror,5
 2026-09,Untimely Malfunction,Duskmourn: House of Horror,2
 2026-09,"Valgavoth, Terror Eater",Duskmourn: House of Horror,2
 2026-09,Veteran Survivor,Duskmourn: House of Horror,2
-2026-09,Walk-In Closet // Forgotten Cellar,Duskmourn: House of Horror,4
+2026-09,Walk-In Closet // Forgotten Cellar,Duskmourn: House of Horror,5
 2026-09,Wildfire Wickerfolk,Duskmourn: House of Horror,2
-2026-09,Metamorphosis Fanatic,Duskmourn: House of Horror Commander,15
-2026-09,Star Athlete,Duskmourn: House of Horror Commander,1
-2026-09,Ursine Monstrosity,Duskmourn: House of Horror Commander,11
+2026-09,Metamorphosis Fanatic,Duskmourn: House of Horror Commander,18
+2026-09,Star Athlete,Duskmourn: House of Horror Commander,2
+2026-09,Ursine Monstrosity,Duskmourn: House of Horror Commander,13
 2026-09,"Winter, Cynical Opportunist",Duskmourn: House of Horror Commander,1
-2026-09,Consult the Star Charts,Edge of Eternities,22
+2026-09,Consult the Star Charts,Edge of Eternities,29
 2026-09,Cosmogrand Zenith,Edge of Eternities,2
 2026-09,Elegy Acolyte,Edge of Eternities,1
-2026-09,Frenzied Baloth,Edge of Eternities,10
-2026-09,Icetill Explorer,Edge of Eternities,14
+2026-09,Frenzied Baloth,Edge of Eternities,12
+2026-09,Icetill Explorer,Edge of Eternities,19
 2026-09,Lightstall Inquisitor,Edge of Eternities,2
 2026-09,Melded Moxite,Edge of Eternities,1
 2026-09,Meltstrider's Resolve,Edge of Eternities,2
 2026-09,Nova Hellkite,Edge of Eternities,6
-2026-09,Ouroboroid,Edge of Eternities,19
+2026-09,Ouroboroid,Edge of Eternities,20
 2026-09,Pinnacle Starcage,Edge of Eternities,1
-2026-09,Quantum Riddler,Edge of Eternities,31
+2026-09,Quantum Riddler,Edge of Eternities,37
 2026-09,Scour for Scrap,Edge of Eternities,4
 2026-09,Seam Rip,Edge of Eternities,2
 2026-09,Starfield Shepherd,Edge of Eternities,15
 2026-09,Sunset Saboteur,Edge of Eternities,2
 2026-09,"Syr Vondam, Sunstar Exemplar",Edge of Eternities,1
-2026-09,"Tezzeret, Cruel Captain",Edge of Eternities,11
+2026-09,"Tezzeret, Cruel Captain",Edge of Eternities,12
 2026-09,The Endstone,Edge of Eternities,1
 2026-09,Umbral Collar Zealot,Edge of Eternities,1
 2026-09,Baloth Prime,Edge of Eternities Commander,1
 2026-09,Collective Brutality,Eldritch Moon,1
-2026-09,Eldritch Evolution,Eldritch Moon,18
-2026-09,"Emrakul, the Promised End",Eldritch Moon,3
+2026-09,Eldritch Evolution,Eldritch Moon,23
+2026-09,"Emrakul, the Promised End",Eldritch Moon,4
 2026-09,Gnarlwood Dryad,Eldritch Moon,2
 2026-09,Grapple with the Past,Eldritch Moon,1
 2026-09,Grim Flayer,Eldritch Moon,2
 2026-09,Selfless Spirit,Eldritch Moon,4
+2026-09,Sigarda's Aid,Eldritch Moon,1
 2026-09,Spell Queller,Eldritch Moon,1
 2026-09,Splendid Reclamation,Eldritch Moon,1
-2026-09,"Thalia, Heretic Cathar",Eldritch Moon,17
+2026-09,"Thalia, Heretic Cathar",Eldritch Moon,18
 2026-09,Whispers of Emrakul,Eldritch Moon,2
-2026-09,Flickerwisp,Eventide,2
-2026-09,Oath of Druids,Exodus,8
+2026-09,Flickerwisp,Eventide,3
+2026-09,Oath of Druids,Exodus,9
 2026-09,Price of Progress,Exodus,18
-2026-09,Survival of the Fittest,Exodus,3
+2026-09,Survival of the Fittest,Exodus,4
 2026-09,Goblin Grenade,Fallen Empires,1
-2026-09,Hymn to Tourach,Fallen Empires,8
+2026-09,Hymn to Tourach,Fallen Empires,9
 2026-09,Assaultron Dominator,Fallout,1
-2026-09,Pre-War Formalwear,Fallout,34
+2026-09,Pre-War Formalwear,Fallout,37
 2026-09,Synth Eradicator,Fallout,7
+2026-09,"Tasigur, the Golden Fang",Fate Reforged,1
 2026-09,Temur Battle Rage,Fate Reforged,2
 2026-09,"Ugin, the Spirit Dragon",Fate Reforged,1
-2026-09,Conjurer's Bauble,Fifth Dawn,4
-2026-09,Crucible of Worlds,Fifth Dawn,1
-2026-09,Eternal Witness,Fifth Dawn,2
+2026-09,Conjurer's Bauble,Fifth Dawn,5
+2026-09,Crucible of Worlds,Fifth Dawn,3
+2026-09,Eternal Witness,Fifth Dawn,4
 2026-09,Grinding Station,Fifth Dawn,3
+2026-09,Magnetic Theft,Fifth Dawn,1
 2026-09,Pentad Prism,Fifth Dawn,4
-2026-09,Serum Visions,Fifth Dawn,20
+2026-09,Serum Visions,Fifth Dawn,23
+2026-09,Steelshaper's Gift,Fifth Dawn,1
 2026-09,Trinket Mage,Fifth Dawn,5
-2026-09,Ambrosia Whiteheart,Final Fantasy,1
+2026-09,Ambrosia Whiteheart,Final Fantasy,2
 2026-09,"Cecil, Dark Knight // Cecil, Redeemed Paladin",Final Fantasy,1
-2026-09,"Cloud, Midgar Mercenary",Final Fantasy,30
+2026-09,"Cloud, Midgar Mercenary",Final Fantasy,32
 2026-09,"Joshua, Phoenix's Dominant // Phoenix, Warden of Fire",Final Fantasy,1
 2026-09,"Lightning, Army of One",Final Fantasy,4
 2026-09,Malboro,Final Fantasy,1
+2026-09,"Raubahn, Bull of Ala Mhigo",Final Fantasy,1
 2026-09,Resentful Revelation,Final Fantasy,2
 2026-09,Sazh's Chocobo,Final Fantasy,2
 2026-09,"Sephiroth, Fabled SOLDIER // Sephiroth, One-Winged Angel",Final Fantasy,1
 2026-09,Summon: Brynhildr,Final Fantasy,2
 2026-09,Swallowed by Leviathan,Final Fantasy,1
-2026-09,Ultima,Final Fantasy,1
+2026-09,Town Greeter,Final Fantasy,1
+2026-09,Ultima,Final Fantasy,2
 2026-09,World Map,Final Fantasy,1
-2026-09,"Gau, Feral Youth",Final Fantasy Commander,3
+2026-09,"Gau, Feral Youth",Final Fantasy Commander,4
+2026-09,Yuna's Decision,Final Fantasy Commander,1
 2026-09,Maddening Hex,Forgotten Realms Commander,2
 2026-09,"Alesha, Who Laughs at Fate",Foundations,3
 2026-09,Dropkick Bomber,Foundations,1
 2026-09,Infestation Sage,Foundations,1
 2026-09,Mossborn Hydra,Foundations,3
 2026-09,Searslicer Goblin,Foundations,1
+2026-09,Sire of Seven Deaths,Foundations,1
 2026-09,Vengeful Bloodwitch,Foundations,1
 2026-09,"General Kreat, the Boltbringer",Foundations Jumpstart,1
 2026-09,"Gornog, the Red Reaper",Foundations Jumpstart,1
 2026-09,"Ivora, Insatiable Heir",Foundations Jumpstart,2
-2026-09,Scythecat Cub,Foundations Jumpstart,23
+2026-09,Scythecat Cub,Foundations Jumpstart,26
 2026-09,Shardless Outlander,Foundations Jumpstart,1
 2026-09,Wriggling Grub,Foundations Jumpstart,1
-2026-09,Aven Mindcensor,Future Sight,30
+2026-09,Aven Mindcensor,Future Sight,32
 2026-09,Coalition Relic,Future Sight,1
 2026-09,Edge of Autumn,Future Sight,1
-2026-09,Magus of the Moon,Future Sight,28
+2026-09,Magus of the Moon,Future Sight,30
 2026-09,Pact of Negation,Future Sight,4
 2026-09,Scout's Warning,Future Sight,1
 2026-09,Street Wraith,Future Sight,1
-2026-09,Summoner's Pact,Future Sight,3
-2026-09,Tarmogoyf,Future Sight,10
+2026-09,Summoner's Pact,Future Sight,4
+2026-09,Sword of the Meek,Future Sight,1
+2026-09,Tarmogoyf,Future Sight,11
 2026-09,Cartel Aristocrat,Gatecrash,1
 2026-09,Enter the Infinite,Gatecrash,1
 2026-09,Ghor-Clan Rampager,Gatecrash,1
@@ -43022,75 +43048,75 @@ mm-yy,card_name,set,plays
 2026-09,Izzet Signet,Guildpact,3
 2026-09,Leyline of the Void,Guildpact,1
 2026-09,Orzhov Signet,Guildpact,1
-2026-09,Assassin's Trophy,Guilds of Ravnica,12
+2026-09,Assassin's Trophy,Guilds of Ravnica,15
 2026-09,Goblin Cratermaker,Guilds of Ravnica,1
 2026-09,Hunted Witness,Guilds of Ravnica,1
-2026-09,Knight of Autumn,Guilds of Ravnica,2
+2026-09,Knight of Autumn,Guilds of Ravnica,3
 2026-09,Legion Warboss,Guilds of Ravnica,2
 2026-09,Mausoleum Secrets,Guilds of Ravnica,1
 2026-09,Torch Courier,Guilds of Ravnica,1
-2026-09,Memory Lapse,Homelands,19
-2026-09,Abrade,Hour of Devastation,7
+2026-09,Memory Lapse,Homelands,24
+2026-09,Abrade,Hour of Devastation,8
 2026-09,Ramunap Excavator,Hour of Devastation,2
-2026-09,Brainstorm,Ice Age,42
+2026-09,Brainstorm,Ice Age,50
 2026-09,Dance of the Dead,Ice Age,1
 2026-09,Demonic Consultation,Ice Age,2
-2026-09,Fire Covenant,Ice Age,2
-2026-09,Fyndhorn Elves,Ice Age,21
+2026-09,Fire Covenant,Ice Age,3
+2026-09,Fyndhorn Elves,Ice Age,24
 2026-09,Hydroblast,Ice Age,2
 2026-09,Jeweled Amulet,Ice Age,2
-2026-09,Nature's Lore,Ice Age,4
+2026-09,Nature's Lore,Ice Age,6
 2026-09,Orcish Lumberjack,Ice Age,1
 2026-09,Portent,Ice Age,1
 2026-09,Pyroblast,Ice Age,1
 2026-09,Tinder Wall,Ice Age,2
 2026-09,Urza's Bauble,Ice Age,11
-2026-09,Zuran Orb,Ice Age,7
-2026-09,Fiend Artisan,Ikoria: Lair of Behemoths,4
+2026-09,Zuran Orb,Ice Age,9
+2026-09,Fiend Artisan,Ikoria: Lair of Behemoths,5
 2026-09,Footfall Crater,Ikoria: Lair of Behemoths,1
 2026-09,Garrison Cat,Ikoria: Lair of Behemoths,1
 2026-09,Heartless Act,Ikoria: Lair of Behemoths,1
 2026-09,Lurrus of the Dream-Den,Ikoria: Lair of Behemoths,6
 2026-09,"Winota, Joiner of Forces",Ikoria: Lair of Behemoths,3
-2026-09,Avacyn's Pilgrim,Innistrad,8
+2026-09,Avacyn's Pilgrim,Innistrad,13
 2026-09,Champion of the Parish,Innistrad,2
 2026-09,Doomed Traveler,Innistrad,1
 2026-09,Liliana of the Veil,Innistrad,4
 2026-09,Memory's Journey,Innistrad,1
 2026-09,Skirsdag High Priest,Innistrad,1
-2026-09,Snapcaster Mage,Innistrad,29
+2026-09,Snapcaster Mage,Innistrad,35
 2026-09,Stony Silence,Innistrad,1
 2026-09,Blood Fountain,Innistrad: Crimson Vow,1
 2026-09,Bloodtithe Harvester,Innistrad: Crimson Vow,3
 2026-09,Cemetery Gatekeeper,Innistrad: Crimson Vow,1
-2026-09,Dread Fugue,Innistrad: Crimson Vow,7
+2026-09,Dread Fugue,Innistrad: Crimson Vow,8
 2026-09,Voldaren Epicure,Innistrad: Crimson Vow,1
 2026-09,Wedding Announcement // Wedding Festivity,Innistrad: Crimson Vow,2
 2026-09,Welcoming Vampire,Innistrad: Crimson Vow,2
 2026-09,"Adeline, Resplendent Cathar",Innistrad: Midnight Hunt,3
 2026-09,Brutal Cathar // Moonrage Brute,Innistrad: Midnight Hunt,7
-2026-09,Cathar Commando,Innistrad: Midnight Hunt,18
-2026-09,Consider,Innistrad: Midnight Hunt,28
+2026-09,Cathar Commando,Innistrad: Midnight Hunt,20
+2026-09,Consider,Innistrad: Midnight Hunt,34
 2026-09,Fateful Absence,Innistrad: Midnight Hunt,7
-2026-09,Graveyard Trespasser // Graveyard Glutton,Innistrad: Midnight Hunt,4
+2026-09,Graveyard Trespasser // Graveyard Glutton,Innistrad: Midnight Hunt,5
 2026-09,Intrepid Adversary,Innistrad: Midnight Hunt,1
 2026-09,"Jadar, Ghoulcaller of Nephalia",Innistrad: Midnight Hunt,1
 2026-09,Memory Deluge,Innistrad: Midnight Hunt,4
 2026-09,Moonsilver Key,Innistrad: Midnight Hunt,3
-2026-09,Outland Liberator // Frenzied Trapbreaker,Innistrad: Midnight Hunt,4
-2026-09,Reckless Stormseeker // Storm-Charged Slasher,Innistrad: Midnight Hunt,13
+2026-09,Outland Liberator // Frenzied Trapbreaker,Innistrad: Midnight Hunt,5
+2026-09,Reckless Stormseeker // Storm-Charged Slasher,Innistrad: Midnight Hunt,14
 2026-09,Sungold Sentinel,Innistrad: Midnight Hunt,5
 2026-09,The Meathook Massacre,Innistrad: Midnight Hunt,1
 2026-09,Chromatic Sphere,Invasion,2
 2026-09,Fact or Fiction,Invasion,1
-2026-09,Opt,Invasion,19
+2026-09,Opt,Invasion,23
 2026-09,Tsabo's Web,Invasion,1
 2026-09,Rampaging Ferocidon,Ixalan,2
 2026-09,Settle the Wreckage,Ixalan,1
 2026-09,Benevolent Bodyguard,Judgment,4
-2026-09,Mental Note,Judgment,4
+2026-09,Mental Note,Judgment,5
 2026-09,Stitch Together,Judgment,1
-2026-09,Sylvan Safekeeper,Judgment,7
+2026-09,Sylvan Safekeeper,Judgment,8
 2026-09,"Muxus, Goblin Grandee",Jumpstart,1
 2026-09,"Ardoz, Cobbler of War",Jumpstart 2022,1
 2026-09,Spitting Dilophosaurus,Jurassic World Collection,2
@@ -43099,97 +43125,100 @@ mm-yy,card_name,set,plays
 2026-09,"Chandra, Torch of Defiance",Kaladesh,1
 2026-09,Paradoxical Outcome,Kaladesh,1
 2026-09,Smuggler's Copter,Kaladesh,5
-2026-09,Paradox Engine,Kaladesh Inventions,5
+2026-09,Paradox Engine,Kaladesh Inventions,6
 2026-09,Search for Glory,Kaldheim,4
 2026-09,Snakeskin Veil,Kaldheim,2
-2026-09,Experimental Synthesizer,Kamigawa: Neon Dynasty,1
-2026-09,Fable of the Mirror-Breaker // Reflection of Kiki-Jiki,Kamigawa: Neon Dynasty,33
+2026-09,Colossal Skyturtle,Kamigawa: Neon Dynasty,1
+2026-09,Experimental Synthesizer,Kamigawa: Neon Dynasty,2
+2026-09,Fable of the Mirror-Breaker // Reflection of Kiki-Jiki,Kamigawa: Neon Dynasty,36
+2026-09,Farewell,Kamigawa: Neon Dynasty,1
 2026-09,"Goro-Goro, Disciple of Ryusei",Kamigawa: Neon Dynasty,1
 2026-09,Kumano Faces Kakkazan // Etching of Kumano,Kamigawa: Neon Dynasty,2
-2026-09,Lion Sash,Kamigawa: Neon Dynasty,24
-2026-09,March of Otherworldly Light,Kamigawa: Neon Dynasty,35
+2026-09,Lion Sash,Kamigawa: Neon Dynasty,26
+2026-09,March of Otherworldly Light,Kamigawa: Neon Dynasty,36
 2026-09,Moon-Circuit Hacker,Kamigawa: Neon Dynasty,1
 2026-09,Moonsnare Prototype,Kamigawa: Neon Dynasty,1
 2026-09,Okiba Reckoner Raid // Nezumi Road Captain,Kamigawa: Neon Dynasty,1
 2026-09,Reality Heist,Kamigawa: Neon Dynasty,3
+2026-09,"Shigeki, Jukai Visionary",Kamigawa: Neon Dynasty,1
 2026-09,Teachings of the Kirin // Kirin-Touched Orochi,Kamigawa: Neon Dynasty,1
-2026-09,The Wandering Emperor,Kamigawa: Neon Dynasty,3
+2026-09,The Wandering Emperor,Kamigawa: Neon Dynasty,4
 2026-09,Touch the Spirit Realm,Kamigawa: Neon Dynasty,2
 2026-09,Bloodsoaked Champion,Khans of Tarkir,1
-2026-09,Dig Through Time,Khans of Tarkir,11
+2026-09,Dig Through Time,Khans of Tarkir,15
 2026-09,Murderous Cut,Khans of Tarkir,1
-2026-09,Treasure Cruise,Khans of Tarkir,8
-2026-09,Chain Lightning,Legends,35
-2026-09,Mana Drain,Legends,7
+2026-09,Treasure Cruise,Khans of Tarkir,10
+2026-09,Chain Lightning,Legends,40
+2026-09,Mana Drain,Legends,8
 2026-09,Sylvan Library,Legends,1
 2026-09,Gempalm Incinerator,Legions,1
-2026-09,Ancestral Recall,Limited Edition Alpha,9
-2026-09,Animate Dead,Limited Edition Alpha,19
+2026-09,Ancestral Recall,Limited Edition Alpha,13
+2026-09,Animate Dead,Limited Edition Alpha,22
 2026-09,Armageddon,Limited Edition Alpha,1
-2026-09,Balance,Limited Edition Alpha,8
-2026-09,Basalt Monolith,Limited Edition Alpha,6
-2026-09,Berserk,Limited Edition Alpha,8
-2026-09,Birds of Paradise,Limited Edition Alpha,28
+2026-09,Balance,Limited Edition Alpha,9
+2026-09,Basalt Monolith,Limited Edition Alpha,7
+2026-09,Berserk,Limited Edition Alpha,10
+2026-09,Birds of Paradise,Limited Edition Alpha,35
 2026-09,Black Lotus,Limited Edition Alpha,3
-2026-09,Channel,Limited Edition Alpha,1
-2026-09,Counterspell,Limited Edition Alpha,28
+2026-09,Channel,Limited Edition Alpha,2
+2026-09,Counterspell,Limited Edition Alpha,35
 2026-09,Dark Ritual,Limited Edition Alpha,6
-2026-09,Demonic Tutor,Limited Edition Alpha,4
-2026-09,Fastbond,Limited Edition Alpha,10
+2026-09,Demonic Tutor,Limited Edition Alpha,5
+2026-09,Fastbond,Limited Edition Alpha,13
 2026-09,Goblin King,Limited Edition Alpha,1
-2026-09,Lightning Bolt,Limited Edition Alpha,46
-2026-09,Llanowar Elves,Limited Edition Alpha,20
-2026-09,Mana Vault,Limited Edition Alpha,7
-2026-09,Mind Twist,Limited Edition Alpha,3
-2026-09,Mox Emerald,Limited Edition Alpha,24
-2026-09,Mox Jet,Limited Edition Alpha,28
-2026-09,Mox Pearl,Limited Edition Alpha,25
-2026-09,Mox Ruby,Limited Edition Alpha,21
-2026-09,Mox Sapphire,Limited Edition Alpha,10
+2026-09,Lightning Bolt,Limited Edition Alpha,54
+2026-09,Llanowar Elves,Limited Edition Alpha,22
+2026-09,Mana Vault,Limited Edition Alpha,9
+2026-09,Mind Twist,Limited Edition Alpha,4
+2026-09,Mox Emerald,Limited Edition Alpha,28
+2026-09,Mox Jet,Limited Edition Alpha,30
+2026-09,Mox Pearl,Limited Edition Alpha,28
+2026-09,Mox Ruby,Limited Edition Alpha,24
+2026-09,Mox Sapphire,Limited Edition Alpha,11
 2026-09,Red Elemental Blast,Limited Edition Alpha,1
-2026-09,Regrowth,Limited Edition Alpha,6
-2026-09,Sol Ring,Limited Edition Alpha,34
-2026-09,Swords to Plowshares,Limited Edition Alpha,60
+2026-09,Regrowth,Limited Edition Alpha,7
+2026-09,Sol Ring,Limited Edition Alpha,38
+2026-09,Swords to Plowshares,Limited Edition Alpha,68
 2026-09,Time Vault,Limited Edition Alpha,1
-2026-09,Time Walk,Limited Edition Alpha,14
-2026-09,Timetwister,Limited Edition Alpha,2
+2026-09,Time Walk,Limited Edition Alpha,17
+2026-09,Timetwister,Limited Edition Alpha,3
 2026-09,Twiddle,Limited Edition Alpha,1
-2026-09,Wheel of Fortune,Limited Edition Alpha,1
-2026-09,Wild Growth,Limited Edition Alpha,3
-2026-09,Wrath of God,Limited Edition Alpha,1
+2026-09,Wheel of Fortune,Limited Edition Alpha,2
+2026-09,Wild Growth,Limited Edition Alpha,4
+2026-09,Wrath of God,Limited Edition Alpha,2
 2026-09,Cryptic Command,Lorwyn,2
-2026-09,Ponder,Lorwyn,41
-2026-09,Rings of Brighthearth,Lorwyn,4
+2026-09,Ponder,Lorwyn,48
+2026-09,Rings of Brighthearth,Lorwyn,5
 2026-09,Shriekmaw,Lorwyn,1
 2026-09,Spellstutter Sprite,Lorwyn,1
 2026-09,Springleaf Drum,Lorwyn,1
 2026-09,Tarfire,Lorwyn,2
-2026-09,Thoughtseize,Lorwyn,48
-2026-09,"Ajani, Outland Chaperone",Lorwyn Eclipsed,2
+2026-09,Thoughtseize,Lorwyn,54
+2026-09,"Ajani, Outland Chaperone",Lorwyn Eclipsed,3
 2026-09,"Brigid, Clachan's Heart // Brigid, Doun's Mind",Lorwyn Eclipsed,2
 2026-09,Emptiness,Lorwyn Eclipsed,2
-2026-09,Formidable Speaker,Lorwyn Eclipsed,13
-2026-09,Hexing Squelcher,Lorwyn Eclipsed,11
+2026-09,Formidable Speaker,Lorwyn Eclipsed,17
+2026-09,Hexing Squelcher,Lorwyn Eclipsed,13
 2026-09,Kinscaer Sentry,Lorwyn Eclipsed,6
 2026-09,Moonshadow,Lorwyn Eclipsed,12
-2026-09,Sear,Lorwyn Eclipsed,6
-2026-09,Vibrance,Lorwyn Eclipsed,3
+2026-09,Sear,Lorwyn Eclipsed,8
+2026-09,Vibrance,Lorwyn Eclipsed,4
 2026-09,Wanderbrine Trapper,Lorwyn Eclipsed,1
 2026-09,Wistfulness,Lorwyn Eclipsed,1
 2026-09,Goblin Chieftain,Magic 2010,1
 2026-09,Silence,Magic 2010,5
 2026-09,Cultivate,Magic 2011,1
-2026-09,Preordain,Magic 2011,38
-2026-09,Primeval Titan,Magic 2011,4
+2026-09,Preordain,Magic 2011,45
+2026-09,Primeval Titan,Magic 2011,5
 2026-09,Viscera Seer,Magic 2011,2
 2026-09,Grand Abolisher,Magic 2012,3
 2026-09,"Krenko, Mob Boss",Magic 2013,1
 2026-09,Omniscience,Magic 2013,1
-2026-09,Elvish Mystic,Magic 2014,16
+2026-09,Elvish Mystic,Magic 2014,17
 2026-09,Goblin Rabblemaster,Magic 2015,9
 2026-09,Dark Petition,Magic Origins,1
 2026-09,"Jace, Vryn's Prodigy // Jace, Telepath Unbound",Magic Origins,4
-2026-09,"Chandra, Hope's Beacon",March of the Machine,2
+2026-09,"Chandra, Hope's Beacon",March of the Machine,3
 2026-09,Faerie Mastermind,March of the Machine,2
 2026-09,Invasion of Azgol // Ashen Reaper,March of the Machine,1
 2026-09,"Invasion of Ikoria // Zilortha, Apex of Ikoria",March of the Machine,2
@@ -43199,81 +43228,85 @@ mm-yy,card_name,set,plays
 2026-09,Scorn-Blade Berserker,March of the Machine,2
 2026-09,Surge of Salvation,March of the Machine,3
 2026-09,Timberland Ancient,March of the Machine,1
-2026-09,Death-Greeter's Champion,March of the Machine Commander,24
+2026-09,Death-Greeter's Champion,March of the Machine Commander,26
 2026-09,Exsanguinator Cavalry,March of the Machine Commander,1
 2026-09,Ayara's Oathsworn,March of the Machine: The Aftermath,3
 2026-09,Cosmic Rebirth,March of the Machine: The Aftermath,1
 2026-09,"Nissa, Resurgent Animist",March of the Machine: The Aftermath,2
+2026-09,"Sigarda, Font of Blessings",March of the Machine: The Aftermath,1
 2026-09,Urborg Scavengers,March of the Machine: The Aftermath,3
 2026-09,"Black Widow, Super Spy",Marvel Super Heroes,8
 2026-09,Call Damage Control,Marvel Super Heroes,1
 2026-09,"Cloak and Dagger, Entwined",Marvel Super Heroes,5
 2026-09,"Hawkeye, Master Marksman",Marvel Super Heroes,1
 2026-09,"Hellcat, Undying Vigilante",Marvel Super Heroes,1
-2026-09,Jennifer Walters // The Sensational She-Hulk,Marvel Super Heroes,5
+2026-09,Jennifer Walters // The Sensational She-Hulk,Marvel Super Heroes,6
 2026-09,"Loki, God of Mischief",Marvel Super Heroes,2
-2026-09,"Mole Man, Moloid Master",Marvel Super Heroes,8
-2026-09,"Night Nurse, Healer of Heroes",Marvel Super Heroes,11
+2026-09,"Mole Man, Moloid Master",Marvel Super Heroes,11
+2026-09,"Night Nurse, Healer of Heroes",Marvel Super Heroes,13
 2026-09,"Shang-Chi, Master of Kung Fu",Marvel Super Heroes,1
-2026-09,The Wondrous Wasp,Marvel Super Heroes,3
+2026-09,The Wondrous Wasp,Marvel Super Heroes,4
 2026-09,"Wolverine, Fierce Fighter",Marvel Super Heroes,1
-2026-09,Batroc the Leaper,Marvel Super Heroes Commander,1
-2026-09,Fantastic Elasticity,Marvel Super Heroes Commander,11
+2026-09,Batroc the Leaper,Marvel Super Heroes Commander,2
+2026-09,Fantastic Elasticity,Marvel Super Heroes Commander,16
 2026-09,"Hammerhead, Maggia Boss",Marvel Super Heroes Commander,1
 2026-09,Hit-Monkey,Marvel Super Heroes Commander,1
 2026-09,"Okoye, Mighty and Adored",Marvel Super Heroes Commander,1
 2026-09,The Fantasticar,Marvel Super Heroes Commander,1
 2026-09,"Vision, Spectral Synthezoid",Marvel Super Heroes Commander,1
 2026-09,Mana Crypt,Masters Edition II,11
-2026-09,Gush,Mercadian Masques,4
+2026-09,Gush,Mercadian Masques,5
 2026-09,Invigorate,Mercadian Masques,2
-2026-09,Snuff Out,Mercadian Masques,24
-2026-09,Enlightened Tutor,Mirage,6
+2026-09,Snuff Out,Mercadian Masques,28
+2026-09,Enlightened Tutor,Mirage,8
 2026-09,Flash,Mirage,1
-2026-09,Lion's Eye Diamond,Mirage,7
-2026-09,Mystical Tutor,Mirage,7
-2026-09,Rampant Growth,Mirage,1
-2026-09,Worldly Tutor,Mirage,18
-2026-09,Aether Spellbomb,Mirrodin,6
-2026-09,Chrome Mox,Mirrodin,51
+2026-09,Lion's Eye Diamond,Mirage,8
+2026-09,Mystical Tutor,Mirage,8
+2026-09,Rampant Growth,Mirage,2
+2026-09,Wall of Roots,Mirage,1
+2026-09,Worldly Tutor,Mirage,21
+2026-09,Aether Spellbomb,Mirrodin,7
+2026-09,Chrome Mox,Mirrodin,56
 2026-09,Dream's Grip,Mirrodin,1
-2026-09,Fabricate,Mirrodin,8
+2026-09,Fabricate,Mirrodin,9
+2026-09,Lightning Greaves,Mirrodin,1
 2026-09,Mindslaver,Mirrodin,1
+2026-09,Pyrite Spellbomb,Mirrodin,1
 2026-09,Scrabbling Claws,Mirrodin,2
-2026-09,Sylvan Scrying,Mirrodin,9
-2026-09,Talisman of Dominance,Mirrodin,7
-2026-09,Talisman of Progress,Mirrodin,8
+2026-09,Sylvan Scrying,Mirrodin,12
+2026-09,Talisman of Dominance,Mirrodin,8
+2026-09,Talisman of Progress,Mirrodin,9
 2026-09,Talisman of Unity,Mirrodin,6
 2026-09,Blightsteel Colossus,Mirrodin Besieged,1
 2026-09,Go for the Throat,Mirrodin Besieged,1
-2026-09,Green Sun's Zenith,Mirrodin Besieged,27
+2026-09,Green Sun's Zenith,Mirrodin Besieged,31
 2026-09,Hero of Bladehold,Mirrodin Besieged,1
 2026-09,Ichor Wellspring,Mirrodin Besieged,1
 2026-09,Phyrexian Revoker,Mirrodin Besieged,1
 2026-09,"Thrun, the Last Troll",Mirrodin Besieged,1
-2026-09,Archmage's Charm,Modern Horizons,6
-2026-09,Arcum's Astrolabe,Modern Horizons,1
-2026-09,Collector Ouphe,Modern Horizons,8
-2026-09,Echo of Eons,Modern Horizons,1
-2026-09,Ephemerate,Modern Horizons,19
+2026-09,Archmage's Charm,Modern Horizons,8
+2026-09,Arcum's Astrolabe,Modern Horizons,2
+2026-09,Collector Ouphe,Modern Horizons,11
+2026-09,Echo of Eons,Modern Horizons,2
+2026-09,Ephemerate,Modern Horizons,21
 2026-09,Fallen Shinobi,Modern Horizons,1
-2026-09,Force of Negation,Modern Horizons,34
-2026-09,Giver of Runes,Modern Horizons,26
-2026-09,Goblin Engineer,Modern Horizons,1
-2026-09,Hexdrinker,Modern Horizons,9
-2026-09,"Hogaak, Arisen Necropolis",Modern Horizons,1
+2026-09,Force of Negation,Modern Horizons,41
+2026-09,Giver of Runes,Modern Horizons,29
+2026-09,Goblin Engineer,Modern Horizons,2
+2026-09,Hexdrinker,Modern Horizons,10
+2026-09,"Hogaak, Arisen Necropolis",Modern Horizons,2
 2026-09,Ice-Fang Coatl,Modern Horizons,3
 2026-09,Ingenious Infiltrator,Modern Horizons,1
 2026-09,Kaya's Guile,Modern Horizons,1
 2026-09,On Thin Ice,Modern Horizons,1
 2026-09,Pashalik Mons,Modern Horizons,1
-2026-09,Ranger-Captain of Eos,Modern Horizons,23
+2026-09,Ranger-Captain of Eos,Modern Horizons,25
 2026-09,Seasoned Pyromancer,Modern Horizons,2
 2026-09,Soulherder,Modern Horizons,1
-2026-09,Talisman of Creativity,Modern Horizons,4
-2026-09,Talisman of Curiosity,Modern Horizons,7
+2026-09,Talisman of Creativity,Modern Horizons,5
+2026-09,Talisman of Curiosity,Modern Horizons,8
 2026-09,Talisman of Hierarchy,Modern Horizons,1
-2026-09,"Urza, Lord High Artificer",Modern Horizons,7
+2026-09,"Urza, Lord High Artificer",Modern Horizons,8
 2026-09,Winds of Abandon,Modern Horizons,1
 2026-09,Wrenn and Six,Modern Horizons,4
 2026-09,"Yawgmoth, Thran Physician",Modern Horizons,1
@@ -43281,119 +43314,127 @@ mm-yy,card_name,set,plays
 2026-09,Bloodbraid Marauder,Modern Horizons 2,1
 2026-09,Bone Shards,Modern Horizons 2,1
 2026-09,Damn,Modern Horizons 2,4
-2026-09,Dauthi Voidwalker,Modern Horizons 2,27
+2026-09,Dauthi Voidwalker,Modern Horizons 2,29
 2026-09,Dragon's Rage Channeler,Modern Horizons 2,4
-2026-09,Dress Down,Modern Horizons 2,17
-2026-09,Endurance,Modern Horizons 2,28
-2026-09,Esper Sentinel,Modern Horizons 2,16
+2026-09,Dress Down,Modern Horizons 2,20
+2026-09,Endurance,Modern Horizons 2,33
+2026-09,Esper Sentinel,Modern Horizons 2,17
 2026-09,Flametongue Yearling,Modern Horizons 2,1
-2026-09,Fury,Modern Horizons 2,37
-2026-09,Grief,Modern Horizons 2,14
-2026-09,"Grist, the Hunger Tide",Modern Horizons 2,21
-2026-09,Ignoble Hierarch,Modern Horizons 2,22
+2026-09,Fury,Modern Horizons 2,41
+2026-09,Grief,Modern Horizons 2,16
+2026-09,"Grist, the Hunger Tide",Modern Horizons 2,24
+2026-09,Ignoble Hierarch,Modern Horizons 2,28
 2026-09,Kaldra Compleat,Modern Horizons 2,2
-2026-09,Lose Focus,Modern Horizons 2,25
-2026-09,Murktide Regent,Modern Horizons 2,17
+2026-09,Lose Focus,Modern Horizons 2,31
+2026-09,Murktide Regent,Modern Horizons 2,21
 2026-09,Nested Shambler,Modern Horizons 2,1
 2026-09,Nettlecyst,Modern Horizons 2,1
 2026-09,Persist,Modern Horizons 2,2
 2026-09,Priest of Fell Rites,Modern Horizons 2,1
-2026-09,Prismatic Ending,Modern Horizons 2,30
+2026-09,Prismatic Ending,Modern Horizons 2,36
 2026-09,Profane Tutor,Modern Horizons 2,7
-2026-09,"Ragavan, Nimble Pilferer",Modern Horizons 2,39
+2026-09,"Ragavan, Nimble Pilferer",Modern Horizons 2,46
 2026-09,Sanctifier en-Vec,Modern Horizons 2,8
-2026-09,Solitude,Modern Horizons 2,48
+2026-09,Solitude,Modern Horizons 2,55
 2026-09,Step Through,Modern Horizons 2,1
-2026-09,Subtlety,Modern Horizons 2,24
+2026-09,Subtlety,Modern Horizons 2,30
 2026-09,Timeless Dragon,Modern Horizons 2,2
-2026-09,Timeless Witness,Modern Horizons 2,4
+2026-09,Timeless Witness,Modern Horizons 2,6
 2026-09,"Tourach, Dread Cantor",Modern Horizons 2,1
-2026-09,Unholy Heat,Modern Horizons 2,12
+2026-09,Unholy Heat,Modern Horizons 2,15
 2026-09,Unmarked Grave,Modern Horizons 2,2
 2026-09,Accursed Marauder,Modern Horizons 3,1
-2026-09,"Ajani, Nacatl Pariah // Ajani, Nacatl Avenger",Modern Horizons 3,40
+2026-09,"Ajani, Nacatl Pariah // Ajani, Nacatl Avenger",Modern Horizons 3,45
 2026-09,Amped Raptor,Modern Horizons 3,1
-2026-09,Birthing Ritual,Modern Horizons 3,4
-2026-09,Brainsurge,Modern Horizons 3,15
+2026-09,Birthing Ritual,Modern Horizons 3,6
+2026-09,Brainsurge,Modern Horizons 3,19
 2026-09,Chthonian Nightmare,Modern Horizons 3,5
 2026-09,Consign to Memory,Modern Horizons 3,1
-2026-09,Detective's Phoenix,Modern Horizons 3,2
+2026-09,Detective's Phoenix,Modern Horizons 3,3
+2026-09,Devourer of Destiny,Modern Horizons 3,1
+2026-09,"Eladamri, Korvecdal",Modern Horizons 3,1
 2026-09,Eldrazi Linebreaker,Modern Horizons 3,2
-2026-09,Emperor of Bones,Modern Horizons 3,32
+2026-09,Eldrazi Repurposer,Modern Horizons 3,1
+2026-09,Emperor of Bones,Modern Horizons 3,37
 2026-09,"Emrakul, the World Anew",Modern Horizons 3,2
-2026-09,Fanatic of Rhonas,Modern Horizons 3,4
+2026-09,Fanatic of Rhonas,Modern Horizons 3,5
 2026-09,Flare of Cultivation,Modern Horizons 3,2
 2026-09,Flare of Denial,Modern Horizons 3,2
 2026-09,Flare of Malice,Modern Horizons 3,1
-2026-09,Galvanic Discharge,Modern Horizons 3,24
+2026-09,Galvanic Discharge,Modern Horizons 3,26
 2026-09,Ghostfire Slice,Modern Horizons 3,1
-2026-09,Glaring Fleshraker,Modern Horizons 3,1
-2026-09,Guide of Souls,Modern Horizons 3,27
-2026-09,Harbinger of the Seas,Modern Horizons 3,8
+2026-09,Glaring Fleshraker,Modern Horizons 3,2
+2026-09,Guide of Souls,Modern Horizons 3,30
+2026-09,Harbinger of the Seas,Modern Horizons 3,11
 2026-09,Indebted Spirit,Modern Horizons 3,1
-2026-09,Invert Polarity,Modern Horizons 3,15
-2026-09,Kozilek's Command,Modern Horizons 3,4
-2026-09,Malevolent Rumble,Modern Horizons 3,23
+2026-09,Invert Polarity,Modern Horizons 3,19
+2026-09,Kozilek's Command,Modern Horizons 3,5
+2026-09,Malevolent Rumble,Modern Horizons 3,28
 2026-09,Marionette Apprentice,Modern Horizons 3,1
-2026-09,"Nadu, Winged Wisdom",Modern Horizons 3,7
-2026-09,Nethergoyf,Modern Horizons 3,10
-2026-09,Ocelot Pride,Modern Horizons 3,30
+2026-09,"Nadu, Winged Wisdom",Modern Horizons 3,9
+2026-09,Nethergoyf,Modern Horizons 3,12
+2026-09,Ocelot Pride,Modern Horizons 3,33
 2026-09,Party Thrasher,Modern Horizons 3,2
-2026-09,"Phelia, Exuberant Shepherd",Modern Horizons 3,34
-2026-09,"Phlage, Titan of Fire's Fury",Modern Horizons 3,16
-2026-09,Planar Genesis,Modern Horizons 3,5
-2026-09,Psychic Frog,Modern Horizons 3,15
+2026-09,"Phelia, Exuberant Shepherd",Modern Horizons 3,39
+2026-09,"Phlage, Titan of Fire's Fury",Modern Horizons 3,19
+2026-09,Planar Genesis,Modern Horizons 3,7
+2026-09,Psychic Frog,Modern Horizons 3,18
 2026-09,Refurbished Familiar,Modern Horizons 3,1
-2026-09,Six,Modern Horizons 3,4
-2026-09,Sowing Mycospawn,Modern Horizons 3,12
-2026-09,Springheart Nantuko,Modern Horizons 3,18
-2026-09,Static Prison,Modern Horizons 3,6
+2026-09,Siege Smash,Modern Horizons 3,1
+2026-09,Six,Modern Horizons 3,7
+2026-09,Sowing Mycospawn,Modern Horizons 3,14
+2026-09,Springheart Nantuko,Modern Horizons 3,22
+2026-09,Static Prison,Modern Horizons 3,7
 2026-09,Strix Serenade,Modern Horizons 3,1
-2026-09,"Tamiyo, Inquisitive Student // Tamiyo, Seasoned Scholar",Modern Horizons 3,27
-2026-09,Thief of Existence,Modern Horizons 3,1
+2026-09,"Tamiyo, Inquisitive Student // Tamiyo, Seasoned Scholar",Modern Horizons 3,32
+2026-09,Thief of Existence,Modern Horizons 3,2
 2026-09,Thraben Charm,Modern Horizons 3,6
 2026-09,"Ulamog, the Defiler",Modern Horizons 3,1
-2026-09,Vexing Bauble,Modern Horizons 3,5
+2026-09,Vexing Bauble,Modern Horizons 3,6
+2026-09,Wastescape Battlemage,Modern Horizons 3,1
 2026-09,White Orchid Phantom,Modern Horizons 3,7
-2026-09,Wight of the Reliquary,Modern Horizons 3,4
-2026-09,Wrath of the Skies,Modern Horizons 3,13
-2026-09,Barrowgoyf,Modern Horizons 3 Commander,42
-2026-09,Bloodbraid Challenger,Modern Horizons 3 Commander,6
+2026-09,Wight of the Reliquary,Modern Horizons 3,6
+2026-09,Wrath of the Skies,Modern Horizons 3,15
+2026-09,Barrowgoyf,Modern Horizons 3 Commander,49
+2026-09,Bloodbraid Challenger,Modern Horizons 3 Commander,7
 2026-09,Polygoyf,Modern Horizons 3 Commander,2
-2026-09,Pyrogoyf,Modern Horizons 3 Commander,29
+2026-09,Pyrogoyf,Modern Horizons 3 Commander,33
 2026-09,Tarmogoyf Nest,Modern Horizons 3 Commander,1
 2026-09,Idyllic Tutor,Morningtide,4
-2026-09,Scapeshift,Morningtide,3
+2026-09,Scapeshift,Morningtide,4
 2026-09,Aftermath Analyst,Murders at Karlov Manor,1
 2026-09,Analyze the Pollen,Murders at Karlov Manor,1
-2026-09,Archdruid's Charm,Murders at Karlov Manor,3
+2026-09,Archdruid's Charm,Murders at Karlov Manor,4
 2026-09,Cryptic Coat,Murders at Karlov Manor,3
 2026-09,Doorkeeper Thrull,Murders at Karlov Manor,1
-2026-09,Forensic Gadgeteer,Murders at Karlov Manor,5
-2026-09,Long Goodbye,Murders at Karlov Manor,4
-2026-09,No More Lies,Murders at Karlov Manor,14
+2026-09,Forensic Gadgeteer,Murders at Karlov Manor,6
+2026-09,Long Goodbye,Murders at Karlov Manor,6
+2026-09,No More Lies,Murders at Karlov Manor,16
 2026-09,Novice Inspector,Murders at Karlov Manor,1
 2026-09,Worldsoul's Rage,Murders at Karlov Manor,1
-2026-09,Daze,Nemesis,26
-2026-09,Parallax Wave,Nemesis,1
+2026-09,Daze,Nemesis,32
+2026-09,Parallax Wave,Nemesis,2
 2026-09,Seal of Fire,Nemesis,2
 2026-09,Skyshroud Claim,Nemesis,1
-2026-09,Tangle Wire,Nemesis,1
+2026-09,Tangle Wire,Nemesis,2
 2026-09,Kappa Cannoneer,Neon Dynasty Commander,1
 2026-09,"Shorikai, Genesis Engine",Neon Dynasty Commander,2
-2026-09,Currency Converter,New Capenna Commander,3
+2026-09,Currency Converter,New Capenna Commander,4
 2026-09,Batterskull,New Phyrexia,2
-2026-09,Birthing Pod,New Phyrexia,2
+2026-09,Birthing Pod,New Phyrexia,3
 2026-09,Blade Splicer,New Phyrexia,1
-2026-09,Dismember,New Phyrexia,39
-2026-09,Gitaxian Probe,New Phyrexia,41
-2026-09,Mental Misstep,New Phyrexia,55
+2026-09,Dismember,New Phyrexia,43
+2026-09,Gitaxian Probe,New Phyrexia,48
+2026-09,Mental Misstep,New Phyrexia,63
 2026-09,Noxious Revival,New Phyrexia,3
 2026-09,Phyrexian Metamorph,New Phyrexia,4
-2026-09,"Kozilek, the Great Distortion",Oath of the Gatewatch,2
+2026-09,Puresteel Paladin,New Phyrexia,1
+2026-09,"Kozilek, the Great Distortion",Oath of the Gatewatch,3
 2026-09,Reckless Bushwhacker,Oath of the Gatewatch,1
+2026-09,Thought-Knot Seer,Oath of the Gatewatch,1
+2026-09,World Breaker,Oath of the Gatewatch,1
 2026-09,Careful Study,Odyssey,1
-2026-09,Entomb,Odyssey,6
+2026-09,Entomb,Odyssey,8
 2026-09,Tainted Pact,Odyssey,2
 2026-09,Upheaval,Odyssey,1
 2026-09,Chain of Vapor,Onslaught,6
@@ -43403,132 +43444,149 @@ mm-yy,card_name,set,plays
 2026-09,Sparksmith,Onslaught,1
 2026-09,Weathered Wayfarer,Onslaught,1
 2026-09,Aven Interrupter,Outlaws of Thunder Junction,6
-2026-09,"Bristly Bill, Spine Sower",Outlaws of Thunder Junction,14
+2026-09,"Bristly Bill, Spine Sower",Outlaws of Thunder Junction,16
 2026-09,Caustic Bronco,Outlaws of Thunder Junction,1
-2026-09,Duelist of the Mind,Outlaws of Thunder Junction,2
+2026-09,Duelist of the Mind,Outlaws of Thunder Junction,3
 2026-09,Forsaken Miner,Outlaws of Thunder Junction,1
 2026-09,Goldvein Hydra,Outlaws of Thunder Junction,2
 2026-09,Insatiable Avarice,Outlaws of Thunder Junction,1
-2026-09,Lavaspur Boots,Outlaws of Thunder Junction,1
+2026-09,Lavaspur Boots,Outlaws of Thunder Junction,2
 2026-09,Nezumi Linkbreaker,Outlaws of Thunder Junction,1
-2026-09,Nurturing Pixie,Outlaws of Thunder Junction,1
+2026-09,Nurturing Pixie,Outlaws of Thunder Junction,2
 2026-09,Ornery Tumblewagg,Outlaws of Thunder Junction,2
-2026-09,Pillage the Bog,Outlaws of Thunder Junction,3
+2026-09,Pillage the Bog,Outlaws of Thunder Junction,4
 2026-09,Scorching Shot,Outlaws of Thunder Junction,1
-2026-09,Three Steps Ahead,Outlaws of Thunder Junction,5
+2026-09,Three Steps Ahead,Outlaws of Thunder Junction,7
 2026-09,Sand Scout,Outlaws of Thunder Junction Commander,2
-2026-09,"Atraxa, Grand Unifier",Phyrexia: All Will Be One,5
+2026-09,"Atraxa, Grand Unifier",Phyrexia: All Will Be One,8
 2026-09,Bloated Contaminator,Phyrexia: All Will Be One,4
-2026-09,Cankerbloom,Phyrexia: All Will Be One,15
+2026-09,Cankerbloom,Phyrexia: All Will Be One,17
 2026-09,Crawling Chorus,Phyrexia: All Will Be One,1
 2026-09,"Elesh Norn, Mother of Machines",Phyrexia: All Will Be One,1
 2026-09,Glissa Sunslayer,Phyrexia: All Will Be One,1
-2026-09,"Migloz, Maze Crusher",Phyrexia: All Will Be One,6
-2026-09,Sheoldred's Edict,Phyrexia: All Will Be One,8
+2026-09,"Kemba, Kha Enduring",Phyrexia: All Will Be One,1
+2026-09,"Migloz, Maze Crusher",Phyrexia: All Will Be One,7
+2026-09,Sheoldred's Edict,Phyrexia: All Will Be One,9
 2026-09,"Thrun, Breaker of Silence",Phyrexia: All Will Be One,2
 2026-09,Tyrranax Rex,Phyrexia: All Will Be One,2
 2026-09,Tyvar's Stand,Phyrexia: All Will Be One,2
-2026-09,Glimmer Lens,Phyrexia: All Will Be One Commander,1
+2026-09,Glimmer Lens,Phyrexia: All Will Be One Commander,2
+2026-09,"Otharri, Suns' Glory",Phyrexia: All Will Be One Commander,1
 2026-09,Staff of the Storyteller,Phyrexia: All Will Be One Commander,2
 2026-09,Damnation,Planar Chaos,3
-2026-09,Mana Tithe,Planar Chaos,2
-2026-09,Simian Spirit Guide,Planar Chaos,2
+2026-09,Mana Tithe,Planar Chaos,3
+2026-09,Simian Spirit Guide,Planar Chaos,3
 2026-09,Stingscourger,Planar Chaos,1
 2026-09,Sunlance,Planar Chaos,1
-2026-09,Baleful Strix,Planechase 2012,10
+2026-09,Baleful Strix,Planechase 2012,12
 2026-09,Shardless Agent,Planechase 2012,1
-2026-09,Eladamri's Call,Planeshift,11
+2026-09,Eladamri's Call,Planeshift,13
 2026-09,Orim's Chant,Planeshift,9
 2026-09,Terminate,Planeshift,1
-2026-09,Personal Tutor,Portal,3
+2026-09,Personal Tutor,Portal,4
 2026-09,Sylvan Tutor,Portal,1
 2026-09,Goblin Matron,Portal Second Age,1
-2026-09,Sleight of Hand,Portal Second Age,20
+2026-09,Sleight of Hand,Portal Second Age,23
 2026-09,Temporal Manipulation,Portal Second Age,2
 2026-09,Capture of Jingzhou,Portal Three Kingdoms,2
 2026-09,Imperial Recruiter,Portal Three Kingdoms,1
-2026-09,Imperial Seal,Portal Three Kingdoms,4
+2026-09,Imperial Seal,Portal Three Kingdoms,5
 2026-09,Ravages of War,Portal Three Kingdoms,1
-2026-09,Three Visits,Portal Three Kingdoms,4
+2026-09,Three Visits,Portal Three Kingdoms,6
 2026-09,Rhystic Tutor,Prophecy,2
 2026-09,Spore Frog,Prophecy,1
 2026-09,Collision // Colossus,Ravnica Allegiance,4
-2026-09,Growth Spiral,Ravnica Allegiance,4
-2026-09,Chord of Calling,Ravnica: City of Guilds,7
+2026-09,Growth Spiral,Ravnica Allegiance,5
+2026-09,Chord of Calling,Ravnica: City of Guilds,10
 2026-09,Dark Confidant,Ravnica: City of Guilds,10
 2026-09,Dimir Signet,Ravnica: City of Guilds,2
-2026-09,Farseek,Ravnica: City of Guilds,3
+2026-09,Farseek,Ravnica: City of Guilds,5
 2026-09,Golgari Signet,Ravnica: City of Guilds,2
-2026-09,Life from the Loam,Ravnica: City of Guilds,3
+2026-09,Life from the Loam,Ravnica: City of Guilds,5
 2026-09,Lightning Helix,Ravnica: City of Guilds,1
 2026-09,Muddle the Mixture,Ravnica: City of Guilds,8
-2026-09,Remand,Ravnica: City of Guilds,26
+2026-09,Remand,Ravnica: City of Guilds,33
 2026-09,Shadow of Doubt,Ravnica: City of Guilds,1
 2026-09,Shred Memory,Ravnica: City of Guilds,5
 2026-09,Carnage Interpreter,Ravnica: Clue Edition,14
-2026-09,Headliner Scarlett,Ravnica: Clue Edition,26
-2026-09,Avatar of Burgeoning Echoes,Reality Fracture,1
+2026-09,Headliner Scarlett,Ravnica: Clue Edition,28
+2026-09,Avatar of Burgeoning Echoes,Reality Fracture,2
 2026-09,Carnivorous Cultivator // Enroot,Reality Fracture,1
+2026-09,"Chandra, Chill of Compliance",Reality Fracture,2
+2026-09,Dark Matter Manipulator,Reality Fracture,1
 2026-09,Gideon the Oathless,Reality Fracture,1
+2026-09,Hexhaven Invigorator,Reality Fracture,1
 2026-09,Lich's Relic,Reality Fracture,1
+2026-09,"Marwyn, the Preserver",Reality Fracture,1
+2026-09,"Samut, Hazoret's Champion",Reality Fracture,1
+2026-09,"The Theorist, Jace Beleren",Reality Fracture,1
 2026-09,Vraska's Final Mercy,Reality Fracture,1
-2026-09,Abrupt Decay,Return to Ravnica,22
+2026-09,Way of the Cryomancer,Reality Fracture,1
+2026-09,Way of the Paradox,Reality Fracture,1
+2026-09,Abrupt Decay,Return to Ravnica,27
 2026-09,Ash Zealot,Return to Ravnica,1
-2026-09,Deathrite Shaman,Return to Ravnica,46
+2026-09,Chromatic Lantern,Return to Ravnica,1
+2026-09,Deathrite Shaman,Return to Ravnica,55
 2026-09,Dryad Militant,Return to Ravnica,8
+2026-09,Grisly Salvage,Return to Ravnica,1
 2026-09,Rest in Peace,Return to Ravnica,2
 2026-09,Sphinx's Revelation,Return to Ravnica,1
-2026-09,Supreme Verdict,Return to Ravnica,4
-2026-09,"Emrakul, the Aeons Torn",Rise of the Eldrazi,1
-2026-09,Flame Slash,Rise of the Eldrazi,18
-2026-09,Gideon Jura,Rise of the Eldrazi,2
-2026-09,Inquisition of Kozilek,Rise of the Eldrazi,48
+2026-09,Supreme Verdict,Return to Ravnica,5
+2026-09,"Emrakul, the Aeons Torn",Rise of the Eldrazi,2
+2026-09,Flame Slash,Rise of the Eldrazi,22
+2026-09,Gideon Jura,Rise of the Eldrazi,3
+2026-09,Inquisition of Kozilek,Rise of the Eldrazi,53
+2026-09,Nest Invader,Rise of the Eldrazi,1
 2026-09,Oust,Rise of the Eldrazi,2
+2026-09,Overgrown Battlement,Rise of the Eldrazi,1
 2026-09,"Ulamog, the Infinite Gyre",Rise of the Eldrazi,1
 2026-09,Wall of Omens,Rise of the Eldrazi,1
 2026-09,Fanatical Firebrand,Rivals of Ixalan,1
 2026-09,Clutch of the Undercity,Salvat 2005,1
 2026-09,Dimir Infiltrator,Salvat 2005,1
 2026-09,Selesnya Signet,Salvat 2005,1
-2026-09,Galvanic Blast,Scars of Mirrodin,1
-2026-09,Glint Hawk,Scars of Mirrodin,1
+2026-09,Galvanic Blast,Scars of Mirrodin,2
+2026-09,Glint Hawk,Scars of Mirrodin,2
 2026-09,Leonin Arbiter,Scars of Mirrodin,6
-2026-09,Mox Opal,Scars of Mirrodin,9
-2026-09,Nihil Spellbomb,Scars of Mirrodin,5
+2026-09,Mox Opal,Scars of Mirrodin,11
+2026-09,Nihil Spellbomb,Scars of Mirrodin,7
 2026-09,Brain Freeze,Scourge,4
 2026-09,Carrion Feeder,Scourge,1
 2026-09,Fierce Empath,Scourge,1
 2026-09,Goblin Warchief,Scourge,1
-2026-09,Stifle,Scourge,7
+2026-09,Stifle,Scourge,9
 2026-09,Temporal Fissure,Scourge,1
 2026-09,Tendrils of Agony,Scourge,3
-2026-09,"Deadpool, Trading Card",Secret Lair Drop,5
+2026-09,"Deadpool, Trading Card",Secret Lair Drop,6
 2026-09,Ambitious Augmenter,Secrets of Strixhaven,2
 2026-09,Daydream,Secrets of Strixhaven,1
 2026-09,Dina's Guidance,Secrets of Strixhaven,1
 2026-09,Embrace the Paradox,Secrets of Strixhaven,1
-2026-09,Emeritus of Abundance // Regrowth,Secrets of Strixhaven,6
+2026-09,Emeritus of Abundance // Regrowth,Secrets of Strixhaven,7
 2026-09,Emeritus of Ideation // Ancestral Recall,Secrets of Strixhaven,4
-2026-09,Erode,Secrets of Strixhaven,46
-2026-09,Flashback,Secrets of Strixhaven,12
-2026-09,Flow State,Secrets of Strixhaven,33
-2026-09,Impractical Joke,Secrets of Strixhaven,2
+2026-09,Erode,Secrets of Strixhaven,50
+2026-09,Flashback,Secrets of Strixhaven,15
+2026-09,Flow State,Secrets of Strixhaven,38
+2026-09,Grave Researcher // Reanimate,Secrets of Strixhaven,1
+2026-09,Hardened Academic,Secrets of Strixhaven,1
+2026-09,Impractical Joke,Secrets of Strixhaven,3
 2026-09,Lorehold Charm,Secrets of Strixhaven,1
 2026-09,Mathemagics,Secrets of Strixhaven,3
 2026-09,Practiced Offense,Secrets of Strixhaven,1
-2026-09,Prismari Charm,Secrets of Strixhaven,4
+2026-09,Prismari Charm,Secrets of Strixhaven,5
 2026-09,Proctor's Gaze,Secrets of Strixhaven,1
-2026-09,Professor Dellian Fel,Secrets of Strixhaven,3
+2026-09,Professor Dellian Fel,Secrets of Strixhaven,4
 2026-09,"Ral Zarek, Guest Lecturer",Secrets of Strixhaven,2
 2026-09,Slumbering Trudge,Secrets of Strixhaven,2
 2026-09,The Dawning Archaic,Secrets of Strixhaven,2
 2026-09,Traumatic Critique,Secrets of Strixhaven,2
 2026-09,Vastlands Scavenger // Bind to Life,Secrets of Strixhaven,1
-2026-09,Vicious Rivalry,Secrets of Strixhaven,3
-2026-09,Witherbloom Charm,Secrets of Strixhaven,3
-2026-09,"Excava, the Risen Past",Secrets of Strixhaven Commander,2
+2026-09,Vicious Rivalry,Secrets of Strixhaven,5
+2026-09,Witherbloom Charm,Secrets of Strixhaven,4
+2026-09,"Excava, the Risen Past",Secrets of Strixhaven Commander,3
 2026-09,Beseech the Queen,Shadowmoor,3
 2026-09,Faerie Macabre,Shadowmoor,1
+2026-09,Painter's Servant,Shadowmoor,1
 2026-09,Anguished Unmaking,Shadows over Innistrad,1
 2026-09,Essence Flux,Shadows over Innistrad,1
 2026-09,Scourge Wolf,Shadows over Innistrad,1
@@ -43539,58 +43597,59 @@ mm-yy,card_name,set,plays
 2026-09,Ethersworn Canonist,Shards of Alara,4
 2026-09,Ranger of Eos,Shards of Alara,13
 2026-09,Relic of Progenitus,Shards of Alara,1
-2026-09,Tezzeret the Seeker,Shards of Alara,7
+2026-09,Tezzeret the Seeker,Shards of Alara,8
 2026-09,Tidehollow Sculler,Shards of Alara,3
 2026-09,Grim Tutor,Starter 1999,4
-2026-09,Ledger Shredder,Streets of New Capenna,4
+2026-09,Ledger Shredder,Streets of New Capenna,6
 2026-09,Tainted Indulgence,Streets of New Capenna,2
 2026-09,Tenacious Underdog,Streets of New Capenna,1
 2026-09,Unlicensed Hearse,Streets of New Capenna,7
 2026-09,Void Rend,Streets of New Capenna,1
 2026-09,Baleful Mastery,Strixhaven: School of Mages,1
 2026-09,Deadly Brew,Strixhaven: School of Mages,1
-2026-09,Elite Spellbinder,Strixhaven: School of Mages,9
+2026-09,Elite Spellbinder,Strixhaven: School of Mages,10
 2026-09,Eureka Moment,Strixhaven: School of Mages,1
-2026-09,Expressive Iteration,Strixhaven: School of Mages,12
-2026-09,Solve the Equation,Strixhaven: School of Mages,7
+2026-09,Expressive Iteration,Strixhaven: School of Mages,15
+2026-09,Solve the Equation,Strixhaven: School of Mages,8
 2026-09,Witherbloom Command,Strixhaven: School of Mages,5
-2026-09,Ensnaring Bridge,Stronghold,4
-2026-09,Mana Leak,Stronghold,28
-2026-09,Mox Diamond,Stronghold,25
-2026-09,Nomads en-Kor,Stronghold,7
-2026-09,Ruination,Stronghold,3
+2026-09,Ensnaring Bridge,Stronghold,5
+2026-09,Mana Leak,Stronghold,34
+2026-09,Mox Diamond,Stronghold,30
+2026-09,Nomads en-Kor,Stronghold,9
+2026-09,Ruination,Stronghold,5
 2026-09,Wall of Blossoms,Stronghold,1
 2026-09,"Aragorn, King of Gondor",Tales of Middle-earth Commander,2
-2026-09,Forth Eorlingas!,Tales of Middle-earth Commander,12
+2026-09,Forth Eorlingas!,Tales of Middle-earth Commander,14
 2026-09,Galadriel's Dismissal,Tales of Middle-earth Commander,3
-2026-09,Legolas's Quick Reflexes,Tales of Middle-earth Commander,12
+2026-09,Legolas's Quick Reflexes,Tales of Middle-earth Commander,15
 2026-09,Relic of Sauron,Tales of Middle-earth Commander,2
 2026-09,Sail into the West,Tales of Middle-earth Commander,1
-2026-09,Auroral Procession,Tarkir: Dragonstorm,7
-2026-09,Clarion Conqueror,Tarkir: Dragonstorm,22
-2026-09,Cori-Steel Cutter,Tarkir: Dragonstorm,6
+2026-09,Auroral Procession,Tarkir: Dragonstorm,10
+2026-09,Clarion Conqueror,Tarkir: Dragonstorm,23
+2026-09,Cori-Steel Cutter,Tarkir: Dragonstorm,7
 2026-09,Descendant of Storms,Tarkir: Dragonstorm,1
 2026-09,Desperate Measures,Tarkir: Dragonstorm,1
-2026-09,"Elspeth, Storm Slayer",Tarkir: Dragonstorm,13
+2026-09,"Elspeth, Storm Slayer",Tarkir: Dragonstorm,14
 2026-09,Fangkeeper's Familiar,Tarkir: Dragonstorm,1
 2026-09,Glacierwood Siege,Tarkir: Dragonstorm,1
-2026-09,Heritage Reclamation,Tarkir: Dragonstorm,2
+2026-09,Heritage Reclamation,Tarkir: Dragonstorm,3
 2026-09,Inevitable Defeat,Tarkir: Dragonstorm,1
 2026-09,Marang River Regent // Coil and Catch,Tarkir: Dragonstorm,1
 2026-09,Mardu Siegebreaker,Tarkir: Dragonstorm,1
-2026-09,Nature's Rhythm,Tarkir: Dragonstorm,7
+2026-09,Nature's Rhythm,Tarkir: Dragonstorm,9
 2026-09,Qarsi Revenant,Tarkir: Dragonstorm,1
-2026-09,Rakshasa's Bargain,Tarkir: Dragonstorm,3
+2026-09,Rakshasa's Bargain,Tarkir: Dragonstorm,5
 2026-09,Rot-Curse Rakshasa,Tarkir: Dragonstorm,1
 2026-09,Sage of the Skies,Tarkir: Dragonstorm,2
 2026-09,Stadium Headliner,Tarkir: Dragonstorm,1
 2026-09,Strategic Betrayal,Tarkir: Dragonstorm,1
-2026-09,Sunpearl Kirin,Tarkir: Dragonstorm,1
-2026-09,"Surrak, Elusive Hunter",Tarkir: Dragonstorm,5
-2026-09,Tersa Lightshatter,Tarkir: Dragonstorm,3
-2026-09,"Ugin, Eye of the Storms",Tarkir: Dragonstorm,6
-2026-09,"Ureni, the Song Unending",Tarkir: Dragonstorm,2
-2026-09,Voice of Victory,Tarkir: Dragonstorm,34
+2026-09,Sunpearl Kirin,Tarkir: Dragonstorm,2
+2026-09,"Surrak, Elusive Hunter",Tarkir: Dragonstorm,6
+2026-09,Tersa Lightshatter,Tarkir: Dragonstorm,4
+2026-09,"Ugin, Eye of the Storms",Tarkir: Dragonstorm,7
+2026-09,"Ureni, the Song Unending",Tarkir: Dragonstorm,3
+2026-09,Voice of Victory,Tarkir: Dragonstorm,38
+2026-09,Colossal Grave-Reaver,Tarkir: Dragonstorm Commander,1
 2026-09,Will of the Sultai,Tarkir: Dragonstorm Commander,1
 2026-09,"Agent Bishop, Man in Black",Teenage Mutant Ninja Turtles,4
 2026-09,Bebop & Rocksteady,Teenage Mutant Ninja Turtles,2
@@ -43599,77 +43658,82 @@ mm-yy,card_name,set,plays
 2026-09,"Michelangelo, Weirdness to 11",Teenage Mutant Ninja Turtles,2
 2026-09,"Mutagen Man, Living Ooze",Teenage Mutant Ninja Turtles,2
 2026-09,"Rat King, Verminister",Teenage Mutant Ninja Turtles,2
+2026-09,Skateboard,Teenage Mutant Ninja Turtles,1
 2026-09,Super Shredder,Teenage Mutant Ninja Turtles,6
 2026-09,The Ooze,Teenage Mutant Ninja Turtles,3
 2026-09,"Tokka & Rahzar, Terrible Twos",Teenage Mutant Ninja Turtles,4
 2026-09,Foot Chopper,Teenage Mutant Ninja Turtles Eternal,1
-2026-09,Game Over,Teenage Mutant Ninja Turtles Eternal,2
+2026-09,Game Over,Teenage Mutant Ninja Turtles Eternal,3
 2026-09,Capsize,Tempest,4
 2026-09,Goblin Bombardment,Tempest,3
-2026-09,Intuition,Tempest,3
+2026-09,Grindstone,Tempest,1
+2026-09,Intuition,Tempest,4
 2026-09,Living Death,Tempest,1
-2026-09,Lotus Petal,Tempest,17
+2026-09,Lotus Petal,Tempest,19
 2026-09,Mogg Fanatic,Tempest,1
 2026-09,Mogg Raider,Tempest,1
-2026-09,Reanimate,Tempest,29
+2026-09,Reanimate,Tempest,32
 2026-09,Time Warp,Tempest,2
 2026-09,Ancient Cornucopia,The Big Score,1
 2026-09,Harvester of Misery,The Big Score,3
-2026-09,Legion Extruder,The Big Score,1
+2026-09,Legion Extruder,The Big Score,3
 2026-09,Simulacrum Synthesizer,The Big Score,1
 2026-09,Audacity,The Brothers' War,2
-2026-09,Brotherhood's End,The Brothers' War,12
+2026-09,Brotherhood's End,The Brothers' War,16
 2026-09,Bushwhack,The Brothers' War,2
-2026-09,Dreams of Steel and Oil,The Brothers' War,6
-2026-09,Haywire Mite,The Brothers' War,17
-2026-09,Loran of the Third Path,The Brothers' War,4
+2026-09,Dreams of Steel and Oil,The Brothers' War,7
+2026-09,Haywire Mite,The Brothers' War,19
+2026-09,Loran of the Third Path,The Brothers' War,5
 2026-09,Overwhelming Remorse,The Brothers' War,1
 2026-09,Portal to Phyrexia,The Brothers' War,3
 2026-09,Recommission,The Brothers' War,2
 2026-09,Recruitment Officer,The Brothers' War,1
 2026-09,Siege Veteran,The Brothers' War,2
-2026-09,Blood Moon,The Dark,23
-2026-09,Elves of Deep Shadow,The Dark,2
-2026-09,"Azog, Moria's Ruin",The Hobbit,1
+2026-09,Blood Moon,The Dark,25
+2026-09,Elves of Deep Shadow,The Dark,4
+2026-09,"Azog, Moria's Ruin",The Hobbit,2
 2026-09,Bejeweled Warg,The Hobbit,5
-2026-09,"Bilbo, Thief in the Night",The Hobbit,16
+2026-09,"Bilbo, Thief in the Night",The Hobbit,19
 2026-09,Confusticate and Bebother,The Hobbit,1
 2026-09,Giant's Boulder,The Hobbit,3
-2026-09,"Gollum, Riddle Master",The Hobbit,6
+2026-09,"Gollum, Riddle Master",The Hobbit,7
+2026-09,Kíli the Resourceful,The Hobbit,1
 2026-09,Ragged Short Spear,The Hobbit,1
-2026-09,Riddles in the Dark,The Hobbit,4
+2026-09,Riddles in the Dark,The Hobbit,6
 2026-09,The Eagles Are Coming!,The Hobbit,3
 2026-09,The Queen of Dale,The Hobbit,3
 2026-09,The Sackville-Bagginses,The Hobbit,1
 2026-09,Tireless Provisioner,The List,1
 2026-09,"Valki, God of Lies // Tibalt, Cosmic Impostor",The List,1
 2026-09,"Arwen, Mortal Queen",The Lord of the Rings: Tales of Middle-earth,1
-2026-09,"Boromir, Warden of the Tower",The Lord of the Rings: Tales of Middle-earth,14
-2026-09,Delighted Halfling,The Lord of the Rings: Tales of Middle-earth,22
+2026-09,"Boromir, Warden of the Tower",The Lord of the Rings: Tales of Middle-earth,15
+2026-09,Delighted Halfling,The Lord of the Rings: Tales of Middle-earth,26
 2026-09,Eagles of the North,The Lord of the Rings: Tales of Middle-earth,6
-2026-09,Flame of Anor,The Lord of the Rings: Tales of Middle-earth,5
+2026-09,Flame of Anor,The Lord of the Rings: Tales of Middle-earth,8
 2026-09,Flowering of the White Tree,The Lord of the Rings: Tales of Middle-earth,4
-2026-09,Generous Ent,The Lord of the Rings: Tales of Middle-earth,12
-2026-09,Lórien Revealed,The Lord of the Rings: Tales of Middle-earth,38
+2026-09,Generous Ent,The Lord of the Rings: Tales of Middle-earth,13
+2026-09,Lórien Revealed,The Lord of the Rings: Tales of Middle-earth,46
 2026-09,Moria Marauder,The Lord of the Rings: Tales of Middle-earth,1
 2026-09,Oliphaunt,The Lord of the Rings: Tales of Middle-earth,10
-2026-09,Orcish Bowmasters,The Lord of the Rings: Tales of Middle-earth,39
+2026-09,Orcish Bowmasters,The Lord of the Rings: Tales of Middle-earth,45
 2026-09,Palantír of Orthanc,The Lord of the Rings: Tales of Middle-earth,2
-2026-09,Reprieve,The Lord of the Rings: Tales of Middle-earth,20
+2026-09,Reprieve,The Lord of the Rings: Tales of Middle-earth,23
 2026-09,Samwise Gamgee,The Lord of the Rings: Tales of Middle-earth,1
 2026-09,Samwise the Stouthearted,The Lord of the Rings: Tales of Middle-earth,5
-2026-09,Stern Scolding,The Lord of the Rings: Tales of Middle-earth,6
-2026-09,The One Ring,The Lord of the Rings: Tales of Middle-earth,18
-2026-09,Troll of Khazad-dûm,The Lord of the Rings: Tales of Middle-earth,23
+2026-09,Stern Scolding,The Lord of the Rings: Tales of Middle-earth,9
+2026-09,The One Ring,The Lord of the Rings: Tales of Middle-earth,22
+2026-09,Troll of Khazad-dûm,The Lord of the Rings: Tales of Middle-earth,26
 2026-09,Bartolomé del Presidio,The Lost Caverns of Ixalan,1
-2026-09,Bitter Triumph,The Lost Caverns of Ixalan,19
-2026-09,Deep-Cavern Bat,The Lost Caverns of Ixalan,19
-2026-09,Get Lost,The Lost Caverns of Ixalan,26
-2026-09,Helping Hand,The Lost Caverns of Ixalan,2
-2026-09,"Inti, Seneschal of the Sun",The Lost Caverns of Ixalan,20
-2026-09,"Malcolm, Alluring Scoundrel",The Lost Caverns of Ixalan,4
+2026-09,Bitter Triumph,The Lost Caverns of Ixalan,22
+2026-09,Deep-Cavern Bat,The Lost Caverns of Ixalan,22
+2026-09,Dusk Rose Reliquary,The Lost Caverns of Ixalan,1
+2026-09,Get Lost,The Lost Caverns of Ixalan,27
+2026-09,"Ghalta, Stampede Tyrant",The Lost Caverns of Ixalan,1
+2026-09,Helping Hand,The Lost Caverns of Ixalan,3
+2026-09,"Inti, Seneschal of the Sun",The Lost Caverns of Ixalan,22
+2026-09,"Malcolm, Alluring Scoundrel",The Lost Caverns of Ixalan,5
 2026-09,Marauding Brinefang,The Lost Caverns of Ixalan,1
-2026-09,Molten Collapse,The Lost Caverns of Ixalan,15
+2026-09,Molten Collapse,The Lost Caverns of Ixalan,16
 2026-09,Nurturing Bristleback,The Lost Caverns of Ixalan,1
 2026-09,Preacher of the Schism,The Lost Caverns of Ixalan,1
 2026-09,Sanguine Evangelist,The Lost Caverns of Ixalan,2
@@ -43678,139 +43742,658 @@ mm-yy,card_name,set,plays
 2026-09,Spelunking,The Lost Caverns of Ixalan,1
 2026-09,Stalactite Stalker,The Lost Caverns of Ixalan,2
 2026-09,The Enigma Jewel // Locus of Enlightenment,The Lost Caverns of Ixalan,1
-2026-09,Tishana's Tidebinder,The Lost Caverns of Ixalan,7
+2026-09,Tishana's Tidebinder,The Lost Caverns of Ixalan,8
 2026-09,Tithing Blade // Consuming Sepulcher,The Lost Caverns of Ixalan,1
 2026-09,Trumpeting Carnosaur,The Lost Caverns of Ixalan,2
 2026-09,Wail of the Forgotten,The Lost Caverns of Ixalan,3
 2026-09,Warden of the Inner Sky,The Lost Caverns of Ixalan,1
-2026-09,Broadside Bombardiers,The Lost Caverns of Ixalan Commander,31
+2026-09,Broadside Bombardiers,The Lost Caverns of Ixalan Commander,35
 2026-09,Mogis's Marauder,Theros,1
 2026-09,Sylvan Caryatid,Theros,1
-2026-09,Cling to Dust,Theros Beyond Death,16
+2026-09,Cling to Dust,Theros Beyond Death,20
 2026-09,Dryad of the Ilysian Grove,Theros Beyond Death,1
 2026-09,"Kroxa, Titan of Death's Hunger",Theros Beyond Death,1
-2026-09,Shadowspear,Theros Beyond Death,17
-2026-09,Soul-Guide Lantern,Theros Beyond Death,7
+2026-09,Shadowspear,Theros Beyond Death,21
+2026-09,Soul-Guide Lantern,Theros Beyond Death,9
 2026-09,Thassa's Oracle,Theros Beyond Death,1
 2026-09,Underworld Breach,Theros Beyond Death,4
-2026-09,"Uro, Titan of Nature's Wrath",Theros Beyond Death,12
+2026-09,"Uro, Titan of Nature's Wrath",Theros Beyond Death,17
 2026-09,Woe Strider,Theros Beyond Death,1
-2026-09,Bonecrusher Giant // Stomp,Throne of Eldraine,6
-2026-09,Brazen Borrower // Petty Theft,Throne of Eldraine,19
+2026-09,Bonecrusher Giant // Stomp,Throne of Eldraine,8
+2026-09,Brazen Borrower // Petty Theft,Throne of Eldraine,22
 2026-09,Cauldron Familiar,Throne of Eldraine,1
 2026-09,Charming Prince,Throne of Eldraine,4
-2026-09,Drown in the Loch,Throne of Eldraine,15
+2026-09,Drown in the Loch,Throne of Eldraine,18
 2026-09,Giant Killer // Chop Down,Throne of Eldraine,7
-2026-09,"Oko, Thief of Crowns",Throne of Eldraine,18
-2026-09,Once Upon a Time,Throne of Eldraine,10
-2026-09,Questing Beast,Throne of Eldraine,10
+2026-09,"Oko, Thief of Crowns",Throne of Eldraine,23
+2026-09,Once Upon a Time,Throne of Eldraine,12
+2026-09,Questing Beast,Throne of Eldraine,11
 2026-09,Robber of the Rich,Throne of Eldraine,6
-2026-09,Shepherd of the Flock // Usher to Safety,Throne of Eldraine,1
+2026-09,Shepherd of the Flock // Usher to Safety,Throne of Eldraine,2
 2026-09,Specter's Shriek,Throne of Eldraine,1
 2026-09,The Great Henge,Throne of Eldraine,2
 2026-09,"Torbran, Thane of Red Fell",Throne of Eldraine,1
-2026-09,Wishclaw Talisman,Throne of Eldraine,4
+2026-09,Wishclaw Talisman,Throne of Eldraine,5
 2026-09,Witching Well,Throne of Eldraine,2
 2026-09,"Arachne, Psionic Weaver",Through the Omenpaths,2
 2026-09,"Lizard, Connors's Curse",Through the Omenpaths,4
 2026-09,Peter Parker's Camera,Through the Omenpaths,1
 2026-09,Spectacular Spider-Man,Through the Omenpaths,8
 2026-09,Spider-Punk,Through the Omenpaths,6
-2026-09,"Spider-Woman, Stunning Savior",Through the Omenpaths,14
+2026-09,"Spider-Woman, Stunning Savior",Through the Omenpaths,16
 2026-09,Symbiote Spider-Man,Through the Omenpaths,1
 2026-09,Chromatic Star,Time Spiral,3
+2026-09,Dread Return,Time Spiral,1
 2026-09,Living End,Time Spiral,1
 2026-09,Mogg War Marshal,Time Spiral,1
 2026-09,Prismatic Lens,Time Spiral,1
 2026-09,Saffi Eriksdotter,Time Spiral,1
-2026-09,Search for Tomorrow,Time Spiral,3
+2026-09,Search for Tomorrow,Time Spiral,5
 2026-09,Cabal Ritual,Torment,5
 2026-09,Fractured Identity,Treasure Chest,1
 2026-09,Territorial Hellkite,Treasure Chest,1
 2026-09,Clowning Around,Unfinity,2
-2026-09,"Comet, Stellar Pup",Unfinity,9
+2026-09,"Comet, Stellar Pup",Unfinity,11
 2026-09,Saw in Half,Unfinity,1
 2026-09,Metalworker,Urza's Destiny,1
-2026-09,Crop Rotation,Urza's Legacy,19
+2026-09,Crop Rotation,Urza's Legacy,23
 2026-09,Defense Grid,Urza's Legacy,10
 2026-09,Frantic Search,Urza's Legacy,7
-2026-09,Goblin Welder,Urza's Legacy,1
-2026-09,Grim Monolith,Urza's Legacy,11
-2026-09,Memory Jar,Urza's Legacy,5
-2026-09,Mother of Runes,Urza's Legacy,30
+2026-09,Goblin Welder,Urza's Legacy,2
+2026-09,Grim Monolith,Urza's Legacy,12
+2026-09,Memory Jar,Urza's Legacy,6
+2026-09,Mother of Runes,Urza's Legacy,34
 2026-09,Rancor,Urza's Legacy,2
 2026-09,Tinker,Urza's Legacy,2
-2026-09,Unearth,Urza's Legacy,12
-2026-09,Back to Basics,Urza's Saga,8
-2026-09,Duress,Urza's Saga,42
+2026-09,Unearth,Urza's Legacy,14
+2026-09,Back to Basics,Urza's Saga,11
+2026-09,Duress,Urza's Saga,46
 2026-09,Exhume,Urza's Saga,1
 2026-09,Exploration,Urza's Saga,5
 2026-09,Gamble,Urza's Saga,4
 2026-09,Goblin Lackey,Urza's Saga,1
 2026-09,Rain of Filth,Urza's Saga,3
 2026-09,Show and Tell,Urza's Saga,2
-2026-09,Time Spiral,Urza's Saga,5
-2026-09,Voltaic Key,Urza's Saga,7
+2026-09,Time Spiral,Urza's Saga,6
+2026-09,Voltaic Key,Urza's Saga,8
 2026-09,Yawgmoth's Will,Urza's Saga,3
 2026-09,City of Solitude,Visions,3
 2026-09,Fireblast,Visions,2
 2026-09,Goblin Recruiter,Visions,1
 2026-09,Impulse,Visions,1
-2026-09,Natural Order,Visions,6
+2026-09,Natural Order,Visions,9
 2026-09,Necromancy,Visions,2
 2026-09,Squandered Resources,Visions,4
-2026-09,Vampiric Tutor,Visions,12
+2026-09,Vampiric Tutor,Visions,15
 2026-09,Vision Charm,Visions,3
 2026-09,"Ashiok, Dream Render",War of the Spark,6
-2026-09,Dreadhorde Arcanist,War of the Spark,6
-2026-09,Finale of Devastation,War of the Spark,5
+2026-09,Dreadhorde Arcanist,War of the Spark,9
+2026-09,Finale of Devastation,War of the Spark,6
 2026-09,God-Eternal Oketra,War of the Spark,1
 2026-09,"Jace, Wielder of Mysteries",War of the Spark,2
 2026-09,"Krenko, Tin Street Kingpin",War of the Spark,1
-2026-09,"Narset, Parter of Veils",War of the Spark,5
-2026-09,Neoform,War of the Spark,7
-2026-09,"Teferi, Time Raveler",War of the Spark,39
+2026-09,"Narset, Parter of Veils",War of the Spark,7
+2026-09,Neoform,War of the Spark,10
+2026-09,"Teferi, Time Raveler",War of the Spark,44
 2026-09,Chaos Defiler,"Warhammer 40,000 Commander",1
-2026-09,Mawloc,"Warhammer 40,000 Commander",14
+2026-09,Mawloc,"Warhammer 40,000 Commander",16
 2026-09,Triumph of Saint Katherine,"Warhammer 40,000 Commander",5
 2026-09,Zephyrim,"Warhammer 40,000 Commander",1
 2026-09,Argivian Find,Weatherlight,3
 2026-09,Doomsday,Weatherlight,1
 2026-09,Mind Stone,Weatherlight,1
 2026-09,Phyrexian Furnace,Weatherlight,3
-2026-09,Agatha's Soul Cauldron,Wilds of Eldraine,12
+2026-09,Agatha's Soul Cauldron,Wilds of Eldraine,13
 2026-09,Beseech the Mirror,Wilds of Eldraine,5
 2026-09,Candy Trail,Wilds of Eldraine,2
 2026-09,Farsight Ritual,Wilds of Eldraine,3
 2026-09,Hopeless Nightmare,Wilds of Eldraine,1
-2026-09,"Kellan, the Fae-Blooded // Birthright Boon",Wilds of Eldraine,2
-2026-09,Monstrous Rage,Wilds of Eldraine,4
+2026-09,"Kellan, the Fae-Blooded // Birthright Boon",Wilds of Eldraine,3
+2026-09,Monstrous Rage,Wilds of Eldraine,5
+2026-09,Questing Druid // Seek the Beast,Wilds of Eldraine,1
 2026-09,The Huntsman's Redemption,Wilds of Eldraine,10
+2026-09,Up the Beanstalk,Wilds of Eldraine,1
 2026-09,Virtue of Persistence // Locthwain Scorn,Wilds of Eldraine,1
 2026-09,Werefox Bodyguard,Wilds of Eldraine,1
 2026-09,Amulet of Vigor,Worldwake,1
+2026-09,Arbor Elf,Worldwake,1
 2026-09,Everflowing Chalice,Worldwake,1
-2026-09,Explore,Worldwake,4
-2026-09,"Jace, the Mind Sculptor",Worldwake,8
-2026-09,Stoneforge Mystic,Worldwake,33
+2026-09,Explore,Worldwake,5
+2026-09,"Jace, the Mind Sculptor",Worldwake,11
+2026-09,Stoneforge Mystic,Worldwake,36
 2026-09,Brave the Elements,Zendikar,3
 2026-09,Burst Lightning,Zendikar,1
-2026-09,Expedition Map,Zendikar,11
+2026-09,Day of Judgment,Zendikar,1
+2026-09,Expedition Map,Zendikar,13
 2026-09,Goblin Bushwhacker,Zendikar,1
 2026-09,Goblin Guide,Zendikar,1
-2026-09,Kor Skyfisher,Zendikar,1
+2026-09,Kor Skyfisher,Zendikar,2
 2026-09,Lotus Cobra,Zendikar,1
 2026-09,Mindbreak Trap,Zendikar,1
-2026-09,Spell Pierce,Zendikar,32
+2026-09,Spell Pierce,Zendikar,39
 2026-09,Vampire Hexmage,Zendikar,2
 2026-09,Vines of Vastwood,Zendikar,2
-2026-09,Archon of Emeria,Zendikar Rising,20
-2026-09,Bloodchief's Thirst,Zendikar Rising,4
+2026-09,Archon of Emeria,Zendikar Rising,23
+2026-09,Bloodchief's Thirst,Zendikar Rising,5
 2026-09,Kargan Intimidator,Zendikar Rising,1
 2026-09,Luminarch Aspirant,Zendikar Rising,15
 2026-09,"Omnath, Locus of Creation",Zendikar Rising,1
 2026-09,Roiling Vortex,Zendikar Rising,1
 2026-09,Scourge of the Skyclaves,Zendikar Rising,1
-2026-09,Skyclave Apparition,Zendikar Rising,17
+2026-09,Skyclave Apparition,Zendikar Rising,18
 2026-09,Thieving Skydiver,Zendikar Rising,1
 2026-09,Valakut Exploration,Zendikar Rising,1
+2026-10,Portable Hole,Adventures in the Forgotten Realms,2
+2026-10,"Baral, Chief of Compliance",Aether Revolt,1
+2026-10,Fatal Push,Aether Revolt,5
+2026-10,Walking Ballista,Aether Revolt,1
+2026-10,"Captain Howler, Sea Scourge",Aetherdrift,1
+2026-10,Marauding Mako,Aetherdrift,1
+2026-10,Molt Tender,Aetherdrift,1
+2026-10,Monument to Endurance,Aetherdrift,1
+2026-10,Scrounging Skyray,Aetherdrift,1
+2026-10,Skyserpent Seeker,Aetherdrift,1
+2026-10,Stock Up,Aetherdrift,7
+2026-10,Force of Will,Alliances,7
+2026-10,Lim-Dûl's Vault,Alliances,2
+2026-10,Commit // Memory,Amonkhet,1
+2026-10,Candelabra of Tawnos,Antiquities,1
+2026-10,Power Artifact,Antiquities,1
+2026-10,Transmute Artifact,Antiquities,2
+2026-10,Evasive Action,Apocalypse,1
+2026-10,Life // Death,Apocalypse,1
+2026-10,Temporal Mastery,Avacyn Restored,2
+2026-10,Terminus,Avacyn Restored,1
+2026-10,Badgermole Cub,Avatar: The Last Airbender,2
+2026-10,Boomerang Basics,Avatar: The Last Airbender,2
+2026-10,"Wan Shi Tong, Librarian",Avatar: The Last Airbender,4
+2026-10,Fire Nation Occupation,Avatar: The Last Airbender Eternal,1
+2026-10,"Toph, Greatest Earthbender",Avatar: The Last Airbender Eternal,1
+2026-10,Bring to Light,Battle for Zendikar,1
+2026-10,Spellseeker,Battlebond,2
+2026-10,Into the Flood Maw,Bloomburrow,2
+2026-10,Keen-Eyed Curator,Bloomburrow,1
+2026-10,Stormcatch Mentor,Bloomburrow,1
+2026-10,Thundertrap Trainer,Bloomburrow,1
+2026-10,Satyr Wayfinder,Born of the Gods,1
+2026-10,Gifts Ungiven,Champions of Kamigawa,1
+2026-10,Sakura-Tribe Elder,Champions of Kamigawa,2
+2026-10,Sensei's Divining Top,Champions of Kamigawa,1
+2026-10,Mishra's Bauble,Coldsnap,4
+2026-10,Scavenging Ooze,Commander 2011,1
+2026-10,Toxic Deluge,Commander 2013,1
+2026-10,"Titania, Protector of Argoth",Commander 2014,1
+2026-10,Mystic Confluence,Commander 2015,1
+2026-10,Retrofitter Foundry,Commander 2018,1
+2026-10,Anje's Ravager,Commander 2019,3
+2026-10,Sevinne's Reclamation,Commander 2019,1
+2026-10,"Laelia, the Blade Reforged",Commander 2021,2
+2026-10,Hullbreacher,Commander Legends,1
+2026-10,Opposition Agent,Commander Legends,5
+2026-10,Delayed Blast Fireball,Commander Legends: Battle for Baldur's Gate,1
+2026-10,"Gut, True Soul Zealot",Commander Legends: Battle for Baldur's Gate,1
+2026-10,"Minsc & Boo, Timeless Heroes",Commander Legends: Battle for Baldur's Gate,3
+2026-10,Rescuer Chwinga,Commander Legends: Battle for Baldur's Gate,1
+2026-10,Seasoned Dungeoneer,Commander Legends: Battle for Baldur's Gate,1
+2026-10,Undermountain Adventurer,Commander Legends: Battle for Baldur's Gate,2
+2026-10,White Plume Adventurer,Commander Legends: Battle for Baldur's Gate,1
+2026-10,Noble Hierarch,Conflux,2
+2026-10,Path to Exile,Conflux,4
+2026-10,Dack Fayden,Conspiracy,2
+2026-10,Stitcher's Supplier,Core Set 2019,1
+2026-10,Elvish Reclaimer,Core Set 2020,2
+2026-10,Manifold Key,Core Set 2020,1
+2026-10,Veil of Summer,Core Set 2020,1
+2026-10,Faithless Looting,Dark Ascension,3
+2026-10,"Thalia, Guardian of Thraben",Dark Ascension,1
+2026-10,Thought Scour,Dark Ascension,1
+2026-10,Skullclamp,Darksteel,1
+2026-10,Infernal Tutor,Dissension,1
+2026-10,Spell Snare,Dissension,5
+2026-10,Sonic Screwdriver,Doctor Who,1
+2026-10,Goblin Electromancer,Duel Decks: Izzet vs. Golgari,1
+2026-10,Abhorrent Oculus,Duskmourn: House of Horror,4
+2026-10,Chainsaw,Duskmourn: House of Horror,1
+2026-10,Demonic Counsel,Duskmourn: House of Horror,1
+2026-10,Fear of Missing Out,Duskmourn: House of Horror,3
+2026-10,Ghost Vacuum,Duskmourn: House of Horror,1
+2026-10,Roaring Furnace // Steaming Sauna,Duskmourn: House of Horror,1
+2026-10,Screaming Nemesis,Duskmourn: House of Horror,1
+2026-10,"Valgavoth, Terror Eater",Duskmourn: House of Horror,1
+2026-10,Metamorphosis Fanatic,Duskmourn: House of Horror Commander,2
+2026-10,Ursine Monstrosity,Duskmourn: House of Horror Commander,1
+2026-10,Consult the Star Charts,Edge of Eternities,5
+2026-10,Cryogen Relic,Edge of Eternities,1
+2026-10,Frenzied Baloth,Edge of Eternities,1
+2026-10,Icetill Explorer,Edge of Eternities,1
+2026-10,Melded Moxite,Edge of Eternities,1
+2026-10,Ouroboroid,Edge of Eternities,1
+2026-10,Quantum Riddler,Edge of Eternities,3
+2026-10,"Tezzeret, Cruel Captain",Edge of Eternities,2
+2026-10,Timeline Culler,Edge of Eternities,1
+2026-10,Collective Brutality,Eldritch Moon,1
+2026-10,Eldritch Evolution,Eldritch Moon,1
+2026-10,"Thalia, Heretic Cathar",Eldritch Moon,2
+2026-10,Oath of Druids,Exodus,1
+2026-10,Recurring Nightmare,Exodus,1
+2026-10,Survival of the Fittest,Exodus,1
+2026-10,Alpha Deathclaw,Fallout,1
+2026-10,Pre-War Formalwear,Fallout,1
+2026-10,Conjurer's Bauble,Fifth Dawn,1
+2026-10,Crucible of Worlds,Fifth Dawn,1
+2026-10,Eternal Witness,Fifth Dawn,1
+2026-10,Grinding Station,Fifth Dawn,1
+2026-10,Pentad Prism,Fifth Dawn,1
+2026-10,Serum Visions,Fifth Dawn,4
+2026-10,Ambrosia Whiteheart,Final Fantasy,1
+2026-10,"Cecil, Dark Knight // Cecil, Redeemed Paladin",Final Fantasy,2
+2026-10,"Cloud, Midgar Mercenary",Final Fantasy,1
+2026-10,"Emet-Selch, Unsundered // Hades, Sorcerer of Eld",Final Fantasy,1
+2026-10,Resentful Revelation,Final Fantasy,1
+2026-10,Town Greeter,Final Fantasy,1
+2026-10,"Gau, Feral Youth",Final Fantasy Commander,1
+2026-10,"Alesha, Who Laughs at Fate",Foundations,2
+2026-10,"Kiora, the Rising Tide",Foundations,1
+2026-10,"Ivora, Insatiable Heir",Foundations Jumpstart,3
+2026-10,Scythecat Cub,Foundations Jumpstart,1
+2026-10,Aven Mindcensor,Future Sight,2
+2026-10,Magus of the Moon,Future Sight,1
+2026-10,Vedalken Aethermage,Future Sight,1
+2026-10,Assassin's Trophy,Guilds of Ravnica,1
+2026-10,Lotleth Giant,Guilds of Ravnica,1
+2026-10,Memory Lapse,Homelands,4
+2026-10,Claim // Fame,Hour of Devastation,2
+2026-10,Ashen Ghoul,Ice Age,1
+2026-10,Brainstorm,Ice Age,9
+2026-10,Demonic Consultation,Ice Age,1
+2026-10,Fyndhorn Elves,Ice Age,2
+2026-10,Nature's Lore,Ice Age,2
+2026-10,Portent,Ice Age,1
+2026-10,Pyroblast,Ice Age,1
+2026-10,Urza's Bauble,Ice Age,3
+2026-10,Zuran Orb,Ice Age,1
+2026-10,Lurrus of the Dream-Den,Ikoria: Lair of Behemoths,1
+2026-10,Avacyn's Pilgrim,Innistrad,1
+2026-10,Snapcaster Mage,Innistrad,7
+2026-10,Stromkirk Noble,Innistrad,1
+2026-10,Dread Fugue,Innistrad: Crimson Vow,2
+2026-10,Voldaren Epicure,Innistrad: Crimson Vow,1
+2026-10,Brutal Cathar // Moonrage Brute,Innistrad: Midnight Hunt,1
+2026-10,Consider,Innistrad: Midnight Hunt,5
+2026-10,Galvanic Iteration,Innistrad: Midnight Hunt,1
+2026-10,Moonsilver Key,Innistrad: Midnight Hunt,1
+2026-10,Reckless Stormseeker // Storm-Charged Slasher,Innistrad: Midnight Hunt,1
+2026-10,Opt,Invasion,4
+2026-10,Chart a Course,Ixalan,1
+2026-10,Anger,Judgment,1
+2026-10,Mental Note,Judgment,1
+2026-10,Aviary Mechanic,Kaladesh,1
+2026-10,Paradox Engine,Kaladesh Inventions,1
+2026-10,Experimental Synthesizer,Kamigawa: Neon Dynasty,1
+2026-10,Fable of the Mirror-Breaker // Reflection of Kiki-Jiki,Kamigawa: Neon Dynasty,2
+2026-10,March of Otherworldly Light,Kamigawa: Neon Dynasty,1
+2026-10,Dig Through Time,Khans of Tarkir,3
+2026-10,Treasure Cruise,Khans of Tarkir,1
+2026-10,Chain Lightning,Legends,3
+2026-10,Mana Drain,Legends,1
+2026-10,Ancestral Recall,Limited Edition Alpha,1
+2026-10,Animate Dead,Limited Edition Alpha,3
+2026-10,Balance,Limited Edition Alpha,1
+2026-10,Basalt Monolith,Limited Edition Alpha,1
+2026-10,Berserk,Limited Edition Alpha,1
+2026-10,Birds of Paradise,Limited Edition Alpha,2
+2026-10,Black Lotus,Limited Edition Alpha,1
+2026-10,Counterspell,Limited Edition Alpha,6
+2026-10,Dark Ritual,Limited Edition Alpha,1
+2026-10,Demonic Tutor,Limited Edition Alpha,1
+2026-10,Fastbond,Limited Edition Alpha,1
+2026-10,Lightning Bolt,Limited Edition Alpha,11
+2026-10,Llanowar Elves,Limited Edition Alpha,2
+2026-10,Mana Vault,Limited Edition Alpha,1
+2026-10,Mox Emerald,Limited Edition Alpha,2
+2026-10,Mox Jet,Limited Edition Alpha,4
+2026-10,Mox Pearl,Limited Edition Alpha,2
+2026-10,Mox Ruby,Limited Edition Alpha,3
+2026-10,Mox Sapphire,Limited Edition Alpha,4
+2026-10,Red Elemental Blast,Limited Edition Alpha,1
+2026-10,Regrowth,Limited Edition Alpha,2
+2026-10,Sol Ring,Limited Edition Alpha,1
+2026-10,Swords to Plowshares,Limited Edition Alpha,8
+2026-10,Time Walk,Limited Edition Alpha,4
+2026-10,Timetwister,Limited Edition Alpha,1
+2026-10,Wheel of Fortune,Limited Edition Alpha,1
+2026-10,Ponder,Lorwyn,9
+2026-10,Rings of Brighthearth,Lorwyn,1
+2026-10,Springleaf Drum,Lorwyn,1
+2026-10,Thoughtseize,Lorwyn,7
+2026-10,Moonshadow,Lorwyn Eclipsed,3
+2026-10,Sear,Lorwyn Eclipsed,1
+2026-10,Silence,Magic 2010,2
+2026-10,Preordain,Magic 2011,9
+2026-10,Elvish Mystic,Magic 2014,2
+2026-10,"Jace, Vryn's Prodigy // Jace, Telepath Unbound",Magic Origins,2
+2026-10,"Chandra, Hope's Beacon",March of the Machine,2
+2026-10,Death-Greeter's Champion,March of the Machine Commander,1
+2026-10,"Black Widow, Super Spy",Marvel Super Heroes,1
+2026-10,Jennifer Walters // The Sensational She-Hulk,Marvel Super Heroes,1
+2026-10,"Mole Man, Moloid Master",Marvel Super Heroes,1
+2026-10,"Night Nurse, Healer of Heroes",Marvel Super Heroes,1
+2026-10,Fantastic Elasticity,Marvel Super Heroes Commander,5
+2026-10,"Okoye, Mighty and Adored",Marvel Super Heroes Commander,1
+2026-10,"Rescue, Pepper Potts",Marvel Super Heroes Commander,1
+2026-10,Mana Crypt,Masters Edition II,1
+2026-10,Snuff Out,Mercadian Masques,3
+2026-10,"Squee, Goblin Nabob",Mercadian Masques,1
+2026-10,Enlightened Tutor,Mirage,1
+2026-10,Lion's Eye Diamond,Mirage,2
+2026-10,Mystical Tutor,Mirage,3
+2026-10,Aether Spellbomb,Mirrodin,1
+2026-10,Chrome Mox,Mirrodin,5
+2026-10,Fabricate,Mirrodin,1
+2026-10,Pyrite Spellbomb,Mirrodin,1
+2026-10,Scrabbling Claws,Mirrodin,1
+2026-10,Sylvan Scrying,Mirrodin,1
+2026-10,Talisman of Dominance,Mirrodin,1
+2026-10,Talisman of Progress,Mirrodin,1
+2026-10,Green Sun's Zenith,Mirrodin Besieged,2
+2026-10,Ichor Wellspring,Mirrodin Besieged,1
+2026-10,Archmage's Charm,Modern Horizons,1
+2026-10,Arcum's Astrolabe,Modern Horizons,1
+2026-10,Collector Ouphe,Modern Horizons,1
+2026-10,Echo of Eons,Modern Horizons,1
+2026-10,Force of Negation,Modern Horizons,7
+2026-10,Giver of Runes,Modern Horizons,1
+2026-10,Goblin Engineer,Modern Horizons,1
+2026-10,"Hogaak, Arisen Necropolis",Modern Horizons,1
+2026-10,Ice-Fang Coatl,Modern Horizons,1
+2026-10,Ranger-Captain of Eos,Modern Horizons,2
+2026-10,Talisman of Creativity,Modern Horizons,1
+2026-10,Talisman of Curiosity,Modern Horizons,1
+2026-10,"Urza, Lord High Artificer",Modern Horizons,1
+2026-10,Wrenn and Six,Modern Horizons,2
+2026-10,Damn,Modern Horizons 2,1
+2026-10,Dauthi Voidwalker,Modern Horizons 2,3
+2026-10,Dragon's Rage Channeler,Modern Horizons 2,2
+2026-10,Dress Down,Modern Horizons 2,3
+2026-10,Endurance,Modern Horizons 2,3
+2026-10,Esper Sentinel,Modern Horizons 2,1
+2026-10,Fury,Modern Horizons 2,7
+2026-10,Grief,Modern Horizons 2,2
+2026-10,"Grist, the Hunger Tide",Modern Horizons 2,2
+2026-10,Ignoble Hierarch,Modern Horizons 2,2
+2026-10,Lose Focus,Modern Horizons 2,7
+2026-10,Master of Death,Modern Horizons 2,1
+2026-10,Murktide Regent,Modern Horizons 2,2
+2026-10,Priest of Fell Rites,Modern Horizons 2,1
+2026-10,Prismatic Ending,Modern Horizons 2,4
+2026-10,Profane Tutor,Modern Horizons 2,2
+2026-10,"Ragavan, Nimble Pilferer",Modern Horizons 2,6
+2026-10,Said // Done,Modern Horizons 2,1
+2026-10,Solitude,Modern Horizons 2,3
+2026-10,Step Through,Modern Horizons 2,1
+2026-10,Subtlety,Modern Horizons 2,3
+2026-10,Terminal Agony,Modern Horizons 2,1
+2026-10,Unholy Heat,Modern Horizons 2,5
+2026-10,Accursed Marauder,Modern Horizons 3,1
+2026-10,"Ajani, Nacatl Pariah // Ajani, Nacatl Avenger",Modern Horizons 3,2
+2026-10,Brainsurge,Modern Horizons 3,4
+2026-10,Chthonian Nightmare,Modern Horizons 3,1
+2026-10,Detective's Phoenix,Modern Horizons 3,3
+2026-10,Emperor of Bones,Modern Horizons 3,3
+2026-10,Galvanic Discharge,Modern Horizons 3,7
+2026-10,"Grist, Voracious Larva // Grist, the Plague Swarm",Modern Horizons 3,1
+2026-10,Guide of Souls,Modern Horizons 3,1
+2026-10,Harbinger of the Seas,Modern Horizons 3,1
+2026-10,Invert Polarity,Modern Horizons 3,2
+2026-10,Jolted Awake,Modern Horizons 3,1
+2026-10,Malevolent Rumble,Modern Horizons 3,3
+2026-10,Nethergoyf,Modern Horizons 3,3
+2026-10,Ocelot Pride,Modern Horizons 3,1
+2026-10,Party Thrasher,Modern Horizons 3,2
+2026-10,"Phelia, Exuberant Shepherd",Modern Horizons 3,2
+2026-10,"Phlage, Titan of Fire's Fury",Modern Horizons 3,4
+2026-10,Planar Genesis,Modern Horizons 3,2
+2026-10,Psychic Frog,Modern Horizons 3,3
+2026-10,"Ral, Monsoon Mage // Ral, Leyline Prodigy",Modern Horizons 3,1
+2026-10,Six,Modern Horizons 3,2
+2026-10,Sneaky Snacker,Modern Horizons 3,1
+2026-10,Springheart Nantuko,Modern Horizons 3,1
+2026-10,Static Prison,Modern Horizons 3,3
+2026-10,"Tamiyo, Inquisitive Student // Tamiyo, Seasoned Scholar",Modern Horizons 3,5
+2026-10,Vexing Bauble,Modern Horizons 3,1
+2026-10,Wight of the Reliquary,Modern Horizons 3,2
+2026-10,Wrath of the Skies,Modern Horizons 3,3
+2026-10,Barrowgoyf,Modern Horizons 3 Commander,5
+2026-10,Bloodbraid Challenger,Modern Horizons 3 Commander,1
+2026-10,Pyrogoyf,Modern Horizons 3 Commander,2
+2026-10,Idyllic Tutor,Morningtide,1
+2026-10,Scapeshift,Morningtide,1
+2026-10,Analyze the Pollen,Murders at Karlov Manor,1
+2026-10,Cryptic Coat,Murders at Karlov Manor,1
+2026-10,Forensic Gadgeteer,Murders at Karlov Manor,1
+2026-10,Insidious Roots,Murders at Karlov Manor,1
+2026-10,No More Lies,Murders at Karlov Manor,3
+2026-10,Novice Inspector,Murders at Karlov Manor,1
+2026-10,Proft's Eidetic Memory,Murders at Karlov Manor,1
+2026-10,Daze,Nemesis,4
+2026-10,Tangle Wire,Nemesis,1
+2026-10,Currency Converter,New Capenna Commander,2
+2026-10,Dismember,New Phyrexia,1
+2026-10,Gitaxian Probe,New Phyrexia,7
+2026-10,Mental Misstep,New Phyrexia,6
+2026-10,Entomb,Odyssey,5
+2026-10,Moment's Peace,Odyssey,1
+2026-10,Peek,Odyssey,2
+2026-10,Tainted Pact,Odyssey,1
+2026-10,Chain of Vapor,Onslaught,3
+2026-10,"Bristly Bill, Spine Sower",Outlaws of Thunder Junction,1
+2026-10,Duelist of the Mind,Outlaws of Thunder Junction,1
+2026-10,Nurturing Pixie,Outlaws of Thunder Junction,1
+2026-10,This Town Ain't Big Enough,Outlaws of Thunder Junction,1
+2026-10,Three Steps Ahead,Outlaws of Thunder Junction,1
+2026-10,Thunderclap Drake,Outlaws of Thunder Junction Commander,1
+2026-10,"Atraxa, Grand Unifier",Phyrexia: All Will Be One,3
+2026-10,Bloated Contaminator,Phyrexia: All Will Be One,1
+2026-10,Cankerbloom,Phyrexia: All Will Be One,1
+2026-10,Glimmer Lens,Phyrexia: All Will Be One Commander,1
+2026-10,Baleful Strix,Planechase 2012,1
+2026-10,Orim's Chant,Planeshift,2
+2026-10,Personal Tutor,Portal,1
+2026-10,Sleight of Hand,Portal Second Age,5
+2026-10,Temporal Manipulation,Portal Second Age,3
+2026-10,Capture of Jingzhou,Portal Three Kingdoms,3
+2026-10,Imperial Seal,Portal Three Kingdoms,2
+2026-10,Three Visits,Portal Three Kingdoms,2
+2026-10,Rhystic Tutor,Prophecy,1
+2026-10,Growth Spiral,Ravnica Allegiance,2
+2026-10,Shimmer of Possibility,Ravnica Allegiance,1
+2026-10,Darkblast,Ravnica: City of Guilds,1
+2026-10,Farseek,Ravnica: City of Guilds,2
+2026-10,Golgari Grave-Troll,Ravnica: City of Guilds,1
+2026-10,Golgari Thug,Ravnica: City of Guilds,1
+2026-10,Life from the Loam,Ravnica: City of Guilds,1
+2026-10,Lightning Helix,Ravnica: City of Guilds,1
+2026-10,Muddle the Mixture,Ravnica: City of Guilds,3
+2026-10,Remand,Ravnica: City of Guilds,7
+2026-10,Shadow of Doubt,Ravnica: City of Guilds,1
+2026-10,Shambling Shell,Ravnica: City of Guilds,1
+2026-10,Shred Memory,Ravnica: City of Guilds,2
+2026-10,Stinkweed Imp,Ravnica: City of Guilds,1
+2026-10,Headliner Scarlett,Ravnica: Clue Edition,1
+2026-10,Carnivorous Cultivator // Enroot,Reality Fracture,1
+2026-10,"Chandra, Chill of Compliance",Reality Fracture,2
+2026-10,Geist of Saint Thalia,Reality Fracture,1
+2026-10,Loyal Tutor,Reality Fracture,1
+2026-10,"Marwyn, the Preserver",Reality Fracture,1
+2026-10,Stingcaster Mage,Reality Fracture,1
+2026-10,Way of the Paradox,Reality Fracture,1
+2026-10,Way of the Pyromancer,Reality Fracture,1
+2026-10,"Winter, Tormented Loner",Reality Fracture,1
+2026-10,Abrupt Decay,Return to Ravnica,2
+2026-10,Chromatic Lantern,Return to Ravnica,1
+2026-10,Codex Shredder,Return to Ravnica,1
+2026-10,Deathrite Shaman,Return to Ravnica,5
+2026-10,Lotleth Troll,Return to Ravnica,1
+2026-10,Flame Slash,Rise of the Eldrazi,5
+2026-10,Inquisition of Kozilek,Rise of the Eldrazi,6
+2026-10,Oust,Rise of the Eldrazi,1
+2026-10,Vengevine,Rise of the Eldrazi,1
+2026-10,Dimir Infiltrator,Salvat 2005,1
+2026-10,Glint Hawk,Scars of Mirrodin,1
+2026-10,Mox Opal,Scars of Mirrodin,2
+2026-10,Nihil Spellbomb,Scars of Mirrodin,1
+2026-10,Brain Freeze,Scourge,1
+2026-10,Tendrils of Agony,Scourge,1
+2026-10,Nexus of Fate,Secret Lair Drop,1
+2026-10,Emeritus of Abundance // Regrowth,Secrets of Strixhaven,3
+2026-10,Erode,Secrets of Strixhaven,3
+2026-10,Flashback,Secrets of Strixhaven,4
+2026-10,Flow State,Secrets of Strixhaven,7
+2026-10,Hardened Academic,Secrets of Strixhaven,1
+2026-10,Postmortem Professor,Secrets of Strixhaven,1
+2026-10,Prismari Charm,Secrets of Strixhaven,3
+2026-10,Professor Dellian Fel,Secrets of Strixhaven,1
+2026-10,Resonating Lute,Secrets of Strixhaven,1
+2026-10,Traumatic Critique,Secrets of Strixhaven,2
+2026-10,Beseech the Queen,Shadowmoor,1
+2026-10,Manamorphose,Shadowmoor,1
+2026-10,Prized Amalgam,Shadows over Innistrad,1
+2026-10,Seasons Past,Shadows over Innistrad,1
+2026-10,Thraben Inspector,Shadows over Innistrad,1
+2026-10,Traverse the Ulvenwald,Shadows over Innistrad,1
+2026-10,Grim Tutor,Starter 1999,1
+2026-10,Ledger Shredder,Streets of New Capenna,1
+2026-10,Conspiracy Theorist,Strixhaven: School of Mages,1
+2026-10,Expressive Iteration,Strixhaven: School of Mages,7
+2026-10,Prismari Command,Strixhaven: School of Mages,1
+2026-10,Solve the Equation,Strixhaven: School of Mages,3
+2026-10,Mana Leak,Stronghold,7
+2026-10,Mox Diamond,Stronghold,5
+2026-10,Forth Eorlingas!,Tales of Middle-earth Commander,2
+2026-10,Legolas's Quick Reflexes,Tales of Middle-earth Commander,1
+2026-10,Relic of Sauron,Tales of Middle-earth Commander,1
+2026-10,Auroral Procession,Tarkir: Dragonstorm,2
+2026-10,Avenger of the Fallen,Tarkir: Dragonstorm,1
+2026-10,Clarion Conqueror,Tarkir: Dragonstorm,1
+2026-10,Cori-Steel Cutter,Tarkir: Dragonstorm,1
+2026-10,"Elspeth, Storm Slayer",Tarkir: Dragonstorm,1
+2026-10,Heritage Reclamation,Tarkir: Dragonstorm,1
+2026-10,Marang River Regent // Coil and Catch,Tarkir: Dragonstorm,1
+2026-10,Nature's Rhythm,Tarkir: Dragonstorm,1
+2026-10,Sunpearl Kirin,Tarkir: Dragonstorm,1
+2026-10,"Surrak, Elusive Hunter",Tarkir: Dragonstorm,1
+2026-10,Tersa Lightshatter,Tarkir: Dragonstorm,2
+2026-10,Voice of Victory,Tarkir: Dragonstorm,3
+2026-10,"Agent Bishop, Man in Black",Teenage Mutant Ninja Turtles,1
+2026-10,Cool but Rude,Teenage Mutant Ninja Turtles,1
+2026-10,Mouser Foundry,Teenage Mutant Ninja Turtles,1
+2026-10,Sewer-veillance Cam,Teenage Mutant Ninja Turtles,1
+2026-10,Super Shredder,Teenage Mutant Ninja Turtles,1
+2026-10,Lotus Petal,Tempest,2
+2026-10,Reanimate,Tempest,3
+2026-10,Sapphire Medallion,Tempest,1
+2026-10,Time Warp,Tempest,3
+2026-10,Legion Extruder,The Big Score,1
+2026-10,Brotherhood's End,The Brothers' War,4
+2026-10,Haywire Mite,The Brothers' War,1
+2026-10,Scrapwork Mutt,The Brothers' War,1
+2026-10,Blood Moon,The Dark,1
+2026-10,"Bilbo, Thief in the Night",The Hobbit,2
+2026-10,Giant's Boulder,The Hobbit,1
+2026-10,Ragged Short Spear,The Hobbit,1
+2026-10,"Boromir, Warden of the Tower",The Lord of the Rings: Tales of Middle-earth,1
+2026-10,Delighted Halfling,The Lord of the Rings: Tales of Middle-earth,2
+2026-10,Flame of Anor,The Lord of the Rings: Tales of Middle-earth,3
+2026-10,Generous Ent,The Lord of the Rings: Tales of Middle-earth,1
+2026-10,Lórien Revealed,The Lord of the Rings: Tales of Middle-earth,7
+2026-10,Oliphaunt,The Lord of the Rings: Tales of Middle-earth,3
+2026-10,Orcish Bowmasters,The Lord of the Rings: Tales of Middle-earth,5
+2026-10,Reprieve,The Lord of the Rings: Tales of Middle-earth,2
+2026-10,Samwise the Stouthearted,The Lord of the Rings: Tales of Middle-earth,1
+2026-10,Stern Scolding,The Lord of the Rings: Tales of Middle-earth,2
+2026-10,The One Ring,The Lord of the Rings: Tales of Middle-earth,5
+2026-10,Troll of Khazad-dûm,The Lord of the Rings: Tales of Middle-earth,5
+2026-10,Bitter Triumph,The Lost Caverns of Ixalan,4
+2026-10,Deep-Cavern Bat,The Lost Caverns of Ixalan,1
+2026-10,Dusk Rose Reliquary,The Lost Caverns of Ixalan,1
+2026-10,Helping Hand,The Lost Caverns of Ixalan,1
+2026-10,"Inti, Seneschal of the Sun",The Lost Caverns of Ixalan,3
+2026-10,"Malcolm, Alluring Scoundrel",The Lost Caverns of Ixalan,2
+2026-10,Molten Collapse,The Lost Caverns of Ixalan,1
+2026-10,Sentinel of the Nameless City,The Lost Caverns of Ixalan,1
+2026-10,Spring-Loaded Sawblades // Bladewheel Chariot,The Lost Caverns of Ixalan,1
+2026-10,Stalactite Stalker,The Lost Caverns of Ixalan,1
+2026-10,Wail of the Forgotten,The Lost Caverns of Ixalan,1
+2026-10,Broadside Bombardiers,The Lost Caverns of Ixalan Commander,2
+2026-10,Cling to Dust,Theros Beyond Death,2
+2026-10,Ox of Agonas,Theros Beyond Death,1
+2026-10,Shadowspear,Theros Beyond Death,1
+2026-10,Soul-Guide Lantern,Theros Beyond Death,1
+2026-10,Thassa's Oracle,Theros Beyond Death,1
+2026-10,Underworld Breach,Theros Beyond Death,1
+2026-10,"Uro, Titan of Nature's Wrath",Theros Beyond Death,2
+2026-10,Brazen Borrower // Petty Theft,Throne of Eldraine,3
+2026-10,Drown in the Loch,Throne of Eldraine,3
+2026-10,"Emry, Lurker of the Loch",Throne of Eldraine,1
+2026-10,"Oko, Thief of Crowns",Throne of Eldraine,3
+2026-10,Once Upon a Time,Throne of Eldraine,1
+2026-10,Robber of the Rich,Throne of Eldraine,1
+2026-10,Shepherd of the Flock // Usher to Safety,Throne of Eldraine,1
+2026-10,The Royal Scions,Throne of Eldraine,1
+2026-10,"Carnage, Crimson Chaos",Through the Omenpaths,1
+2026-10,"Hobgoblin, Mantled Marauder",Through the Omenpaths,1
+2026-10,Norman Osborn // Green Goblin,Through the Omenpaths,1
+2026-10,Peter Parker's Camera,Through the Omenpaths,2
+2026-10,"Scarlet Spider, Kaine",Through the Omenpaths,1
+2026-10,"Spider-Woman, Stunning Savior",Through the Omenpaths,1
+2026-10,Dread Return,Time Spiral,1
+2026-10,Search for Tomorrow,Time Spiral,2
+2026-10,Basking Rootwalla,Torment,1
+2026-10,Cabal Ritual,Torment,1
+2026-10,Fiery Temper,Torment,1
+2026-10,Ichorid,Torment,1
+2026-10,Putrid Imp,Torment,1
+2026-10,"Comet, Stellar Pup",Unfinity,1
+2026-10,Crop Rotation,Urza's Legacy,3
+2026-10,Defense Grid,Urza's Legacy,1
+2026-10,Frantic Search,Urza's Legacy,3
+2026-10,Goblin Welder,Urza's Legacy,1
+2026-10,Grim Monolith,Urza's Legacy,2
+2026-10,Memory Jar,Urza's Legacy,1
+2026-10,Miscalculation,Urza's Legacy,1
+2026-10,Mother of Runes,Urza's Legacy,2
+2026-10,Unearth,Urza's Legacy,4
+2026-10,Back to Basics,Urza's Saga,1
+2026-10,Duress,Urza's Saga,5
+2026-10,Gamble,Urza's Saga,3
+2026-10,Rain of Filth,Urza's Saga,1
+2026-10,Time Spiral,Urza's Saga,1
+2026-10,Voltaic Key,Urza's Saga,1
+2026-10,Yawgmoth's Will,Urza's Saga,1
+2026-10,City of Solitude,Visions,1
+2026-10,Impulse,Visions,2
+2026-10,Natural Order,Visions,1
+2026-10,Squandered Resources,Visions,1
+2026-10,Vampiric Tutor,Visions,2
+2026-10,Vision Charm,Visions,1
+2026-10,Dreadhorde Arcanist,War of the Spark,3
+2026-10,"Jace, Wielder of Mysteries",War of the Spark,1
+2026-10,"Narset, Parter of Veils",War of the Spark,3
+2026-10,"Teferi, Time Raveler",War of the Spark,6
+2026-10,Mawloc,"Warhammer 40,000 Commander",1
+2026-10,Poxwalkers,"Warhammer 40,000 Commander",1
+2026-10,Abeyance,Weatherlight,1
+2026-10,Argivian Find,Weatherlight,1
+2026-10,Phyrexian Furnace,Weatherlight,1
+2026-10,Beseech the Mirror,Wilds of Eldraine,1
+2026-10,Up the Beanstalk,Wilds of Eldraine,1
+2026-10,Explore,Worldwake,1
+2026-10,"Jace, the Mind Sculptor",Worldwake,1
+2026-10,Stoneforge Mystic,Worldwake,1
+2026-10,Bloodghast,Zendikar,2
+2026-10,Expedition Map,Zendikar,1
+2026-10,Kor Skyfisher,Zendikar,1
+2026-10,Spell Pierce,Zendikar,6
+2026-10,Archon of Emeria,Zendikar Rising,1
+2026-10,Luminarch Aspirant,Zendikar Rising,1
+2026-10,Skyclave Shade,Zendikar Rising,1
