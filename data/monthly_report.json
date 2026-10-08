@@ -5882,13 +5882,13 @@
         "delta": 50.0
       },
       {
-        "card": "Teferi, Time Raveler",
+        "card": "Eladamri's Call",
         "prev_rate": 0.0,
         "curr_rate": 37.5,
         "delta": 37.5
       },
       {
-        "card": "Tarmogoyf",
+        "card": "Unholy Heat",
         "prev_rate": 0.0,
         "curr_rate": 37.5,
         "delta": 37.5
@@ -5902,13 +5902,13 @@
         "delta": -50.0
       },
       {
-        "card": "Toxic Deluge",
+        "card": "Damnation",
         "prev_rate": 50.0,
         "curr_rate": 0.0,
         "delta": -50.0
       },
       {
-        "card": "Damnation",
+        "card": "Toxic Deluge",
         "prev_rate": 50.0,
         "curr_rate": 0.0,
         "delta": -50.0
@@ -5920,7 +5920,7 @@
         "delta": -37.5
       },
       {
-        "card": "Snow-Covered Swamp",
+        "card": "Castle Vantress",
         "prev_rate": 37.5,
         "curr_rate": 0.0,
         "delta": -37.5
@@ -8815,33 +8815,33 @@
     "unique_delta": -26,
     "rising": [
       {
-        "card": "Plains",
-        "prev_rate": 12.5,
-        "curr_rate": 62.5,
-        "delta": 50.0
-      },
-      {
         "card": "March of Otherworldly Light",
         "prev_rate": 0.0,
         "curr_rate": 50.0,
         "delta": 50.0
       },
       {
-        "card": "Swords to Plowshares",
-        "prev_rate": 25.0,
+        "card": "Plains",
+        "prev_rate": 12.5,
         "curr_rate": 62.5,
-        "delta": 37.5
-      },
-      {
-        "card": "Jace, the Mind Sculptor",
-        "prev_rate": 0.0,
-        "curr_rate": 37.5,
-        "delta": 37.5
+        "delta": 50.0
       },
       {
         "card": "Karakas",
         "prev_rate": 37.5,
         "curr_rate": 75.0,
+        "delta": 37.5
+      },
+      {
+        "card": "Strip Mine",
+        "prev_rate": 12.5,
+        "curr_rate": 50.0,
+        "delta": 37.5
+      },
+      {
+        "card": "Swords to Plowshares",
+        "prev_rate": 25.0,
+        "curr_rate": 62.5,
         "delta": 37.5
       }
     ],
@@ -8853,27 +8853,27 @@
         "delta": -37.5
       },
       {
-        "card": "Lightning Bolt",
-        "prev_rate": 62.5,
-        "curr_rate": 37.5,
+        "card": "Tropical Island",
+        "prev_rate": 50.0,
+        "curr_rate": 25.0,
         "delta": -25.0
       },
       {
-        "card": "Sprite Dragon",
+        "card": "Oko, Thief of Crowns",
+        "prev_rate": 37.5,
+        "curr_rate": 12.5,
+        "delta": -25.0
+      },
+      {
+        "card": "Arid Mesa",
+        "prev_rate": 87.5,
+        "curr_rate": 62.5,
+        "delta": -25.0
+      },
+      {
+        "card": "Stormwing Entity",
         "prev_rate": 25.0,
         "curr_rate": 0.0,
-        "delta": -25.0
-      },
-      {
-        "card": "Steam Vents",
-        "prev_rate": 37.5,
-        "curr_rate": 12.5,
-        "delta": -25.0
-      },
-      {
-        "card": "Bonecrusher Giant // Stomp",
-        "prev_rate": 37.5,
-        "curr_rate": 12.5,
         "delta": -25.0
       }
     ],
@@ -10264,21 +10264,21 @@
         "delta": 62.5
       },
       {
-        "card": "Fury",
+        "card": "Abrade",
+        "prev_rate": 0.0,
+        "curr_rate": 50.0,
+        "delta": 50.0
+      },
+      {
+        "card": "Bonecrusher Giant // Stomp",
         "prev_rate": 12.5,
         "curr_rate": 62.5,
         "delta": 50.0
       },
       {
-        "card": "Unlicensed Hearse",
-        "prev_rate": 0.0,
-        "curr_rate": 50.0,
-        "delta": 50.0
-      },
-      {
-        "card": "Abrade",
-        "prev_rate": 0.0,
-        "curr_rate": 50.0,
+        "card": "Fury",
+        "prev_rate": 12.5,
+        "curr_rate": 62.5,
         "delta": 50.0
       },
       {
@@ -10290,31 +10290,31 @@
     ],
     "falling": [
       {
-        "card": "Misty Rainforest",
-        "prev_rate": 87.5,
-        "curr_rate": 50.0,
-        "delta": -37.5
-      },
-      {
-        "card": "Life from the Loam",
-        "prev_rate": 37.5,
-        "curr_rate": 0.0,
-        "delta": -37.5
-      },
-      {
-        "card": "Strip Mine",
+        "card": "Opt",
         "prev_rate": 50.0,
         "curr_rate": 12.5,
         "delta": -37.5
       },
       {
-        "card": "Courser of Kruphix",
+        "card": "Titania, Protector of Argoth",
         "prev_rate": 37.5,
         "curr_rate": 0.0,
         "delta": -37.5
       },
       {
-        "card": "Consider",
+        "card": "Ponder",
+        "prev_rate": 50.0,
+        "curr_rate": 12.5,
+        "delta": -37.5
+      },
+      {
+        "card": "Crop Rotation",
+        "prev_rate": 50.0,
+        "curr_rate": 12.5,
+        "delta": -37.5
+      },
+      {
+        "card": "Strip Mine",
         "prev_rate": 50.0,
         "curr_rate": 12.5,
         "delta": -37.5
@@ -11263,13 +11263,13 @@
         "delta": 87.5
       },
       {
-        "card": "Endurance",
+        "card": "Boseiju, Who Endures",
         "prev_rate": 25.0,
         "curr_rate": 100.0,
         "delta": 75.0
       },
       {
-        "card": "Boseiju, Who Endures",
+        "card": "Endurance",
         "prev_rate": 25.0,
         "curr_rate": 100.0,
         "delta": 75.0
@@ -11277,7 +11277,7 @@
     ],
     "falling": [
       {
-        "card": "Swamp",
+        "card": "Unlicensed Hearse",
         "prev_rate": 50.0,
         "curr_rate": 0.0,
         "delta": -50.0
@@ -11295,13 +11295,13 @@
         "delta": -50.0
       },
       {
-        "card": "Unlicensed Hearse",
+        "card": "Lurrus of the Dream-Den",
         "prev_rate": 50.0,
         "curr_rate": 0.0,
         "delta": -50.0
       },
       {
-        "card": "Lurrus of the Dream-Den",
+        "card": "Swamp",
         "prev_rate": 50.0,
         "curr_rate": 0.0,
         "delta": -50.0
@@ -11452,19 +11452,19 @@
         "delta": 43.8
       },
       {
+        "card": "Ancient Tomb",
+        "prev_rate": 0.0,
+        "curr_rate": 37.5,
+        "delta": 37.5
+      },
+      {
         "card": "Teferi, Time Raveler",
         "prev_rate": 0.0,
         "curr_rate": 37.5,
         "delta": 37.5
       },
       {
-        "card": "Sevinne's Reclamation",
-        "prev_rate": 0.0,
-        "curr_rate": 37.5,
-        "delta": 37.5
-      },
-      {
-        "card": "Uro, Titan of Nature's Wrath",
+        "card": "Chrome Mox",
         "prev_rate": 0.0,
         "curr_rate": 37.5,
         "delta": 37.5
@@ -12721,7 +12721,7 @@
         "delta": 38.9
       },
       {
-        "card": "Grist, the Hunger Tide",
+        "card": "Overgrown Tomb",
         "prev_rate": 6.2,
         "curr_rate": 44.4,
         "delta": 38.2
@@ -14076,13 +14076,13 @@
         "delta": 43.3
       },
       {
-        "card": "Mox Ruby",
+        "card": "Tundra",
         "prev_rate": 16.7,
         "curr_rate": 60.0,
         "delta": 43.3
       },
       {
-        "card": "Tundra",
+        "card": "Mox Ruby",
         "prev_rate": 16.7,
         "curr_rate": 60.0,
         "delta": 43.3
@@ -14108,13 +14108,13 @@
         "delta": -23.3
       },
       {
-        "card": "Silent Clearing",
+        "card": "Liliana of the Veil",
         "prev_rate": 22.2,
         "curr_rate": 0.0,
         "delta": -22.2
       },
       {
-        "card": "Lion Sash",
+        "card": "Silent Clearing",
         "prev_rate": 22.2,
         "curr_rate": 0.0,
         "delta": -22.2
@@ -14841,13 +14841,13 @@
         "delta": 18.6
       },
       {
-        "card": "Sevinne's Reclamation",
+        "card": "Lotus Petal",
         "prev_rate": 0.0,
         "curr_rate": 17.9,
         "delta": 17.9
       },
       {
-        "card": "Lotus Petal",
+        "card": "City of Brass",
         "prev_rate": 0.0,
         "curr_rate": 17.9,
         "delta": 17.9
@@ -14879,7 +14879,7 @@
         "delta": -26.4
       },
       {
-        "card": "Bloodchief's Thirst",
+        "card": "Copperline Gorge",
         "prev_rate": 40.0,
         "curr_rate": 14.3,
         "delta": -25.7
@@ -17825,9 +17825,9 @@
         "delta": 25.0
       },
       {
-        "card": "Path to Exile",
-        "prev_rate": 33.3,
-        "curr_rate": 58.3,
+        "card": "Spell Snare",
+        "prev_rate": 25.0,
+        "curr_rate": 50.0,
         "delta": 25.0
       }
     ],
@@ -17839,27 +17839,27 @@
         "delta": -25.0
       },
       {
-        "card": "Demonic Tutor",
-        "prev_rate": 20.8,
-        "curr_rate": 0.0,
-        "delta": -20.8
-      },
-      {
         "card": "Ahn-Crop Crasher",
         "prev_rate": 20.8,
         "curr_rate": 0.0,
         "delta": -20.8
       },
       {
-        "card": "Wooded Foothills",
-        "prev_rate": 87.5,
-        "curr_rate": 70.8,
-        "delta": -16.7
+        "card": "Demonic Tutor",
+        "prev_rate": 20.8,
+        "curr_rate": 0.0,
+        "delta": -20.8
       },
       {
         "card": "Price of Progress",
         "prev_rate": 29.2,
         "curr_rate": 12.5,
+        "delta": -16.7
+      },
+      {
+        "card": "Wooded Foothills",
+        "prev_rate": 87.5,
+        "curr_rate": 70.8,
         "delta": -16.7
       }
     ],
@@ -18656,13 +18656,13 @@
         "delta": 26.6
       },
       {
-        "card": "Blood Crypt",
+        "card": "Demonic Tutor",
         "prev_rate": 0.0,
         "curr_rate": 26.3,
         "delta": 26.3
       },
       {
-        "card": "Demonic Tutor",
+        "card": "Blood Crypt",
         "prev_rate": 0.0,
         "curr_rate": 26.3,
         "delta": 26.3
@@ -18682,7 +18682,7 @@
         "delta": -33.1
       },
       {
-        "card": "Spell Snare",
+        "card": "Daze",
         "prev_rate": 50.0,
         "curr_rate": 21.1,
         "delta": -28.9
@@ -18694,7 +18694,7 @@
         "delta": -28.9
       },
       {
-        "card": "Daze",
+        "card": "Spell Snare",
         "prev_rate": 50.0,
         "curr_rate": 21.1,
         "delta": -28.9
@@ -19698,7 +19698,7 @@
         "delta": -26.3
       },
       {
-        "card": "Deathrite Shaman",
+        "card": "Green Sun's Zenith",
         "prev_rate": 42.1,
         "curr_rate": 16.7,
         "delta": -25.4
@@ -21297,15 +21297,15 @@
         "delta": 18.8
       },
       {
-        "card": "Verdant Catacombs",
-        "prev_rate": 48.0,
-        "curr_rate": 66.0,
-        "delta": 18.0
-      },
-      {
         "card": "Savannah",
         "prev_rate": 16.0,
         "curr_rate": 34.0,
+        "delta": 18.0
+      },
+      {
+        "card": "Verdant Catacombs",
+        "prev_rate": 48.0,
+        "curr_rate": 66.0,
         "delta": 18.0
       },
       {
@@ -21341,7 +21341,7 @@
         "delta": -17.1
       },
       {
-        "card": "Usher of the Fallen",
+        "card": "Dryad Militant",
         "prev_rate": 16.0,
         "curr_rate": 0.0,
         "delta": -16.0
@@ -23443,13 +23443,13 @@
         "delta": 24.2
       },
       {
-        "card": "Flame Slash",
+        "card": "Murktide Regent",
         "prev_rate": 31.9,
         "curr_rate": 55.9,
         "delta": 24.0
       },
       {
-        "card": "Murktide Regent",
+        "card": "Flame Slash",
         "prev_rate": 31.9,
         "curr_rate": 55.9,
         "delta": 24.0
@@ -24722,15 +24722,15 @@
         "delta": 26.8
       },
       {
-        "card": "Mox Ruby",
-        "prev_rate": 8.8,
-        "curr_rate": 34.1,
-        "delta": 25.3
-      },
-      {
         "card": "Ancient Tomb",
         "prev_rate": 23.5,
         "curr_rate": 48.8,
+        "delta": 25.3
+      },
+      {
+        "card": "Mox Ruby",
+        "prev_rate": 8.8,
+        "curr_rate": 34.1,
         "delta": 25.3
       }
     ],
@@ -31130,7 +31130,7 @@
         "delta": -15.9
       },
       {
-        "card": "Comet, Stellar Pup",
+        "card": "Hallowed Fountain",
         "prev_rate": 36.0,
         "curr_rate": 20.3,
         "delta": -15.7
@@ -34968,13 +34968,13 @@
         "delta": -20.9
       },
       {
-        "card": "Sensei's Divining Top",
+        "card": "Expedition Map",
         "prev_rate": 27.7,
         "curr_rate": 7.4,
         "delta": -20.3
       },
       {
-        "card": "Expedition Map",
+        "card": "Sensei's Divining Top",
         "prev_rate": 27.7,
         "curr_rate": 7.4,
         "delta": -20.3
@@ -36815,13 +36815,13 @@
         "delta": 21.6
       },
       {
-        "card": "Pyrogoyf",
+        "card": "Galvanic Discharge",
         "prev_rate": 0.0,
         "curr_rate": 17.0,
         "delta": 17.0
       },
       {
-        "card": "Galvanic Discharge",
+        "card": "Pyrogoyf",
         "prev_rate": 0.0,
         "curr_rate": 17.0,
         "delta": 17.0
@@ -47673,13 +47673,13 @@
         "delta": -14.7
       },
       {
-        "card": "Ancient Den",
+        "card": "Mox Opal",
         "prev_rate": 18.2,
         "curr_rate": 4.2,
         "delta": -14.0
       },
       {
-        "card": "Mox Opal",
+        "card": "Ancient Den",
         "prev_rate": 18.2,
         "curr_rate": 4.2,
         "delta": -14.0
@@ -50744,7 +50744,7 @@
         "delta": 15.9
       },
       {
-        "card": "March of Otherworldly Light",
+        "card": "Ajani, Nacatl Pariah // Ajani, Nacatl Avenger",
         "prev_rate": 20.4,
         "curr_rate": 33.9,
         "delta": 13.5
@@ -59346,13 +59346,13 @@
         "delta": 17.4
       },
       {
-        "card": "Uro, Titan of Nature's Wrath",
+        "card": "Taiga",
         "prev_rate": 9.1,
         "curr_rate": 25.3,
         "delta": 16.2
       },
       {
-        "card": "Taiga",
+        "card": "Uro, Titan of Nature's Wrath",
         "prev_rate": 9.1,
         "curr_rate": 25.3,
         "delta": 16.2
@@ -59366,15 +59366,15 @@
     ],
     "falling": [
       {
-        "card": "The Wandering Emperor",
-        "prev_rate": 19.2,
-        "curr_rate": 6.9,
-        "delta": -12.3
-      },
-      {
         "card": "Daze",
         "prev_rate": 36.4,
         "curr_rate": 24.1,
+        "delta": -12.3
+      },
+      {
+        "card": "The Wandering Emperor",
+        "prev_rate": 19.2,
+        "curr_rate": 6.9,
         "delta": -12.3
       },
       {
@@ -67346,9 +67346,9 @@
         "delta": 12.2
       },
       {
-        "card": "Phlage, Titan of Fire's Fury",
-        "prev_rate": 11.8,
-        "curr_rate": 23.9,
+        "card": "Quantum Riddler",
+        "prev_rate": 14.0,
+        "curr_rate": 26.1,
         "delta": 12.1
       }
     ],
@@ -67372,13 +67372,13 @@
         "delta": -10.3
       },
       {
-        "card": "Urza's Bauble",
+        "card": "Demonic Tutor",
         "prev_rate": 14.0,
         "curr_rate": 4.3,
         "delta": -9.7
       },
       {
-        "card": "Demonic Tutor",
+        "card": "Urza's Bauble",
         "prev_rate": 14.0,
         "curr_rate": 4.3,
         "delta": -9.7
@@ -69019,13 +69019,13 @@
         "delta": -10.6
       },
       {
-        "card": "Dark Ritual",
+        "card": "Lion Sash",
         "prev_rate": 13.0,
         "curr_rate": 3.8,
         "delta": -9.2
       },
       {
-        "card": "Lion Sash",
+        "card": "Dark Ritual",
         "prev_rate": 13.0,
         "curr_rate": 3.8,
         "delta": -9.2
@@ -87437,77 +87437,105 @@
   },
   "2026-10": {
     "month": "2026-10",
-    "event_count": 5,
-    "event_delta": -69,
-    "deck_count": 15,
-    "deck_delta": -111,
-    "unique_cards": 658,
-    "unique_delta": -783,
+    "event_count": 22,
+    "event_delta": -52,
+    "deck_count": 57,
+    "deck_delta": -69,
+    "unique_cards": 1198,
+    "unique_delta": -243,
     "rising": [
       {
         "card": "Volcanic Island",
         "prev_rate": 19.8,
-        "curr_rate": 73.3,
-        "delta": 53.5
+        "curr_rate": 40.4,
+        "delta": 20.6
       },
       {
-        "card": "Thundering Falls",
-        "prev_rate": 18.3,
-        "curr_rate": 60.0,
-        "delta": 41.7
-      },
-      {
-        "card": "Steam Vents",
-        "prev_rate": 15.1,
-        "curr_rate": 53.3,
-        "delta": 38.2
+        "card": "Otawara, Soaring City",
+        "prev_rate": 37.3,
+        "curr_rate": 56.1,
+        "delta": 18.8
       },
       {
         "card": "Expressive Iteration",
         "prev_rate": 11.9,
-        "curr_rate": 46.7,
-        "delta": 34.8
+        "curr_rate": 29.8,
+        "delta": 17.9
       },
       {
-        "card": "Lightning Bolt",
-        "prev_rate": 42.9,
-        "curr_rate": 73.3,
-        "delta": 30.4
+        "card": "Preordain",
+        "prev_rate": 35.7,
+        "curr_rate": 52.6,
+        "delta": 16.9
+      },
+      {
+        "card": "Thundering Falls",
+        "prev_rate": 18.3,
+        "curr_rate": 35.1,
+        "delta": 16.8
       }
     ],
     "falling": [
       {
-        "card": "Skullclamp",
-        "prev_rate": 38.9,
-        "curr_rate": 6.7,
-        "delta": -32.2
+        "card": "Ajani, Nacatl Pariah // Ajani, Nacatl Avenger",
+        "prev_rate": 35.7,
+        "curr_rate": 15.8,
+        "delta": -19.9
       },
       {
         "card": "Witch Enchanter // Witch-Blessed Meadow",
         "prev_rate": 29.4,
-        "curr_rate": 0.0,
-        "delta": -29.4
+        "curr_rate": 10.5,
+        "delta": -18.9
       },
       {
-        "card": "Urza's Saga",
-        "prev_rate": 35.7,
-        "curr_rate": 6.7,
-        "delta": -29.0
+        "card": "Windswept Heath",
+        "prev_rate": 77.8,
+        "curr_rate": 61.4,
+        "delta": -16.4
       },
       {
-        "card": "Dismember",
-        "prev_rate": 34.1,
-        "curr_rate": 6.7,
-        "delta": -27.4
+        "card": "Sol Ring",
+        "prev_rate": 30.2,
+        "curr_rate": 14.0,
+        "delta": -16.2
       },
       {
-        "card": "Ancient Tomb",
-        "prev_rate": 33.3,
-        "curr_rate": 6.7,
-        "delta": -26.6
+        "card": "Overlord of the Balemurk",
+        "prev_rate": 22.2,
+        "curr_rate": 7.0,
+        "delta": -15.2
       }
     ],
     "debuts": [
+      {
+        "card": "Stingcaster Mage",
+        "deck_count": 2,
+        "decks": [
+          {
+            "label": "Flux – Izzet Turns",
+            "id": "JD3GUaknckC6HL6T0nrvqQ"
+          },
+          {
+            "label": "Infernape1 – UR Tempo",
+            "id": "qKiJFAMhv0CLUyGtUnr9bw"
+          }
+        ]
+      },
+      {
+        "card": "Theorist's Sanctum",
+        "deck_count": 2,
+        "decks": [
+          {
+            "label": "yofl – Blue Moon",
+            "id": "3Pf4XYnnCUegegqQFvysqw"
+          },
+          {
+            "label": "Maladroit – Blue Moon",
+            "id": "glNjWYNBy0a8_0nQA2SHpw"
+          }
+        ]
+      },
       {
         "card": "Loyal Tutor",
         "deck_count": 1,
@@ -87525,16 +87553,6 @@
           {
             "label": "ccaterwaull – Sans Black Elasticity Turns",
             "id": "K4CTsW7w4UqndvaJE6R5HA"
-          }
-        ]
-      },
-      {
-        "card": "Stingcaster Mage",
-        "deck_count": 1,
-        "decks": [
-          {
-            "label": "Flux – Izzet Turns",
-            "id": "JD3GUaknckC6HL6T0nrvqQ"
           }
         ]
       },
@@ -87587,6 +87605,216 @@
             "id": "wbNnshz-pUqiLy05z7lMEw"
           }
         ]
+      },
+      {
+        "card": "Hero of the Dunes",
+        "deck_count": 1,
+        "decks": [
+          {
+            "label": "Gem – Esper Threeanimator",
+            "id": "nu0PjA2zG0yQGIChDDda-Q"
+          }
+        ]
+      },
+      {
+        "card": "Restless Reef",
+        "deck_count": 1,
+        "decks": [
+          {
+            "label": "Gem – Esper Threeanimator",
+            "id": "nu0PjA2zG0yQGIChDDda-Q"
+          }
+        ]
+      },
+      {
+        "card": "Treacherous Greed",
+        "deck_count": 1,
+        "decks": [
+          {
+            "label": "Gem – Esper Threeanimator",
+            "id": "nu0PjA2zG0yQGIChDDda-Q"
+          }
+        ]
+      },
+      {
+        "card": "Tidecaller Mentor",
+        "deck_count": 1,
+        "decks": [
+          {
+            "label": "Gem – Esper Threeanimator",
+            "id": "nu0PjA2zG0yQGIChDDda-Q"
+          }
+        ]
+      },
+      {
+        "card": "Mirrormade",
+        "deck_count": 1,
+        "decks": [
+          {
+            "label": "Cyclopes8 – Twiddle Jewel",
+            "id": "-ppKpJEKjUqDCUXgU4ieUw"
+          }
+        ]
+      },
+      {
+        "card": "Treasure Mage",
+        "deck_count": 1,
+        "decks": [
+          {
+            "label": "Cyclopes8 – Twiddle Jewel",
+            "id": "-ppKpJEKjUqDCUXgU4ieUw"
+          }
+        ]
+      },
+      {
+        "card": "Dramatic Reversal",
+        "deck_count": 1,
+        "decks": [
+          {
+            "label": "Cyclopes8 – Twiddle Jewel",
+            "id": "-ppKpJEKjUqDCUXgU4ieUw"
+          }
+        ]
+      },
+      {
+        "card": "Release to the Wind",
+        "deck_count": 1,
+        "decks": [
+          {
+            "label": "Cyclopes8 – Twiddle Jewel",
+            "id": "-ppKpJEKjUqDCUXgU4ieUw"
+          }
+        ]
+      },
+      {
+        "card": "Replication Technique",
+        "deck_count": 1,
+        "decks": [
+          {
+            "label": "Cyclopes8 – Twiddle Jewel",
+            "id": "-ppKpJEKjUqDCUXgU4ieUw"
+          }
+        ]
+      },
+      {
+        "card": "Planar Incision",
+        "deck_count": 1,
+        "decks": [
+          {
+            "label": "Cyclopes8 – Twiddle Jewel",
+            "id": "-ppKpJEKjUqDCUXgU4ieUw"
+          }
+        ]
+      },
+      {
+        "card": "Scrollshift",
+        "deck_count": 1,
+        "decks": [
+          {
+            "label": "Cyclopes8 – Twiddle Jewel",
+            "id": "-ppKpJEKjUqDCUXgU4ieUw"
+          }
+        ]
+      },
+      {
+        "card": "Doppelgang",
+        "deck_count": 1,
+        "decks": [
+          {
+            "label": "Cyclopes8 – Twiddle Jewel",
+            "id": "-ppKpJEKjUqDCUXgU4ieUw"
+          }
+        ]
+      },
+      {
+        "card": "Season of Weaving",
+        "deck_count": 1,
+        "decks": [
+          {
+            "label": "Cyclopes8 – Twiddle Jewel",
+            "id": "-ppKpJEKjUqDCUXgU4ieUw"
+          }
+        ]
+      },
+      {
+        "card": "Spaceshift",
+        "deck_count": 1,
+        "decks": [
+          {
+            "label": "Cyclopes8 – Twiddle Jewel",
+            "id": "-ppKpJEKjUqDCUXgU4ieUw"
+          }
+        ]
+      },
+      {
+        "card": "Molten Duplication",
+        "deck_count": 1,
+        "decks": [
+          {
+            "label": "Cyclopes8 – Twiddle Jewel",
+            "id": "-ppKpJEKjUqDCUXgU4ieUw"
+          }
+        ]
+      },
+      {
+        "card": "Divergent Equation",
+        "deck_count": 1,
+        "decks": [
+          {
+            "label": "ethan – Mono Blue High Tide",
+            "id": "p_0cGUc_LUuxnQHUF7Xb1A"
+          }
+        ]
+      },
+      {
+        "card": "Abstract Performance",
+        "deck_count": 1,
+        "decks": [
+          {
+            "label": "Dye-lan – 5c Cascade",
+            "id": "I1UXuM1auE6Me5bsfMYr8Q"
+          }
+        ]
+      },
+      {
+        "card": "Liliana the Faultless",
+        "deck_count": 1,
+        "decks": [
+          {
+            "label": "mimp – Orzhov Death and Taxes",
+            "id": "Q3WKd_jwtEmIuGr2vcmWmA"
+          }
+        ]
+      },
+      {
+        "card": "Teyo, Lightshield Expert",
+        "deck_count": 1,
+        "decks": [
+          {
+            "label": "mimp – Orzhov Death and Taxes",
+            "id": "Q3WKd_jwtEmIuGr2vcmWmA"
+          }
+        ]
+      },
+      {
+        "card": "Most Decrepit Old Bird // Speak Secrets",
+        "deck_count": 1,
+        "decks": [
+          {
+            "label": "Infernape1 – UR Tempo",
+            "id": "qKiJFAMhv0CLUyGtUnr9bw"
+          }
+        ]
+      },
+      {
+        "card": "Simulacrum Shaper",
+        "deck_count": 1,
+        "decks": [
+          {
+            "label": "CJDeathBlade – Bant Turns",
+            "id": "ZghsGtYYBECGrGJlMRJOuA"
+          }
+        ]
       }
     ],
     "winners": [
@@ -87597,6 +87825,33 @@
         "event_name": "Cockatrice Async - September",
         "date": "2026/10/01",
         "id": "cVY8e-dSd06vPux556KQ-Q",
+        "event_size": 8
+      },
+      {
+        "winner_name": "CliffClaff",
+        "placement": "1st",
+        "deck_name": "Bant Nadu Lands",
+        "event_name": "Lodestone Canadian Clash",
+        "date": "2026/10/03",
+        "id": "SrJNx5OtQUWPaNFJUEqIwA",
+        "event_size": 8
+      },
+      {
+        "winner_name": "Regorn",
+        "placement": "1st",
+        "deck_name": "Bant Time Vault",
+        "event_name": "Webcam Async - September",
+        "date": "2026/10/04",
+        "id": "sVVaO8ivMk6OUQqP3R622Q",
+        "event_size": 8
+      },
+      {
+        "winner_name": "JSI",
+        "placement": "1st",
+        "deck_name": "Jund Aggro",
+        "event_name": "Wheelers Rodeo Webcam Async - September",
+        "date": "2026/10/07",
+        "id": "IxLeU9sW6EqzsgFiK55zGQ",
         "event_size": 8
       },
       {
@@ -87618,12 +87873,120 @@
         "event_size": 2
       },
       {
+        "winner_name": "Impulse",
+        "placement": "Winner",
+        "deck_name": "RUG Moon",
+        "event_name": "Discord Webcam Weekly",
+        "date": "2026/10/03",
+        "id": "1CCxvNsy4kajvwSF6y0QVw",
+        "event_size": 2
+      },
+      {
+        "winner_name": "some user zoe",
+        "placement": "Winner",
+        "deck_name": "Sans Red Naduwalk Lands",
+        "event_name": "Discord Cockatrice Weekly",
+        "date": "2026/10/04",
+        "id": "RaSMtDg9z0GfzA2APaVXkg",
+        "event_size": 2
+      },
+      {
         "winner_name": "ccaterwaull",
         "placement": "1st",
         "deck_name": "Jund Dredge",
         "event_name": "Curio Cavern Weekly",
         "date": "2026/10/02",
         "id": "cdMQboVmf0C6bnRwmyjGlg",
+        "event_size": 1
+      },
+      {
+        "winner_name": "Unedible",
+        "placement": "1st",
+        "deck_name": "Dimir Tempo",
+        "event_name": "Aegis Games Monthly",
+        "date": "2026/10/03",
+        "id": "bSTtZ9zZKkaBsnvJr_ohzA",
+        "event_size": 1
+      },
+      {
+        "winner_name": "Maladroit",
+        "placement": "1st",
+        "deck_name": "Blue Moon",
+        "event_name": "Toronto Meetups",
+        "date": "2026/10/03",
+        "id": "glNjWYNBy0a8_0nQA2SHpw",
+        "event_size": 1
+      },
+      {
+        "winner_name": "Ed",
+        "placement": "1st",
+        "deck_name": "BUG Timmy Tinker",
+        "event_name": "Nottingham Weekly",
+        "date": "2026/10/04",
+        "id": "qICDZjEQX0W-GvGmljKo5Q",
+        "event_size": 1
+      },
+      {
+        "winner_name": "Infernape1",
+        "placement": "1st",
+        "deck_name": "UR Tempo",
+        "event_name": "Gathering Emporium Weekly",
+        "date": "2026/10/04",
+        "id": "qKiJFAMhv0CLUyGtUnr9bw",
+        "event_size": 1
+      },
+      {
+        "winner_name": "CJDeathBlade",
+        "placement": "1st",
+        "deck_name": "Bant Turns",
+        "event_name": "Cheltenham Monthly",
+        "date": "2026/10/04",
+        "id": "ZghsGtYYBECGrGJlMRJOuA",
+        "event_size": 1
+      },
+      {
+        "winner_name": "The_Eleventh",
+        "placement": "1st",
+        "deck_name": "Jund Aggro",
+        "event_name": "West Coast Hobbies Biweekly",
+        "date": "2026/10/05",
+        "id": "7E-9AxNpjUGGGMZZe2hm7A",
+        "event_size": 1
+      },
+      {
+        "winner_name": "Nyko C.",
+        "placement": "1st",
+        "deck_name": "Bant Naduwalk Lands",
+        "event_name": "YJ Monday Night Highlander",
+        "date": "2026/10/05",
+        "id": "JVzBUcXNE0yx4rke8oxXFw",
+        "event_size": 1
+      },
+      {
+        "winner_name": "CatCat",
+        "placement": "1st",
+        "deck_name": "Dimir Tempo",
+        "event_name": "Portland Game Store Weekly",
+        "date": "2026/10/05",
+        "id": "4-BBq9CXXE2IdXVL-e2b3w",
+        "event_size": 1
+      },
+      {
+        "winner_name": "Xavier B.",
+        "placement": "1st",
+        "deck_name": "Oops All Spells",
+        "event_name": "Alt F4 Biweeklies",
+        "date": "2026/10/06",
+        "id": "141EtEpQyUmgAx5LNF58Lg",
+        "event_size": 1
+      },
+      {
+        "winner_name": "Guyderdin",
+        "placement": "1st",
+        "deck_name": "Naya Monsters",
+        "event_name": "Misty Mountain Games Weekly",
+        "date": "2026/10/07",
+        "id": "hoGHanidB0yuJkNhaoKvCw",
         "event_size": 1
       },
       {
@@ -87660,6 +88023,60 @@
         "event_name": "Wizards Keep Monthly",
         "date": "2026/10/01",
         "id": "BeXum3ExyUKrwvV9VBbqOQ",
+        "event_size": 2
+      },
+      {
+        "winner_name": "GenghisPrawn",
+        "placement": "Top 2",
+        "deck_name": "Jeskai Black Control",
+        "event_name": "Discord Webcam Weekly",
+        "date": "2026/10/03",
+        "id": "3o3O47RQ1E64jUMK-uX_NA",
+        "event_size": 2
+      },
+      {
+        "winner_name": "mimp",
+        "placement": "1st/2nd",
+        "deck_name": "Orzhov Death and Taxes",
+        "event_name": "Players Union Games Weekly",
+        "date": "2026/10/04",
+        "id": "Q3WKd_jwtEmIuGr2vcmWmA",
+        "event_size": 2
+      },
+      {
+        "winner_name": "bolnd",
+        "placement": "Top 2",
+        "deck_name": "Gruul Blitz",
+        "event_name": "Discord Cockatrice Weekly",
+        "date": "2026/10/04",
+        "id": "UaRclPJoeUqNASE19r4Q1A",
+        "event_size": 2
+      },
+      {
+        "winner_name": "Scottyv2",
+        "placement": "1st/2nd",
+        "deck_name": "Bant Blink",
+        "event_name": "Players Union Games Weekly",
+        "date": "2026/10/04",
+        "id": "avAU-wkTLkimEyA3GmFwMg",
+        "event_size": 2
+      },
+      {
+        "winner_name": "yofl",
+        "placement": "1st/2nd",
+        "deck_name": "Blue Moon",
+        "event_name": "Game Underground Weekly",
+        "date": "2026/10/07",
+        "id": "3Pf4XYnnCUegegqQFvysqw",
+        "event_size": 2
+      },
+      {
+        "winner_name": "Lazyapple",
+        "placement": "1st/2nd",
+        "deck_name": "Bant Blink",
+        "event_name": "Game Underground Weekly",
+        "date": "2026/10/07",
+        "id": "mEAG-kdNs0Srf7al0-nEzA",
         "event_size": 2
       },
       {
@@ -87723,6 +88140,195 @@
         "event_name": "Cockatrice Async - September",
         "date": "2026/10/01",
         "id": "jdTyv_rYFUGpk0epBD1nzg",
+        "event_size": 8
+      },
+      {
+        "winner_name": "xreamy",
+        "placement": "8th",
+        "deck_name": "Medium Red",
+        "event_name": "Lodestone Canadian Clash",
+        "date": "2026/10/03",
+        "id": "ZeX3zFaxOkGUR7zKRDxjXQ",
+        "event_size": 8
+      },
+      {
+        "winner_name": "",
+        "placement": "2nd",
+        "deck_name": "Bant Naduwalk",
+        "event_name": "Lodestone Canadian Clash",
+        "date": "2026/10/03",
+        "id": "VEK4IrUXnk2lvo4rg3yzGg",
+        "event_size": 8
+      },
+      {
+        "winner_name": "Paceebene",
+        "placement": "5th",
+        "deck_name": "Paradox Academy",
+        "event_name": "Lodestone Canadian Clash",
+        "date": "2026/10/03",
+        "id": "6uAT47-kJkSWvgFaRUxRzA",
+        "event_size": 8
+      },
+      {
+        "winner_name": "Clavlin Raptor",
+        "placement": "6th",
+        "deck_name": "Jeskai Control",
+        "event_name": "Lodestone Canadian Clash",
+        "date": "2026/10/03",
+        "id": "3ESO2vgPdkKsMHHCNpp0Kw",
+        "event_size": 8
+      },
+      {
+        "winner_name": "Dye-lan",
+        "placement": "7th",
+        "deck_name": "5c Cascade",
+        "event_name": "Lodestone Canadian Clash",
+        "date": "2026/10/03",
+        "id": "I1UXuM1auE6Me5bsfMYr8Q",
+        "event_size": 8
+      },
+      {
+        "winner_name": "ThrunsBuns",
+        "placement": "4th",
+        "deck_name": "Mono Green Stompy",
+        "event_name": "Lodestone Canadian Clash",
+        "date": "2026/10/03",
+        "id": "F9uCdUkH8k2G5zOwbYrCwg",
+        "event_size": 8
+      },
+      {
+        "winner_name": "",
+        "placement": "3rd",
+        "deck_name": "Jeskai Control",
+        "event_name": "Lodestone Canadian Clash",
+        "date": "2026/10/03",
+        "id": "BJ95ewDxbUS0Kmad51ilEg",
+        "event_size": 8
+      },
+      {
+        "winner_name": "Gem",
+        "placement": "5th-8th",
+        "deck_name": "Esper Threeanimator",
+        "event_name": "Webcam Async - September",
+        "date": "2026/10/04",
+        "id": "nu0PjA2zG0yQGIChDDda-Q",
+        "event_size": 8
+      },
+      {
+        "winner_name": "salt boi",
+        "placement": "2nd",
+        "deck_name": "Jund Aggro",
+        "event_name": "Webcam Async - September",
+        "date": "2026/10/04",
+        "id": "oIuzwgbnKkmULquMZRatUw",
+        "event_size": 8
+      },
+      {
+        "winner_name": "Evelyn",
+        "placement": "5th-8th",
+        "deck_name": "Dimir Control",
+        "event_name": "Webcam Async - September",
+        "date": "2026/10/04",
+        "id": "Whh7PZ2H5UGxJK_V0xdqEA",
+        "event_size": 8
+      },
+      {
+        "winner_name": "Halfdan",
+        "placement": "3rd/4th",
+        "deck_name": "Jeskai Control",
+        "event_name": "Webcam Async - September",
+        "date": "2026/10/04",
+        "id": "phZHZi1ucEuWhGqSEV0_Yw",
+        "event_size": 8
+      },
+      {
+        "winner_name": "JWyatt",
+        "placement": "3rd/4th",
+        "deck_name": "Grixis Midrange",
+        "event_name": "Webcam Async - September",
+        "date": "2026/10/04",
+        "id": "97FnkFtDEU6yWcook2CLDA",
+        "event_size": 8
+      },
+      {
+        "winner_name": "wheatly",
+        "placement": "5th-8th",
+        "deck_name": "Mono White Death and Taxes",
+        "event_name": "Webcam Async - September",
+        "date": "2026/10/04",
+        "id": "tfCqOIKjhEidY8gyHg2qXg",
+        "event_size": 8
+      },
+      {
+        "winner_name": "GenghisPrawn",
+        "placement": "5th-8th",
+        "deck_name": "Grixis Midrange",
+        "event_name": "Webcam Async - September",
+        "date": "2026/10/04",
+        "id": "-zx5SX3kaEm2IjGyvUxuMQ",
+        "event_size": 8
+      },
+      {
+        "winner_name": "Paranundrox",
+        "placement": "5th-8th",
+        "deck_name": "Orzhov Martyr Proc",
+        "event_name": "Wheelers Rodeo Webcam Async - September",
+        "date": "2026/10/07",
+        "id": "2hkhozx3KkiMM6dRgx74aQ",
+        "event_size": 8
+      },
+      {
+        "winner_name": "Cyclopes8",
+        "placement": "5th-8th",
+        "deck_name": "Twiddle Jewel",
+        "event_name": "Wheelers Rodeo Webcam Async - September",
+        "date": "2026/10/07",
+        "id": "-ppKpJEKjUqDCUXgU4ieUw",
+        "event_size": 8
+      },
+      {
+        "winner_name": "ethan",
+        "placement": "2nd",
+        "deck_name": "Mono Blue High Tide",
+        "event_name": "Wheelers Rodeo Webcam Async - September",
+        "date": "2026/10/07",
+        "id": "p_0cGUc_LUuxnQHUF7Xb1A",
+        "event_size": 8
+      },
+      {
+        "winner_name": "Pywo",
+        "placement": "3rd/4th",
+        "deck_name": "Medium Red",
+        "event_name": "Wheelers Rodeo Webcam Async - September",
+        "date": "2026/10/07",
+        "id": "52sypr2-MkKM33wXnrLDxA",
+        "event_size": 8
+      },
+      {
+        "winner_name": "HD_Dabnado",
+        "placement": "3rd/4th",
+        "deck_name": "Dimir Tempo",
+        "event_name": "Wheelers Rodeo Webcam Async - September",
+        "date": "2026/10/07",
+        "id": "BQUtO_3310eFB_RVJ6_k5A",
+        "event_size": 8
+      },
+      {
+        "winner_name": "Sarah Paragon",
+        "placement": "5th-8th",
+        "deck_name": "Esper Midrange",
+        "event_name": "Wheelers Rodeo Webcam Async - September",
+        "date": "2026/10/07",
+        "id": "dsmteAjwy0iqICqvdpOdMQ",
+        "event_size": 8
+      },
+      {
+        "winner_name": "Crumpet",
+        "placement": "5th-8th",
+        "deck_name": "Medium Red",
+        "event_name": "Wheelers Rodeo Webcam Async - September",
+        "date": "2026/10/07",
+        "id": "N5PRL3n2b0Wpk_0oHW0kdw",
         "event_size": 8
       }
     ]
