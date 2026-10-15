@@ -57038,5 +57038,183 @@
     "set_name": "Secrets of Strixhaven Commander",
     "released_at": "2026-04-24",
     "image_url": "https://cards.scryfall.io/normal/front/2/7/2795c812-0850-4405-b968-b624deaccd55.jpg?1783903863"
+  },
+  "Intrepid Ace": {
+    "oracle_id": "cb8889c8-8ee3-4e27-9f47-ad1021ff61bb",
+    "mana_cost": "{R}",
+    "cmc": 1.0,
+    "type_line": "Creature — Human Pilot",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Marvel Super Heroes Commander",
+    "released_at": "2026-06-26",
+    "image_url": "https://cards.scryfall.io/normal/front/d/e/dead141b-ed26-4d20-9c2b-788fb6ecc74d.jpg?1783903048"
+  },
+  "Marwyn, the Clearcutter": {
+    "oracle_id": "aff4e43d-cafa-47de-8e39-011f9254a26a",
+    "mana_cost": "{R}",
+    "cmc": 1.0,
+    "type_line": "Legendary Creature — Elf Warrior",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/f/9/f93da73c-ca8b-438e-8387-6109dac3fc1a.jpg?1789644549"
+  },
+  "The Echoverse Fulcrum": {
+    "oracle_id": "c04197ad-d2f3-499f-b863-bed0c869519c",
+    "mana_cost": "{2}",
+    "cmc": 2.0,
+    "type_line": "Legendary Artifact",
+    "color_identity": [],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/d/7/d71d250f-c0e0-44b2-877c-76f3bcab4f34.jpg?1789385887"
+  },
+  "Sundering Titan": {
+    "oracle_id": "d17d071d-dbee-4d65-8435-137f35cd89ca",
+    "mana_cost": "{8}",
+    "cmc": 8.0,
+    "type_line": "Artifact Creature — Golem",
+    "color_identity": [],
+    "set_name": "Darksteel",
+    "released_at": "2004-02-06",
+    "image_url": "https://cards.scryfall.io/normal/front/3/e/3e4bd552-e629-41a4-868f-d656187317b7.jpg?1783944418"
+  },
+  "Sanctum Lurker": {
+    "oracle_id": "3ebd64d2-c178-45a2-a51f-9869754baa0f",
+    "mana_cost": "{2}{B}",
+    "cmc": 3.0,
+    "type_line": "Creature — Horror",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/2/1/2185c08f-bb4d-49d5-8b6c-c629a48bb61c.jpg?1789556729"
+  },
+  "Happy Hogan, Dauntless Driver": {
+    "oracle_id": "557ce9d4-8fe3-4ffc-8e56-b9b73d58d41b",
+    "mana_cost": "{R}",
+    "cmc": 1.0,
+    "type_line": "Legendary Creature — Human Pilot",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Marvel Super Heroes Commander",
+    "released_at": "2026-06-26",
+    "image_url": "https://cards.scryfall.io/normal/front/4/1/4174e5fa-8e28-41c5-ba5c-4ec27b7cd4a3.jpg?1783903100"
+  },
+  "Master of Barbs": {
+    "oracle_id": "e8c36337-135c-460d-a1da-cc01743dda71",
+    "mana_cost": "{1}{R}",
+    "cmc": 2.0,
+    "type_line": "Creature — Lizard Bard",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/4/4/4404d9d4-9cdd-4dad-a4f6-574d90db5052.jpg?1789127596"
+  },
+  "Warship Scout": {
+    "oracle_id": "f07e6ba7-42e8-4b4d-9831-00a856059060",
+    "mana_cost": "{R}",
+    "cmc": 1.0,
+    "type_line": "Creature — Human Scout",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Avatar: The Last Airbender Eternal",
+    "released_at": "2025-11-21",
+    "image_url": "https://cards.scryfall.io/normal/front/b/1/b1a95982-be16-465a-9c1b-1f4d875c0c40.jpg?1783904777"
+  },
+  "Roiling Canopy": {
+    "oracle_id": "c6e87760-4cd0-4281-82d4-7a377ea960ad",
+    "mana_cost": "",
+    "cmc": 0.0,
+    "type_line": "Land",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/d/b/db61361b-bd12-453e-abc2-bbe09b66e3d9.jpg?1789514074"
+  },
+  "Smaug the Magnificent": {
+    "oracle_id": "c53b7602-5e36-4900-896c-844bf6eac22e",
+    "mana_cost": "{2}{R}{R}",
+    "cmc": 4.0,
+    "type_line": "Legendary Creature — Dragon",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "The Hobbit",
+    "released_at": "2026-08-14",
+    "image_url": "https://cards.scryfall.io/normal/front/6/a/6a5d8fad-2ffd-4645-8c49-907999b6cecf.jpg?1783902784"
+  },
+  "Ajani's Anguish": {
+    "oracle_id": "4a37f4a0-2869-4f81-b51b-4c3e7e0e0671",
+    "mana_cost": "{X}{R}",
+    "cmc": 1.0,
+    "type_line": "Enchantment",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/d/9/d9039a58-2f17-4b8a-b714-3a2f0b46f057.jpg?1789470674"
+  },
+  "Vigorbloom Charm": {
+    "oracle_id": "826f17d1-3806-4579-8b1b-2082b7b03d69",
+    "mana_cost": "{G}{W}",
+    "cmc": 2.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "G",
+      "W"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/2/b/2b198e10-b507-4314-a29c-a219f06e48b7.jpg?1789127656"
+  },
+  "Dwarven Mauler": {
+    "oracle_id": "70538676-2ffb-4cad-827e-b55e81088678",
+    "mana_cost": "{R}",
+    "cmc": 1.0,
+    "type_line": "Creature — Dwarf Warrior",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "The Hobbit",
+    "released_at": "2026-08-14",
+    "image_url": "https://cards.scryfall.io/normal/front/b/d/bd0f0415-43af-4f5d-8999-853c5d42780d.jpg?1784895019"
+  },
+  "Solarium Sentry": {
+    "oracle_id": "afddba56-f9a0-4917-8167-c9fd17ca9954",
+    "mana_cost": "{G}{W}",
+    "cmc": 2.0,
+    "type_line": "Creature — Cat Soldier",
+    "color_identity": [
+      "G",
+      "W"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/1/e/1ef12dcf-df50-4da6-8c4c-e2937ba9698e.jpg?1789127651"
+  },
+  "From Father to Son": {
+    "oracle_id": "87864421-505c-4bdb-b1e3-3e44e05f2beb",
+    "mana_cost": "{1}{W}",
+    "cmc": 2.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Final Fantasy",
+    "released_at": "2025-06-13",
+    "image_url": "https://cards.scryfall.io/normal/front/0/c/0c730a3b-334e-466b-bb9b-4b41fce2af6d.jpg?1783906649"
   }
 }
