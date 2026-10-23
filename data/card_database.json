@@ -57216,5 +57216,203 @@
     "set_name": "Final Fantasy",
     "released_at": "2025-06-13",
     "image_url": "https://cards.scryfall.io/normal/front/0/c/0c730a3b-334e-466b-bb9b-4b41fce2af6d.jpg?1783906649"
+  },
+  "The Unagi of Kyoshi Island": {
+    "oracle_id": "be922360-ee9f-4cfb-bf10-d481c5de5cb1",
+    "mana_cost": "{3}{U}{U}",
+    "cmc": 5.0,
+    "type_line": "Legendary Creature — Serpent",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Avatar: The Last Airbender",
+    "released_at": "2025-11-21",
+    "image_url": "https://cards.scryfall.io/normal/front/0/e/0ecd8b38-9ee5-41a5-9b93-21c33fc1a6ff.jpg?1783904980"
+  },
+  "Seasoned Cryomancer": {
+    "oracle_id": "c3936db3-d3b6-4a92-9773-6f3c52dc419d",
+    "mana_cost": "{1}{U}{U}",
+    "cmc": 3.0,
+    "type_line": "Creature — Human Wizard",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/5/1/51d86875-420d-4e82-b69c-4feeb99c9428.jpg?1789470781"
+  },
+  "Fatehold Charm": {
+    "oracle_id": "313aee0e-4090-4589-b323-a4edbda21c68",
+    "mana_cost": "{W}{U}",
+    "cmc": 2.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "U",
+      "W"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/c/f/cfc54011-647e-4428-bcdb-59400e1da49d.jpg?1789127637"
+  },
+  "Dark Fortress": {
+    "oracle_id": "40760bfa-a423-487c-ba29-043b2d00c736",
+    "mana_cost": "",
+    "cmc": 0.0,
+    "type_line": "Land",
+    "color_identity": [
+      "B",
+      "R"
+    ],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26",
+    "image_url": "https://cards.scryfall.io/normal/front/c/1/c16fd43c-7c47-4c1b-860f-91146532e89d.jpg?1783902885"
+  },
+  "Stingerquill Charm": {
+    "oracle_id": "987aadac-d6a6-4e50-9468-9e8e53cc5529",
+    "mana_cost": "{B}{R}",
+    "cmc": 2.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "B",
+      "R"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/8/1/81733ff7-e611-43ee-bf38-6bb700676017.jpg?1789127652"
+  },
+  "Stinging Vitriol": {
+    "oracle_id": "624cf822-0b4e-4f0c-9893-a53cb094f616",
+    "mana_cost": "{B}{R}",
+    "cmc": 2.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "B",
+      "R"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/a/7/a7d78297-7411-4ec5-8931-a25146869d5b.jpg?1789385971"
+  },
+  "Ingris Stingerquill": {
+    "oracle_id": "bda098cb-31ec-41a1-a9d7-122877cc69d2",
+    "mana_cost": "{B}{R}{R}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Elder Sphinx",
+    "color_identity": [
+      "B",
+      "R"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/6/4/6471b135-33a8-4005-9a07-ebb74e0bf145.jpg?1788878212"
+  },
+  "Darksteel Angel": {
+    "oracle_id": "d0259f7d-9bd7-4722-8fb9-439768308516",
+    "mana_cost": "{9}",
+    "cmc": 9.0,
+    "type_line": "Artifact Creature — Angel",
+    "color_identity": [],
+    "set_name": "Reality Fracture Commander",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/0/c/0c33024e-9473-4d5b-8433-9898380282c4.jpg?1784325693"
+  },
+  "Brawn, Amadeus Cho": {
+    "oracle_id": "19910a90-d334-4d99-89f2-cd81cea3c824",
+    "mana_cost": "{1}{G/U}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Gamma Scientist Hero",
+    "color_identity": [
+      "G",
+      "U"
+    ],
+    "set_name": "Marvel Super Heroes Commander",
+    "released_at": "2026-06-26",
+    "image_url": "https://cards.scryfall.io/normal/front/8/1/813ef553-28f2-46d5-b14b-76ebcbe061d4.jpg?1783903093"
+  },
+  "Thalia, the Survivor": {
+    "oracle_id": "55ef129e-698e-424f-be3c-3fbba6c2cc3e",
+    "mana_cost": "{3}{W}",
+    "cmc": 4.0,
+    "type_line": "Legendary Creature — Human Soldier",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/8/0/80226231-9e70-430e-aabc-f262f70b9226.jpg?1789127700"
+  },
+  "Pia, Aether Ascetic": {
+    "oracle_id": "6519dc16-4960-4220-aaa8-7e4279743714",
+    "mana_cost": "{2}{G}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Human Druid",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/f/f/ff0bc30f-9d20-458e-808f-bdc2825905a5.jpg?1789387120"
+  },
+  "Final Showdown": {
+    "oracle_id": "7e7ec3d6-a84f-4cc3-93f4-4d181d41e126",
+    "mana_cost": "{W}",
+    "cmc": 1.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Outlaws of Thunder Junction",
+    "released_at": "2024-04-19",
+    "image_url": "https://cards.scryfall.io/normal/front/3/5/358968f9-45bd-4022-b6bc-f1f7e0adf0e7.jpg?1783911857"
+  },
+  "Jeskai Revelation": {
+    "oracle_id": "61b6b1d1-4350-41c1-ac47-835b2831f24a",
+    "mana_cost": "{4}{U}{R}{W}",
+    "cmc": 7.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "R",
+      "U",
+      "W"
+    ],
+    "set_name": "Tarkir: Dragonstorm",
+    "released_at": "2025-04-11",
+    "image_url": "https://cards.scryfall.io/normal/front/3/c/3cac0ad3-5107-4ed6-a688-d44bbd65e407.jpg?1783907311"
+  },
+  "Sphinx of False Conclusions": {
+    "oracle_id": "9f004382-c57b-4fde-af97-0c85516c3cf4",
+    "mana_cost": "{2}{U}{U}",
+    "cmc": 4.0,
+    "type_line": "Creature — Sphinx Illusion",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/0/8/08ffbd51-2bd3-4262-8809-09576ce2b6f5.jpg?1789385594"
+  },
+  "Flickering Hound": {
+    "oracle_id": "162421d2-8761-437f-bed9-578b61c96f1f",
+    "mana_cost": "{3}{W}",
+    "cmc": 4.0,
+    "type_line": "Creature — Dog",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/6/8/686f3a25-305d-4f02-8972-eba7b8e9635f.jpg?1789470769"
+  },
+  "Repurposed Enforcer": {
+    "oracle_id": "b775a404-ec0a-47ff-bb9d-eae2273d945b",
+    "mana_cost": "{1}{W}",
+    "cmc": 2.0,
+    "type_line": "Creature — Human Soldier",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/3/5/35000e93-85d3-44f8-976a-5918ee4c71e0.jpg?1788878108"
   }
 }
