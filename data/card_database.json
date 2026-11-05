@@ -57414,5 +57414,41 @@
     "set_name": "Reality Fracture",
     "released_at": "2026-10-02",
     "image_url": "https://cards.scryfall.io/normal/front/3/5/35000e93-85d3-44f8-976a-5918ee4c71e0.jpg?1788878108"
+  },
+  "Seismic Assault": {
+    "oracle_id": "8ad4f2fe-6d98-4279-a331-3817d40ae46d",
+    "mana_cost": "{R}{R}{R}",
+    "cmc": 3.0,
+    "type_line": "Enchantment",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Exodus",
+    "released_at": "1998-06-15",
+    "image_url": "https://cards.scryfall.io/normal/front/c/c/cc494af5-4da4-43f5-a193-426ef84d80a7.jpg?1783946508"
+  },
+  "Evendo Brushrazer": {
+    "oracle_id": "795bc0b0-4b0a-49d6-ac8e-a52a10a93be8",
+    "mana_cost": "{2}{R}",
+    "cmc": 3.0,
+    "type_line": "Creature — Insect Warrior",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Edge of Eternities Commander",
+    "released_at": "2025-08-01",
+    "image_url": "https://cards.scryfall.io/normal/front/8/b/8b9001a4-953c-4a32-b51a-c6bec7e74f9e.jpg?1783906065"
+  },
+  "Ram Through": {
+    "oracle_id": "4b1befff-48fa-47a3-832e-bdaf43495c02",
+    "mana_cost": "{1}{G}",
+    "cmc": 2.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Ikoria: Lair of Behemoths",
+    "released_at": "2020-04-24",
+    "image_url": "https://cards.scryfall.io/normal/front/a/c/ac0b24e7-14e7-45ee-b5d8-bdb8674b669c.jpg?1783931030"
   }
 }
