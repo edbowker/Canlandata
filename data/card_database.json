@@ -57450,5 +57450,128 @@
     "set_name": "Ikoria: Lair of Behemoths",
     "released_at": "2020-04-24",
     "image_url": "https://cards.scryfall.io/normal/front/a/c/ac0b24e7-14e7-45ee-b5d8-bdb8674b669c.jpg?1783931030"
+  },
+  "Theorist's Proxy": {
+    "oracle_id": "0089acfe-da66-4dd7-b1e5-4d7407f58257",
+    "mana_cost": "{1}{U}",
+    "cmc": 2.0,
+    "type_line": "Creature — Illusion",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/7/1/710302ca-c4be-4069-8ce1-f531414c74e9.jpg?1788878151"
+  },
+  "The Lost and the Damned": {
+    "oracle_id": "22e70ad0-1a9c-4d9e-8cc1-ebea485282ca",
+    "mana_cost": "{1}{U}{R}",
+    "cmc": 3.0,
+    "type_line": "Enchantment",
+    "color_identity": [
+      "R",
+      "U"
+    ],
+    "set_name": "Warhammer 40,000 Commander",
+    "released_at": "2022-10-07",
+    "image_url": "https://cards.scryfall.io/normal/front/9/a/9a53cf96-b47f-48f0-b9cc-3330ae546a87.jpg?1783920844"
+  },
+  "Balmor, Battlemage Captain": {
+    "oracle_id": "7da19fc5-cb85-4ec7-beea-95210378bbfe",
+    "mana_cost": "{U}{R}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Bird Wizard",
+    "color_identity": [
+      "R",
+      "U"
+    ],
+    "set_name": "Dominaria United",
+    "released_at": "2022-09-09",
+    "image_url": "https://cards.scryfall.io/normal/front/9/5/959ba62e-bb3a-49ad-8b1b-e787e413e5d4.jpg?1783921286"
+  },
+  "Golgari Brownscale": {
+    "oracle_id": "34242c44-a987-412c-9652-5242b9b5200c",
+    "mana_cost": "{1}{G}{G}",
+    "cmc": 3.0,
+    "type_line": "Creature — Lizard",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Ravnica: City of Guilds",
+    "released_at": "2005-10-07",
+    "image_url": "https://cards.scryfall.io/normal/front/6/9/690cfc79-da41-4ac0-b0cc-719aa650b207.jpg?1783943638"
+  },
+  "Traxos, Academy Guardian": {
+    "oracle_id": "7b9a574f-6d56-421b-8fbd-94da1e6e3ce1",
+    "mana_cost": "{3}{U}",
+    "cmc": 4.0,
+    "type_line": "Legendary Artifact Creature — Dragon Construct",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/a/3/a349800f-b634-4e74-a9d9-185df37ad909.jpg?1789568451"
+  },
+  "Rescue Girl, First Responder": {
+    "oracle_id": "df6fc0b4-333b-4f6c-804c-ba6c8e29c88e",
+    "mana_cost": "{2}{W}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Human Cleric",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/6/9/699874e3-1ccf-4a6c-8371-61040de82d08.jpg?1789645598"
+  },
+  "Pompous Battlemage // Improvised Act": {
+    "oracle_id": "33e3793c-098f-4897-88f3-9f9ce9081e0f",
+    "mana_cost": "{R}",
+    "cmc": 1.0,
+    "type_line": "Creature — Goblin Sorcerer // Sorcery",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/a/a/aa0f77ac-741a-444a-8bf0-a42c644726bf.jpg?1788878186"
+  },
+  "Alex Wilder, Runaway": {
+    "oracle_id": "f3031397-c2d5-40c6-8eca-88faed00a5ea",
+    "mana_cost": "{1}{R}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Human Hero Villain",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Marvel Super Heroes Commander",
+    "released_at": "2026-06-26",
+    "image_url": "https://cards.scryfall.io/normal/front/7/8/78ba8bef-5b36-4e63-b708-d77250ebaf62.jpg?1783903056"
+  },
+  "Gollum the Abandoned": {
+    "oracle_id": "8d88facd-cf7e-498e-ab6b-6bd021316162",
+    "mana_cost": "{1}{B}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Halfling Horror",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "The Hobbit",
+    "released_at": "2026-08-14",
+    "image_url": "https://cards.scryfall.io/normal/front/5/0/50d91ef3-6f5d-4255-8d47-be731b5dad30.jpg?1784733916"
+  },
+  "Solitary Cell": {
+    "oracle_id": "66a22b35-3dc0-4a74-8474-e73293403de6",
+    "mana_cost": "{R}{W}",
+    "cmc": 2.0,
+    "type_line": "Artifact",
+    "color_identity": [
+      "R",
+      "W"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/5/1/5142bbb6-194c-4b12-b11a-1a21c9fe81a6.jpg?1790558834"
   }
 }
