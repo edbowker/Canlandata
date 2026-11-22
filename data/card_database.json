@@ -57573,5 +57573,115 @@
     "set_name": "Reality Fracture",
     "released_at": "2026-10-02",
     "image_url": "https://cards.scryfall.io/normal/front/5/1/5142bbb6-194c-4b12-b11a-1a21c9fe81a6.jpg?1790558834"
+  },
+  "Teetering Peaks": {
+    "oracle_id": "4a9437a6-4e61-48b6-8194-1c6ba6432250",
+    "mana_cost": "",
+    "cmc": 0.0,
+    "type_line": "Land",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Zendikar",
+    "released_at": "2009-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/e/5/e56aca36-bb51-45e3-9ef9-9f9f2aa1e088.jpg?1783942121"
+  },
+  "Satyr Hoplite": {
+    "oracle_id": "ee7dc820-10ee-429a-a1ef-ecd6a11f5608",
+    "mana_cost": "{R}",
+    "cmc": 1.0,
+    "type_line": "Creature — Satyr Soldier",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Journey into Nyx",
+    "released_at": "2014-05-02",
+    "image_url": "https://cards.scryfall.io/normal/front/b/8/b8754d66-facb-432e-a6c2-91430a6dec94.jpg?1783939420"
+  },
+  "Break Out": {
+    "oracle_id": "99eaac39-28d4-4af7-984b-f75fd37902ed",
+    "mana_cost": "{R}{G}",
+    "cmc": 2.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "G",
+      "R"
+    ],
+    "set_name": "Murders at Karlov Manor",
+    "released_at": "2024-02-09",
+    "image_url": "https://cards.scryfall.io/normal/front/8/c/8c628476-0987-47d4-8d2a-cfc3977b2357.jpg?1783912863"
+  },
+  "Defend the Rider": {
+    "oracle_id": "561af57d-d43d-4d98-9ef6-18a0843f22ae",
+    "mana_cost": "{G}",
+    "cmc": 1.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Aetherdrift",
+    "released_at": "2025-02-14",
+    "image_url": "https://cards.scryfall.io/normal/front/5/9/59ed23a2-6153-47b2-ab73-062195cafb74.jpg?1783907873"
+  },
+  "Furor of the Bitten": {
+    "oracle_id": "40be0923-5d57-46fd-84ef-7f1a1fd5da42",
+    "mana_cost": "{R}",
+    "cmc": 1.0,
+    "type_line": "Enchantment — Aura",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Innistrad",
+    "released_at": "2011-09-30",
+    "image_url": "https://cards.scryfall.io/normal/front/f/f/ff4a4c19-6427-4a03-a543-992c910e668f.jpg?1783940937"
+  },
+  "Hemosymbic Mite": {
+    "oracle_id": "103e0b63-fbde-4054-91f7-dd04b40b59ef",
+    "mana_cost": "{G}",
+    "cmc": 1.0,
+    "type_line": "Creature — Mite",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Edge of Eternities",
+    "released_at": "2025-08-01",
+    "image_url": "https://cards.scryfall.io/normal/front/c/1/c14137a4-2d44-444c-ad50-e2edf9380571.jpg?1783905936"
+  },
+  "Thud": {
+    "oracle_id": "5d2a9859-1353-4431-9343-f5999450acd1",
+    "mana_cost": "{R}",
+    "cmc": 1.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Core Set 2019",
+    "released_at": "2018-07-13",
+    "image_url": "https://cards.scryfall.io/normal/front/1/1/11bed78a-c579-424a-8fcc-322ce2630dbc.jpg?1783934543"
+  },
+  "Self-Destruct": {
+    "oracle_id": "98bf6311-bc9b-4bf8-ac83-c041973b86d0",
+    "mana_cost": "{1}{R}",
+    "cmc": 2.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Final Fantasy",
+    "released_at": "2025-06-13",
+    "image_url": "https://cards.scryfall.io/normal/front/7/6/7661003c-bf83-46bb-bcc0-8fbf5819ffa8.jpg?1783906597"
+  },
+  "Callous Sell-Sword // Burn Together": {
+    "oracle_id": "0e7405e3-e9e6-4213-a73f-e0c01a7d6721",
+    "mana_cost": "{1}{B}",
+    "cmc": 2.0,
+    "type_line": "Creature — Human Soldier // Sorcery — Adventure",
+    "color_identity": [
+      "B",
+      "R"
+    ],
+    "set_name": "Wilds of Eldraine",
+    "released_at": "2023-09-08",
+    "image_url": "https://cards.scryfall.io/normal/front/7/7/770ee3da-d33e-466f-9a2e-ad2d08ef5012.jpg?1783915066"
   }
 }
