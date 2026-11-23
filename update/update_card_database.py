@@ -152,3 +152,6 @@ def main():
             print(e)
 
     return len(missing_cards)
+
+if __name__ == '__main__':
+    main()

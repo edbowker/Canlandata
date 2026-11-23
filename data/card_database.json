@@ -57683,5 +57683,353 @@
     "set_name": "Wilds of Eldraine",
     "released_at": "2023-09-08",
     "image_url": "https://cards.scryfall.io/normal/front/7/7/770ee3da-d33e-466f-9a2e-ad2d08ef5012.jpg?1783915066"
+  },
+  "Multiply by Zero": {
+    "oracle_id": "d940611f-f84d-43fa-82d6-eecb4fb54164",
+    "mana_cost": "{1}{B}",
+    "cmc": 2.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/9/0/90d684a4-9639-4792-8760-2011a7a85370.jpg?1789644823"
+  },
+  "Silverquill Charm": {
+    "oracle_id": "d985b12e-2731-4ccf-9f51-90218b20b42a",
+    "mana_cost": "{W}{B}",
+    "cmc": 2.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "B",
+      "W"
+    ],
+    "set_name": "Secrets of Strixhaven",
+    "released_at": "2026-04-24",
+    "image_url": "https://cards.scryfall.io/normal/front/3/e/3eb73579-f1c6-4762-81d2-9568ab501fac.jpg?1783903631"
+  },
+  "Unstable Glyphbridge // Sandswirl Wanderglyph": {
+    "oracle_id": "fcd54631-ea47-49a7-ad5f-9a9a51a815ba",
+    "mana_cost": "{3}{W}{W}",
+    "cmc": 5.0,
+    "type_line": "Artifact // Artifact Creature — Golem",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "The Lost Caverns of Ixalan",
+    "released_at": "2023-11-17",
+    "image_url": "https://cards.scryfall.io/normal/front/d/7/d70f48e7-582c-4dd2-a64e-6fd03fa6b77e.jpg?1783913805"
+  },
+  "Spiked Corridor // Torture Pit": {
+    "oracle_id": "e49b902f-a556-4dab-8928-93caf0a3f609",
+    "mana_cost": "{3}{R} // {3}{R}",
+    "cmc": 8.0,
+    "type_line": "Enchantment — Room // Enchantment — Room",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Duskmourn: House of Horror Commander",
+    "released_at": "2024-09-27",
+    "image_url": "https://cards.scryfall.io/normal/front/b/9/b90164a1-8b0a-4445-a0ad-43e4c3324925.jpg?1783909656"
+  },
+  "Raphael, Tough Turtle": {
+    "oracle_id": "2c72e6d2-bbb0-42de-b465-438d584cbddc",
+    "mana_cost": "{1}{R}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Mutant Ninja Turtle",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Teenage Mutant Ninja Turtles",
+    "released_at": "2026-03-06",
+    "image_url": "https://cards.scryfall.io/normal/front/f/2/f24c90c8-ed04-4b4e-8b19-c7d07a90c6b8.jpg?1783904092"
+  },
+  "Goblin-town Flunkies": {
+    "oracle_id": "85ceb4ac-7a1c-4c7e-95a3-515a5b5d6116",
+    "mana_cost": "{1}{R}",
+    "cmc": 2.0,
+    "type_line": "Creature — Goblin Soldier",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "The Hobbit",
+    "released_at": "2026-08-14",
+    "image_url": "https://cards.scryfall.io/normal/front/c/c/ccff7382-8609-494c-aeee-cd1436456dd0.jpg?1785497117"
+  },
+  "U.S.S. Discovery, at Black Alert": {
+    "oracle_id": "13dbfe3f-1e04-4c4f-953c-7c949dba9d33",
+    "mana_cost": "{3}{G}{G}",
+    "cmc": 5.0,
+    "type_line": "Legendary Artifact — Spacecraft",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Star Trek",
+    "released_at": "2026-11-13",
+    "image_url": "https://cards.scryfall.io/normal/front/6/9/69b1f87f-ff02-4945-9f07-18dab5035e2d.jpg?1792508275"
+  },
+  "Unflinching Hortimancer": {
+    "oracle_id": "7cd0bd74-2463-4e9d-9802-69ac4ef6d543",
+    "mana_cost": "{1}{W}",
+    "cmc": 2.0,
+    "type_line": "Creature — Human Cleric",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/6/3/63f82985-c9c2-4d0a-ac4f-560166bebd9f.jpg?1789556741"
+  },
+  "Dream Beavers": {
+    "oracle_id": "a1cec8e8-cf3c-42a4-b625-ca0cd148664e",
+    "mana_cost": "{B}",
+    "cmc": 1.0,
+    "type_line": "Creature — Beaver Nightmare",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Teenage Mutant Ninja Turtles",
+    "released_at": "2026-03-06",
+    "image_url": "https://cards.scryfall.io/normal/front/6/0/600e3bc1-9777-4057-a11e-4f61582636c6.jpg?1783904107"
+  },
+  "Tomik, Izzet Sparkmage": {
+    "oracle_id": "16604fee-cd8d-41e4-8269-3c7ff756613d",
+    "mana_cost": "{1}{R}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Human Wizard",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/5/c/5c5afd5f-6f37-4c3e-83f0-68fdcea98810.jpg?1789729773"
+  },
+  "Wingnut, Bat on the Belfry": {
+    "oracle_id": "392a71c7-8f6d-46b8-bcc3-613e086d86ed",
+    "mana_cost": "{1}{R}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Bat Mutant",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Teenage Mutant Ninja Turtles",
+    "released_at": "2026-03-06",
+    "image_url": "https://cards.scryfall.io/normal/front/4/0/40b9b1d0-b7d1-473e-b6a9-a29d527c2f35.jpg?1783904090"
+  },
+  "Enlightened Confidant": {
+    "oracle_id": "a139eb7f-3853-490c-a839-35d0e5aed7b5",
+    "mana_cost": "{1}{W}",
+    "cmc": 2.0,
+    "type_line": "Creature — Kor Cleric",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/4/8/483fcc58-cc6e-4452-a696-7b38e117c837.jpg?1788329184"
+  },
+  "Seven of Nine, Unassimilated": {
+    "oracle_id": "af9c9b8a-0713-4904-8e86-2b3331ec5495",
+    "mana_cost": "{1}{U}",
+    "cmc": 2.0,
+    "type_line": "Legendary Artifact Creature — Human Officer",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Star Trek",
+    "released_at": "2026-11-13",
+    "image_url": "https://cards.scryfall.io/normal/front/d/d/ddc517bd-27e1-4688-8941-a41c312bd782.jpg?1792508210"
+  },
+  "Blade of the Bloodchief": {
+    "oracle_id": "8985e545-07c3-45f9-9058-fe3c1f50de04",
+    "mana_cost": "{1}",
+    "cmc": 1.0,
+    "type_line": "Artifact — Equipment",
+    "color_identity": [],
+    "set_name": "Zendikar",
+    "released_at": "2009-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/7/e/7e4b42e5-0e60-4148-907e-456d9f3043be.jpg?1783942128"
+  },
+  "Darklight Phoenix": {
+    "oracle_id": "e4b51c2d-7e56-435b-89d6-85e33df65879",
+    "mana_cost": "{3}{B}",
+    "cmc": 4.0,
+    "type_line": "Creature — Phoenix",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/e/c/ec454979-3839-4be3-a34a-9d25482948ba.jpg?1789470810"
+  },
+  "Heartwood Crafter // Soul Tether": {
+    "oracle_id": "c8b3a070-408e-4a8f-8597-6476eeec0a5f",
+    "mana_cost": "{G}",
+    "cmc": 1.0,
+    "type_line": "Creature — Elf Artificer // Sorcery",
+    "color_identity": [
+      "G",
+      "R"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/9/1/910a1f41-17fd-4ab0-9597-7151e79dc760.jpg?1789127630"
+  },
+  "Emrakul, the Exigent Doom": {
+    "oracle_id": "4421ab7d-6d9b-4edd-b5a0-53a8ed84da6f",
+    "mana_cost": "{10}",
+    "cmc": 10.0,
+    "type_line": "Legendary Creature — Eldrazi",
+    "color_identity": [],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/c/3/c3ff8dd3-88a8-49dc-a59b-e2748680623c.jpg?1790829846"
+  },
+  "Captain James T. Kirk": {
+    "oracle_id": "19edde54-153f-46b8-8a8d-a20fdef0667f",
+    "mana_cost": "{2}{R}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Human Officer",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Star Trek",
+    "released_at": "2026-11-13",
+    "image_url": "https://cards.scryfall.io/normal/front/4/0/40a0466d-20bb-4ed5-858d-947fb9144580.jpg?1784036779"
+  },
+  "Thor, Asgard's Avenger": {
+    "oracle_id": "44c2fefb-5de3-4406-955a-3fabc46357d0",
+    "mana_cost": "{2}{R}{R}",
+    "cmc": 4.0,
+    "type_line": "Legendary Creature — God Warrior Hero",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Marvel Super Heroes Commander",
+    "released_at": "2026-06-26",
+    "image_url": "https://cards.scryfall.io/normal/front/3/5/3513c041-7147-467d-845d-3d1c83fb3328.jpg?1783903026"
+  },
+  "Shining Shoal": {
+    "oracle_id": "9937dae8-e639-46ad-849b-7e7be93bbbad",
+    "mana_cost": "{X}{W}{W}",
+    "cmc": 2.0,
+    "type_line": "Instant — Arcane",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Betrayers of Kamigawa",
+    "released_at": "2005-02-04",
+    "image_url": "https://cards.scryfall.io/normal/front/7/8/78ca16f8-336a-444b-9f78-e97a3f20a3bc.jpg?1783944211"
+  },
+  "Guiding Hydra": {
+    "oracle_id": "24f1445c-16c9-45c0-be56-0266e6c78cdb",
+    "mana_cost": "{X}{W}",
+    "cmc": 1.0,
+    "type_line": "Creature — Hydra Horror",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/a/5/a53eb840-039d-4c45-b701-d58cb26b1a6c.jpg?1789644816"
+  },
+  "Accorder Paladin": {
+    "oracle_id": "6891c8b7-7112-40dc-8b94-b84ad1885e5e",
+    "mana_cost": "{1}{W}",
+    "cmc": 2.0,
+    "type_line": "Creature — Human Knight",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Mirrodin Besieged",
+    "released_at": "2011-02-04",
+    "image_url": "https://cards.scryfall.io/normal/front/d/f/df0a4370-729d-40e7-b68b-21902648492d.jpg?1783941394"
+  },
+  "Autumn's Veil": {
+    "oracle_id": "03f5946b-e000-4b39-a49f-1c31668b51bd",
+    "mana_cost": "{G}",
+    "cmc": 1.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Magic 2011",
+    "released_at": "2010-07-16",
+    "image_url": "https://cards.scryfall.io/normal/front/7/e/7e354ce5-b4c1-4a9c-99d1-7624301b594b.jpg?1783941801"
+  },
+  "Harbin, Vanguard Aviator": {
+    "oracle_id": "d827575f-e364-4a20-887e-3091e5501a4f",
+    "mana_cost": "{W}{U}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Human Soldier",
+    "color_identity": [
+      "U",
+      "W"
+    ],
+    "set_name": "The Brothers' War",
+    "released_at": "2022-11-18",
+    "image_url": "https://cards.scryfall.io/normal/front/4/b/4b88be69-3201-4345-a193-cc21bd066d15.jpg?1783920030"
+  },
+  "The Naked Time": {
+    "oracle_id": "2cf79dd0-c9db-403e-969d-6c09e7aaa575",
+    "mana_cost": "{1}{R}",
+    "cmc": 2.0,
+    "type_line": "Enchantment — Saga",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Star Trek",
+    "released_at": "2026-11-13",
+    "image_url": "https://cards.scryfall.io/normal/front/6/2/627c2ff6-88be-4c37-a676-0eddf453e8c6.jpg?1793359584"
+  },
+  "Salt Vampire": {
+    "oracle_id": "31c7453e-33b8-4eb6-abac-28cdb35fb993",
+    "mana_cost": "{1}{B}",
+    "cmc": 2.0,
+    "type_line": "Creature — Vampire Shapeshifter",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Star Trek",
+    "released_at": "2026-11-13",
+    "image_url": "https://cards.scryfall.io/normal/front/7/8/78faba81-01a3-489f-927e-1adaa8fe4436.jpg?1784036770"
+  },
+  "Hidden Lair": {
+    "oracle_id": "7069d241-4e66-40bf-afd1-551a4a5457f0",
+    "mana_cost": "",
+    "cmc": 0.0,
+    "type_line": "Land",
+    "color_identity": [
+      "B",
+      "U"
+    ],
+    "set_name": "Marvel Super Heroes",
+    "released_at": "2026-06-26",
+    "image_url": "https://cards.scryfall.io/normal/front/0/7/0742ddb6-71ed-444e-91ad-84f876725a4a.jpg?1783902883"
+  },
+  "Rosa, Resolute White Mage": {
+    "oracle_id": "9c4fdd20-0396-40b7-8687-43b1035b6956",
+    "mana_cost": "{3}{W}",
+    "cmc": 4.0,
+    "type_line": "Legendary Creature — Human Noble Cleric",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Final Fantasy",
+    "released_at": "2025-06-13",
+    "image_url": "https://cards.scryfall.io/normal/front/d/7/d7964800-1392-4bb8-84e2-c9f3938ceac3.jpg?1783906490"
+  },
+  "Bilbo's Gambit": {
+    "oracle_id": "ef71ef07-8a35-41ec-a851-d95e9e3a221b",
+    "mana_cost": "{1}{W}",
+    "cmc": 2.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "The Hobbit",
+    "released_at": "2026-08-14",
+    "image_url": "https://cards.scryfall.io/normal/front/4/5/45ad01f0-cda8-4931-82bb-cb4949e56ae9.jpg?1784894818"
   }
 }
