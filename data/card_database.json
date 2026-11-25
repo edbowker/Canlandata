@@ -58031,5 +58031,662 @@
     "set_name": "The Hobbit",
     "released_at": "2026-08-14",
     "image_url": "https://cards.scryfall.io/normal/front/4/5/45ad01f0-cda8-4931-82bb-cb4949e56ae9.jpg?1784894818"
+  },
+  "Kira Nerys, Firebrand": {
+    "oracle_id": "ff9f5bbb-43c4-481e-9bd7-db9f246355ae",
+    "mana_cost": "{1}{R}{W}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Bajoran Soldier",
+    "color_identity": [
+      "R",
+      "W"
+    ],
+    "set_name": "Star Trek",
+    "released_at": "2026-11-13",
+    "image_url": "https://cards.scryfall.io/normal/front/8/1/81ad6427-e730-47c9-8310-6d3ca4b10c82.jpg?1793013295"
+  },
+  "Bruse Tarl, Boorish Herder": {
+    "oracle_id": "e39a1f6b-6b13-4a8b-ac0c-63ede4636812",
+    "mana_cost": "{2}{R}{W}",
+    "cmc": 4.0,
+    "type_line": "Legendary Creature — Human Ally",
+    "color_identity": [
+      "R",
+      "W"
+    ],
+    "set_name": "Commander 2016",
+    "released_at": "2016-11-11",
+    "image_url": "https://cards.scryfall.io/normal/front/1/2/125b552b-45ea-4e0b-94a9-8131c97a04c0.jpg?1783937085"
+  },
+  "Captain Jean-Luc Picard": {
+    "oracle_id": "04624f75-5981-4607-aa8f-706554f826e1",
+    "mana_cost": "{2}{W}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Human Officer",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Star Trek",
+    "released_at": "2026-11-13",
+    "image_url": "https://cards.scryfall.io/normal/front/b/7/b7114271-eb05-41e2-ad96-a34f53492312.jpg?1792508148"
+  },
+  "Cabaretti Charm": {
+    "oracle_id": "36d8b701-f5dc-42c0-9869-268f8149cbd1",
+    "mana_cost": "{R}{G}{W}",
+    "cmc": 3.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "G",
+      "R",
+      "W"
+    ],
+    "set_name": "Streets of New Capenna",
+    "released_at": "2022-04-29",
+    "image_url": "https://cards.scryfall.io/normal/front/0/8/08f33c8a-8e93-4296-964b-da132a854b3b.jpg?1783923091"
+  },
+  "Purphoros's Intervention": {
+    "oracle_id": "e190f086-ebee-447f-907f-7b37ec8824ac",
+    "mana_cost": "{X}{R}",
+    "cmc": 1.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Theros Beyond Death",
+    "released_at": "2020-01-24",
+    "image_url": "https://cards.scryfall.io/normal/front/e/c/ecc911ee-0e12-4b10-add7-9a9d63c29443.jpg?1783931547"
+  },
+  "Hearth Elemental // Stoke Genius": {
+    "oracle_id": "f01cf0c5-0ac6-4ad3-8642-dd21c8e8563e",
+    "mana_cost": "{5}{R}",
+    "cmc": 6.0,
+    "type_line": "Creature — Elemental // Sorcery — Adventure",
+    "color_identity": [
+      "R"
+    ],
+    "set_name": "Wilds of Eldraine",
+    "released_at": "2023-09-08",
+    "image_url": "https://cards.scryfall.io/normal/front/a/8/a8f5f102-cc75-4cee-a117-4bdaaf86c2e9.jpg?1783915092"
+  },
+  "Erebos's Intervention": {
+    "oracle_id": "e078585e-7058-4746-a884-3c9a14630a1b",
+    "mana_cost": "{X}{B}",
+    "cmc": 1.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "B"
+    ],
+    "set_name": "Theros Beyond Death",
+    "released_at": "2020-01-24",
+    "image_url": "https://cards.scryfall.io/normal/front/8/8/88e35c80-6cfe-49fc-8138-562233ccf987.jpg?1783931569"
+  },
+  "Theorix Charm": {
+    "oracle_id": "cf527bbd-e898-4aa9-909d-daec2f4b62ad",
+    "mana_cost": "{U}{B}",
+    "cmc": 2.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "B",
+      "U"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/2/8/2835c9aa-0904-44db-8da2-e8c4e04201aa.jpg?1789127659"
+  },
+  "Dimir Charm": {
+    "oracle_id": "4d99e786-585d-4026-9253-19741fb357de",
+    "mana_cost": "{U}{B}",
+    "cmc": 2.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "B",
+      "U"
+    ],
+    "set_name": "Gatecrash",
+    "released_at": "2013-02-01",
+    "image_url": "https://cards.scryfall.io/normal/front/f/3/f3f4cfa7-8ee4-4a85-9e6a-65a7541f62c1.jpg?1783940109"
+  },
+  "Absorbing Man and Titania": {
+    "oracle_id": "a1afb796-1b0b-4f41-9c8f-5320c9af5989",
+    "mana_cost": "{3}{R}{G}",
+    "cmc": 5.0,
+    "type_line": "Legendary Creature — Human Villain",
+    "color_identity": [
+      "G",
+      "R"
+    ],
+    "set_name": "Marvel Super Heroes Commander",
+    "released_at": "2026-06-26",
+    "image_url": "https://cards.scryfall.io/normal/front/5/f/5f363991-91f2-4675-b0ca-cc7fe230c4ff.jpg?1783903108"
+  },
+  "Kayla's Command": {
+    "oracle_id": "3d937cd9-b1e1-406d-9e29-3b9d3ceea3be",
+    "mana_cost": "{1}{W}{W}",
+    "cmc": 3.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "The Brothers' War",
+    "released_at": "2022-11-18",
+    "image_url": "https://cards.scryfall.io/normal/front/0/7/0737dbec-1646-41a0-adbf-706c9bd4fc7a.jpg?1783920132"
+  },
+  "Silverquill Command": {
+    "oracle_id": "6075b999-75c5-41c8-898d-ee612ba79a92",
+    "mana_cost": "{2}{W}{B}",
+    "cmc": 4.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "B",
+      "W"
+    ],
+    "set_name": "Strixhaven: School of Mages",
+    "released_at": "2021-04-23",
+    "image_url": "https://cards.scryfall.io/normal/front/5/c/5c55f533-9d31-4ad1-b336-927aba6e74d6.jpg?1783927293"
+  },
+  "Crosis's Charm": {
+    "oracle_id": "e59d70a2-40ac-45b0-995d-65b9caa290c8",
+    "mana_cost": "{U}{B}{R}",
+    "cmc": 3.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "B",
+      "R",
+      "U"
+    ],
+    "set_name": "Planeshift",
+    "released_at": "2001-02-05",
+    "image_url": "https://cards.scryfall.io/normal/front/b/5/b59a9e75-9988-4040-a718-b1655fc20d11.jpg?1783945608"
+  },
+  "Dawn Charm": {
+    "oracle_id": "a8f5cfa7-4956-4182-8e44-acf3493239f0",
+    "mana_cost": "{1}{W}",
+    "cmc": 2.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Planar Chaos",
+    "released_at": "2007-02-02",
+    "image_url": "https://cards.scryfall.io/normal/front/a/4/a4c9667b-1d94-42eb-ae8e-1ae4755e200a.jpg?1783943171"
+  },
+  "MACO Strike Team": {
+    "oracle_id": "0d60cfb1-dd77-4013-b862-41e95fdb53ae",
+    "mana_cost": "{G}",
+    "cmc": 1.0,
+    "type_line": "Creature — Human Soldier",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Star Trek",
+    "released_at": "2026-11-13",
+    "image_url": "https://cards.scryfall.io/normal/front/9/8/98a38e3f-e5ff-402f-9bcd-a03edc264688.jpg?1793188018"
+  },
+  "Temur Charm": {
+    "oracle_id": "418bc6c8-972b-4f07-aac0-8d003b9c1b17",
+    "mana_cost": "{G}{U}{R}",
+    "cmc": 3.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "G",
+      "R",
+      "U"
+    ],
+    "set_name": "Khans of Tarkir",
+    "released_at": "2014-09-26",
+    "image_url": "https://cards.scryfall.io/normal/front/e/2/e2ee3e36-a849-42b0-b84b-027a08427c35.jpg?1783939051"
+  },
+  "Anthropological Mission": {
+    "oracle_id": "535c0280-fdb5-4ff8-8608-c2f98b8a7ffc",
+    "mana_cost": "{2}{U}",
+    "cmc": 3.0,
+    "type_line": "Enchantment",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Star Trek",
+    "released_at": "2026-11-13",
+    "image_url": "https://cards.scryfall.io/normal/front/9/3/93b458aa-a928-48ef-b685-1306cc65ad06.jpg?1793012962"
+  },
+  "Darigaaz's Charm": {
+    "oracle_id": "7ee01801-5e42-4916-a359-64e9975090a7",
+    "mana_cost": "{B}{R}{G}",
+    "cmc": 3.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "B",
+      "G",
+      "R"
+    ],
+    "set_name": "Planeshift",
+    "released_at": "2001-02-05",
+    "image_url": "https://cards.scryfall.io/normal/front/c/f/cf4c9d6a-86eb-45be-9405-473eb263b94c.jpg?1783945608"
+  },
+  "Leatherhead, Swamp Stalker": {
+    "oracle_id": "ee9b606a-a1fe-43c8-84d0-9bf7b012cc75",
+    "mana_cost": "{2}{G}{G}",
+    "cmc": 4.0,
+    "type_line": "Legendary Creature — Crocodile Mutant Rogue",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Teenage Mutant Ninja Turtles",
+    "released_at": "2026-03-06",
+    "image_url": "https://cards.scryfall.io/normal/front/b/1/b1f6b5b5-12ca-468d-bc53-dd0cde60e7b6.jpg?1783904088"
+  },
+  "Serpent of the Pass": {
+    "oracle_id": "98e36c6e-a868-4679-a5b5-6f02097f560b",
+    "mana_cost": "{5}{U}{U}",
+    "cmc": 7.0,
+    "type_line": "Creature — Serpent",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Avatar: The Last Airbender",
+    "released_at": "2025-11-21",
+    "image_url": "https://cards.scryfall.io/normal/front/8/7/87595843-15bc-48bb-8a81-3e6ad924ed44.jpg?1783904982"
+  },
+  "Pull from Eternity": {
+    "oracle_id": "2903bd66-6948-445b-a18a-12e2ce1a86c3",
+    "mana_cost": "{W}",
+    "cmc": 1.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Time Spiral",
+    "released_at": "2006-10-06",
+    "image_url": "https://cards.scryfall.io/normal/front/3/d/3d218091-d218-41ad-b666-c8ab3de7160a.jpg?1783943250"
+  },
+  "Tolarian Terror": {
+    "oracle_id": "b9d0f2e1-62c2-44fd-ad38-471daf17bb0a",
+    "mana_cost": "{6}{U}",
+    "cmc": 7.0,
+    "type_line": "Creature — Serpent",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Dominaria United",
+    "released_at": "2022-09-09",
+    "image_url": "https://cards.scryfall.io/normal/front/4/2/42f01cba-43d4-46ad-b7a5-d7631b0e1347.jpg?1783921342"
+  },
+  "Cryptic Serpent": {
+    "oracle_id": "0f26c04a-9bf7-4cbd-a95f-73ee4a3b1af1",
+    "mana_cost": "{5}{U}{U}",
+    "cmc": 7.0,
+    "type_line": "Creature — Serpent",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Amonkhet",
+    "released_at": "2017-04-28",
+    "image_url": "https://cards.scryfall.io/normal/front/4/3/43d11a24-8abf-46ff-8cc6-57b8ac3013f6.jpg?1783936524"
+  },
+  "Nog, Ambitious Cadet": {
+    "oracle_id": "5a8ae1c0-1935-4d03-aa94-9e9088650821",
+    "mana_cost": "{B}{G}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Ferengi Rogue",
+    "color_identity": [
+      "B",
+      "G"
+    ],
+    "set_name": "Star Trek",
+    "released_at": "2026-11-13",
+    "image_url": "https://cards.scryfall.io/normal/front/b/5/b513dd60-8573-467b-9c6a-855a0ba86fca.jpg?1793101384"
+  },
+  "Grixis Charm": {
+    "oracle_id": "387ae7be-1cb5-4ae8-bb63-edf4941945a9",
+    "mana_cost": "{U}{B}{R}",
+    "cmc": 3.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "B",
+      "R",
+      "U"
+    ],
+    "set_name": "Shards of Alara",
+    "released_at": "2008-10-03",
+    "image_url": "https://cards.scryfall.io/normal/front/a/9/a98a6695-44ce-445f-b476-e18a0b5dd8f2.jpg?1783942545"
+  },
+  "Treva's Charm": {
+    "oracle_id": "e9795590-0918-49f9-b37c-1278c8616ab1",
+    "mana_cost": "{G}{W}{U}",
+    "cmc": 3.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "G",
+      "U",
+      "W"
+    ],
+    "set_name": "Planeshift",
+    "released_at": "2001-02-05",
+    "image_url": "https://cards.scryfall.io/normal/front/7/2/72acb67d-01cb-4fde-8b0b-199e8d1e396a.jpg?1783945601"
+  },
+  "Jund Charm": {
+    "oracle_id": "7bd2ac13-d598-4cf1-a483-2a6878aed93b",
+    "mana_cost": "{B}{R}{G}",
+    "cmc": 3.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "B",
+      "G",
+      "R"
+    ],
+    "set_name": "Shards of Alara",
+    "released_at": "2008-10-03",
+    "image_url": "https://cards.scryfall.io/normal/front/7/a/7a0ddf00-926c-4283-a8b2-daa02fa99b8b.jpg?1783942544"
+  },
+  "Esper Charm": {
+    "oracle_id": "d40ea3d9-8c48-4846-b1f4-99018d4fd789",
+    "mana_cost": "{W}{U}{B}",
+    "cmc": 3.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "B",
+      "U",
+      "W"
+    ],
+    "set_name": "Shards of Alara",
+    "released_at": "2008-10-03",
+    "image_url": "https://cards.scryfall.io/normal/front/a/3/a3d70a07-8d91-462c-aa96-901cc9a81531.jpg?1783942545"
+  },
+  "Lorehold Command": {
+    "oracle_id": "107becb1-f8a3-4777-b39f-a0456c2d580e",
+    "mana_cost": "{3}{R}{W}",
+    "cmc": 5.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "R",
+      "W"
+    ],
+    "set_name": "Strixhaven: School of Mages",
+    "released_at": "2021-04-23",
+    "image_url": "https://cards.scryfall.io/normal/front/e/4/e4f0885f-1049-4a19-853d-f4e6d4bec29e.jpg?1783927309"
+  },
+  "Horrific Assault": {
+    "oracle_id": "4c7e091e-e3c1-446d-a442-4aacb3cdd575",
+    "mana_cost": "{G}",
+    "cmc": 1.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Modern Horizons 3",
+    "released_at": "2024-06-14",
+    "image_url": "https://cards.scryfall.io/normal/front/c/f/cfa6ed13-7bba-40c0-8e0e-4ffd3cea6241.jpg?1783911259"
+  },
+  "Mardu Charm": {
+    "oracle_id": "147eabab-9d93-4cf4-811b-0efa3b84c5b5",
+    "mana_cost": "{R}{W}{B}",
+    "cmc": 3.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "B",
+      "R",
+      "W"
+    ],
+    "set_name": "Khans of Tarkir",
+    "released_at": "2014-09-26",
+    "image_url": "https://cards.scryfall.io/normal/front/c/3/c35fb7a3-7c7f-4470-b1ad-5b8709a608e6.jpg?1783939056"
+  },
+  "Gruul Charm": {
+    "oracle_id": "e552cab2-cee0-4420-9419-4bada4b2f241",
+    "mana_cost": "{R}{G}",
+    "cmc": 2.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "G",
+      "R"
+    ],
+    "set_name": "Gatecrash",
+    "released_at": "2013-02-01",
+    "image_url": "https://cards.scryfall.io/normal/front/9/2/9235afe5-0a6b-43c2-921c-18524cf032f1.jpg?1783940106"
+  },
+  "Garruk, Curse Breaker": {
+    "oracle_id": "184d4672-05a9-4182-8b3f-3561fb33ed62",
+    "mana_cost": "{3}{G}{G}",
+    "cmc": 5.0,
+    "type_line": "Legendary Planeswalker — Garruk",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/9/0/90ca5812-ceb5-46bd-b049-aed7ff10e6af.jpg?1788329370"
+  },
+  "Bant Charm": {
+    "oracle_id": "324889d6-c857-41ed-bb60-408809fc9964",
+    "mana_cost": "{G}{W}{U}",
+    "cmc": 3.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "G",
+      "U",
+      "W"
+    ],
+    "set_name": "Shards of Alara",
+    "released_at": "2008-10-03",
+    "image_url": "https://cards.scryfall.io/normal/front/6/5/65b65c87-b084-44aa-b841-411a3c73e234.jpg?1783942548"
+  },
+  "Gloryscale Viashino": {
+    "oracle_id": "d94a6e12-0197-4125-9a8c-431e42edb1da",
+    "mana_cost": "{1}{R}{G}{W}",
+    "cmc": 4.0,
+    "type_line": "Creature — Lizard Soldier",
+    "color_identity": [
+      "G",
+      "R",
+      "W"
+    ],
+    "set_name": "Alara Reborn",
+    "released_at": "2009-04-30",
+    "image_url": "https://cards.scryfall.io/normal/front/8/e/8e02e9e6-4cff-404a-94a3-e844ef7cadee.jpg?1783942415"
+  },
+  "Test of Courage": {
+    "oracle_id": "101b2387-58a1-4ef9-8395-0024713e217b",
+    "mana_cost": "{G}",
+    "cmc": 1.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Star Trek",
+    "released_at": "2026-11-13",
+    "image_url": "https://cards.scryfall.io/normal/front/2/9/291b9b6b-54bf-4e71-98f1-cb9301ea0727.jpg?1792668501"
+  },
+  "Quandrix Command": {
+    "oracle_id": "9c0f7cdc-9095-40ae-bf83-75a5ffda72b9",
+    "mana_cost": "{1}{G}{U}",
+    "cmc": 3.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "G",
+      "U"
+    ],
+    "set_name": "Strixhaven: School of Mages",
+    "released_at": "2021-04-23",
+    "image_url": "https://cards.scryfall.io/normal/front/0/2/021b62d8-d160-47f5-bc51-0474f160d13f.jpg?1783927299"
+  },
+  "Golgari Charm": {
+    "oracle_id": "f0ab7166-9fcf-46e5-af2c-b7f628db4789",
+    "mana_cost": "{B}{G}",
+    "cmc": 2.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "B",
+      "G"
+    ],
+    "set_name": "Return to Ravnica",
+    "released_at": "2012-10-05",
+    "image_url": "https://cards.scryfall.io/normal/front/4/8/48fce388-eefc-4234-8dd9-1260c1ba97eb.jpg?1783940339"
+  },
+  "Selesnya Charm": {
+    "oracle_id": "a1a49639-bcc4-4522-8862-c9fb13d40880",
+    "mana_cost": "{G}{W}",
+    "cmc": 2.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "G",
+      "W"
+    ],
+    "set_name": "Return to Ravnica",
+    "released_at": "2012-10-05",
+    "image_url": "https://cards.scryfall.io/normal/front/a/9/a9848eab-1d3a-4ab0-adf6-c20858aa3afb.jpg?1783940333"
+  },
+  "Naya Charm": {
+    "oracle_id": "20cc0f3e-de69-4e5f-88b3-ae7e6c6b5996",
+    "mana_cost": "{R}{G}{W}",
+    "cmc": 3.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "G",
+      "R",
+      "W"
+    ],
+    "set_name": "Shards of Alara",
+    "released_at": "2008-10-03",
+    "image_url": "https://cards.scryfall.io/normal/front/4/7/47748c3a-c60a-4f2e-9eb8-2675c067bb9c.jpg?1783942543"
+  },
+  "Contest of Claws": {
+    "oracle_id": "e30d5114-40d7-4dc5-8067-9c5e9625e097",
+    "mana_cost": "{1}{G}",
+    "cmc": 2.0,
+    "type_line": "Sorcery",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "The Lost Caverns of Ixalan Commander",
+    "released_at": "2023-11-17",
+    "image_url": "https://cards.scryfall.io/normal/front/c/6/c6679e01-acd1-460a-a4c6-096059510288.jpg?1783913932"
+  },
+  "Ezri Dax, Newly Joined": {
+    "oracle_id": "d4fb650a-94fd-4361-9648-45d6ad64b7a2",
+    "mana_cost": "{1}{W}",
+    "cmc": 2.0,
+    "type_line": "Legendary Creature — Trill Advisor",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Star Trek Commander",
+    "released_at": "2026-11-13",
+    "image_url": "https://cards.scryfall.io/normal/front/f/4/f46512c2-0d03-406d-a37c-5e4cb8d5a465.jpg?1793111694"
+  },
+  "Brokers Charm": {
+    "oracle_id": "a90de2b8-4d71-4d0e-82b3-3b7ab194165b",
+    "mana_cost": "{G}{W}{U}",
+    "cmc": 3.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "G",
+      "U",
+      "W"
+    ],
+    "set_name": "Streets of New Capenna",
+    "released_at": "2022-04-29",
+    "image_url": "https://cards.scryfall.io/normal/front/7/4/74c9c315-1cf4-468e-a74a-b5f3be4a63a1.jpg?1783923094"
+  },
+  "Hero of Precinct One": {
+    "oracle_id": "5a66802a-76f9-4a31-a776-24110dcfca64",
+    "mana_cost": "{1}{W}",
+    "cmc": 2.0,
+    "type_line": "Creature — Human Warrior",
+    "color_identity": [
+      "W"
+    ],
+    "set_name": "Ravnica Allegiance",
+    "released_at": "2019-01-25",
+    "image_url": "https://cards.scryfall.io/normal/front/8/7/87732718-1067-4e5f-a76d-409539c9ef3f.jpg?1783933723"
+  },
+  "Maestros Charm": {
+    "oracle_id": "3b207754-9172-426a-8efc-a9c3912d94bb",
+    "mana_cost": "{U}{B}{R}",
+    "cmc": 3.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "B",
+      "R",
+      "U"
+    ],
+    "set_name": "Streets of New Capenna",
+    "released_at": "2022-04-29",
+    "image_url": "https://cards.scryfall.io/normal/front/3/d/3dcdedb6-3c24-4a29-b9b9-27cc47d8ee56.jpg?1783923080"
+  },
+  "Sultai Charm": {
+    "oracle_id": "46ed38d1-e642-4cea-99ed-a9c17fd982b1",
+    "mana_cost": "{B}{G}{U}",
+    "cmc": 3.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "B",
+      "G",
+      "U"
+    ],
+    "set_name": "Khans of Tarkir",
+    "released_at": "2014-09-26",
+    "image_url": "https://cards.scryfall.io/normal/front/9/9/993c9028-9b1b-4903-81b2-3cf4f37b7229.jpg?1783939052"
+  },
+  "Hunter's Bow": {
+    "oracle_id": "810592fe-65f5-4c95-9d75-d6806e004903",
+    "mana_cost": "{1}{G}",
+    "cmc": 2.0,
+    "type_line": "Artifact — Equipment",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Assassin's Creed",
+    "released_at": "2024-07-05",
+    "image_url": "https://cards.scryfall.io/normal/front/c/a/ca2765df-edff-4607-843c-8528d5d4fce9.jpg?1783910976"
+  },
+  "Konstrari Charm": {
+    "oracle_id": "40961b23-b153-434a-aeb9-b9c2ff613dcb",
+    "mana_cost": "{R}{G}",
+    "cmc": 2.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "G",
+      "R"
+    ],
+    "set_name": "Reality Fracture",
+    "released_at": "2026-10-02",
+    "image_url": "https://cards.scryfall.io/normal/front/7/d/7d29dfa1-9582-47bc-8f42-62b611bdcc4e.jpg?1789127645"
+  },
+  "Abzan Charm": {
+    "oracle_id": "4137a22c-f793-4e27-a9b2-72740a6e2121",
+    "mana_cost": "{W}{B}{G}",
+    "cmc": 3.0,
+    "type_line": "Instant",
+    "color_identity": [
+      "B",
+      "G",
+      "W"
+    ],
+    "set_name": "Khans of Tarkir",
+    "released_at": "2014-09-26",
+    "image_url": "https://cards.scryfall.io/normal/front/8/f/8f7b7598-35b0-4bb5-8347-8c868500f846.jpg?1783939062"
+  },
+  "Eddymurk Crab": {
+    "oracle_id": "3c345e24-1726-45ac-91ca-e348d1e7acfe",
+    "mana_cost": "{5}{U}{U}",
+    "cmc": 7.0,
+    "type_line": "Creature — Elemental Crab",
+    "color_identity": [
+      "U"
+    ],
+    "set_name": "Bloomburrow",
+    "released_at": "2024-08-02",
+    "image_url": "https://cards.scryfall.io/normal/front/e/6/e6d45abe-4962-47d9-a54e-7e623ea8647c.jpg?1783910850"
+  },
+  "Dr. Leonard \"Bones\" McCoy": {
+    "oracle_id": "0157faee-f307-43c0-b308-bbf36ce02e32",
+    "mana_cost": "{1}{G}{G}",
+    "cmc": 3.0,
+    "type_line": "Legendary Creature — Human Doctor",
+    "color_identity": [
+      "G"
+    ],
+    "set_name": "Star Trek",
+    "released_at": "2026-11-13",
+    "image_url": "https://cards.scryfall.io/normal/front/d/8/d8593bf7-5248-4f4a-bf8b-9816d2f76c6b.jpg?1793187127"
   }
 }

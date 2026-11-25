@@ -56,12 +56,16 @@ def main():
     for i, card in enumerate(missing_cards):
 
         # Query scryfall, seacrch card name and get first result
+        # Use single quotes to wrap the exact-name term if the card name itself
+        # contains a double quote (e.g. Dr. Leonard "Bones" McCoy), since that
+        # would otherwise terminate the quoted query early and 404.
+        quote = "'" if '"' in card else '"'
         try:
             response = requests.get(
                 'https://api.scryfall.com/cards/search',
                 headers=headers,
                 params={
-                    'q': f'!"{card}"',
+                    'q': f'!{quote}{card}{quote}',
                     'order': 'released',
                     'dir': 'asc',
                     'unique': 'prints',
